@@ -41,11 +41,11 @@ A: Not really. For example, Zedity is also available as a JavaScript Library. Fo
 == Screenshots ==
 
 1. By clicking on the Z icon the Zedity editor opens up:
-screenshot-menu.png
+`screenshot-1.png`
 2. To get started, click on the Add box menu, then Image, for example:
-screenshot-add-box.png
+`screenshot-2.png`
 3. Add other boxes, drag them around, add effects and eventually click on "Save" under the "Page" menu:
-screenshot-page.png
+`screenshot-3.png`
 
 == Changelog ==
 
