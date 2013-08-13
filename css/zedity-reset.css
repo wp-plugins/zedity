@@ -1,0 +1,4 @@
+/*reset image width in zedity content*/
+.zedity-editor img {
+	max-width: 100%;
+}

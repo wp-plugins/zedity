@@ -1,0 +1,35 @@
+/*
+Reset some css modified by the WP visual editor.
+*/
+
+.zedity-editor b,
+.zedity-editor strong,
+.zedity-editor i,
+.zedity-editor em {
+	font: inherit;
+	line-height: inherit;
+}
+
+.zedity-editor b,
+.zedity-editor strong {
+	font-weight: bold;
+}
+
+.zedity-editor i,
+.zedity-editor em {
+	font-style: italic;
+}
+
+
+
+.zedity-editor .zedity-box-Image p {
+	margin: 0;
+	padding: 0;
+}
+
+.zedity-editor .zedity-box img {
+	padding: 0;
+	border: none;
+	max-width: 100%;
+}
+
