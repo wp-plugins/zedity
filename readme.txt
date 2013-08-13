@@ -21,7 +21,7 @@ For any further information please visit the [Zedity site](http://zedity.com).
 
 == Installation ==
 
-1. Upload and unzip the `zedity-wp-plugin-free.zip` file to the `/wp-content/plugins/` directory.
+1. Upload and unzip the `zedity.zip` file to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Frequently asked questions ==
