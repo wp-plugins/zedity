@@ -4,7 +4,7 @@ Donate link: http://zedity.com/plugin/wp
 Tags: multimedia, flexible layout, editor, html5, css3, drag and drop, WYSIWYG, text, image, picture, video, audio, embed, zedity
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -41,13 +41,14 @@ A: Not really. For example, Zedity is also available as a JavaScript Library. Fo
 == Screenshots ==
 
 1. By clicking on the Z icon the Zedity editor opens up:
-`screenshot-1.png`
 2. To get started, click on the Add box menu, then Image, for example:
-`screenshot-2.png`
 3. Add other boxes, drag them around, add effects and eventually click on "Save" under the "Page" menu:
-`screenshot-3.png`
 
 == Changelog ==
+
+= 1.0.1 =
+* Center editor on screen.
+* Minor bug fixes.
 
 = 1.0.0 =
 * Initial version.
