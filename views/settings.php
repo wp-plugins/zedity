@@ -1,0 +1,106 @@
+<?php
+	$allwebfonts = zedity_get_all_webfonts();
+	foreach ($allwebfonts as $font) {
+		$fontname = explode(',',$font);
+		$fontname = urlencode($fontname[0]);
+?>
+		<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
+<?php
+	}
+?>
+
+<div class="wrap">
+	<?php screen_icon(); ?>
+	<h2>Zedity Editor Settings</h2>
+
+	<form action="options.php" method="post">
+
+		<hr/>
+
+		<h3 class="title">Page</h3>
+		<p>Default page size (in pixels).</p>
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Page width:</label></th>
+				<td>
+					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
+					(<?php echo $this::MIN_WIDTH.'-'.$this::MAX_WIDTH?>), numbers only.
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Page height:</label></th>
+				<td>
+					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
+					(<?php echo $this::MIN_HEIGHT.'-'.$this::MAX_HEIGHT?>), numbers only.
+				</td>
+			</tr>
+		</tbody></table>
+
+		<hr/>
+
+		<h3 class="title">Webfonts</h3>
+		<p>Enable webfonts in your blog and Zedity editor.</p>
+		<p><b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.</p>
+		<div style="border:2px solid #ccc;width:300px;height:200px;overflow-y:scroll;padding:5px">
+			<?php
+				$i = 0;
+				foreach ($allwebfonts as $font) {
+					$i++;
+					$fontname = explode(',',$font);
+					$fontname = $fontname[0];
+			?>
+				<input type="checkbox" id="cbWB_<?php echo $i ?>" name="zedity_settings[webfonts][]" value="<?php echo $font ?>" <?php checked(in_array($font,$options['webfonts'])); ?>/>
+				<label for="cbWB_<?php echo $i ?>" style="font:16px <?php echo $font ?>"><?php echo $fontname ?></label>
+				<br />
+			<?php } ?>
+		</div>
+	
+		<?php if (!function_exists(zedity_get_premium_webfonts)) { ?>
+		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
+		<?php } ?>
+
+		<hr/>
+
+		<h3 class="title">Media embed</h3>
+		<p>Supported media embed services.</p>
+
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Video:</label></th>
+				<td>
+					<?php
+					$content = array();
+					foreach(zedity_get_all_videoembeds() as $service=>$site) {
+						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
+					}
+					echo implode(', ',$content);
+					?>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Audio:</label></th>
+				<td>
+					<?php
+					$content = array();
+					foreach(zedity_get_all_audioembeds() as $service=>$site) {
+						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
+					}
+					echo implode(', ',$content);
+					?>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<br/>
+
+		<?php if (!function_exists(zedity_get_premium_audioembeds)) { ?>
+		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
+		<?php } ?>
+
+		<?php 
+			settings_fields('wp_zedity_plugin');
+			do_settings_fields('wp_zedity_plugin','zedity_settings');
+			submit_button();
+		?>
+	</form>
+</div>
