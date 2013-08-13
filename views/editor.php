@@ -59,7 +59,7 @@
 	</head>
 	
 	<body>
-		<div id="zedityEditor"></div>
+		<div id="zedityEditorW"></div>
 		<div id="filler"></div>
 
 
@@ -130,11 +130,20 @@
 		});
 
 		zedityEditor = new Zedity({
-			container: '#zedityEditor',
+			container: '#zedityEditorW',
 			width: <?php echo $options['page_width']?>,
 			height: <?php echo $options['page_height']?>,
+			minWidth: <?php echo WP_Zedity_Plugin::MIN_WIDTH?>,
+			maxWidth: <?php echo WP_Zedity_Plugin::MAX_WIDTH?>,
+			minHeight: <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>,
+			maxHeight: <?php echo WP_Zedity_Plugin::MAX_HEIGHT?>,
 			onchange: function(){
 				this.contentChanged = true;
+				//reposition to center the editor
+				var ew = this.page.size().width;
+				var bw = $('body').width();
+				$('.zedity-mainmenu').css('width',Math.max(ew-4,300));
+				this.$container.css('margin-left',(ew<bw) ? (bw-ew)/2 : '');
 			},
 			Text: {
 				fonts: fonts
