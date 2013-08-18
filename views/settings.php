@@ -1,4 +1,6 @@
 <?php
+	if (!isset($options['webfonts'])) $options['webfonts'] = array();
+
 	$allwebfonts = zedity_get_all_webfonts();
 	foreach ($allwebfonts as $font) {
 		$fontname = explode(',',$font);
@@ -24,14 +26,14 @@
 				<th scope="row"><label for="blogname">Page width:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
-					(<?php echo $this::MIN_WIDTH.'-'.$this::MAX_WIDTH?>), numbers only.
+					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page height:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
-					(<?php echo $this::MIN_HEIGHT.'-'.$this::MAX_HEIGHT?>), numbers only.
+					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
 				</td>
 			</tr>
 		</tbody></table>
@@ -96,6 +98,25 @@
 		<?php if (!function_exists(zedity_get_premium_audioembeds)) { ?>
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
 		<?php } ?>
+
+		<hr/>
+
+		<h3 class="title">Watermark</h3>
+		<p>If you like Zedity and want to support it, please enable the "powered by Zedity" watermark to be shown in your preferred position:</p>
+		<!--<p>Select position:</p>-->
+
+		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
+			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM2">Top left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM3">Top right</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM4">Bottom left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM5">Bottom right</label><br/>
+		</div>
 
 		<?php 
 			settings_fields('wp_zedity_plugin');
