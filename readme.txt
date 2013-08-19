@@ -1,7 +1,7 @@
 === Zedity ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible layout, editor, html5, css, drag and drop, WYSIWYG, text, image, picture, video, audio, embed, zedity, posts
+Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, link, image, video, audio, embed, zedity, posts
 Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: 1.1.0
