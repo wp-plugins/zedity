@@ -20,7 +20,7 @@
 		<hr/>
 
 		<h3 class="title">Page</h3>
-		<p>Default page size (in pixels).</p>
+		<p>Select the default page size (in pixels), to be used when you start a new Zedity post:</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page width:</label></th>
@@ -38,6 +38,25 @@
 			</tr>
 		</tbody></table>
 
+		<hr/>
+
+		<h3 class="title">Watermark</h3>
+		<p>If you like Zedity and want to support it, please enable the "powered by Zedity" watermark to be shown in your preferred position:</p>
+		<!--<p>Select position:</p>-->
+
+		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
+			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM2">Top left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM3">Top right</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM4">Bottom left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM5">Bottom right</label><br/>
+		</div>
+		
 		<hr/>
 
 		<h3 class="title">Webfonts</h3>
@@ -99,24 +118,7 @@
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
 		<?php } ?>
 
-		<hr/>
-
-		<h3 class="title">Watermark</h3>
-		<p>If you like Zedity and want to support it, please enable the "powered by Zedity" watermark to be shown in your preferred position:</p>
-		<!--<p>Select position:</p>-->
-
-		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
-			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
-			<label for="rbWM2">Top left</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
-			<label for="rbWM3">Top right</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
-			<label for="rbWM4">Bottom left</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
-			<label for="rbWM5">Bottom right</label><br/>
-		</div>
+		
 
 		<?php 
 			settings_fields('wp_zedity_plugin');
