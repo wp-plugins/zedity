@@ -1,7 +1,7 @@
 === Zedity ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, link, image, video, audio, embed, zedity, posts
+Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, embed, zedity, posts
 Requires at least: 3.5
 Tested up to: 3.6
 Stable tag: 1.1.0
@@ -46,7 +46,8 @@ A: Not really. For example, Zedity is also available as a JavaScript Library. Fo
 
 1. By clicking on the Z icon the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
-3. Add other boxes, drag them around, add effects and eventually click on "Save" under the "Page" menu.
+3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Page" menu or the Save icon.
+4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc. 
 
 == Changelog ==
 
