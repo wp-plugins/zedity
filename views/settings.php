@@ -44,7 +44,7 @@
 		<p>If you like Zedity and want to support it, please enable the "powered by Zedity" watermark to be shown in your preferred position:</p>
 		<!--<p>Select position:</p>-->
 
-		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
+		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px;">
 			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
 			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
 			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
@@ -56,12 +56,13 @@
 			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
 			<label for="rbWM5">Bottom right</label><br/>
 		</div>
+		<br/>
 		
 		<hr/>
 
 		<h3 class="title">Webfonts</h3>
-		<p>Enable webfonts in your blog and Zedity editor.</p>
-		<p><b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.</p>
+		<p>In addition to the standard fonts, you can select any of the following webfonts to give your content a distinctive style:</p>
+		<p><b>(Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.)</p>
 		<div style="border:2px solid #ccc;width:300px;height:200px;overflow-y:scroll;padding:5px">
 			<?php
 				$i = 0;
