@@ -22,8 +22,11 @@ For any further information please visit the [Zedity site](http://zedity.com).
 
 == Installation ==
 
-1. Upload and unzip the `zedity.zip` file to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+1. You can upload and unzip the plugin .zip file to your 'wp-content/plugins' directory, or just install automatically through your WordPress dashboard (Plugins -> Add new).
+
+2. Activate the Zedity plugin from your WordPress dashboard.
+
+3. You can set your preferences in the Zedity Settings, from your WordPress dashboard (Installed Plugins->Zedity->Settings).
 
 == Frequently asked questions ==
 
@@ -37,7 +40,7 @@ A: After installing and enabling the plugin, a new button appears in the WordPre
 A: No worries, that is normal behavior in WordPress: they will play normally when you publish your post.
 
 **Q: How can I update the Zedity content after saving it?**  
-A: From the standard WordPress editor, just click on the Zedity content you want to update (you can have even more than one in your post) and the click on the Zedity icon.
+A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
 **Q: Can I see any live content created with Zedity?**  
 A: Sure. For example, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
