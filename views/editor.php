@@ -99,6 +99,8 @@
 			needBrBefore = $(element).prev(':not(.zedity-editor)').length==0;
 			needBrAfter = $(element).next(':not(.zedity-editor)').length==0;
 
+			if (!element) return '';
+
 			//select content
 			mce.selection.select(element);
 
@@ -281,6 +283,9 @@
 						$(elem).remove();
 					}
 				});
+				
+				//show overlay on new content
+				mce.plugins.zedity._zedityContent = $(mce.getDoc()).find('#'+this.id)[0];
 			});
 		});
 

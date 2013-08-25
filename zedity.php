@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
-Version: 1.1.0
+Version: 1.2.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -117,7 +117,7 @@ class WP_Zedity_Plugin {
 
 			//Handle ThickBox window close
 			var old_tb_remove = tb_remove;
-			tb_remove = function(event) {
+			tb_remove = function(){
 				var $iframe = jQuery('#TB_iframeContent');
 				if ($iframe.hasClass('zedity-iframe')) {
 					if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
@@ -131,8 +131,9 @@ class WP_Zedity_Plugin {
 					idoc.getSelection().removeAllRanges();
 					*/
 				}
-				old_tb_remove();
-			}
+				old_tb_remove.apply(this,arguments);
+				tinyMCE.get('content').plugins.zedity._closeZedity();
+			};
 
 			//Handle ThickBox window resize
 			resizeForZedity = function(){
@@ -148,6 +149,15 @@ class WP_Zedity_Plugin {
 				}
 			};
 			jQuery(window).on('resize',resizeForZedity);
+
+			//Handle WP editor switch
+			if (window.switchEditors) {
+				var old_go = switchEditors.go;
+				switchEditors.go = function(){
+					tinyMCE.get('content').plugins.zedity._hideOverlay();
+					old_go.apply(this,arguments);
+				};
+			}
 
 		});
 		</script>
@@ -173,7 +183,7 @@ class WP_Zedity_Plugin {
 	public function add_mce_css($mce_css) {
 		@session_start();
 		$options = get_option('zedity_settings');
-		$_SESSION['webfonts'] = $options['webfonts'];
+		$_SESSION['zedity_webfonts'] = $options['webfonts'];
 
 		if (!empty($mce_css)) $mce_css .= ',';
 		$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';

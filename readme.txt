@@ -4,7 +4,7 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, embed, zedity, posts
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -53,12 +53,16 @@ A: Not really. For example, Zedity is also available as a JavaScript Library. Fo
 1. By clicking on the Z icon the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
 3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Page" menu or the Save icon.
-4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc. 
+4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc.
 
 == Changelog ==
 
+= 1.2.0 =
+* Added automatic selection of Zedity content in WordPress editor, with buttons to edit or delete the content.
+* Various optimizations and minor bug fixes.
+
 = 1.1.0 =
-* Fixed an installation error occurring on some PHP platforms (Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM). 
+* Fixed an installation error occurring on some PHP platforms (Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM).
 * New menu toolbar quick access functions.
 * Increased maximum allowed image file size to 10MB.
 * Added watermark setting.
