@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
-Version: 1.0
+Version: 1.2.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -66,7 +66,8 @@ class WP_Zedity_Plugin {
 		add_option('zedity_settings',array(
 			'page_width' => self::DEFAULT_WIDTH,
 			'page_height' => self::DEFAULT_HEIGHT,
-			'webfonts' => array()
+			'webfonts' => array(),
+			'watermark' => 'none',
 		));
 	}
 	
@@ -116,7 +117,7 @@ class WP_Zedity_Plugin {
 
 			//Handle ThickBox window close
 			var old_tb_remove = tb_remove;
-			tb_remove = function(event) {
+			tb_remove = function(){
 				var $iframe = jQuery('#TB_iframeContent');
 				if ($iframe.hasClass('zedity-iframe')) {
 					if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
@@ -130,8 +131,9 @@ class WP_Zedity_Plugin {
 					idoc.getSelection().removeAllRanges();
 					*/
 				}
-				old_tb_remove();
-			}
+				old_tb_remove.apply(this,arguments);
+				tinyMCE.get('content').plugins.zedity._closeZedity();
+			};
 
 			//Handle ThickBox window resize
 			resizeForZedity = function(){
@@ -140,9 +142,22 @@ class WP_Zedity_Plugin {
 					left: '5%',
 					'margin-left': ''
 				});
-				jQuery('#TB_iframeContent').css('width','100%');
-			}
+				var $iframe = jQuery('#TB_iframeContent');
+				if ($iframe.length>0) {
+					$iframe.css('width','100%');
+					$iframe[0].contentWindow.resizeEditor($iframe[0].contentWindow.zedityEditor);
+				}
+			};
 			jQuery(window).on('resize',resizeForZedity);
+
+			//Handle WP editor switch
+			if (window.switchEditors) {
+				var old_go = switchEditors.go;
+				switchEditors.go = function(){
+					tinyMCE.get('content').plugins.zedity._hideOverlay();
+					old_go.apply(this,arguments);
+				};
+			}
 
 		});
 		</script>
@@ -168,7 +183,7 @@ class WP_Zedity_Plugin {
 	public function add_mce_css($mce_css) {
 		@session_start();
 		$options = get_option('zedity_settings');
-		$_SESSION['webfonts'] = $options['webfonts'];
+		$_SESSION['zedity_webfonts'] = $options['webfonts'];
 
 		if (!empty($mce_css)) $mce_css .= ',';
 		$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
@@ -210,29 +225,37 @@ class WP_Zedity_Plugin {
 
 		$options['page_width'] = trim($input['page_width']);
 		if (!preg_match('/^[0-9]{3,5}$/i', $options['page_width'])) {
-			$options['page_width'] = $this::DEFAULT_WIDTH;
+			$options['page_width'] = self::DEFAULT_WIDTH;
 		}
-		if ($options['page_width']<$this::MIN_WIDTH) {
-			$options['page_width'] = $this::MIN_WIDTH;
+		if ($options['page_width']<self::MIN_WIDTH) {
+			$options['page_width'] = self::MIN_WIDTH;
 		}
-		if ($options['page_width']>$this::MAX_WIDTH) {
-			$options['page_width'] = $this::MAX_WIDTH;
+		if ($options['page_width']>self::MAX_WIDTH) {
+			$options['page_width'] = self::MAX_WIDTH;
 		}
 
 		$options['page_height'] = trim($input['page_height']);
 		if (!preg_match('/^[0-9]{3,5}$/i', $options['page_height'])) {
-			$options['page_height'] = $this::DEFAULT_HEIGHT;
+			$options['page_height'] = self::DEFAULT_HEIGHT;
 		}
-		if ($options['page_height']<$this::MIN_WIDTH) {
-			$options['page_height'] = $this::MIN_HEIGHT;
+		if ($options['page_height']<self::MIN_WIDTH) {
+			$options['page_height'] = self::MIN_HEIGHT;
 		}
-		if ($options['page_height']>$this::MAX_WIDTH) {
-			$options['page_height'] = $this::MAX_HEIGHT;
+		if ($options['page_height']>self::MAX_WIDTH) {
+			$options['page_height'] = self::MAX_HEIGHT;
 		}
 
 		$options['webfonts'] = array();
-		foreach ($input['webfonts'] as $font){
-			$options['webfonts'][] = $font;
+		if (isset($input['webfonts'])) {
+			foreach ($input['webfonts'] as $font){
+				$options['webfonts'][] = $font;
+			}
+		}
+
+		$allowed = array('none','topleft','topright','bottomleft','bottomright');
+		$options['watermark'] = 'none';
+		if (in_array($input['watermark'],$allowed)) {
+			$options['watermark'] = $input['watermark'];
 		}
 
 		return $options;
@@ -250,12 +273,14 @@ class WP_Zedity_Plugin {
 		?>
 		<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-reset.css', __FILE__); ?>" type="text/css" media="all" />
 		<?php
-		foreach ($options['webfonts'] as $font) {
-			$fontname = explode(',',$font);
-			$fontname = urlencode($fontname[0]);
-			?>
-			<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
-			<?php
+		if (isset($options['webfonts'])) {
+			foreach ($options['webfonts'] as $font) {
+				$fontname = explode(',',$font);
+				$fontname = urlencode($fontname[0]);
+				?>
+				<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
+				<?php
+			}
 		}
 	}
 
