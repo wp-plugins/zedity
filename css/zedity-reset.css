@@ -2,3 +2,27 @@
 .zedity-editor img {
 	max-width: 100%;
 }
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/* Content overlay */
+
+#zedity_content_overlay {
+	display: none;
+	position: absolute;
+	background-color: rgba(80,210,80,0.6);
+}
+
+#zedity_content_overlay img {
+	border: 1px solid #999;
+	background-color: #eee;
+	margin: 10px 0 0 10px;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+#zedity_content_overlay img:hover {
+	border-color: #555;
+	background-color: #ccc;
+}

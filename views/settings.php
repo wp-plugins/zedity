@@ -1,4 +1,6 @@
 <?php
+	if (!isset($options['webfonts'])) $options['webfonts'] = array();
+
 	$allwebfonts = zedity_get_all_webfonts();
 	foreach ($allwebfonts as $font) {
 		$fontname = explode(',',$font);
@@ -18,29 +20,49 @@
 		<hr/>
 
 		<h3 class="title">Page</h3>
-		<p>Default page size (in pixels).</p>
+		<p>Select the default page size (in pixels), to be used when you start a new Zedity post:</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page width:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
-					(<?php echo $this::MIN_WIDTH.'-'.$this::MAX_WIDTH?>), numbers only.
+					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page height:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
-					(<?php echo $this::MIN_HEIGHT.'-'.$this::MAX_HEIGHT?>), numbers only.
+					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
 				</td>
 			</tr>
 		</tbody></table>
 
 		<hr/>
 
+		<h3 class="title">Watermark</h3>
+		<p>If you like Zedity and want to support it, please enable the "Powered by Zedity" watermark to be shown in your preferred position:</p>
+		<!--<p>Select position:</p>-->
+
+		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
+			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM2">Top left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM3">Top right</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
+			<label for="rbWM4">Bottom left</label><br/>
+			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
+			<label for="rbWM5">Bottom right</label><br/>
+		</div>
+		<br/>
+		
+		<hr/>
+
 		<h3 class="title">Webfonts</h3>
-		<p>Enable webfonts in your blog and Zedity editor.</p>
-		<p><b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.</p>
+		<p>In addition to the standard fonts, you can select any of the following webfonts to give your content a distinctive style:</p>
+		<p>(<b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.)</p>
 		<div style="border:2px solid #ccc;width:300px;height:200px;overflow-y:scroll;padding:5px">
 			<?php
 				$i = 0;
@@ -96,6 +118,7 @@
 		<?php if (!function_exists(zedity_get_premium_audioembeds)) { ?>
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
 		<?php } ?>
+		
 
 		<?php 
 			settings_fields('wp_zedity_plugin');

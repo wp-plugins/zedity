@@ -1,5 +1,5 @@
-/*
-Reset some css modified by the WP visual editor.
+/*----------------------------------------------------------------------------------------
+Reset some css modified by the WP visual editor
 */
 
 .zedity-editor b,
@@ -32,4 +32,18 @@ Reset some css modified by the WP visual editor.
 	border: none;
 	max-width: 100%;
 }
+
+
+
+
+/*--------------------------------------------------------------------------------------
+Normalizations
+*/
+
+p {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+
 
