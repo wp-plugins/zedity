@@ -1,10 +1,10 @@
 === Zedity ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, embed, zedity, posts
+Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, embed, images, zedity, posts
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -56,6 +56,9 @@ A: Not really. For example, Zedity is also available as a JavaScript Library. Fo
 4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc.
 
 == Changelog ==
+
+= 1.2.1 =
+* Fixed a bug in Zedity occurring with recent versions (e.g. 23.0.1) of Firefox.
 
 = 1.2.0 =
 * Added automatic selection of Zedity content in WordPress editor, with buttons to edit or delete the content.
