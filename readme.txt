@@ -45,8 +45,8 @@ A: From the standard WordPress editor, just click on the Zedity content that you
 **Q: Can I see any live content created with Zedity?**  
 A: Sure. For example, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
 
-**Q: Is Zedity available only for WordPress?**  
-A: Not really. For example, Zedity is also available as a JavaScript Library. For an up-to-date list of supported platforms and versions please visit the [Zedity site](http://zedity.com).
+**Q: Is there a Premium version  of Zedity Plugin for WordPress?**  
+A: Yes, it is currently under development and will be available soon. You can find the features it will include and subscribe to get notified as soon as the [Premium Version](http://zedity.com/plugin/wp) will be ready.
 
 == Screenshots ==
 
