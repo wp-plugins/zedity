@@ -58,7 +58,7 @@ A: Yes, it is currently under development and will be available soon. You can fi
 == Changelog ==
 
 = 1.2.1 =
-* Fixed a bug in Zedity occurring with recent versions (e.g. 23.0.1) of Firefox.
+* Fixed a bug in Zedity occurring with recent versions of Firefox (e.g. 23.0.1).
 
 = 1.2.0 =
 * Added automatic selection of Zedity content in WordPress editor, with buttons to edit or delete the content.
