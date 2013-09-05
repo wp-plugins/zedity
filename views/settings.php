@@ -13,7 +13,7 @@
 
 <div class="wrap">
 	<?php screen_icon(); ?>
-	<h2>Zedity Editor Settings</h2>
+	<h2>Zedity Settings</h2>
 
 	<form action="options.php" method="post">
 
