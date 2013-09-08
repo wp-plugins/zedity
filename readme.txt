@@ -15,7 +15,7 @@ Take your site or blog to the next level by adding multimedia content with unpre
 Zedity is a content editor that enables you to enrich your WordPress site with stunning multimedia content. With the WYSIWYG drag and drop "boxes", you can easily insert text, images, videos and audio exactly how and where you want, top them with CSS3 effects, and achieve impressive results that only skilled web developers could do.
 Zedity is completely HTML5 driven: with no external plugin (e.g. Flash, etc.) required, it is suitable for any modern computer or portable device.
 
-You can watch this video showing how to use Zedity:
+Here is a video that gives you just an example of things you can easily do with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
 For any further information please visit the [Zedity site](http://zedity.com).
