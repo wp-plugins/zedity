@@ -41,7 +41,7 @@
 		<hr/>
 
 		<h3 class="title">Watermark</h3>
-		<p>If you like Zedity and want to support it, you can enable the "Powered by Zedity" watermark to be shown in your preferred position:</p>
+		<p>If you like Zedity and want to support it, you can simply enable the "Powered by Zedity" watermark to be shown in your preferred position:</p>
 		<!--<p>Select position:</p>-->
 
 		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
