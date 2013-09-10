@@ -20,7 +20,7 @@
 		<hr/>
 
 		<h3 class="title">Page</h3>
-		<p>Select the default page size (in pixels) to be used whenever you start creating new Zedity content:</p>
+		<p>Enter the default size (in pixels) of the Zedity box (you can always change it on the fly while creating your content):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page width:</label></th>
