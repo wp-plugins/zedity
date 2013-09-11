@@ -23,6 +23,8 @@ Reset some css modified by the WP visual editor
 
 
 .zedity-editor .zedity-box-Image p {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }

@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
-Version: 1.2.1
+Version: 1.3.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -21,11 +21,11 @@ if (file_exists($file)) include($file);
 
 class WP_Zedity_Plugin {
 	
-	const MIN_WIDTH = 150;
+	const MIN_WIDTH = 50; // IMPORTANT: keep in sync with hard coded values in zedity-mce-buttons
 	const MAX_WIDTH = 1920;
 	const DEFAULT_WIDTH = 600; // looks like the max we can have in wordpress editor...
 
-	const MIN_HEIGHT = 150;
+	const MIN_HEIGHT = 20; // IMPORTANT: keep in sync with hard coded values in zedity-mce-buttons
 	const MAX_HEIGHT = 6000;
 	const DEFAULT_HEIGHT = 600;
 
@@ -154,7 +154,8 @@ class WP_Zedity_Plugin {
 			if (window.switchEditors) {
 				var old_go = switchEditors.go;
 				switchEditors.go = function(){
-					tinyMCE.get('content').plugins.zedity._hideOverlay();
+					var ed = tinyMCE.get('content');
+					if (ed) ed.plugins.zedity._hideOverlay();
 					old_go.apply(this,arguments);
 				};
 			}
@@ -306,7 +307,7 @@ function zedity_get_all_webfonts() {
 		'Jacques Francois,serif',
 		'Quintessential,cursive',
 	);
-	if (function_exists(zedity_get_premium_webfonts)) {
+	if (function_exists('zedity_get_premium_webfonts')) {
 		$webfonts = array_unique(array_merge($webfonts, zedity_get_premium_webfonts()));
 	}
 	asort($webfonts);
@@ -320,7 +321,7 @@ function zedity_get_all_videoembeds() {
 		'youtube' => 'http://www.youtube.com',
 		'vimeo' => 'http://vimeo.com',
 	);
-	if (function_exists(zedity_get_premium_videoembeds)) {
+	if (function_exists('zedity_get_premium_videoembeds')) {
 		$vembeds = array_unique(array_merge($vembeds, zedity_get_premium_videoembeds()));
 	}
 	return $vembeds;
@@ -333,7 +334,7 @@ function zedity_get_all_audioembeds() {
 		'soundcloud' => 'http://soundcloud.com',
 		'reverbnation' => 'http://www.reverbnation.com',
 	);
-	if (function_exists(zedity_get_premium_audioembeds)) {
+	if (function_exists('zedity_get_premium_audioembeds')) {
 		$aembeds = array_unique(array_merge($aembeds, zedity_get_premium_audioembeds()));
 	}
 	return $aembeds;

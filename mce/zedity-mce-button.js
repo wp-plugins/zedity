@@ -23,7 +23,9 @@
 				ed.dom.events.add(ed.getBody(), 'mousedown', function(e){
 					var parent = ed.dom.getParent(e.target,'div.zedity-editor');
 					if (parent) {
-						ed.execCommand('mceFocus',false);
+						try {
+							ed.execCommand('mceFocus',false);
+						} catch (e) {}
 						t._showOverlay(ed,parent);
 						ed.dom.events.prevent(e);
 						ed.dom.events.stop(e);
@@ -80,7 +82,9 @@
 			var t = this;
 			t.open = false;
 			setTimeout(function(){
-				t.ed.execCommand('mceFocus',false);
+				try {
+					t.ed.execCommand('mceFocus',false);
+				} catch (e) {}
 				t._showOverlay(t.ed,t._zedityContent);
 			},100);
 		},
@@ -132,7 +136,7 @@
 			h = Math.min(h, vp.h-(p2.y-vp.y), vp.h) + yo;
 
 			//not enough room for buttons, exit
-			if (w<100 || h<50) {
+			if (w<50 || h<20) { // IMPORTANT: keep it in sync with MIN_WIDTH and MIN_HEIGHT values in zedity.php
 				this._hideOverlay(true);
 				return;
 			}

@@ -20,7 +20,7 @@
 		<hr/>
 
 		<h3 class="title">Page</h3>
-		<p>Enter the default size (in pixels) of the Zedity box (you can always change it on the fly while creating your content):</p>
+		<p>Enter the default size (in pixels) of any new Zedity content (you can always change size while creating it):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page width:</label></th>
@@ -77,7 +77,7 @@
 			<?php } ?>
 		</div>
 	
-		<?php if (!function_exists(zedity_get_premium_webfonts)) { ?>
+		<?php if (!function_exists('zedity_get_premium_webfonts')) { ?>
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
 		<?php } ?>
 
@@ -115,7 +115,7 @@
 
 		<br/>
 
-		<?php if (!function_exists(zedity_get_premium_audioembeds)) { ?>
+		<?php if (!function_exists('zedity_get_premium_audioembeds')) { ?>
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
 		<?php } ?>
 		

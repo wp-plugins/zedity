@@ -57,9 +57,6 @@
 				width: 100%;
 				height: 250px;
 			}
-			.zedity-icon-disk {
-				background-image: url("<?php echo plugins_url('views/3floppy_unmount.png',dirname(__FILE__))?>");
-			}
 			.zedity-menu-quick {
 				float: right;
 			}
@@ -72,6 +69,9 @@
 				width: 5px !important;
 				border-left: 1px solid gray;
 			}
+			.zedity-menu-quick .zedity-icon-disk {
+				background-size: 100%;
+			}
 		</style>
 	</head>
 	
@@ -80,7 +80,7 @@
 		<div id="filler"></div>
 
 
-		<?php if (function_exists(get_premium_embedcodes)) get_premium_embedcodes() ?>
+		<?php if (function_exists('zedity_get_premium_embedcodes')) zedity_get_premium_embedcodes() ?>
 
 
 		<script type="text/javascript">
@@ -123,6 +123,14 @@
 			var bw = $('body').width();
 			$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
 			editor.$container.css('margin-left', (ew<bw) ? (bw-ew)/2 : '');
+			var type = '';
+			if (editor.$this.hasClass('alignleft')) type='left';
+			if (editor.$this.hasClass('alignright')) type='right';
+			var but = editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+type+']');
+			but.find('.zedity-menu-icon').removeClass('zedity-icon-none').addClass('zedity-icon-yes');
+			but.siblings().each(function(idx,elem){
+				$(elem).find('.zedity-menu-icon').removeClass('zedity-icon-yes').addClass('zedity-icon-none');
+			});
 		};
 
 
@@ -182,14 +190,37 @@
 				action: '<?php echo plugins_url("utils/img2base64.php",dirname(__FILE__))?>'
 			}
 		});
+		zedityEditor.page._sizeConstraints.minWidth = <?php echo WP_Zedity_Plugin::MIN_WIDTH?>;
+		zedityEditor.page._sizeConstraints.minHeight = <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>;
+
+		//rename Page to Content
+		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child a').text('Content');
 
 		//move 'Clear all' to 'Edit' menu
 		zedityEditor.$container.find('.zedity-mainmenu li.zedity-menu-ClearAll')
 			.add('.zedity-mainmenu li:nth-child(1) .zedity-separator:eq(0)')
 			.appendTo('.zedity-mainmenu li:nth-child(2) ul');
-
+		
+		//add Alignment to menu
+		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child > ul').append(
+			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
+			'<li class="ui-menu-item" role="presentation">'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Alignment</a>'+
+				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
+					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="">'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span>None</a>'+
+					'</li>'+
+					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="left">'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Left</a>'+
+					'</li>'+
+					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="right">'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Right</a>'+
+					'</li>'+
+				'</ul>'+
+			'</li>'
+		);
 		//add Save to menu
-		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child ul').append(
+		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
 			'<li class="zedity-menu-SavePage ui-menu-item" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span>Save</a>'+
@@ -217,13 +248,20 @@
 			editor[$(this).attr('data-type')]();
 			return false;
 		});
+		//page align
+		zedityEditor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign').on('click',function(){
+			var type = $(this).attr('data-type');
+			zedityEditor.$this.removeClass('alignleft alignright');
+			if (type) zedityEditor.$this.addClass('align'+type);
+			resizeEditor(zedityEditor);
+		});
 		//save
 		zedityEditor.$container.find('.zedity-mainmenu .zedity-menu-SavePage').on('click',function(){
 			zedityEditor.save(function(html){
 				$(parent.document).find('#TB_iframeContent').removeClass('zedity-iframe');
 				var $html = $('<div/>');
 				$html.append(html);
-
+				
 				var wmp = '<?php echo $options["watermark"]?>';
 				if (wmp != 'none') {
 					//add watermark

@@ -3,6 +3,13 @@
 	max-width: 100%;
 }
 
+/*reset image wrapped in <p> by TinyMCE*/
+.zedity-editor .zedity-box-Image p {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
 
 /*--------------------------------------------------------------------------------------*/
@@ -17,7 +24,7 @@
 #zedity_content_overlay img {
 	border: 1px solid #999;
 	background-color: #eee;
-	margin: 10px 0 0 10px;
+	margin: 5px 0 0 5px;
 	padding: 2px;
 	border-radius: 3px;
 }
