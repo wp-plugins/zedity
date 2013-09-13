@@ -3,8 +3,8 @@ Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 1.3.0
+Tested up to: 3.6.1
+Stable tag: 1.3.1
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -34,7 +34,7 @@ For any further information please visit the [Zedity site](http://zedity.com).
 A: Zedity enables you to do things that cannot be done with the default WordPress editor. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media, and stylish effects, all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
 
 **Q: How do I start using Zedity?**  
-A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Page" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
+A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Content" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
 
 **Q: How come audio and video boxes are not playing after I exit the Zedity Editor?**  
 A: No worries, that is normal behavior in WordPress: they will play normally when you publish your post.
@@ -52,10 +52,13 @@ A: Yes, it is currently under development and will be available soon. You can fi
 
 1. By clicking on the Z icon the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
-3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Page" menu or the Save icon.
+3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Content" menu or the Save icon.
 4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc.
 
 == Changelog ==
+
+= 1.3.1 =
+* Minor optimizations and bug fix for IE10.
 
 = 1.3.0 =
 * Added "Content Alignment" feature to (left or right) align the Zedity content, letting the WordPress text wrap around it, just like if it's an image.
