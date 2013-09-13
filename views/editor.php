@@ -193,9 +193,6 @@
 		zedityEditor.page._sizeConstraints.minWidth = <?php echo WP_Zedity_Plugin::MIN_WIDTH?>;
 		zedityEditor.page._sizeConstraints.minHeight = <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>;
 
-		//rename Page to Content
-		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child a').text('Content');
-
 		//move 'Clear all' to 'Edit' menu
 		zedityEditor.$container.find('.zedity-mainmenu li.zedity-menu-ClearAll')
 			.add('.zedity-mainmenu li:nth-child(1) .zedity-separator:eq(0)')

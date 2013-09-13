@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
-Version: 1.3.0
+Version: 1.3.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -21,11 +21,11 @@ if (file_exists($file)) include($file);
 
 class WP_Zedity_Plugin {
 	
-	const MIN_WIDTH = 50; // IMPORTANT: keep in sync with hard coded values in zedity-mce-buttons
+	const MIN_WIDTH = 50;
 	const MAX_WIDTH = 1920;
 	const DEFAULT_WIDTH = 600; // looks like the max we can have in wordpress editor...
 
-	const MIN_HEIGHT = 20; // IMPORTANT: keep in sync with hard coded values in zedity-mce-buttons
+	const MIN_HEIGHT = 20;
 	const MAX_HEIGHT = 6000;
 	const DEFAULT_HEIGHT = 600;
 
