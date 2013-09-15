@@ -42,6 +42,9 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
+**Q: Can I include as many media as I want in my content?**
+A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to load (just like it happens in any web-site).
+
 **Q: Can I see any live content created with Zedity?**  
 A: Sure. For example, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
 
