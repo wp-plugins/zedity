@@ -25,7 +25,7 @@ class WP_Zedity_Plugin {
 	const MAX_WIDTH = 1920;
 	const DEFAULT_WIDTH = 600; // looks like the max we can have in wordpress editor...
 
-	const MIN_HEIGHT = 20;
+	const MIN_HEIGHT = 20; // pixels
 	const MAX_HEIGHT = 6000;
 	const DEFAULT_HEIGHT = 600;
 
