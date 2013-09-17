@@ -46,7 +46,7 @@ A: From the standard WordPress editor, just click on the Zedity content that you
 A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to load (just like it happens in any web-site).
 
 **Q: Can I see any live content created with Zedity?**  
-A: Sure. For example, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
+A: Sure. We happen to report some live examples on the [Zedity Facebook page](https://www.facebook.com/Zedity). Yet, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
 
 **Q: Is there a Premium version  of Zedity Plugin for WordPress?**  
 A: Yes, it is currently under development and will be available soon. You can find the features it will include and subscribe to get notified as soon as the [Premium Version](http://zedity.com/plugin/wp) will be ready.
