@@ -1,4 +1,4 @@
-=== Zedity ===
+=== Zedity - The Multimedia Editor ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments
