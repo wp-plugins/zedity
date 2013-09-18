@@ -56,7 +56,7 @@ A: Yes, it is currently under development and will be available soon. You can fi
 1. By clicking on the Z icon the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
 3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Content" menu or the Save icon.
-4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
+4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 == Changelog ==
 
