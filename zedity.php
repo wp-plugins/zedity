@@ -22,11 +22,11 @@ if (file_exists($file)) include($file);
 class WP_Zedity_Plugin {
 	
 	const MIN_WIDTH = 50; // pixels
-	const MAX_WIDTH = 1920;
+	const MAX_WIDTH = 1920; // pixels
 	const DEFAULT_WIDTH = 600; // looks like the max we can have in wordpress editor...
 
 	const MIN_HEIGHT = 20; // pixels
-	const MAX_HEIGHT = 6000;
+	const MAX_HEIGHT = 6000; // pixels
 	const DEFAULT_HEIGHT = 600;
 
 
