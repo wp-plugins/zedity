@@ -16,11 +16,9 @@
 	<h2>Zedity Settings</h2>
 
 	<form action="options.php" method="post">
-
 		<hr/>
-
 		<h3 class="title">Page</h3>
-		<p>Enter the default size (in pixels) for your future Zedity contents (you can always change size while creating it):</p>
+		<p>Enter the default size (in pixels) for your future Zedity contents (you can always change size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Page width:</label></th>
