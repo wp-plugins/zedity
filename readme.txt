@@ -48,8 +48,8 @@ A: Absolutely yes. Just keep in mind that if you add many big images, then the c
 **Q: Can I see any live content created with Zedity?**  
 A: Sure. We happen to report some live examples on the [Zedity Facebook page](https://www.facebook.com/Zedity). Yet, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
 
-**Q: Is there a Premium version  of Zedity Plugin for WordPress?**  
-A: Yes, it is currently under development and will be available soon. You can find the features it will include and subscribe to get notified as soon as the [Premium Version](http://zedity.com/plugin/wp) will be ready.
+**Q: Is it possible to have additional video/audio services supported?**  
+A: Yes, at the moment there are 20+ audio and video service supported by [Zedity Premium](http://zedity.com/plugin/wp).
 
 == Screenshots ==
 
