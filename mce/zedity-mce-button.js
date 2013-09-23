@@ -137,7 +137,7 @@
 
 			//not enough room for buttons, exit
 			//this should be the smallest rectangle that can accommodate the buttons (90x50),
-			//now Zedity content can be even smaller, so we let it anyway
+			//now Zedity content can be even smaller (MIN_WIDTH and MIN_HEIGHT values in zedity.php), so we let it anyway
 			if (w<50 || h<20) {
 				this._hideOverlay(true);
 				return;

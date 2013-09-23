@@ -4,21 +4,21 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.6.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Take your site or blog to the next level by adding multimedia content with unprecedented possibilities and flexibility, in just few clicks!
+Take your site to the next level! A unique wizard editor to add multimedia content with unprecedented possibilities and in just few clicks!
 
 == Description ==
 
-Zedity is a content editor that enables you to enrich your WordPress site with stunning multimedia content. With the WYSIWYG drag and drop "boxes", you can easily insert text, images, videos and audio exactly how and where you want, top them with CSS3 effects, and achieve impressive results that only skilled web developers could do.
+Zedity is an innovative content editor that enables you to enrich your WordPress site with stunning multimedia content. With the WYSIWYG drag and drop "boxes", you can easily insert text, images, videos and audio exactly how and where you want, top them with CSS3 effects, and achieve impressive results that only skilled web developers could do.
 Zedity is completely HTML5 driven: with no requirement for external plugin (e.g. Flash, etc.), it is suitable for any modern computer or portable device.
 
 Here is a video that gives you just an example of things you can easily do with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
-For any further information please visit the [Zedity site](http://zedity.com).
+For further details and information you can visit the [Zedity Plugin for WordPress site](http://zedity.com/plugin/wp).
 
 == Installation ==
 
@@ -42,7 +42,7 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
-**Q: Can I include as many media as I want in my content?**
+**Q: Can I include as many media as I want in my content?**  
 A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to load (just like it happens in any web-site).
 
 **Q: Can I see any live content created with Zedity?**  
@@ -59,6 +59,10 @@ A: Yes, at the moment there are 20+ audio and video service supported by [Zedity
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 == Changelog ==
+
+= 1.3.2 =
+* Added support to install Zedity Premium.
+* Optimizations and minor bug fixes.
 
 = 1.3.1 =
 * Minor optimizations and bug fix for IE10.
