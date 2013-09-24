@@ -8,7 +8,7 @@ Stable tag: 1.3.2
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Take your site to the next level! A unique wizard editor to add multimedia content with unprecedented possibilities and in just few clicks!
+Take your site to the next level! A unique wizard editor to add multimedia content with unprecedented possibilities, in just few clicks!
 
 == Description ==
 
