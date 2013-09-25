@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
-Version: 1.3.2
+Version: 1.3.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -192,6 +192,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					switchEditors.go = function(){
 						var ed = tinyMCE.get('content');
 						if (ed) ed.plugins.zedity._hideOverlay();
+						old_go.apply(this,arguments); // *** bug
 					};
 				}
 
