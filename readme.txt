@@ -43,7 +43,7 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
 **Q: Can I include as many media as I want in my content?**  
-A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to load (just like it happens in any web-site).
+A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to save and load. If the maximum size allowed (which depends on the system configuration) is exceeded then it may not be possible to save the content.
 
 **Q: Can I see any live content created with Zedity?**  
 A: Sure. We happen to report some live examples on the [Zedity Facebook page](https://www.facebook.com/Zedity). Yet, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
