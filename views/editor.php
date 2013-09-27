@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Zedity Editor</title>
+		<title>Zedity - Editing Reinvented</title>
 
 		<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css',dirname(__FILE__))?>" type="text/css" media="all" />
 		<?php
