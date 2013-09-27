@@ -8,14 +8,15 @@ Stable tag: 1.3.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Take your site to the next level! A unique wizard editor to add multimedia content with unprecedented possibilities, in just few clicks!
+Editing Reinvented. Take your site to the next level and wow your audience, easily in few clicks!
 
 == Description ==
+Zedity is an innovative HTML5 editor that enables you to create content with unprecedented possibilities. 
+Forget about struggling with layout-constraints and unleash your creativity: with complete WYSIWYG drag and drop "boxes", 
+you can easily insert any media exactly where you want, top them with any style effects you want, 
+and achieve impressive results that only skilled web developers could get before!
 
-Zedity is an innovative content editor that enables you to enrich your WordPress site with stunning multimedia content. With the WYSIWYG drag and drop "boxes", you can easily insert text, images, videos and audio exactly how and where you want, top them with CSS3 effects, and achieve impressive results that only skilled web developers could do.
-Zedity is completely HTML5 driven: with no requirement for external plugin (e.g. Flash, etc.), it is suitable for any modern computer or portable device.
-
-Here is a video that gives you just an example of things you can easily do with Zedity:
+Here is a video showing how powerful and easy to use Zedity is:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
 For further details and information you can visit the [Zedity Plugin for WordPress site](http://zedity.com/plugin/wp).
