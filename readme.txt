@@ -13,8 +13,7 @@ Editing Reinvented. Take your site to the next level and wow your audience, easi
 == Description ==
 Zedity is an innovative HTML5 editor that enables you to create content with unprecedented possibilities. 
 Forget about struggling with layout-constraints and unleash your creativity: with complete WYSIWYG drag and drop "boxes", 
-you can easily insert any media exactly where you want, top them with any style effects you want, 
-and achieve impressive results that only skilled web developers could get before!
+you can easily insert any media exactly where you want, top them with style effects and achieve impressive results that only skilled web developers could get before!
 
 Here is a video showing how powerful and easy to use Zedity is:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
