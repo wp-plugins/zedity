@@ -2,7 +2,7 @@
 /*
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
-Description: Take your site to the next level by adding multimedia content with unprecedented possibilities and flexibility.
+Description: Editing Reinvented. Take your site to the next level and wow your audience.
 Version: 1.3.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
