@@ -8,7 +8,7 @@ Stable tag: 1.3.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Editing Reinvented. Take your site to the next level and wow your audience, easily in few clicks!
+Editing reinvented. Take your site to the next level and WOW your audience! 
 
 == Description ==
 Zedity is an innovative HTML5 editor that enables you to create content with unprecedented possibilities. 
