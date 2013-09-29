@@ -1,4 +1,4 @@
-=== Zedity ===
+=== Zedity - Design outside the box ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
@@ -8,7 +8,7 @@ Stable tag: 1.3.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Editing reinvented. Take your site to the next level and WOW your audience! 
+The perfect editor to arrange any media into creative designs. Powerful and extremely easy to use, Zedity takes your site to the next level!
 
 == Description ==
 Zedity is an innovative HTML5 editor that enables you to create content with unprecedented possibilities. 
