@@ -8,7 +8,7 @@ Stable tag: 1.3.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-The perfect editor to arrange any media into creative designs. Powerful and extremely easy to use, Zedity takes your site to the next level!
+The best editor for creative and unique designs. Powerful but extremely easy to use, Zedity takes your site to the next level!
 
 == Description ==
 Zedity is an innovative HTML5 editor that enables you to create content with unprecedented possibilities. 
