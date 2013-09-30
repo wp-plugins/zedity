@@ -15,7 +15,7 @@ Zedity is an innovative HTML5 editor that enables you to create content with unp
 Forget about struggling with layout-constraints and unleash your creativity: with complete WYSIWYG drag and drop "boxes", 
 you can easily insert any media exactly where you want, top them with style effects and achieve impressive results that only skilled web developers could get before!
 
-Here is a video showing how powerful and easy to use Zedity is:
+Here is a video giving you an idea of how easy and quick it is to achieve creative designs:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
 For further details and information you can visit the [Zedity Plugin for WordPress site](http://zedity.com/plugin/wp).
