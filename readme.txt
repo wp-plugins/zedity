@@ -1,4 +1,4 @@
-=== Zedity - Design outside the box ===
+=== Zedity - Design outside the box! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
