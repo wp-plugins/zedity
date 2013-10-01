@@ -14,7 +14,8 @@ The best editor for creative and unique designs. Powerful but extremely easy to 
 Zedity is an original and unique HTML5 editor that enables you to arrange any media (text, images, audios, videos, etc.) 
 into creative and layout-free designs: scrapbooking, splash pages, and any other design crossing your mind can be created in just few clicks!
 Zedity has been conceived to enable anyone to achieve professional results easily and without any technical skills about HTML, CSS, and so on.
-Last but not least, Zedity generates HTML5 content, without using any external plugin (e.g. Flash), which means that the content you create can be seen correctly on any device, including smartphones and tablets, running a modern browser.
+
+Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device, including smartphones and tablets, running a modern browser.
 
 Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
