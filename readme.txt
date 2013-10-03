@@ -20,10 +20,14 @@ Last but not the least, Zedity generates HTML5 content without any external plug
 Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
-Links:
-     [Zedity Plugin for WordPress site](http://zedity.com): find details, discover the [Premium](http://zedity.com/plugin/wp) version, etc. 
-     [Zedity on Facebook](https://www.facebook.com/Zedity): do you want to share your Zedity site? Share your link! 
-     [Slideshare presentation for Zedity Premium](http://www.slideshare.net/Zuyoy/zedity-premium) 
+
+Would you like to show case your Zedity site? Contact us to share your link on our [Facebook page](https://www.facebook.com/Zedity)!  
+
+
+[Zedity Plugin for WordPress site](http://zedity.com): find details, discover the [Premium](http://zedity.com/plugin/wp) version, etc. 
+
+     
+[Slideshare presentation for Zedity Premium](http://www.slideshare.net/Zuyoy/zedity-premium) 
 
 == Installation ==
 
