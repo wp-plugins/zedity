@@ -347,9 +347,10 @@
 				);
 
 				//cleanup TinyMCE leftovers
-				$(mce.getDoc()).find('style.imgData').each(function(idx,elem){
-					if ($(elem).parents('.zedity-editor').length==0) {
-						$(elem).remove();
+				$(mce.getDoc()).find('style').each(function(idx,elem){
+					$elem = $(elem);
+					if ($elem.hasClass('imgData') && $elem.parents('.zedity-editor').length==0) {
+						$elem.remove();
 					}
 				});
 				

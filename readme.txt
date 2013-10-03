@@ -4,7 +4,7 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.6.1
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -68,6 +68,9 @@ A: Yes, at the moment there are 20+ audio and video service supported by [Zedity
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 == Changelog ==
+
+= 1.3.4 =
+* Fixed an issue with TinyMCE css handling that affected images.
 
 = 1.3.3 =
 * Optimized visual/text switch mode.
