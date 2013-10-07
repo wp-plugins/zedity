@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com
 Description: Editing Reinvented. Take your site to the next level and wow your audience.
-Version: 1.3.4
+Version: 1.4.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -55,35 +55,38 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function __construct() {
 			$plugin = plugin_basename(__FILE__);
 
-			if ((current_user_can('edit_posts') || current_user_can('edit_pages')) && get_user_option('rich_editing')) {
+			//add custom css to reset Zedity content + webfonts
+			add_action('wp_head', array(&$this,'add_head_css'));
 
-				// register actions
-				add_action('admin_init', array(&$this, 'admin_init'));
-				add_action('admin_menu', array(&$this, 'add_menu'));
+			//stop here if we are not in admin area or user can't use editor
+			if (!is_admin()) return;
+			if (!(current_user_can('edit_posts') || current_user_can('edit_pages'))) return;
+			if (!get_user_option('rich_editing')) return;
 
-				//add javascript
-				add_action('admin_print_footer_scripts', array(&$this, 'add_js'));
+			// register actions
+			add_action('admin_init', array(&$this, 'admin_init'));
+			add_action('admin_menu', array(&$this, 'add_menu'));
 
-				//add TinyMCE css
-				add_filter('mce_css', array(&$this, 'add_mce_css'));
-				//add TinyMCE buttons
-				add_filter('mce_buttons', array(&$this,'register_mce_buttons'));
-				add_filter('mce_external_plugins', array(&$this,'add_mce_buttons'));
+			//add javascript
+			add_action('admin_print_footer_scripts', array(&$this, 'add_js'));
 
-				//link to the settings page
-				add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
+			//add TinyMCE css
+			add_filter('mce_css', array(&$this, 'add_mce_css'));
+			//add TinyMCE buttons
+			add_filter('mce_buttons', array(&$this,'register_mce_buttons'));
+			add_filter('mce_external_plugins', array(&$this,'add_mce_buttons'));
 
-				//Zedity into ThickBox
-				add_thickbox();
-				add_action('load-dashboard_page_zedity_editor', array(&$this,'add_zedity_editor_page'));
+			//link to the settings page
+			add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
 
-				//add custom css to reset Zedity content + webfonts
-				add_action('wp_head', array(&$this,'add_head_css'));
-				add_action('admin_head', array(&$this,'add_head_css'));
-
-			}
+			//Zedity into ThickBox
+			wp_enqueue_script('thickbox');
+			add_action('load-dashboard_page_zedity_editor', array(&$this,'add_zedity_editor_page'));
+			
+			//add custom css to reset Zedity content + webfonts
+			add_action('admin_head', array(&$this,'add_head_css'));
 		}
-	
+		
 		public static function activate() {
 			$defaults = array(
 				'page_width' => self::DEFAULT_WIDTH,
@@ -157,7 +160,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					var $iframe = jQuery('#TB_iframeContent');
 					if ($iframe.hasClass('zedity-iframe')) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
-							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select from the menu Page->Save.');
+							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select from the menu Content->Save.');
 							if (!ret) return;
 						}
 						//deselect
@@ -305,7 +308,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		//HEAD CSS
 
 
-		public static function add_head_css() {
+		public function add_head_css() {
 			$options = get_option('zedity_settings');
 			?>
 			<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-reset.css', __FILE__); ?>" type="text/css" media="all" />
@@ -318,6 +321,12 @@ if (class_exists('WP_Zedity_Plugin')) {
 					<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
 					<?php
 				}
+			}
+			//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
+			if (is_admin()) {
+				?>
+				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
+				<?php
 			}
 		}
 

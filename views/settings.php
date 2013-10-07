@@ -19,18 +19,18 @@
 
 	<form action="options.php" method="post">
 		<hr/>
-		<h3 class="title">Page</h3>
+		<h3 class="title">Content</h3>
 		<p>Enter the default size (in pixels) for your future Zedity contents (you can always change size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Page width:</label></th>
+				<th scope="row"><label for="blogname">Content width:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
 					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Page height:</label></th>
+				<th scope="row"><label for="blogname">Content height:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
 					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.

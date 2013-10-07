@@ -4,18 +4,18 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.6.1
-Stable tag: 1.3.4
+Stable tag: 1.4.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Zedity is a break-through editor in the way you design your sites. Powerful but easy to use, Zedity boosts your productivity!
+The best editor for creative and unique designs. Powerful but extremely easy to use, Zedity takes your site to the next level!
 
 == Description ==
-Zedity is an original and unique HTML5 editor that will change the way you create your sites: wih Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! 
+Zedity is an original and unique HTML5 editor that enables you to arrange any media (text, images, audios, videos, etc.) 
+into creative and layout-free designs: scrapbooking, splash pages, and any other design crossing your mind can be created in just few clicks!
+Zedity has been conceived to enable anyone to achieve professional results easily and without any technical skills about HTML, CSS, and so on.
 
-Not only does Zedity boost your productivity, but it also enables anyone to achieve professional results without any technical skills about HTML, CSS, and so on.
-
-Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device running a modern browser.
+Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device, including smartphones and tablets, running a modern browser.
 
 Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
@@ -84,6 +84,12 @@ A: Yes, at the moment there are 20+ audio and video service supported by [Zedity
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 == Changelog ==
+
+= 1.4.0 =
+* Added indication of media services who don't support preview.
+* Now border opacity slider applies opacity during slide.
+* Workaround for a WordPress bug where ThickBox breaks sites with RTL languages.
+* Various optimizations.
 
 = 1.3.4 =
 * Fixed an issue with TinyMCE css handling that affected images.
