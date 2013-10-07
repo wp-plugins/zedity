@@ -8,14 +8,14 @@ Stable tag: 1.4.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-The best editor for creative and unique designs. Powerful but extremely easy to use, Zedity takes your site to the next level!
+Zedity is a break-through editor in the way you design your sites. Powerful but easy to use, Zedity boosts your productivity!
 
 == Description ==
-Zedity is an original and unique HTML5 editor that enables you to arrange any media (text, images, audios, videos, etc.) 
-into creative and layout-free designs: scrapbooking, splash pages, and any other design crossing your mind can be created in just few clicks!
-Zedity has been conceived to enable anyone to achieve professional results easily and without any technical skills about HTML, CSS, and so on.
+Zedity is an original and unique HTML5 editor that will change the way you create your sites: wih Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! 
 
-Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device, including smartphones and tablets, running a modern browser.
+Not only does Zedity boost your productivity, but it also enables anyone to achieve professional results without any technical skills about HTML, CSS, and so on.
+
+Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device running a modern browser.
 
 Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
