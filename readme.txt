@@ -1,32 +1,57 @@
-=== Zedity ===
+=== Zedity - Design outside the box! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible layout, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments
+Tags: plugin, multimedia, post, flexible layout, design, editor, html5, css, widget, drag and drop, WYSIWYG, page, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 1.3.0
+Tested up to: 3.6.1
+Stable tag: 1.4.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Take your site or blog to the next level by adding multimedia content with unprecedented possibilities and flexibility, in just few clicks!
+The best editor for creative and unique designs. Powerful but extremely easy to use, Zedity takes your site to the next level!
 
 == Description ==
+Zedity is an original and unique HTML5 editor that enables you to arrange any media (text, images, audios, videos, etc.) 
+into creative and layout-free designs: scrapbooking, splash pages, and any other design crossing your mind can be created in just few clicks!
+Zedity has been conceived to enable anyone to achieve professional results easily and without any technical skills about HTML, CSS, and so on.
 
-Zedity is a content editor that enables you to enrich your WordPress site with stunning multimedia content. With the WYSIWYG drag and drop "boxes", you can easily insert text, images, videos and audio exactly how and where you want, top them with CSS3 effects, and achieve impressive results that only skilled web developers could do.
-Zedity is completely HTML5 driven: with no external plugin (e.g. Flash, etc.) required, it is suitable for any modern computer or portable device.
+Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device, including smartphones and tablets, running a modern browser.
 
-Here is a video that gives you just an example of things you can easily do with Zedity:
+Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
-For any further information please visit the [Zedity site](http://zedity.com).
+
+Would you like to show case your Zedity site? Contact us to share your link on our [Facebook page](https://www.facebook.com/Zedity)!  
+
+
+[Zedity Plugin for WordPress site](http://zedity.com): find details, discover the [Premium](http://zedity.com/plugin/wp) version, etc. 
+
+     
+[Slideshare presentation for Zedity Premium](http://www.slideshare.net/Zuyoy/zedity-premium) 
 
 == Installation ==
 
-1. You can upload and unzip the plugin .zip file to your 'wp-content/plugins' directory, or just install automatically through your WordPress dashboard (Plugins -> Add new).
+Option A: from the WordPress Dashboard:
+---------------------------------------
+
+1. Click on "Plugins" in the left panel, then click on "Add new".
+
+2. You should now see the Install Plugins page. Click on "Upload".
+
+3. Click on Browse and select your "zedity-wp-plugin-premium.zip" file.
+
+4. Click on Install now and you're done!
+
+Option B: via FTP:
+------------------
+
+1. Upload and unzip the "zedity-wp-plugin-premium.zip" file into your 'wp-content/plugins' directory
 
 2. Activate the Zedity plugin from your WordPress dashboard.
 
-3. You can set your preferences in the Zedity Settings, from your WordPress dashboard (Installed Plugins->Zedity->Settings).
+
+
+IMPORTANT: if you are updating the premium version, you need to delete the previous version first.
 
 == Frequently asked questions ==
 
@@ -34,7 +59,7 @@ For any further information please visit the [Zedity site](http://zedity.com).
 A: Zedity enables you to do things that cannot be done with the default WordPress editor. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media, and stylish effects, all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
 
 **Q: How do I start using Zedity?**  
-A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Page" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
+A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Content" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
 
 **Q: How come audio and video boxes are not playing after I exit the Zedity Editor?**  
 A: No worries, that is normal behavior in WordPress: they will play normally when you publish your post.
@@ -42,20 +67,42 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
-**Q: Can I see any live content created with Zedity?**  
-A: Sure. For example, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
+**Q: Can I include as many media as I want in my content?**  
+A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to save and load. If the maximum size allowed (which depends on the system configuration) is exceeded then it may not be possible to save the content.
 
-**Q: Is there a Premium version  of Zedity Plugin for WordPress?**  
-A: Yes, it is currently under development and will be available soon. You can find the features it will include and subscribe to get notified as soon as the [Premium Version](http://zedity.com/plugin/wp) will be ready.
+**Q: Can I see any live content created with Zedity?**  
+A: Sure. We happen to report some live examples on the [Zedity Facebook page](https://www.facebook.com/Zedity). Yet, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
+
+**Q: Is it possible to have additional video/audio services supported?**  
+A: Yes, at the moment there are 20+ audio and video service supported by [Zedity Premium](http://zedity.com/plugin/wp).
 
 == Screenshots ==
 
 1. By clicking on the Z icon the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
-3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Page" menu or the Save icon.
-4. In your WordPress Dashboard, check the Zedity Settings for the default page size of your posts, the watermark position, your favorite web fonts, etc.
+3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Content" menu or the Save icon.
+4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 == Changelog ==
+
+= 1.4.0 =
+* Added indication of media services who don't support preview.
+* Now border opacity slider applies opacity during slide.
+* Workaround for a WordPress bug where ThickBox breaks sites with RTL languages.
+* Various optimizations.
+
+= 1.3.4 =
+* Fixed an issue with TinyMCE css handling that affected images.
+
+= 1.3.3 =
+* Optimized visual/text switch mode.
+
+= 1.3.2 =
+* Added support to install Zedity Premium.
+* Optimizations and minor bug fixes.
+
+= 1.3.1 =
+* Minor optimizations and bug fix for IE10.
 
 = 1.3.0 =
 * Added "Content Alignment" feature to (left or right) align the Zedity content, letting the WordPress text wrap around it, just like if it's an image.

@@ -1,4 +1,6 @@
 <?php
+	$plugindata = $this->get_plugin_data();
+
 	if (!isset($options['webfonts'])) $options['webfonts'] = array();
 
 	$allwebfonts = zedity_get_all_webfonts();
@@ -16,21 +18,19 @@
 	<h2>Zedity Settings</h2>
 
 	<form action="options.php" method="post">
-
 		<hr/>
-
-		<h3 class="title">Page</h3>
-		<p>Enter the default size (in pixels) of any new Zedity content (you can always change size while creating it):</p>
+		<h3 class="title">Content</h3>
+		<p>Enter the default size (in pixels) for your future Zedity contents (you can always change size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Page width:</label></th>
+				<th scope="row"><label for="blogname">Content width:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
 					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Page height:</label></th>
+				<th scope="row"><label for="blogname">Content height:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
 					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
@@ -41,7 +41,8 @@
 		<hr/>
 
 		<h3 class="title">Watermark</h3>
-		<p>If you like Zedity and want to support it, you can simply enable the "Powered by Zedity" watermark to be shown in your preferred position:</p>
+		<p>If you like Zedity and want to support it, you can simply enable the "Powered by Zedity" watermark.</p>
+		<p>Select the default watermark position (you can always change the position while creating your content):</p>
 		<!--<p>Select position:</p>-->
 
 		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
@@ -116,10 +117,14 @@
 		<br/>
 
 		<?php if (!function_exists('zedity_get_premium_audioembeds')) { ?>
-		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 10+ video and 10+ audio services embeds.</p>
+		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
 		<?php } ?>
 		
-
+		<hr/>
+		
+		<h4 class="title">License</h4>
+		<p>The <?php echo $plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $plugindata['LicenseURI'];?>"><?php echo $plugindata['License'];?></a> license.</p>
+		
 		<?php 
 			settings_fields('wp_zedity_plugin');
 			do_settings_fields('wp_zedity_plugin','zedity_settings');
