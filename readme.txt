@@ -31,27 +31,23 @@ Would you like to show case your Zedity site? Contact us to share your link on o
 
 == Installation ==
 
-Option A: from the WordPress Dashboard:
----------------------------------------
+Option A (from your WordPress Dashboard):
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
 2. You should now see the Install Plugins page. Click on "Upload".
 
-3. Click on Browse and select your "zedity-wp-plugin-premium.zip" file.
+3. Click on Browse and select your "zedity.zip" file.
 
-4. Click on Install now and you're done!
-
-Option B: via FTP:
-------------------
-
-1. Upload and unzip the "zedity-wp-plugin-premium.zip" file into your 'wp-content/plugins' directory
-
-2. Activate the Zedity plugin from your WordPress dashboard.
+4. Click on "Install now", activate it and you're done!
 
 
+Option B (via FTP):
 
-IMPORTANT: if you are updating the premium version, you need to delete the previous version first.
+1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory
+
+2. Activate the Zedity plugin (from your WordPress dashboard).
+
 
 == Frequently asked questions ==
 
