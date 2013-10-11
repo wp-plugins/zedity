@@ -8,7 +8,7 @@ Stable tag: 1.4.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Zedity is a break-through editor in the way you design your sites. Powerful but easy to use, Zedity boosts your productivity!
+A break-through editor that makes it extremely easy to design your sites. Boost your productivity and achieve professional results, hassle-free!
 
 == Description ==
 Zedity is an original and unique HTML5 editor that will change the way you create your sites: wih Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! 
