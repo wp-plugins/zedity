@@ -11,9 +11,9 @@ License URI: http://zedity.com/license/free
 Zedity is an innovative editor that gives you unprecedented design freedom. Now you can really design outside the box!
 
 == Description ==
-Zedity is an original and unique HTML5 editor that will change the way you create your sites: wih Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! 
+Zedity is an original and unique HTML5 editor that drastically improves the way you create your content. 
 
-Not only does Zedity boost your productivity, but it also enables anyone to achieve professional results without any technical skills about HTML, CSS, and so on.
+With Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! Not only does Zedity boost your productivity, but it also enables anyone to achieve professional results without any technical skills! 
 
 Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device running a modern browser.
 
