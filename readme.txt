@@ -29,7 +29,13 @@ Would you like to show case your Zedity site? Contact us to share your link on o
      
 [Slideshare presentation for Zedity Premium](http://www.slideshare.net/Zuyoy/zedity-premium) 
 
-== Installation ==
+== Get started ==
+
+Here is a basic tutorial that shows how to get started with Zedity:
+[youtube http://www.youtube.com/watch?v=wdUkypagojc]
+
+
+Here are the usual steps to install a WordPress plugin:
 
 Option A (from your WordPress Dashboard):
 
@@ -66,11 +72,12 @@ A: From the standard WordPress editor, just click on the Zedity content that you
 **Q: Can I include as many media as I want in my content?**  
 A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to save and load. If the maximum size allowed (which depends on the system configuration) is exceeded then it may not be possible to save the content.
 
-**Q: Can I see any live content created with Zedity?**  
-A: Sure. We happen to report some live examples on the [Zedity Facebook page](https://www.facebook.com/Zedity). Yet, in our WordPress Zedity Blog, the "[See it with your eyes](http://zedity.com/blog/introducing-zedity/)" section was easily created with the Zedity Plugin for WordPress.
-
 **Q: Is it possible to have additional video/audio services supported?**  
-A: Yes, at the moment there are 20+ audio and video service supported by [Zedity Premium](http://zedity.com/plugin/wp).
+A: There are 20+ audio and video services supported as a premium feature in [Zedity Premium](http://zedity.com/plugin/wp).
+
+**Q: Can I see any live content created with Zedity?**  
+A: Sure. At the moment we share some live examples on our [Zedity Facebook page](https://www.facebook.com/Zedity). Contact us if you'd like to share your Zedity site too.
+
 
 == Screenshots ==
 
