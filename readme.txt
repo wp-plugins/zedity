@@ -29,13 +29,9 @@ Would you like to show case your Zedity site? Contact us to share your link on o
      
 [Slideshare presentation for Zedity Premium](http://www.slideshare.net/Zuyoy/zedity-premium) 
 
-== Get started ==
+== Installation ==
 
-Here is a basic tutorial that shows how to get started with Zedity:
-[youtube http://www.youtube.com/watch?v=wdUkypagojc]
-
-
-Here are the usual steps to install a WordPress plugin:
+As for other plugins, you may have (at least) two options:
 
 Option A (from your WordPress Dashboard):
 
@@ -54,6 +50,9 @@ Option B (via FTP):
 
 2. Activate the Zedity plugin (from your WordPress dashboard) and you're good to go!
 
+== Tutorials ==
+Here is a basic tutorial that shows how to get started with Zedity:
+[youtube http://www.youtube.com/watch?v=wdUkypagojc]
 
 == Frequently asked questions ==
 
