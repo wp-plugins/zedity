@@ -1,4 +1,4 @@
-=== Zedity - Design outside the box! ===
+=== Zedity - Design as you dreamt of! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible, design, editor, html5, filter, widget, drag and drop, WYSIWYG, page, google, SEO, twitter, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
@@ -8,28 +8,35 @@ Stable tag: 1.4.0
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-Zedity is an innovative editor that gives you unprecedented design freedom. Now you can really design outside the box!
+An innovative HTML5 editor that enables you to design outside the box, saves you time and efforts, and it's super easy to use!
 
 == Description ==
-Zedity is an original and unique HTML5 editor that makes it extremely easy, quick and flexible to create your content. 
-
-** Advantages: **
-- design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won't experience that frustrating feeling of not being able to place object where you'd like them to be.
-- save time: creating content with Zedity is easy and intuitive: just drag and drop media boxes, with no more need to struggle with the HTML/CSS code! 
-- professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results. 
-
+Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities to design and create content for your posts, pages and sites.
 
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
+**Advantages:**
 
-- no external plugins: Zedity generates HTML5 content with no need for external plugins, i.e. no Flash. That means that your content can be seen correctly on any device running a modern browser.
+*   design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won\'t experience that frustrating feeling of not being able to place object where you\'d like them to be.
+
+*   save time: creating content with Zedity is easy and intuitive: just drag and drop media boxes, with no more need to struggle with the HTML/CSS code! 
+
+*   professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results. 
+
+*   no external plugins: Zedity generates HTML5 content with no need for external plugins, i.e. no Flash. That means that your content can be seen correctly on any device running a modern browser.
 
 
 **Social page and web site:**
-Contact us to share your link on our [Facebook page](https://www.facebook.com/Zedity)!  
 
-Visit the [Zedity Plugin for WordPress site](http://zedity.com/plugin/wp).
+*   [Zedity Web Site](http://zedity.com/plugin/wp): visit the official website to discover more about Zedity!
+
+*   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
+
+*   [Zedity Tutorials](http://www.youtube.com/user/ZedityTutorials): some useful tutorials about Zedity.
  
+
+**Enjoy Zedity!**
+Your feedback, suggestions or request are welcome!
 
 == Installation ==
 
@@ -53,8 +60,17 @@ Option B (via FTP):
 2. Activate the Zedity plugin (from your WordPress dashboard) and you're good to go!
 
 == Tutorials ==
-Here is a basic tutorial that shows how to get started with Zedity:
+Here are some tutorials that can help you get started and learn some useful tips:
+
+**From A to... Zedity! This tutorial shows how to install and create your first Zedity content:**
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
+
+
+**Need to update your Zedity content? This short tutorial shows how to do it:**
+[youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
+
+Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) plugin. 
+
 
 == Frequently asked questions ==
 
@@ -77,7 +93,10 @@ A: Absolutely yes. Just keep in mind that if you add many big images, then the c
 A: There are 20+ audio and video services supported as a premium feature in [Zedity Premium](http://zedity.com/plugin/wp).
 
 **Q: Can I see any live content created with Zedity?**  
-A: Sure. At the moment we share some live examples on our [Zedity Facebook page](https://www.facebook.com/Zedity). Contact us if you'd like to share your Zedity site too.
+A: Sure. At the moment we share some live examples on our [Zedity Facebook page](https://www.facebook.com/Zedity). 
+
+**Q: Is there any tutorial about Zedity?**  
+A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutorials](http://www.youtube.com/user/ZedityTutorials). 
 
 
 == Screenshots ==
