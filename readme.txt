@@ -17,7 +17,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Advantages:**
 
-*   design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won\'t experience that frustrating feeling of not being able to place object where you\'d like them to be.
+*   design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won't experience that frustrating feeling of not being able to place object where you'd like them to be.
 
 *   save time: creating content with Zedity is easy and intuitive: just drag and drop media boxes, with no more need to struggle with the HTML/CSS code! 
 
@@ -32,11 +32,12 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 
-*   [Zedity Tutorials](http://www.youtube.com/user/ZedityTutorials): some useful tutorials about Zedity.
+*   [Zedity Tutorials](http://wordpress.org/plugins/zedity/other_notes/): some useful tutorials about Zedity.
  
 
 **Enjoy Zedity!**
-Your feedback, suggestions or request are welcome!
+Your feedback, suggestions or request are welcome! 
+If you think there's a bug please do not hesitate to either email us at 'info @ zedity.com' or to report it in [support section](http://wordpress.org/support/plugin/zedity). 
 
 == Installation ==
 
@@ -62,14 +63,14 @@ Option B (via FTP):
 == Tutorials ==
 Here are some tutorials that can help you get started and learn some useful tips:
 
-**From A to... Zedity! This tutorial shows how to install and create your first Zedity content:**
+**From A to... Zedity! This tutorial shows you how to get started with Zedity:**
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
 
 
 **Need to update your Zedity content? This short tutorial shows how to do it:**
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
-Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) plugin. 
+Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) 
 
 
 == Frequently asked questions ==
