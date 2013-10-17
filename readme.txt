@@ -11,18 +11,22 @@ License URI: http://zedity.com/license/free
 Zedity is an innovative editor that gives you unprecedented design freedom. Now you can really design outside the box!
 
 == Description ==
-Zedity is an original and unique HTML5 editor that drastically improves the way you create your content. 
+Zedity is an original and unique HTML5 editor that makes it extremely easy, quick and flexible to create your content. 
 
-With Zedity you can implement any creative design you have in mind, in a fraction of the time you're used to! Not only does Zedity boost your productivity, but it also enables anyone to achieve professional results without any technical skills! 
+** Advantages: **
+- design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won't experience that frustrating feeling of not being able to place object where you'd like them to be.
+- save time: creating content with Zedity is easy and intuitive: just drag and drop media boxes, with no more need to struggle with the HTML/CSS code! 
+- professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results. 
 
-Last but not the least, Zedity generates HTML5 content without any external plugin (e.g. Flash): thus, the content you create can be seen correctly on any device running a modern browser.
 
-Here is a video that gives you an idea of how easy it is to create content with Zedity:
 [youtube http://www.youtube.com/watch?v=AOlNNbiw1-A]
 
- 
-Contact us to share your link on our [Facebook page](https://www.facebook.com/Zedity)!  
 
+- no external plugins: Zedity generates HTML5 content with no need for external plugins, i.e. no Flash. That means that your content can be seen correctly on any device running a modern browser.
+
+
+**Social page and web site:**
+Contact us to share your link on our [Facebook page](https://www.facebook.com/Zedity)!  
 
 Visit the [Zedity Plugin for WordPress site](http://zedity.com/plugin/wp).
  
