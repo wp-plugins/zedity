@@ -37,7 +37,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Enjoy Zedity!**
 Your feedback, suggestions or request are welcome! 
-If you think there's a bug please do not hesitate to either email us at 'info @ zedity.com' or to report it in [support section](http://wordpress.org/support/plugin/zedity). 
+If you think there's a bug please do not hesitate to either email us at 'info @ zedity.com' or to report it in the [support section](http://wordpress.org/support/plugin/zedity). 
 
 == Installation ==
 
