@@ -17,13 +17,13 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Advantages:**
 
-*   design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) wherever you want: you won't experience that frustrating feeling of not being able to place object where you'd like them to be.
+*   design freedom: with Zedity you can implement any creative design you have in mind. You can place any media (images, videos, docs, audios, etc.) exactly where you want with drag and drop! 
 
 *   save time: creating content with Zedity is easy and intuitive: just drag and drop media boxes, with no more need to struggle with the HTML/CSS code! 
 
 *   professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results. 
 
-*   no external plugins: Zedity generates HTML5 content with no need for external plugins, i.e. no Flash. That means that your content can be seen correctly on any device running a modern browser.
+*   cross-browser: Zedity generates HTML5 code that runs on any modern browser (IE9+, Chrome, Firefox, Safari, etc.), with no need for external plugins, i.e. no Flash, etc.
 
 
 **Social page and web site:**
@@ -36,7 +36,9 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
  
 
 **Enjoy Zedity!**
+
 Your feedback, suggestions or request are welcome! 
+
 If you think there's a bug please do not hesitate to either email us at 'info @ zedity.com' or to report it in the [support section](http://wordpress.org/support/plugin/zedity). 
 
 == Installation ==
