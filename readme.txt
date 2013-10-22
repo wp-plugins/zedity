@@ -1,5 +1,5 @@
 === Zedity - Design Outside The Box! ===
-Contributors: zuyoydocument
+Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible, design, editor, html5, filter, widget, drag and drop, WYSIWYG, page, google, SEO, html, box, hassle-free, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
