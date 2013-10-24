@@ -39,6 +39,11 @@
 				<?php
 			}
 		}
+		if (isset($options['customfontscss'])) {
+			echo "<style type=\"text/css\">{$options['customfontscss']}</style>";
+		} else {
+			$options['customfonts'] = array();
+		}
 		?>
 
 		<style>
@@ -80,7 +85,7 @@
 		<div id="filler"></div>
 
 
-		<?php if (function_exists('zedity_get_premium_embedcodes')) zedity_get_premium_embedcodes() ?>
+		<?php $this->get_embedcodes() ?>
 
 
 		<script type="text/javascript">
@@ -138,6 +143,9 @@
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+type+']'));
 			//refresh watermark
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-Watermark[data-type='+watermarkposition+']'));
+			//refresh theme style
+			type = editor.$this.hasClass('zedity-notheme') ? 'no' : 'yes';
+			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyle[data-type='+type+']'));
 		};
 
 
@@ -166,9 +174,11 @@
 		];
 
 		var webfonts = <?php echo json_encode($options['webfonts'])?>;
+		var customfonts = <?php echo json_encode($options['customfonts'])?>;
 		var watermarkposition = '<?php echo $options["watermark"]?>';
 
 		fonts = fonts.concat(webfonts);
+		fonts = fonts.concat(customfonts);
 		fonts = fonts.filter(function(a){if(!this[a]){this[a]=1;return a;}},{});
 		fonts.sort(function(a,b){
 			a = a.split(',')[0];
@@ -200,14 +210,17 @@
 		});
 		zedityEditor.page._sizeConstraints.minWidth = <?php echo WP_Zedity_Plugin::MIN_WIDTH?>;
 		zedityEditor.page._sizeConstraints.minHeight = <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>;
+		zedityEditor.$this.addClass('zedity-notheme');
 
+		var zedityMenu = zedityEditor.$container.find('.zedity-mainmenu');
+		
 		//move 'Clear all' to 'Edit' menu
-		zedityEditor.$container.find('.zedity-mainmenu li.zedity-menu-ClearAll')
+		zedityMenu.find('li.zedity-menu-ClearAll')
 			.add('.zedity-mainmenu li:nth-child(1) .zedity-separator:eq(0)')
 			.appendTo('.zedity-mainmenu li:nth-child(2) ul');
 		
 		//add Alignment to menu
-		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child > ul').append(
+		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
 			'<li class="ui-menu-item" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Alignment</a>'+
@@ -224,8 +237,22 @@
 				'</ul>'+
 			'</li>'
 		);
+		//add Theme style to menu
+		zedityMenu.find('li.ui-menubar:first-child > ul').append(
+			'<li class="ui-menu-item" role="presentation">'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Theme style</a>'+
+				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
+					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="yes">'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Enabled</a>'+
+					'</li>'+
+					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="no">'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span>Disabled</a>'+
+					'</li>'+
+				'</ul>'+
+			'</li>'
+		);
 		//add Watermark to menu
-		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child > ul').append(
+		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-menu-item" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Watermark</a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
@@ -248,14 +275,15 @@
 			'</li>'
 		);
 		//add Save to menu
-		zedityEditor.$container.find('.zedity-mainmenu li.ui-menubar:first-child > ul').append(
+		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
 			'<li class="zedity-menu-SavePage ui-menu-item" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span>Save</a>'+
 			'</li>'
 		);
+		
 		//add shortcut buttons
-		zedityEditor.$container.find('.zedity-mainmenu').append(
+		zedityMenu.append(
 			'<li class="zedity-menu-SavePage ui-menu-item zedity-menu-quick" role="presentation" title="Save">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span></a>'+
 			'</li>'+
@@ -270,26 +298,32 @@
 		);
 
 		//undo/redo
-		zedityEditor.$container.find('.zedity-menu-quick.zedity-menu-EditUndoRedo').on('click.zedity',function(event){
+		zedityMenu.find('.zedity-menu-quick.zedity-menu-EditUndoRedo').on('click.zedity',function(event){
 			var editor = $(this).editor();
 			editor.menu.close();
 			editor[$(this).attr('data-type')]();
 			return false;
 		});
 		//page align
-		zedityEditor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign').on('click',function(){
+		zedityMenu.find('.zedity-menu-PageAlign').on('click',function(){
 			var type = $(this).attr('data-type');
 			zedityEditor.$this.removeClass('alignleft alignright');
 			if (type) zedityEditor.$this.addClass('align'+type);
 			resizeEditor(zedityEditor);
 		});
+		//theme style
+		zedityMenu.find('.zedity-menu-ThemeStyle').on('click',function(){
+			var type = $(this).attr('data-type');
+			zedityEditor.$this.toggleClass('zedity-notheme', type=='no');
+			resizeEditor(zedityEditor);
+		});
 		//watermark
-		zedityEditor.$container.find('.zedity-mainmenu .zedity-menu-Watermark').on('click',function(){
+		zedityMenu.find('.zedity-menu-Watermark').on('click',function(){
 			watermarkposition = $(this).attr('data-type');
 			resizeEditor(zedityEditor);
 		});
 		//save
-		zedityEditor.$container.find('.zedity-mainmenu .zedity-menu-SavePage').on('click',function(){
+		zedityMenu.find('.zedity-menu-SavePage').on('click',function(){
 			zedityEditor.save(function(html){
 				$(parent.document).find('#TB_iframeContent').removeClass('zedity-iframe');
 				var $html = $('<div/>');

@@ -1,9 +1,7 @@
 <?php
-	$plugindata = $this->get_plugin_data();
-
 	if (!isset($options['webfonts'])) $options['webfonts'] = array();
 
-	$allwebfonts = zedity_get_all_webfonts();
+	$allwebfonts = $this->get_webfonts();
 	foreach ($allwebfonts as $font) {
 		$fontname = explode(',',$font);
 		$fontname = urlencode($fontname[0]);
@@ -61,6 +59,45 @@
 		
 		<hr/>
 
+		<h3 class="title">Media embed</h3>
+		<p>Supported media embed services.</p>
+
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Video:</label></th>
+				<td>
+					<?php
+					$content = array();
+					foreach($this->get_videoembeds() as $service=>$site) {
+						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
+					}
+					echo implode(', ',$content);
+					?>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="blogname">Audio:</label></th>
+				<td>
+					<?php
+					$content = array();
+					foreach($this->get_audioembeds() as $service=>$site) {
+						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
+					}
+					echo implode(', ',$content);
+					?>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<br/>
+
+		<?php if (!$this->is_premium()) { ?>
+		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
+		<?php } ?>
+		
+		<hr/>
+
+		
 		<h3 class="title">Webfonts</h3>
 		<p>In addition to the standard fonts, you can select any of the following webfonts to give your content a distinctive style:</p>
 		<p>(<b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.)</p>
@@ -78,52 +115,20 @@
 			<?php } ?>
 		</div>
 	
-		<?php if (!function_exists('zedity_get_premium_webfonts')) { ?>
+		<?php if (!$this->is_premium()) { ?>
 		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
 		<?php } ?>
 
 		<hr/>
 
-		<h3 class="title">Media embed</h3>
-		<p>Supported media embed services.</p>
-
-		<table class="form-table"><tbody>
-			<tr valign="top">
-				<th scope="row"><label for="blogname">Video:</label></th>
-				<td>
-					<?php
-					$content = array();
-					foreach(zedity_get_all_videoembeds() as $service=>$site) {
-						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
-					}
-					echo implode(', ',$content);
-					?>
-				</td>
-			</tr>
-			<tr valign="top">
-				<th scope="row"><label for="blogname">Audio:</label></th>
-				<td>
-					<?php
-					$content = array();
-					foreach(zedity_get_all_audioembeds() as $service=>$site) {
-						$content[] = "<a href=\"$site\" target=\"_blank\">$service</a>";
-					}
-					echo implode(', ',$content);
-					?>
-				</td>
-			</tr>
-		</tbody></table>
-
-		<br/>
-
-		<?php if (!function_exists('zedity_get_premium_audioembeds')) { ?>
-		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
-		<?php } ?>
-		
-		<hr/>
+		<?php
+		if (method_exists($this,'additional_settings_page')) {
+			$this->additional_settings_page($options);
+		}
+		?>
 		
 		<h4 class="title">License</h4>
-		<p>The <?php echo $plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $plugindata['LicenseURI'];?>"><?php echo $plugindata['License'];?></a> license.</p>
+		<p>The <?php echo $this->plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $this->plugindata['LicenseURI'];?>"><?php echo $this->plugindata['License'];?></a> license.</p>
 		
 		<?php 
 			settings_fields('wp_zedity_plugin');

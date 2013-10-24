@@ -4,7 +4,7 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible, design, editor, html5, filter, widget, drag and drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.6.1
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -109,7 +109,13 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 3. Add other boxes, drag them around, add effects and eventually click on either "Save" under the "Content" menu or the Save icon.
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
+
 == Changelog ==
+
+= 1.4.1 =
+* New feature to enable/disable the WP Theme style for the published Zedity content.
+* Added support for WP multi-site network installation and activation.
+* Text box: improved text shadow and text height.
 
 = 1.4.0 =
 * Added indication of media services who don't support preview.

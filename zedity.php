@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Zedity
-Plugin URI: http://zedity.com
+Plugin URI: http://zedity.com/plugin/wp
 Description: Editing Reinvented. Take your site to the next level and wow your audience.
-Version: 1.4.0
+Version: 1.4.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -37,10 +37,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 } else {
 
 
-	require_once("$path../../../wp-includes/pluggable.php");
-	if (file_exists($filepremium)) require_once($filepremium);
-
-
 
 	class WP_Zedity_Plugin {
 		
@@ -53,20 +49,25 @@ if (class_exists('WP_Zedity_Plugin')) {
 		const DEFAULT_HEIGHT = 600;
 
 		public function __construct() {
+			register_activation_hook(__FILE__, array(&$this, 'activate'));
+
 			$plugin = plugin_basename(__FILE__);
 
 			//add custom css to reset Zedity content + webfonts
 			add_action('wp_head', array(&$this,'add_head_css'));
 
-			//stop here if we are not in admin area or user can't use editor
+			//stop here if we are not in admin area
 			if (!is_admin()) return;
-			if (!(current_user_can('edit_posts') || current_user_can('edit_pages'))) return;
-			if (!get_user_option('rich_editing')) return;
 
 			// register actions
 			add_action('admin_init', array(&$this, 'admin_init'));
 			add_action('admin_menu', array(&$this, 'add_menu'));
+			
+			$this->plugindata = $this->get_plugin_data();
 
+			//link to the settings page
+			add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
+			
 			//add javascript
 			add_action('admin_print_footer_scripts', array(&$this, 'add_js'));
 
@@ -76,47 +77,59 @@ if (class_exists('WP_Zedity_Plugin')) {
 			add_filter('mce_buttons', array(&$this,'register_mce_buttons'));
 			add_filter('mce_external_plugins', array(&$this,'add_mce_buttons'));
 
-			//link to the settings page
-			add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
-
 			//Zedity into ThickBox
-			wp_enqueue_script('thickbox');
+			add_action('admin_enqueue_scripts', array(&$this,'admin_enqueue_scripts'));
 			add_action('load-dashboard_page_zedity_editor', array(&$this,'add_zedity_editor_page'));
 			
 			//add custom css to reset Zedity content + webfonts
 			add_action('admin_head', array(&$this,'add_head_css'));
+			
+			//show messages
+			add_action('admin_notices', array(&$this,'admin_notices'));
 		}
 		
-		public static function activate() {
-			$defaults = array(
-				'page_width' => self::DEFAULT_WIDTH,
-				'page_height' => self::DEFAULT_HEIGHT,
-				'webfonts' => array(),
-				'watermark' => 'none',
-			);
-			if (function_exists('zedity_get_premium_settings')) {
-				$defaults = array_merge($defaults, zedity_get_premium_settings());
-			}
+		public function activate($network_wide) {
+			$defaults = $this->get_defaults();
 			add_option('zedity_settings',$defaults);
 		}
 
-		public static function deactivate() {
-
-		}
-
-		public static function uninstall() {
-			//delete_option('zedity_settings');
+		
+		public function is_premium() {
+			return FALSE;
 		}
 
 		public function get_plugin_data() {
 			return get_file_data(__FILE__,array(
 				'Name' => 'Plugin Name',
+				'Description' => 'Description',
+				'Version' => 'Version',
+				'PluginURI' => 'Plugin URI',
 				'License' => 'License',
 				'LicenseURI' => 'License URI',
 			));
 		}
 
+		
+		public function show_message($message, $pages=TRUE) {
+			$notices = get_option('zedity_admin_notices', array());
+			$notices[] = array($message,$pages);
+			update_option('zedity_admin_notices', $notices);
+		}
 
+		public function admin_notices() {
+			global $pagenow;
+			$notices = get_option('zedity_admin_notices', array());
+			foreach ($notices as $notice) {
+				if (is_string($notice)) $notice = array($notice,TRUE);
+				if (!is_array($notice)) continue;
+				if ($notice[1]===TRUE || in_array($pagenow,$notice[1])) {
+					echo "<div class='updated'>{$notice[0]}</div>";
+				}
+			}
+			delete_option('zedity_admin_notices');
+		}
+		
+		
 		//----------------------------------------------------------------------------------------------
 		//VIEWS
 
@@ -203,6 +216,11 @@ if (class_exists('WP_Zedity_Plugin')) {
 			</script>
 			<?php
 		}
+		
+		public function admin_enqueue_scripts() {
+			//ThickBox
+			wp_enqueue_script('thickbox');
+		}
 
 
 		//----------------------------------------------------------------------------------------------
@@ -224,6 +242,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 			@session_start();
 			$options = get_option('zedity_settings');
 			$_SESSION['zedity_webfonts'] = $options['webfonts'];
+			$_SESSION['zedity_customfontscss'] = $options['customfontscss'];
 
 			if (!empty($mce_css)) $mce_css .= ',';
 			$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
@@ -239,11 +258,19 @@ if (class_exists('WP_Zedity_Plugin')) {
 		//----------------------------------------------------------------------------------------------
 		//SETTINGS
 
-
+		
+		public function get_defaults(){
+			return array(
+				'page_width' => self::DEFAULT_WIDTH,
+				'page_height' => self::DEFAULT_HEIGHT,
+				'webfonts' => array(),
+				'watermark' => 'none',
+			);
+		}
 
 		public function add_settings_page() {
 			if (!current_user_can('manage_options')) {
-				wp_die(__('You do not have sufficient permissions to access	this page.'));
+				wp_die(__('You do not have sufficient permissions to access this page.'));
 			}
 			$options = get_option('zedity_settings');
 			//Render the settings template
@@ -322,69 +349,55 @@ if (class_exists('WP_Zedity_Plugin')) {
 					<?php
 				}
 			}
-			//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
 			if (is_admin()) {
+				//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
+				<link rel="stylesheet" href="<?php echo plugins_url('mce/content-overlay.css', __FILE__); ?>" type="text/css" media="all" />
 				<?php
 			}
 		}
+		
+		
+		
+		//--------------------------------------------------------------------------------
 
-
-	}
-
-
-
-	register_activation_hook(__FILE__, array('WP_Zedity_Plugin', 'activate'));
-	register_deactivation_hook(__FILE__, array('WP_Zedity_Plugin', 'deactivate'));
-	register_uninstall_hook(__FILE__, array('WP_Zedity_Plugin', 'uninstall'));
-
-	$wp_zedity_plugin = new WP_Zedity_Plugin();
-
-
-
-
-
-
-	function zedity_get_all_webfonts() {
-		$webfonts = array(
-			'Caesar Dressing,cursive',
-			'Crafty Girls,cursive',
-			'Jacques Francois,serif',
-			'Quintessential,cursive',
-		);
-		if (function_exists('zedity_get_premium_webfonts')) {
-			$webfonts = array_unique(array_merge($webfonts, zedity_get_premium_webfonts()));
+		
+		public function get_webfonts(){
+			return array(
+				'Caesar Dressing,cursive',
+				'Crafty Girls,cursive',
+				'Jacques Francois,serif',
+				'Quintessential,cursive',
+			);
 		}
-		asort($webfonts);
-		return $webfonts;
-	}
-
-
-
-	function zedity_get_all_videoembeds() {
-		$vembeds = array(
-			'youtube' => 'http://www.youtube.com',
-			'vimeo' => 'http://vimeo.com',
-		);
-		if (function_exists('zedity_get_premium_videoembeds')) {
-			$vembeds = array_unique(array_merge($vembeds, zedity_get_premium_videoembeds()));
+		
+		public function get_videoembeds(){
+			return array(
+				'youtube' => 'http://www.youtube.com',
+				'vimeo' => 'http://vimeo.com',
+			);
 		}
-		return $vembeds;
-	}
 
-
-
-	function zedity_get_all_audioembeds() {
-		$aembeds = array(
-			'soundcloud' => 'http://soundcloud.com',
-			'reverbnation' => 'http://www.reverbnation.com',
-		);
-		if (function_exists('zedity_get_premium_audioembeds')) {
-			$aembeds = array_unique(array_merge($aembeds, zedity_get_premium_audioembeds()));
+		public function get_audioembeds(){
+			return array(
+				'soundcloud' => 'http://soundcloud.com',
+				'reverbnation' => 'http://www.reverbnation.com',
+			);
 		}
-		return $aembeds;
+		
+		public function get_embedcodes(){
+		}
+		
 	}
 
+	
+	if (file_exists($filepremium)) {
+		require_once($filepremium);
+		$wp_zedity_plugin = new WP_Zedity_Plugin_Premium();
+	} else {
+		$wp_zedity_plugin = new WP_Zedity_Plugin();
+	}
+	
 }
 
