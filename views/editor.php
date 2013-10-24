@@ -324,7 +324,13 @@
 		});
 		//save
 		zedityMenu.find('.zedity-menu-SavePage').on('click',function(){
+			var maxSize = <?php echo WP_Zedity_Plugin::WARNING_CONTENT_SIZE ?>;
 			zedityEditor.save(function(html){
+				if (html.length > maxSize) {
+					var ret = confirm('The content you have created is bigger than '+(maxSize/1000000).toFixed(1)+'MB.\nDepending on the configuration of your environment, WordPress may not be able to save it correctly.\n\nDo you want to continue anyway?');
+					if (!ret) return;
+				}
+				
 				$(parent.document).find('#TB_iframeContent').removeClass('zedity-iframe');
 				var $html = $('<div/>');
 				$html.append(html);

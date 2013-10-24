@@ -47,6 +47,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 		const MIN_HEIGHT = 20; // pixels
 		const MAX_HEIGHT = 6000; // pixels
 		const DEFAULT_HEIGHT = 600;
+		
+		const WARNING_CONTENT_SIZE = 1000000; // 1MB (system dependent, current value based on observed cases)
 
 		public function __construct() {
 			register_activation_hook(__FILE__, array(&$this, 'activate'));
