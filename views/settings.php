@@ -18,7 +18,7 @@
 	<form action="options.php" method="post">
 		<hr/>
 		<h3 class="title">Content</h3>
-		<p>Enter the default size (in pixels) for your future Zedity contents (you can always change size while editing):</p>
+		<p>Enter the default size (in pixels) for your future Zedity contents (you can also change the size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="blogname">Content width:</label></th>
