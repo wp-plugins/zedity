@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/free
 An innovative HTML5 editor that enables you to design outside the box, saves you time and efforts, and it's super easy to use!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to design creative content, with no technical skills required and completely hassle-free!
+Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with the HTML/CSS code are gone!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
@@ -23,9 +23,9 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 *   Professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.  
 
-*   Cross-browser compatibility: Zedity generates HTML5 code that runs on any modern browser (IE9+, Chrome, Firefox, Safari, etc.), with no need for external plugins, i.e. no Flash, etc.
+*   Cross-browser: Zedity generates HTML5 code that runs on any modern HTML5 browser (IE9+, Chrome, Firefox, Safari, etc.), without using Flash or other external plugins.
 
-*   Hassle-free: creating content with Zedity is easy and intuitive: just drag and drop media boxes, no more need to struggle with the HTML/CSS code!
+*   Productivity: Zedity will impress you for the ease of create more engaging content in a fraction of the time! And, yes, with absolutely no technical skills required!
 
 
 **Social page and web site:**
