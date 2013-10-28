@@ -11,13 +11,13 @@ License URI: http://zedity.com/license/free
 An innovative HTML5 editor to create any design you want, the way you've always been wishing for: visually, quickly and easily!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with the HTML/CSS code are gone!
+Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 **Advantages:**
 
-*   Design freedom: have you ever felt like "I wish I could just drag this object here" while creating your content? With Zedity that wish is now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, audios, etc.) can be placed exactly where and how you want, with drag and drop!
+*   Design freedom: have you ever felt like "I wish I could just drag this object here" while creating your content? With Zedity that wish is now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want, with drag and drop!
 
 *   Real Drag and Drop: some web site builder or editor use to call themselves "Drag and Drop". Unfortunately, you may find out that what is drag and drop is only the way you bring items on the page but then, even simplest things like placing two images beside each other can be a stressful task. Zedity overcomes all those limitations, giving you the Drag and Drop experienced you wished for. 
 
