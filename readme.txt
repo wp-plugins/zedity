@@ -1,9 +1,9 @@
 === Zedity - Design Freedom is here! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
+Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content,visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
-Tested up to: 3.6.1
+Tested up to: 3.7
 Stable tag: 1.4.1
 License: GPLv3
 License URI: http://zedity.com/license/free
@@ -30,7 +30,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Social page and web site:**
 
-*   [Zedity Web Site](http://zedity.com/plugin/wp): visit the official website to discover more about Zedity!
+*   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 
