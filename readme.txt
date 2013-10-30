@@ -1,9 +1,9 @@
 === Zedity - Design Freedom is here! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, social, zedity, posts, sidebar, comments, youtube, soundcloud
+Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
-Tested up to: 3.7.1
+Tested up to: 3.7
 Stable tag: 1.4.1
 License: GPLv3
 License URI: http://zedity.com/license/free
@@ -14,6 +14,21 @@ An innovative HTML5 editor to create any design you want, the way you've always 
 Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
+
+**Boxes to design... outside the box!**
+
+Zedity has the right box for each type of content you need while creating your design:
+ 
+*   Audio: to include songs, soundtracks, sound effects, voice overs, and so on. 
+*   Color: to add solid and gradient backgrounds, create shapes, etc.
+*   Text: for any textual content, links, titles, slogans, descriptions, etc.
+*   Image: to add images, including online images, with built-in effects and filters.
+*   Video: to include videos from 4 major online services (more than 20 for the [Premium](http://zedity.com/plugin/wp)). 
+*   [Premium](http://zedity.com/plugin/wp) Document: add online documents like slideshare, scribd, google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
+*   [Premium](http://zedity.com/plugin/wp) Html: the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
+
+With its unique boxes, Zedity enables you to come up with any creative design you like! Do you think there's a need for another box or to add a feature to an existing one? We're glad to hear from you!
+
 
 **Advantages:**
 
