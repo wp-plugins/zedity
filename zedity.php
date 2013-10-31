@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Editing Reinvented. Take your site to the next level and wow your audience.
-Version: 1.4.1
+Version: 1.4.2
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
