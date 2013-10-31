@@ -4,7 +4,7 @@ Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -29,7 +29,6 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 
 **Boxes to design... outside the box!**
-
 Zedity has the right box for each type of content you need while creating your design:
  
 *   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
@@ -46,17 +45,15 @@ Do you think there's a need for another box or to add a feature to an existing o
 **Social page and web site:**
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
-
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
-
-*   [Zedity Tutorials](http://wordpress.org/plugins/zedity/other_notes/): some useful tutorials about Zedity.
+*   [Zedity Tutorials](http://wordpress.org/plugins/zedity/other_notes/): some useful tutorials to get started with Zedity.
  
 
 **Enjoy Zedity!**
 
 Your feedback, suggestions or request are welcome! 
 
-If you think there's a bug please do not hesitate to either email us at 'info @ zedity.com' or to report it in the [support section](http://wordpress.org/support/plugin/zedity). 
+If you think there's a bug please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). 
 
 == Installation ==
 
@@ -128,6 +125,9 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 1.4.2 =
+* Various optimizations and improvements.
 
 = 1.4.1 =
 * New feature to enable/disable the WP Theme style for the published Zedity content.

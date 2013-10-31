@@ -388,9 +388,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 			);
 		}
 		
-		public function get_embedcodes(){
-		}
-		
 	}
 
 	
@@ -403,3 +400,5 @@ if (class_exists('WP_Zedity_Plugin')) {
 	
 }
 
+//Fix for Chrome not showing embeds in preview
+header('X-XSS-Protection: 0');

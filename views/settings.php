@@ -40,7 +40,7 @@
 
 		<h3 class="title">Watermark</h3>
 		<p>If you like Zedity and want to support it, you can simply enable the "Powered by Zedity" watermark.</p>
-		<p>Select the default watermark position (you can always change the position while creating your content):</p>
+		<p>Select the default watermark position (you can also change the position while creating your content):</p>
 		<!--<p>Select position:</p>-->
 
 		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">

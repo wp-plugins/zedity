@@ -77,16 +77,18 @@
 			.zedity-menu-quick .zedity-icon-disk {
 				background-size: 100%;
 			}
+			
+			.zedity-mainmenu .ui-menu-item a span.premium,
+			.zedity-contextmenu .ui-menu-item a span.premium {
+				font-size: .9em;
+				color: blue;
+			}
 		</style>
 	</head>
 	
 	<body>
 		<div id="zedityEditorW"></div>
 		<div id="filler"></div>
-
-
-		<?php $this->get_embedcodes() ?>
-
 
 		<script type="text/javascript">
 		//-----------------------------------------------------------------------------------------
@@ -282,6 +284,26 @@
 			'</li>'
 		);
 		
+		<?php if (!$this->is_premium()) { ?>
+			//add disabled Premium boxes to menu
+			zedityMenu.find('li.ui-menubar:nth-child(3) > ul').append(
+				'<li class="ui-state-disabled ui-menu-item" role="presentation">'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-document"></span> Document box <span class="premium">(Premium)</span></a>'+
+				'</li>'+
+				'<li class="ui-state-disabled ui-menu-item" role="presentation">'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-html"></span> Html box <span class="premium">(Premium)</span></a>'+
+				'</li>'
+			);
+			zedityEditor.$container.find('.zedity-contextmenu').append(
+				'<li class="zedity-menu-AddBox ui-menu-item ui-state-disabled" role="presentation">'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-document"></span> Add Document box <span class="premium">(Premium)</span></a>'+
+				'</li>'+
+				'<li class="zedity-menu-AddBox ui-menu-item ui-state-disabled" role="presentation">'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-html"></span> Add Html box <span class="premium">(Premium)</span></a>'+
+				'</li>'
+			);
+		<?php } ?>
+		
 		//add shortcut buttons
 		zedityMenu.append(
 			'<li class="zedity-menu-SavePage ui-menu-item zedity-menu-quick" role="presentation" title="Save">'+
@@ -324,6 +346,8 @@
 		});
 		//save
 		zedityMenu.find('.zedity-menu-SavePage').on('click',function(){
+			//scroll up
+			$('html,body').scrollTop(0);
 			var maxSize = <?php echo WP_Zedity_Plugin::WARNING_CONTENT_SIZE ?>;
 			zedityEditor.save(function(html){
 				if (html.length > maxSize) {
