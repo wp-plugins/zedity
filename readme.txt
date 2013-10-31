@@ -15,21 +15,6 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
-**Boxes to design... outside the box!**
-
-Zedity has the right box for each type of content you need while creating your design:
- 
-*   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
-*   Color box: to add solid and gradient backgrounds, create shapes, etc.
-*   Text box: for any textual content, links, titles, slogans, descriptions, etc.
-*   Image box: to add images, including online images, with built-in effects and filters.
-*   Video box: to include videos from 4 major online services (more than 20 for the [Premium](http://zedity.com/plugin/wp)). 
-*   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like slideshare, scribd, google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
-*   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
-
-With its unique boxes, Zedity enables you to come up with any creative design you like! Do you think there's a need for another box or to add a feature to an existing one? We're glad to hear from you!
-
-
 **Advantages:**
 
 *   Design freedom: have you ever felt like "I wish I could just drag this object here" while creating your content? With Zedity that wish is now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want, with drag and drop!
@@ -41,6 +26,21 @@ With its unique boxes, Zedity enables you to come up with any creative design yo
 *   Cross-browser: Zedity generates HTML5 code that runs on any modern HTML5 browser (IE9+, Chrome, Firefox, Safari, etc.), without using Flash or other external plugins.
 
 *   Productivity: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need to have or hire technical skills to create your content? With Zedity, not any more!
+
+
+**Boxes to design... outside the box!**
+
+Zedity has the right box for each type of content you need while creating your design:
+ 
+*   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
+*   Color box: to add solid and gradient backgrounds, create shapes, etc.
+*   Text box: for any textual content, links, titles, slogans, descriptions, etc.
+*   Image box: to add images, including online images, with built-in effects and filters.
+*   Video box: to include videos with Zedity flexibility and options for creative designs and effects. 
+*   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like slideshare, scribd, google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
+*   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
+
+Do you think there's a need for another box or to add a feature to an existing one? We're glad to hear from you!
 
 
 **Social page and web site:**
