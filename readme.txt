@@ -1,3 +1,4 @@
+=== Zedity - Design the way you want! ===
 === Zedity - Design Freedom is here! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
