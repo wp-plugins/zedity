@@ -29,6 +29,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 
 **Boxes to design... outside the box!**
+
 Zedity has the right box for each type of content you need while creating your design:
  
 *   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
