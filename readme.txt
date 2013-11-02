@@ -55,7 +55,8 @@ Do you think there's a need for another box or to add a feature to an existing o
 
 Your feedback, suggestions or request are welcome! 
 
-If you think there's a bug please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). 
+If you think you've found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). 
+If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
 == Installation ==
 
