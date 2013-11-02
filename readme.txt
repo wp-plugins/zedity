@@ -1,11 +1,10 @@
 === Zedity - Design the way you want! ===
-=== Zedity - Design Freedom is here! ===
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
 Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.4.2
+Stable tag: 1.4.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
@@ -32,7 +31,6 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 **Boxes to design... outside the box!**
 
 Zedity has the right box for each type of content you need while creating your design:
- 
 *   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
 *   Color box: to add solid and gradient backgrounds, create shapes, etc.
 *   Text box: for any textual content, links, titles, slogans, descriptions, etc.
@@ -55,8 +53,7 @@ Do you think there's a need for another box or to add a feature to an existing o
 
 Your feedback, suggestions or request are welcome! 
 
-If you think you've found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). 
-If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
+If you think you've found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
 == Installation ==
 
@@ -128,6 +125,9 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 1.4.3 =
+* Fixed a text styling issue in some browsers.
 
 = 1.4.2 =
 * Various optimizations and improvements.
