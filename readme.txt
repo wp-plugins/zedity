@@ -23,7 +23,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 *   Professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.  
 
-*   Cross-browser: Zedity generates HTML5 code that runs on any modern HTML5 browser (IE9+, Chrome, Firefox, Safari, etc.), without using Flash or other external plugins.
+*   Cross-browser: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
 *   Productivity: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need to have or hire technical skills to create your content? With Zedity, not any more!
 
