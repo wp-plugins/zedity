@@ -1,7 +1,7 @@
 === Zedity - Total Design Freedom! === 
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, filter, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud
+Tags: plugin, multimedia, post, flexible, design, editor, html5, css3, code, content, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.3
@@ -36,7 +36,7 @@ Zedity has the right box for each type of content you need while creating your d
 *   Text box: for any textual content, links, titles, slogans, descriptions, etc.
 *   Image box: to add images, including online images, with built-in effects and filters.
 *   Video box: to include videos with Zedity flexibility and options for creative designs and effects. 
-*   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like slideshare, scribd, google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
+*   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like Slideshare, Scribd, Google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
 *   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
 
 Do you think there's a need for another box or to add a feature to an existing one? We're glad to hear from you!
@@ -59,7 +59,7 @@ If you think you've found a bug, please do not hesitate to email us at 'info @ z
 
 As for other plugins, you may have (at least) two options:
 
-Option A (from your WordPress Dashboard):
+**Option A (from your WordPress Dashboard):**
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
@@ -70,7 +70,7 @@ Option A (from your WordPress Dashboard):
 4. Click on "Install now", activate it and you're done!
 
 
-Option B (via FTP):
+**Option B (via FTP):**
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
