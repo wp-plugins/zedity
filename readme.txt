@@ -8,7 +8,7 @@ Stable tag: 1.4.3
 License: GPLv3
 License URI: http://zedity.com/license/free
 
-**An innovative HTML5 editor to create **any design you want**, the way you have been wishing for: **visually**, **flexibly** and **easily!**
+An innovative HTML5 editor to create any design you want, the way you have been wishing for: flexibly, visually and easily!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
