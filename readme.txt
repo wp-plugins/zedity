@@ -1,7 +1,7 @@
 === Zedity - Ultimate Design Freedom === 
 Contributors: zuyoy
 Donate link: http://zedity.com/plugin/wp
-Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters
+Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.3
@@ -39,7 +39,7 @@ Zedity has the right box for each type of content you need while creating your d
 *   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like Slideshare, Scribd, Google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
 *   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
 
-Do you think there's a need for another box or to add a feature to an existing one? We're glad to hear from you!
+Do you think there's a need for another box or a new feature? We're glad to hear from you!
 
 
 **Social page and web site:**
