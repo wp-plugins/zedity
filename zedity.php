@@ -7,7 +7,7 @@ Version: 1.4.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
-License URI: http://zedity.com/license/free
+License URI: http://zedity.com/license/freewp
 */
 
 $path = plugin_dir_path(__FILE__);
