@@ -1,7 +1,7 @@
 === Zedity - Ultimate Design Freedom === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share
+Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share, widgets, multisite, javascript, jquery
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.3
@@ -32,7 +32,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 Zedity has the right box for each type of content you need while creating your design:
 *   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
-*   Color box: to add solid and gradient backgrounds, create shapes, etc.
+*   Color box: to add solid and gradient backgrounds, create simple shapes, etc.
 *   Text box: for any textual content, links, titles, slogans, descriptions, etc.
 *   Image box: to add images, including online images, with built-in effects and filters.
 *   Video box: to include videos with Zedity flexibility and options for creative designs and effects. 
