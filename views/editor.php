@@ -20,11 +20,29 @@
 		wp_enqueue_script('jquery-ui-droppable');
 		wp_enqueue_script('jquery-ui-menu');
 		wp_enqueue_script('jquery-ui-slider');
+		wp_enqueue_script('jquery-ui-tooltip');
 		//print scripts
 		wp_print_head_scripts();
 		wp_print_footer_scripts();
 		?>
-		<script type="text/javascript">$ = jQuery;</script>
+		<script type="text/javascript">
+		$ = jQuery;
+                var linkMsg = 'For information or to upgrade to Zedity Premium, please visit <a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>.';
+		ZedityPromo = {
+			product: 'Zedity Premium',
+			productShort: 'Premium',
+			message: 'This is a Zedity Premium feature.<br/>'+linkMsg,
+			feature: {
+				linkOnBox: 'Premium feature: associate a link to the box.<br/>'+linkMsg,
+				boxSize: 'Premium feature: view and set exact box size.<br/>'+linkMsg,
+				textParagraph: 'Premium feature: SEO friendly tags, e.g. title, paragraph, etc.<br/>'+linkMsg,
+				textLink: 'Premium feature: open link in a new tab.<br/>'+linkMsg,
+				imageFilters: 'Premium feature: enhance images with special effects.<br/>'+linkMsg,
+				additionalMedia: linkMsg,
+				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
+			}
+		};
+		</script>
 		
 		<link rel="stylesheet" href="<?php echo plugins_url('zedity/zedity.min.css',dirname(__FILE__))?>" type="text/css" media="screen" />
 		<script src="<?php echo plugins_url('zedity/zedity.min.js',dirname(__FILE__))?>" type="text/javascript"></script>
@@ -76,12 +94,6 @@
 			}
 			.zedity-menu-quick .zedity-icon-disk {
 				background-size: 100%;
-			}
-			
-			.zedity-mainmenu .ui-menu-item a span.premium,
-			.zedity-contextmenu .ui-menu-item a span.premium {
-				font-size: .9em;
-				color: blue;
 			}
 		</style>
 	</head>
@@ -283,27 +295,6 @@
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span>Save</a>'+
 			'</li>'
 		);
-		
-		<?php if (!$this->is_premium()) { ?>
-			//add disabled Premium boxes to menu
-			zedityMenu.find('li.ui-menubar:nth-child(3) > ul').append(
-				'<li class="ui-state-disabled ui-menu-item" role="presentation">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-document"></span> Document box <span class="premium">(Premium)</span></a>'+
-				'</li>'+
-				'<li class="ui-state-disabled ui-menu-item" role="presentation">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-html"></span> Html box <span class="premium">(Premium)</span></a>'+
-				'</li>'
-			);
-			zedityEditor.$container.find('.zedity-contextmenu').append(
-				'<li class="zedity-menu-AddBox ui-menu-item ui-state-disabled" role="presentation">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-document"></span> Add Document box <span class="premium">(Premium)</span></a>'+
-				'</li>'+
-				'<li class="zedity-menu-AddBox ui-menu-item ui-state-disabled" role="presentation">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-html"></span> Add Html box <span class="premium">(Premium)</span></a>'+
-				'</li>'
-			);
-		<?php } ?>
-		
 		//add shortcut buttons
 		zedityMenu.append(
 			'<li class="zedity-menu-SavePage ui-menu-item zedity-menu-quick" role="presentation" title="Save">'+

@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Zedity
-Plugin URI: http://zedity.com/plugin/wp
-Description: Editing Reinvented. Take your site to the next level and wow your audience.
-Version: 1.4.3
+Plugin URI: http://zedity.com
+Description: Finally you can create any design you want, the way you have been wishing for!
+Version: 1.4.4
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -67,8 +67,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 			
 			$this->plugindata = $this->get_plugin_data();
 
-			//link to the settings page
+			//additional links
 			add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
+			add_filter('plugin_row_meta', array(&$this,'plugin_row'), 10, 2);
 			
 			//add javascript
 			add_action('admin_print_footer_scripts', array(&$this, 'add_js'));
@@ -114,7 +115,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		public function show_message($message, $pages=TRUE) {
 			$notices = get_option('zedity_admin_notices', array());
-			$notices[] = array($message,$pages);
+			$newmsg = array($message,$pages);
+			if (!in_array($newmsg,$notices)) $notices[] = $newmsg;
 			update_option('zedity_admin_notices', $notices);
 		}
 
@@ -154,7 +156,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function add_zedity_editor_page() {
 			require(ABSPATH . WPINC . '/version.php');
-			$options = get_option('zedity_settings');
+			$options = $this->get_options();
 			include(sprintf("%s/views/editor.php", dirname(__FILE__)));
 			exit;
 		}
@@ -242,7 +244,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function add_mce_css($mce_css) {
 			@session_start();
-			$options = get_option('zedity_settings');
+			$options = $this->get_options();
 			$_SESSION['zedity_webfonts'] = $options['webfonts'];
 			$_SESSION['zedity_customfontscss'] = $options['customfontscss'];
 
@@ -267,14 +269,22 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'page_height' => self::DEFAULT_HEIGHT,
 				'webfonts' => array(),
 				'watermark' => 'none',
+				'customfontscss' => '',
+				'customfonts' => array(),
 			);
+		}
+		
+		public function get_options(){
+			$options = get_option('zedity_settings',array());
+			$defaults = $this->get_defaults();
+			return array_merge($defaults,$options);
 		}
 
 		public function add_settings_page() {
 			if (!current_user_can('manage_options')) {
 				wp_die(__('You do not have sufficient permissions to access this page.'));
 			}
-			$options = get_option('zedity_settings');
+			$options = $this->get_options();
 			//Render the settings template
 			include(sprintf("%s/views/settings.php", dirname(__FILE__)));
 		}
@@ -287,10 +297,20 @@ if (class_exists('WP_Zedity_Plugin')) {
 			return $links;
 		}
 
+		public function plugin_row($links,$file) {
+			if ($file == plugin_basename(__FILE__)) {
+				//Add "Donate" and "Get Premium" links if it is not Premium
+				if (!$this->is_premium()) {
+					$links[] = '<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ" target="_blank">Donate</a>';
+					$links[] = '<a class="button" href="'.$this->plugindata['PluginURI'].'" target="_blank">Get Zedity Premium</a>';
+				}
+			}
+			return $links;
+		}
 
 		//Validation
 		public function zedity_settings_validate($input) {
-			$options = get_option('zedity_settings');
+			$options = $this->get_options();
 
 			$options['page_width'] = trim($input['page_width']);
 			if (!preg_match('/^[0-9]{3,5}$/i', $options['page_width'])) {
@@ -338,7 +358,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 
 		public function add_head_css() {
-			$options = get_option('zedity_settings');
+			$options = $this->get_options();
 			?>
 			<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-reset.css', __FILE__); ?>" type="text/css" media="all" />
 			<?php
@@ -356,6 +376,25 @@ if (class_exists('WP_Zedity_Plugin')) {
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
 				<link rel="stylesheet" href="<?php echo plugins_url('mce/content-overlay.css', __FILE__); ?>" type="text/css" media="all" />
+				<style type="text/css">
+				#zedity .button,
+				#zedity-premium .button {
+					padding: 0px 4px;
+					line-height: 16px;
+					height: auto;
+					border: 1px solid #E6DB55;
+					background: #FFFFE0;
+					background: -webkit-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+					background: -moz-linear-gradient(top, #FFFFE0 0%, #E6DB55 100%);
+					background: -ms-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+					background: -o-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+					background: linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+				}
+				#zedity .button:hover,
+				#zedity-premium .button:hover {
+					background: #FFFFE0;
+				}                                                                
+				</style>
 				<?php
 			}
 		}

@@ -5,9 +5,9 @@
 	foreach ($allwebfonts as $font) {
 		$fontname = explode(',',$font);
 		$fontname = urlencode($fontname[0]);
-?>
+		?>
 		<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
-<?php
+		<?php
 	}
 ?>
 
@@ -92,7 +92,7 @@
 		<br/>
 
 		<?php if (!$this->is_premium()) { ?>
-		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
+			<p>Get <a href=<?php echo $this->plugindata['PluginURI']?>" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
 		<?php } ?>
 		
 		<hr/>
@@ -108,15 +108,15 @@
 					$i++;
 					$fontname = explode(',',$font);
 					$fontname = $fontname[0];
-			?>
-				<input type="checkbox" id="cbWB_<?php echo $i ?>" name="zedity_settings[webfonts][]" value="<?php echo $font ?>" <?php checked(in_array($font,$options['webfonts'])); ?>/>
-				<label for="cbWB_<?php echo $i ?>" style="font:16px <?php echo $font ?>"><?php echo $fontname ?></label>
-				<br />
+					?>
+					<input type="checkbox" id="cbWB_<?php echo $i ?>" name="zedity_settings[webfonts][]" value="<?php echo $font ?>" <?php checked(in_array($font,$options['webfonts'])); ?>/>
+					<label for="cbWB_<?php echo $i ?>" style="font:16px <?php echo $font ?>"><?php echo $fontname ?></label>
+					<br />
 			<?php } ?>
 		</div>
 	
 		<?php if (!$this->is_premium()) { ?>
-		<p>Get <a href="http://zedity.com" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
+			<p>Get <a href="<?php echo $this->plugindata['PluginURI']?>" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
 		<?php } ?>
 
 		<hr/>

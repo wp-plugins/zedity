@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share, widgets, multisite, javascript, jquery
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.4.3
+Stable tag: 1.4.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -125,6 +125,10 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 1.4.4 =
+* Added support to show premium features
+* Minor enhancements, including styled dialogs for page dimensions, etc.
 
 = 1.4.3 =
 * Fixed a text styling issue in some browsers.
