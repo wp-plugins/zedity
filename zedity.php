@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Zedity
-Plugin URI: http://zedity.com
+Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
 Version: 1.4.4
 Author: Zuyoy LLC
