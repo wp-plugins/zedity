@@ -1,4 +1,4 @@
-=== Zedity - Ultimate Design Freedom === 
+=== Zedity - Design outside the box! === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share, widgets, multisite, javascript, jquery
@@ -8,7 +8,7 @@ Stable tag: 1.4.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-A breakthrough editor that enables you to create any design you want, the way you have been wishing for: flexibly, visually and easily! 
+It's almost 2014... time to move forward! Zedity enables you to create any design you want, the way you have been wishing for!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
