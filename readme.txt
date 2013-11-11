@@ -1,4 +1,4 @@
-=== Zedity - Design outside the box! === 
+=== Zedity - Design Freedom Is Here === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags: plugin, multimedia, post, flexible, design, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, twitter, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share, widgets, multisite, javascript, jquery
@@ -46,7 +46,8 @@ Do you think there's a need for another box or a new feature? We're glad to hear
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
-*   [Zedity Tutorials](http://wordpress.org/plugins/zedity/other_notes/): some useful tutorials to get started with Zedity.
+*   [Zedity Blog](http://zedity.com/blog): release notes, tutorials and other useful information about Zedity.
+
  
 
 **Enjoy Zedity!**
