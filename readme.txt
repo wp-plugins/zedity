@@ -39,7 +39,7 @@ Zedity has the right box for each type of content you need while creating your d
 *   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like Slideshare, Scribd, Google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
 *   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
 
-Do you think there's a need for another box or a new feature? We're glad to hear from you!
+And other cool features, often requested by Zedity users, are coming soon... If you thought of any feature that you'd like to see in Zedity, we're surely glad to hear from you!
 
 
 **Social page and web site:**
@@ -49,10 +49,9 @@ Do you think there's a need for another box or a new feature? We're glad to hear
 *   [Zedity Blog](http://zedity.com/blog): release notes, tutorials and other useful information about Zedity.
 
  
-
 **Enjoy Zedity!**
 
-Your feedback, suggestions or request are welcome! 
+Your feedback, suggestions or requests are always welcome! 
 
 If you think you've found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
