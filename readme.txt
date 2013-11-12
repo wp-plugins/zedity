@@ -8,10 +8,10 @@ Stable tag: 1.4.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-It's almost 2014... time to move forward! Now you can create any design you want, the way you have been wishing for: visually, flexibly, easily!
+It's almost 2014... time to move forward! Zedity enables you to create any design you want, the way you have been wishing for!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
+Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, the way you want: visually, quickly and easily! Still struggling with HTML/CSS code manually to put items where you want? It's now time to move on, meet Zedity!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
