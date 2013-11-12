@@ -8,7 +8,7 @@ Stable tag: 1.4.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-It's almost 2014... time to move forward! Zedity enables you to create any design you want, the way you have been wishing for!
+It's almost 2014... time to move forward! Now you can create any design you want, the way you have been wishing for: visually, flexibly, easily!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gives you unprecedented possibilities and flexibility to create any design you want, with no technical skills required, quickly and easily. The times of struggling with HTML/CSS code are gone!
@@ -21,7 +21,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 *   Real Drag and Drop: some web site builder or editor use to call themselves "Drag and Drop". Unfortunately, you may find out that what is drag and drop is only the way you bring items on the page but then, even simplest things like placing two images beside each other can be a stressful task. Zedity overcomes all those limitations, giving you the Drag and Drop experienced you wished for. 
 
-*   Professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.  
+*   Professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.
 
 *   Cross-browser: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
@@ -46,7 +46,7 @@ And other cool features, often requested by Zedity users, are coming soon... If 
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
-*   [Zedity Blog](http://zedity.com/blog): release notes, tutorials and other useful information about Zedity.
+*   [Zedity Blog](http://zedity.com/blog): release notes, tutorials and other useful information about Zedity!
 
  
 **Enjoy Zedity!**
