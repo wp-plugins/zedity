@@ -1,7 +1,7 @@
-=== Zedity - Creating The Better Way === 
+=== Zedity - Easy Design Freedom! === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags: plugin, multimedia, post, flexible, design, simple, editor, media, edit, html5, css3, code, button, content, e-commerce, formatting, picture, pictures, automatic, visual, generator, freedom, widget, drag, drop, WYSIWYG, page, google, SEO, html, box, productivity, tool, text, links, image, video, box, creative, audio, admin, wordpress, custom, embed, images, zedity, posts, sidebar, comments, youtube, soundcloud, slideshare, filters, free, link, multisite, music, photo, photos, share, twitter, widgets, multisite
+Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.4
