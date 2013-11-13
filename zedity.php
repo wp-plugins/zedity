@@ -24,8 +24,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		$otherp.= 'Premium';
 	}
 
-	$message = "<b>Could not activate</b> Zedity $thisp plugin. You cannot enable both Zedity free and Zedity Premium plugins at the same time.<br/>
-			You should <b>deactivate</b> the Zedity $otherp plugin first, then <b>try again</b> activating the Zedity $thisp plugin.";
+	$message = "<b>Could not activate</b> Zedity $thisp plugin. You cannot enable both Zedity free and Zedity Premium plugins at the same time.<br/>Please <b>first deactivate</b> the Zedity $otherp plugin, <b>then activate</b> the Zedity $thisp plugin.";
 	
 	if (isset($_GET['action']) && $_GET['action'] == 'error_scrape') {
 		echo $message;
