@@ -176,7 +176,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					var $iframe = jQuery('#TB_iframeContent');
 					if ($iframe.hasClass('zedity-iframe')) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
-							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select from the menu Content->Save.');
+							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select Content->Save from the menu.');
 							if (!ret) return;
 						}
 						//deselect
