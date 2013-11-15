@@ -17,15 +17,15 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Advantages:**
 
-*   Design freedom: have you ever felt like "I wish I could just drag and drop this object right there" while creating your content? With Zedity that wish is now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want, with drag and drop!
+*   **Design freedom**: have you ever felt like "I wish I could just drag and drop this object right there" while creating your content? With Zedity that now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want, with real drag and drop!
 
-*   Real Drag and Drop: some web site builder or editor use to call themselves "Drag and Drop". Unfortunately, you may find out that what is drag and drop is only the way you bring items on the page but then, even simplest things like placing two images beside each other can be a stressful task. Zedity overcomes all those limitations, giving you the Drag and Drop experienced you wished for. 
+*   **Real Drag and Drop**: some web site builder or editor use to call themselves "Drag and Drop". Unfortunately, you may find out that what is drag and drop is only the way you bring items on the page but then, even simplest things like placing two images beside each other can be a stressful task. Zedity overcomes all those limitations, giving you the Drag and Drop experienced you wished for. 
 
-*   Professional results: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.
+*   **Professional results**: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.
 
-*   Cross-browser: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
+*   **HTML5 Modern content**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
-*   Productivity: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need to have or hire technical skills to create your content? With Zedity, not any more!
+*   **Less time, more fun**: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need technical skills to create your content? With Zedity, not any more!
 
 
 **Boxes to design... outside the box!**
