@@ -1,4 +1,4 @@
-=== Zedity - Design your way! === 
+=== Zedity - Design Outside The Box! === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
