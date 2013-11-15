@@ -28,21 +28,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 *   **Less time, more fun**: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need technical skills to create your content? With Zedity, not any more!
 
 
-**Boxes to design... outside the box!**
-
-Zedity has the right box for each type of content you need while creating your design:
-*   Audio box: to include songs, soundtracks, sound effects, voice overs, and so on. 
-*   Color box: to add solid and gradient backgrounds, create simple shapes, etc.
-*   Text box: for any textual content, links, titles, slogans, descriptions, etc.
-*   Image box: to add images, including online images, with built-in effects and filters.
-*   Video box: to include videos with Zedity flexibility and options for creative designs and effects. 
-*   Document box ([Premium](http://zedity.com/plugin/wp)): add online documents like Slideshare, Scribd, Google_viewer, PDF documents, Microsoft Office documents, Apple Pages, Adobe Photoshop and Illustrator, and more.
-*   Html5 box ([Premium](http://zedity.com/plugin/wp)): the ultimate piece of flexibility! An example: have you got a PayPal button and you'd like it the Zedity way? Just copy paste the PayPal code into this box and the magic is done. The Html box gives you total power and endless possibilities! 
-
-And other cool features, often requested by Zedity users, are coming soon... If you thought of any feature that you'd like to see in Zedity, we're surely glad to hear from you!
-
-
-**Social page and web site:**
+**All about Zedity:**
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
