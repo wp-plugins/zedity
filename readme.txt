@@ -1,7 +1,7 @@
 === Zedity » Total Design Freedom! === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
+Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.4
@@ -17,11 +17,11 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 **Advantages:**
 
-*   **Design freedom**: have you ever felt like "I wish I could just drag and drop this object right there" while creating your content? With Zedity that now a reality! You can implement any creative design you want with no more layout constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want, with real drag and drop!
+*   **Design freedom**: have you ever felt like "I wish I could just move this object right there" while creating your content? With Zedity that is now a reality! You can implement any creative design you want, with no limitation or constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want. Unleash your creativity!
 
 *   **Real Drag and Drop**: some web site builder or editor use to call themselves "Drag and Drop". Unfortunately, you may find out that what is drag and drop is only the way you bring items on the page but then, even simplest things like placing two images beside each other can be a stressful task. Zedity overcomes all those limitations, giving you the Drag and Drop experienced you wished for. 
 
-*   **Professional results**: Zedity has been designed to be very easy but, at the same time, very flexible and powerful to enable anyone to achieve professional results.
+*   **Professional results**: Zedity has been designed to be very easy to use and, at the same time, very flexible and powerful to enable anyone to achieve professional results.
 
 *   **HTML5 Modern content**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
