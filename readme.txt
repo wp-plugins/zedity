@@ -1,4 +1,4 @@
-=== Zedity - Your New Way To Design! === 
+=== Zedity » Total Design Freedom! === 
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -28,7 +28,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 *   **Less time, more fun**: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need technical skills to create your content? With Zedity, not any more!
 
 
-**All about Zedity:**
+**Find more about Zedity:**
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
