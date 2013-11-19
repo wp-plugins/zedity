@@ -1,10 +1,10 @@
-=== Zedity • Design Outside The Box! === 
+=== Zedity • Design Outside The Box! ===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.4.4
+Stable tag: 1.4.5
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -19,7 +19,7 @@ Zedity is an innovative, powerful and extremely easy to use HTML5 editor that gi
 
 *   **Design Freedom**: have you ever felt like "I wish I could just move this object right there" while creating your content? With Zedity that is now a reality! You can implement any creative design you want, with no limitation or constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want. Unleash your creativity!
 
-*   **Real Drag and Drop**: you've already seen other 'drag&drop' tools around, haven't you? So, what's new? As you may have found out, very often that "drag and drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require enough, and often too much, technical effort. Zedity overcomes all those limitations, giving you the real Drag and Drop experienced you have wished for. 
+*   **Real Drag and Drop**: you've already seen other 'drag&drop' tools around, haven't you? So, what's new? As you may have found out, very often that "drag and drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require enough, and often too much, technical effort. Zedity overcomes all those limitations, giving you the real Drag and Drop experienced you have wished for.
 
 *   **Modern Content for Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
@@ -111,6 +111,9 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 1.4.5 =
+* Added support to address a bug in Chrome 31 with TinyMCE selection.
 
 = 1.4.4 =
 * Added support to show premium features

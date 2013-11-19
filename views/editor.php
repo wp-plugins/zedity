@@ -27,7 +27,7 @@
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
-                var linkMsg = 'For information or to upgrade to Zedity Premium, please visit <a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>.';
+		var linkMsg = 'For information or to upgrade to Zedity Premium, please visit <a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>.';
 		ZedityPromo = {
 			product: 'Zedity Premium',
 			productShort: 'Premium',
@@ -394,12 +394,15 @@
 
 				//re-select content
 				mce.selection.select(element);
-				// Add a paragraph before and after the content to avoid problems adding content from WP editor if no other content is present
-				parent.send_to_editor(
+				//add a paragraph before and/or after the content (if needed) to permit adding text from WP editor if no other content is present
+				//insert raw HTML (mceInsertContent or send_to_editor() have problems #614)
+				mce.execCommand('mceInsertRawHTML',false,
 					(needBrBefore ? '<p>&nbsp;</p>' : '') +
 					$html.html() +
 					(needBrAfter ? '<p>&nbsp;</p>' : '')
 				);
+				//close editor window
+				parent.tb_remove();
 
 				//cleanup TinyMCE leftovers
 				$(mce.getDoc()).find('style').each(function(idx,elem){
