@@ -8,7 +8,7 @@ Stable tag: 1.4.5
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-It's almost 2014... time to move forward! Create any design you want, the way you have been wishing for: visually, quickly and easily!
+It's almost 2014... time to move forward! Create any design you need, the way you have been wishing for: visually, quickly and super easily!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
@@ -17,7 +17,8 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 
 **Advantages:**
 
-*   **Design Freedom**: have you ever felt like "I wish I could just move this object right there" while creating your content? With Zedity that is now a reality! You can implement any creative design you want, with no limitation or constraints: any media (images, videos, docs, text, audios, buttons, etc.) can be placed exactly where and how you want. Unleash your creativity!
+*   **Design Freedom**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other creative idea? If so, and you're not using Zedity, you may have two options: either you give up and let your creative idea go or you spend precious time or money doing it manually dealing with the HTML/CSS code. 
+With Zedity, things have finally changed for the best! You can now implement any creative design you want, with no limitation or constraints, unleash your creativity and also have fun creating your pages!
 
 *   **Real Drag and Drop**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require enough, and often too much, technical effort. Zedity overcomes all those limitations, giving you the real Drag and Drop experienced you have wished for.
 
