@@ -99,7 +99,7 @@
 
 		
 		<h3 class="title">Webfonts</h3>
-		<p>In addition to the standard fonts, you can select any of the following webfonts to give your content a distinctive style:</p>
+		<p>In addition to the standard fonts, you can select any of the following web-fonts, to give your content a distinctive style:</p>
 		<p>(<b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.)</p>
 		<div style="border:2px solid #ccc;width:300px;height:200px;overflow-y:scroll;padding:5px">
 			<?php
