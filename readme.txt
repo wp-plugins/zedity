@@ -17,8 +17,8 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 
 **Advantages:**
 
-*   **Design Freedom**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other more creative ideas? If so, and you're not using Zedity, you have two options: either to give up and let your creative idea go or to spend enough time or money doing it manually dealing with the HTML/CSS code. 
-With Zedity, things have finally evolved! You can now implement any creative design you need, with no limitation or constraints, just like you've been wishing for!
+*   **Design Freedom**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other more creative ideas? In those cases usually you have two options: either you spend enough time (money) dealing with the HTML/CSS code or you give up and let your creative idea go. 
+With Zedity, things have finally evolved! You can now implement any creative design you need, with no limitation or constraints, just like the way you've been wishing for!
 
 *   **Real Drag and Drop**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require enough, and often too much, technical effort. Zedity overcomes all those limitations, giving you the real Drag and Drop experienced you have wished for.
 
@@ -26,7 +26,7 @@ With Zedity, things have finally evolved! You can now implement any creative des
 
 *   **Professional Results**: Zedity has been designed to be very easy to use and, at the same time, very flexible and powerful to enable anyone to achieve professional results.
 
-*   **Save Time and Money**: Zedity will impress you for the ease of creating more engaging content in a fraction of the time! Do you still need technical skills to create your content? With Zedity, not any more!
+*   **Save Time and Money**: with Zedity, not only don't you need any technical skills any more, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time on how to create it. Zedity will definitely impress you for the ease of creating more engaging content in a fraction of the time! 
 
 
 **Find more about Zedity:**
