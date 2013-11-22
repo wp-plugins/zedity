@@ -1,4 +1,4 @@
-=== Zedity | The Next Generation Editor! ===
+=== Zedity, The Next Generation Editor. ===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, drag, drop, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -34,6 +34,7 @@ With Zedity, things have finally evolved! You can now implement any creative des
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
+*   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback, ideas and satisfaction! 
 
  
 **Enjoy Zedity!**
