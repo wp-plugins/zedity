@@ -22,11 +22,11 @@ With Zedity, things have finally evolved! You can now implement any creative des
 
 *   **Real Drag and Drop**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require enough, and often too much, technical effort. Zedity overcomes all those limitations, giving you the real Drag and Drop experienced you have wished for.
 
-*   **Modern Content for Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
+*   **Save Time and Money**: with Zedity, not only don't you need any technical skills any more, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time on how to create it. Zedity will definitely impress you for the ease of creating more engaging content in a fraction of the time! 
 
 *   **Professional Results**: Zedity has been designed to be very easy to use and, at the same time, very flexible and powerful to enable anyone to achieve professional results.
 
-*   **Save Time and Money**: with Zedity, not only don't you need any technical skills any more, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time on how to create it. Zedity will definitely impress you for the ease of creating more engaging content in a fraction of the time! 
+*   **Modern Content for Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
 
 **Find more about Zedity:**
