@@ -34,14 +34,12 @@ With Zedity, things have finally evolved! You can now implement any creative des
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
-*   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback, ideas and satisfaction! 
+*   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
 
  
 **Enjoy Zedity!**
 
-Your feedback, suggestions or requests are always welcome! 
-
-If you think you've found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
+If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
 == Installation ==
 
