@@ -1,7 +1,7 @@
 === Zedity: Design with No Code-Hassle!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, button, code, comments, content, creative, css3, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, multisite, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
+Tags:  admin, audio, automatic, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.5
