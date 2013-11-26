@@ -1,4 +1,4 @@
-=== Zedity: Design Freedom for Everybody!===
+=== Zedity: Hassle-Free New Visual Editor===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -17,9 +17,9 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 
 **Advantages:**
 
-*   **Frustrated Struggling with the Code? Not anymore!**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other more creative ideas? In those cases usually you have two options: either you spend enough time (money) dealing with the HTML/CSS code or you give up and let your creative idea go. With Zedity, things have finally evolved! You can now implement any creative design you need, with no limitation or constraints, just like the way you've been wishing for!
+*   **Frustrated? Struggling with the code? Not anymore!**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other more creative ideas? In those cases usually you have two options: either you spend enough time (money) dealing with the HTML/CSS code or you give up and let your creative idea go. With Zedity, things have finally evolved! You can now implement any creative design you need, with no limitation or constraints, just like you've been wishing for!
 
-*   **Amazingly easy and flexible**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require time, efforts and technical skills. Zedity overcomes all those limitations, giving you a real Drag and Drop experience with all visual commands for maximum flexibility and ease of use!
+*   **Amazingly Easy and Flexible**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require time, efforts and technical skills. Zedity overcomes all those limitations, giving you a real Drag and Drop experience with all visual commands for maximum flexibility and ease of use!
 
 *   **Save Time and Money**: with Zedity, not only don't you need any technical skill, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time struggling on how to create it. Zedity enables anyone to create much more engaging and professional content, in much less time with real drag&drop and few clicks!
 
