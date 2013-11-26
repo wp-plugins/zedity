@@ -100,8 +100,8 @@
 			ed.getBody().setAttribute('contenteditable', 'false');
 			ed.dom.setAttrib(ed.dom.select('a'), 'onclick', 'return false;');
 
-			//exit if not main content editor
-			if (ed.id != 'content') return;
+			//exit if it is the fullscreen editor (@qtranslate) 
+			if (ed.id == 'wp_mce_fullscreen') return;
 
 			var w = ed.getWin();
 			var vp = ed.dom.getViewPort(ed.getWin());
@@ -136,7 +136,9 @@
 			h = Math.min(h, vp.h-(p2.y-vp.y), vp.h) + yo;
 
 			//not enough room for buttons, exit
-			if (w<50 || h<20) { // IMPORTANT: keep it in sync with MIN_WIDTH and MIN_HEIGHT values in zedity.php
+			//this should be the smallest rectangle that can accommodate the buttons (90x50),
+			//now Zedity content can be even smaller (MIN_WIDTH and MIN_HEIGHT values in zedity.php), so we let it anyway
+			if (w<50 || h<20) {
 				this._hideOverlay(true);
 				return;
 			}
@@ -223,9 +225,13 @@
 			tinymce.dom.Event.add(zDelButton, 'mousedown', function(e){
 				ed.selection.select(t._zedityContent);
 				t._hideOverlay();
-				ed.execCommand('mceStartTyping','');
+				try {
+					ed.execCommand('mceStartTyping','');
+				} catch (e) {}
 				tinymce.DOM.remove(ed.selection.getNode());
-				ed.execCommand('mceEndTyping','');
+				try {
+					ed.execCommand('mceEndTyping','');
+				} catch (e) {}
 			});
 		},
 
