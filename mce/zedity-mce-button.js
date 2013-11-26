@@ -100,8 +100,8 @@
 			ed.getBody().setAttribute('contenteditable', 'false');
 			ed.dom.setAttrib(ed.dom.select('a'), 'onclick', 'return false;');
 
-			//exit if not main content editor
-			if (ed.id != 'content') return;
+			//exit if it is the fullscreen editor (@qtranslate) 
+			if (ed.id == 'wp_mce_fullscreen') return;
 
 			var w = ed.getWin();
 			var vp = ed.dom.getViewPort(ed.getWin());
