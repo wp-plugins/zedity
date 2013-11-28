@@ -13,6 +13,9 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
+**HAPPY THANKSGIVING!**
+Stay tuned for our upcoming **"BLACK FRIDAY"** promo on [Zedity.com](http://zedity.com) 
+
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 **Advantages:**
@@ -32,10 +35,6 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
 *   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
-
-
-**HAPPY THANKSGIVING!**
-* Stay tuned for our upcoming "BLACK FRIDAY" discounts to go PREMIUM! 
 
  
 **Enjoy Zedity!**
