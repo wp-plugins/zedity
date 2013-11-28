@@ -33,6 +33,10 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
 *   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
 
+
+**HAPPY THANKSGIVING!**
+* Stay tuned for our upcoming "BLACK FRIDAY" discounts to go PREMIUM! 
+
  
 **Enjoy Zedity!**
 
