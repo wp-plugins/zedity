@@ -13,7 +13,7 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
-**BLACK FRIDAY** Promo! **40% Off!**
+**BLACK FRIDAY** Few more hours to get **40% Off!**
 This is an exceptional opportunity to switch to the Premium version! 
 Get the **Promo Code** and enter it before checking out at [Zedity.com](http://zedity.com/plugin/wp)! 
 
@@ -30,7 +30,7 @@ Get the **Promo Code** and enter it before checking out at [Zedity.com](http://z
 *   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
 
-**BLACK FRIDAY** Promo! **40% Off!**
+**BLACK FRIDAY** Few more hours to get **40% Off!**
 This is an exceptional opportunity to switch to the Premium version! 
 Get the **Promo Code** and enter it before checking out at [Zedity.com](http://zedity.com/plugin/wp)! 
 
