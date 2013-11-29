@@ -1,7 +1,7 @@
 === Zedity: Hassle-Free Editor. Modern and Easy.===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
+Tags:  admin, audio, automatic, black, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 1.4.6
@@ -13,8 +13,9 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
-**HAPPY THANKSGIVING!**
-Stay tuned for our upcoming **"BLACK FRIDAY"** promo on [Zedity.com](http://zedity.com) 
+**BLACK FRIDAY** is here! Zedity Premium Plugin with **40% OFF!!!**
+This is an exceptional opportunity to upgrade to the Premium version! 
+Visit [Zedity.com](http://zedity.com/plugin/wp) to get the **Promo Code** and enter it when you check out.  
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
@@ -36,6 +37,10 @@ Stay tuned for our upcoming **"BLACK FRIDAY"** promo on [Zedity.com](http://zedi
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
 *   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
 
+
+**BLACK FRIDAY** is here! Zedity Premium Plugin with **40% OFF!!!**
+This is an exceptional opportunity to upgrade to the Premium version! 
+Visit [Zedity.com](http://zedity.com/plugin/wp) to get the **Promo Code** and enter it when you check out.  
  
 **Enjoy Zedity!**
 
