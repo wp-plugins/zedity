@@ -14,7 +14,7 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
 **Small Business Saturday** Get **40% Off!**
-This is an exceptional opportunity to switch to the Premium version! 
+This is an exceptional opportunity to switch to the Premium version! Don't miss on it!!
 Get the **Promo Code** and enter it before checking out at [Zedity.com](http://zedity.com/plugin/wp)! 
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
