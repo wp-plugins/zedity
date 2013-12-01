@@ -13,6 +13,10 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
+**CYBER MONDAY is approaching!** Get up to **35% Off** on Monday, Dec 2, 2013!
+This is an exceptional opportunity to switch to the Premium version! 
+
+
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 **Advantages:**
