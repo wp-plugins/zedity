@@ -1,4 +1,4 @@
-=== Zedity: The Easiest Way To Design Your Pages!===
+=== Zedity™ The Modern Way To Create Content.===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -13,10 +13,6 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
-**Small Business Saturday** Get **40% Off!**
-This is an exceptional opportunity to switch to the Premium version! Don't miss on it!!
-Get the **Promo Code** and enter it before checking out at [Zedity.com](http://zedity.com/plugin/wp)! 
-
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 **Advantages:**
@@ -29,10 +25,6 @@ Get the **Promo Code** and enter it before checking out at [Zedity.com](http://z
 
 *   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
-
-**Small Business Saturday** Get **40% Off!**
-This is an exceptional opportunity to switch to the Premium version! 
-Get the **Promo Code** and enter it before checking out at [Zedity.com](http://zedity.com/plugin/wp)! 
 
 **Find more about Zedity:**
 
