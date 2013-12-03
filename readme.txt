@@ -13,10 +13,6 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use unique editor that gives you unprecedented possibilities and flexibility: you can create any design you want, the way you want! Are you still struggling with layout limitations and getting frustrated with Html/Css code? Finally you can forget about that and enter a new dimension with Zedity!
 
-**CYBER MONDAY PROMO!** Get up to **35% OFF** Few more hours left!
-This is an exceptional opportunity to switch to the Premium version! 
-Enter CYBER-MONZ promo code before checking out at [Zedity.com!](http://zedity.com/plugin/wp)
-
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 **Advantages:**
@@ -37,10 +33,6 @@ Enter CYBER-MONZ promo code before checking out at [Zedity.com!](http://zedity.c
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
 *   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
 
-
-**CYBER MONDAY PROMO!** Get up to **35% OFF** Few more hours left!
-This is an exceptional opportunity to switch to the Premium version! 
-Enter CYBER-MONZ promo code before checking out at [Zedity.com!](http://zedity.com/plugin/wp)
  
 **Enjoy Zedity!**
 
