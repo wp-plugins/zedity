@@ -26,7 +26,7 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 *   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari).
 
 
-**Find more about Zedity:**
+**Discover more about Zedity:**
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
