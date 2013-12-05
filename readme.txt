@@ -29,7 +29,7 @@ Zedity is an innovative, powerful and extremely easy to use unique editor that g
 **Discover more about Zedity:**
 
 *   [Zedity Web Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials, release notes and other useful information about Zedity!
+*   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials and examples on how to use Zedity, release notes, etc.
 *   [Zedity Feedback Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
 
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
