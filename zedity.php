@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 1.4.6
+Version: 2.0.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -48,7 +48,10 @@ if (class_exists('WP_Zedity_Plugin')) {
 		const DEFAULT_HEIGHT = 600;
 		
 		const WARNING_CONTENT_SIZE = 1000000; // 1MB (system dependent, current value based on observed cases)
-
+		const ATTEMPT_MAX_SIZE = 10000000; // 10MB
+		
+		public $MAX_UPLOAD_SIZE;
+		
 		public function __construct() {
 			register_activation_hook(__FILE__, array(&$this, 'activate'));
 
@@ -56,6 +59,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 			//add custom css to reset Zedity content + webfonts
 			add_action('wp_head', array(&$this,'add_head_css'));
+			//add javascript for responsive content
+			add_action('wp_print_footer_scripts', array(&$this, 'add_front_js'));
 
 			//stop here if we are not in admin area
 			if (!is_admin()) return;
@@ -71,23 +76,34 @@ if (class_exists('WP_Zedity_Plugin')) {
 			add_filter('plugin_row_meta', array(&$this,'plugin_row'), 10, 2);
 			
 			//add javascript
-			add_action('admin_print_footer_scripts', array(&$this, 'add_js'));
+			add_action('admin_print_footer_scripts', array(&$this, 'add_admin_js'));
 
 			//add TinyMCE css
 			add_filter('mce_css', array(&$this, 'add_mce_css'));
 			//add TinyMCE buttons
 			add_filter('mce_buttons', array(&$this,'register_mce_buttons'));
-			add_filter('mce_external_plugins', array(&$this,'add_mce_buttons'));
+			add_filter('mce_external_plugins', array(&$this,'add_mce_buttons'), 999);
+			//TinyMCE configuration
+			add_filter('tiny_mce_before_init', array(&$this,'mce_config'));
 
 			//Zedity into ThickBox
 			add_action('admin_enqueue_scripts', array(&$this,'admin_enqueue_scripts'));
 			add_action('load-dashboard_page_zedity_editor', array(&$this,'add_zedity_editor_page'));
+			add_action('load-dashboard_page_zedity_ajax', array(&$this,'add_zedity_ajax_page'));
+			
+			//Zedity into Media Library
+			add_filter('post_mime_types', array(&$this,'add_zedity_mime_type'));
 			
 			//add custom css to reset Zedity content + webfonts
 			add_action('admin_head', array(&$this,'add_head_css'));
 			
 			//show messages
 			add_action('admin_notices', array(&$this,'admin_notices'));
+			
+			//max upload size
+			//ini_set('post_max_size',self::ATTEMPT_MAX_SIZE);
+			//ini_set('upload_max_filesize',self::ATTEMPT_MAX_SIZE);
+			$this->MAX_UPLOAD_SIZE = wp_max_upload_size();
 		}
 		
 		public function activate($network_wide) {
@@ -145,8 +161,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_menu() {
 			add_options_page('Zedity Settings', 'Zedity Editor', 'manage_options', 'wp_zedity_plugin', array(&$this, 'add_settings_page'));
 			add_submenu_page(null, 'Zedity Editor', 'Zedity Editor', 'edit_pages', 'zedity_editor', array(&$this, 'add_zedity_editor_page'));
+			add_submenu_page(null, 'Zedity Ajax', 'Zedity Ajax', 'edit_pages', 'zedity_ajax', array(&$this, 'add_zedity_uploader_page'));
 		}
+		
 
+		function add_zedity_mime_type($post_mime_types) {
+			$post_mime_types['application/zedity'] = array('Zedity', 'Manage Zedity contents', _n_noop('Zedity <span class="count">(%s)</span>','Zedity <span class="count">(%s)</span>'));
+			return $post_mime_types;
+		}
 
 
 		//----------------------------------------------------------------------------------------------
@@ -160,12 +182,18 @@ if (class_exists('WP_Zedity_Plugin')) {
 			exit;
 		}
 
+		public function add_zedity_ajax_page() {
+			require(ABSPATH . WPINC . '/version.php');
+			$options = $this->get_options();
+			include(sprintf("%s/views/ajax.php", dirname(__FILE__)));
+			exit;
+		}
 
 
 		//----------------------------------------------------------------------------------------------
 		//JAVASCRIPT
 
-		public function add_js(){
+		public function add_admin_js(){
 			?>
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
@@ -174,7 +202,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				var old_tb_remove = tb_remove;
 				tb_remove = function(){
 					var $iframe = jQuery('#TB_iframeContent');
-					if ($iframe.hasClass('zedity-iframe')) {
+					if ($iframe.hasClass('zedity-editor-iframe')) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
 							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select Content->Save from the menu.');
 							if (!ret) return;
@@ -188,6 +216,31 @@ if (class_exists('WP_Zedity_Plugin')) {
 					}
 					old_tb_remove.apply(this,arguments);
 					tinyMCE.get('content').plugins.zedity._closeZedity();
+				};
+				
+				window.askPublish = function(){
+					jQuery('<div><p>You have modified your Zedity content.</p><p>Please don\'t forget to publish your post for the modifications to appear in your published post as well.</p></div>').dialog({
+						title: 'Zedity',
+						dialogClass: 'zedity-dialog',
+						autoOpen: true,
+						modal: true,
+						resizable: false,
+						close: function(){
+							jQuery(this).dialog('destroy').remove();
+						},
+						buttons: [{
+							text: 'Publish now',
+							click: function(){
+								jQuery(this).dialog('close');
+								jQuery('#publish').trigger('click');
+							}
+						},{
+							text: 'Publish later',
+							click: function(){
+								jQuery(this).dialog('close');
+							}
+						}]
+					});
 				};
 
 				//Handle ThickBox window resize
@@ -220,6 +273,25 @@ if (class_exists('WP_Zedity_Plugin')) {
 			<?php
 		}
 		
+		public function additional_editor_js($options){
+			//Temporary disabled until responsive feature is ready in Premium
+			/*
+			?>
+			<script type="text/javascript">
+			//add Responsive to menu (disabled)
+			zedityMenu.find('li.ui-menubar:first-child > ul > li:nth-child(5)').after(
+				'<li class="ui-state-disabled ui-menu-item" role="presentation" aria-disabled="true">'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Responsive <small style="color:blue">(Premium)</small></a>'+
+				'</li>'
+			);
+			</script>
+			<?php
+			*/
+		}
+		
+		public function add_front_js(){
+		}
+		
 		public function admin_enqueue_scripts() {
 			//ThickBox
 			wp_enqueue_script('thickbox');
@@ -237,6 +309,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function add_mce_buttons($plugins) {
 			$plugins['zedity'] = plugins_url('mce/zedity-mce-button.js', __FILE__);
+			$plugins['newmedia'] = plugins_url('mce/media/editor_plugin.js', __FILE__);
 			return $plugins;
 		}
 
@@ -252,8 +325,23 @@ if (class_exists('WP_Zedity_Plugin')) {
 			$mce_css .= plugins_url('mce/webfonts.php', __FILE__);
 			return $mce_css;
 		}
-
-
+		
+		public function mce_config($init) {
+			//ensure that iframes are allowed
+			if (!isset($init['extended_valid_elements'])) {
+				$init['extended_valid_elements'] = 'iframe[*]';
+			} else {
+				$init['extended_valid_elements'] .= ',iframe[*]';
+			}
+			
+			//disable media plugin
+			$plugins = explode(',',$init['plugins']);
+			if (($idx = array_search('media',$plugins)) !== false) {
+				unset($plugins[$idx]);
+			}
+			$init['plugins'] = implode(',',$plugins);
+			return $init;
+		}
 
 
 
@@ -270,6 +358,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'watermark' => 'none',
 				'customfontscss' => '',
 				'customfonts' => array(),
+				'responsive' => FALSE,
 			);
 		}
 		
@@ -348,7 +437,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 			return $options;
 		}
-
+		
+		public function additional_settings_page($options){
+		}
 
 
 
@@ -371,10 +462,15 @@ if (class_exists('WP_Zedity_Plugin')) {
 				}
 			}
 			if (is_admin()) {
+				global $post;
+				if (!empty($post)) {
+					?><script type="text/javascript">window.post_id = <?php echo $post->ID ?>;</script><?php
+				}
 				//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
 				<link rel="stylesheet" href="<?php echo plugins_url('mce/content-overlay.css', __FILE__); ?>" type="text/css" media="all" />
+				<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css', __FILE__)?>" type="text/css" media="all" />
 				<style type="text/css">
 				#zedity .button,
 				#zedity-premium .button {
@@ -392,7 +488,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 				#zedity .button:hover,
 				#zedity-premium .button:hover {
 					background: #FFFFE0;
-				}                                                                
+				}
+				.zedity-dialog {
+					z-index: 400000 !important;
+				}
+				.ui-widget-overlay.ui-front {
+					background: #000;
+				}
 				</style>
 				<?php
 			}
@@ -402,6 +504,10 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		//--------------------------------------------------------------------------------
 
+		
+		public function get_font_sizes(){
+			return array('11','12','14','16','19','21','24','27','29','32','37','48','53','64');
+		}
 		
 		public function get_webfonts(){
 			return array(

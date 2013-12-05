@@ -1,4 +1,35 @@
 /*----------------------------------------------------------------------------------------
+Zedity Content (iframe version)
+*/
+
+.zedity-iframe {
+	vertical-align: bottom;
+	max-width: none;
+}
+.zedity-wrapper,
+.zedity-iframe {
+	overflow: hidden;
+}
+.zedity-wrapper,
+.zedity-iframe-wrapper,
+.zedity-iframe {
+	padding: 0;
+	border: 0;
+}
+.zedity-iframe-wrapper,
+.zedity-iframe {
+	margin: 0;
+}
+.zedity-responsive{
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+
+/*----------------------------------------------------------------------------------------
 Zedity Content
 */
 

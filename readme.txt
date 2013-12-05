@@ -1,10 +1,10 @@
-=== Zedity™ Creating content has never been easier!===
+=== Zedity™ Create content the modern way, easily!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, button, code, comments, content, create, creative, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, Share, sidebar, simple, slideshare, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.4.6
+Stable tag: 2.0.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -111,6 +111,12 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 == Changelog ==
 
+= 2.0.0 =
+* Now Zedity contents are saved into the WordPress Media Library.  
+  That comes with a better content management, safer content uploading and no more undesired  modifications from other plugins/themes.
+* New custom icon set specifically designed for Zedity.
+* Enhanced compatibility with plugins that change the standard WordPress editor.
+
 = 1.4.6 =
 * Enhanced compatibility with plugins that change the standard WordPress editor.
 
@@ -118,7 +124,7 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 * Added support to address a bug in Chrome 31 with TinyMCE selection.
 
 = 1.4.4 =
-* Added support to show premium features
+* Added support to show premium features.
 * Minor enhancements, including styled dialogs for page dimensions, etc.
 
 = 1.4.3 =

@@ -121,11 +121,7 @@
 
 		<hr/>
 
-		<?php
-		if (method_exists($this,'additional_settings_page')) {
-			$this->additional_settings_page($options);
-		}
-		?>
+		<?php $this->additional_settings_page($options); ?>
 		
 		<h4 class="title">License</h4>
 		<p>The <?php echo $this->plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $this->plugindata['LicenseURI'];?>"><?php echo $this->plugindata['License'];?></a> license.</p>
