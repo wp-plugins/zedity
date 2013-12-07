@@ -38,7 +38,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
  
 **Enjoy Zedity!**
 
-If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post it in the [support section](http://wordpress.org/support/plugin/zedity). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
+If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post either into the [support section](http://wordpress.org/support/plugin/zedity) or into the [Zedity Forum](http://zedity.uservoice.com). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
 == Installation ==
 
