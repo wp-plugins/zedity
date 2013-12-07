@@ -42,7 +42,7 @@ If you think you have found a bug, please do not hesitate to email us at 'info @
 
 == Installation ==
 
-As for other plugins, you may have (at least) two options:
+As for other plugins, you may want to go for one of the following options:
 
 **Option A (from your WordPress Dashboard):**
 
