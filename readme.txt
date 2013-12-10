@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 It's almost 2014... time to move forward! Create any design you need, the way you have been wishing for: visually, quickly and very easily!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity will take you into a new dimension, making your life much easier!
+Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity takes you to a new dimension, making your life much easier, saving time and money!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
@@ -38,8 +38,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
  
 **Enjoy Zedity!**
 
-If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post either into the [support section](http://wordpress.org/support/plugin/zedity) or into the [Zedity Forum](http://zedity.uservoice.com). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. 
-Thank you in advance.
+If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post either into the [support section](http://wordpress.org/support/plugin/zedity) or into the [Zedity Forum](http://zedity.uservoice.com). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance.
 
 == Installation ==
 
