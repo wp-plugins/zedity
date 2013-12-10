@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 It's almost 2014... time to move forward! Create any design you need, the way you have been wishing for: visually, quickly and very easily!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity will make your life much easier!
+Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity will take you into a new dimension, making your life much easier!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
