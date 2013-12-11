@@ -1,7 +1,7 @@
 === Zedity™ Create content in a better, modern, easier way!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, Formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, sidebar, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
+Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, sidebar, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.7.1
 Stable tag: 2.0.0
@@ -14,6 +14,7 @@ It's almost 2014... time to move forward! Create any design you need, the way yo
 Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity takes you to a new dimension, making your life much easier, saving time and money!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
+
 
 **Advantages:**
 
