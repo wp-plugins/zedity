@@ -16,7 +16,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**NEW** Now available with **RESPONSIVE DESIGN! [Zedity Premium 2](http://zedity.com/plugin/wp)**
+**NEW FREE VERSION 2.0!** Also available with **RESPONSIVE DESIGN! [Zedity Premium](http://zedity.com/plugin/wp)**
 
 
 **Advantages:**
