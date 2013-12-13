@@ -27,7 +27,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 *   **Save Time and Money**: with Zedity, not only don't you need any technical skill, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time struggling on how to create it. Zedity enables anyone to create much more engaging and professional content, in much less time with real drag&drop and few clicks!
 
-*   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari). The [Premium](http://zedity.com/plugin/wp) version comes with responsive scaling, to perfectly fit your responsive design!
+*   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari). The [Premium](http://zedity.com/plugin/wp) version comes with responsive scaling, to perfectly fit your responsive design on any device!
 
 
 **Discover more about Zedity:**
