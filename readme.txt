@@ -16,18 +16,15 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**NEW VERSION 2.0!** Now available with **RESPONSIVE DESIGN in[Zedity Premium](http://zedity.com/plugin/wp)**
-
-
 **Advantages:**
 
 *   **Design Freedom with No More Code Struggling!**: while designing your pages, have you ever felt like "I wish I could just move this object right there" or "I'd like to put an image on the corner of this video" or any other more creative ideas? In those cases usually you have two options: either you spend enough time (money) dealing with the HTML/CSS code or you give up and let your creative idea go. With Zedity, things have finally evolved! You can now implement any creative design you need, with no limitation or constraints, just like you've been wishing for!
 
-*   **Amazingly Easy and Flexible**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require time, efforts and technical skills. Zedity overcomes all those limitations, giving you a real Drag and Drop experience with all visual commands for maximum flexibility and ease of use!
+*   **Amazingly Easy and Flexible!**: most likely you've already encountered the "drag&drop" term around, haven't you? So, what's new? As you may have found out, very often that "drag&drop" is about the way you bring items from the menu into the page but then, even simple things like placing two images beside each other, require time, efforts and technical skills. Zedity overcomes all those limitations, giving you a real Drag and Drop experience with all visual commands for maximum flexibility and ease of use!
 
-*   **Save Time and Money**: with Zedity, not only don't you need any technical skill, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time struggling on how to create it. Zedity enables anyone to create much more engaging and professional content, in much less time with real drag&drop and few clicks!
+*   **Get done in minutes, not days!**: with Zedity, not only don't you need any technical skill, but also, you can focus on the content you're creating, which is the valuable part of what you're doing, instead of wasting time struggling on how to create it. Zedity enables anyone to create much more engaging and professional content, in a fraction of the usual time!
 
-*   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari). The [Premium](http://zedity.com/plugin/wp) version comes with responsive scaling, to perfectly fit your responsive design on any device!
+*   **It works on any Modern Devices**: Zedity generates HTML5 code without using Flash or other external plugins, so your content can be shown on any device running a modern HTML5 browser (e.g. Chrome, Firefox, IE9+, Opera, Safari). The [Premium](http://zedity.com/plugin/wp) version comes with responsive scaling, to perfectly fit your responsive design!
 
 
 **Discover more about Zedity:**
