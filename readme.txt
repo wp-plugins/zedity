@@ -23,7 +23,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 * **Save Time**: get done in minutes not in days of hard work!
 * **Save Money**: finally you can be your own web designer!
 * **Professional results**: extremely easy to use, yet very powerful!
-* **Responsive Design [Premium](http://zedity.com/plugin/wp) **: automatic content scaling to perfectly fit any modern device!
+* **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
 
 
 **Discover more about Zedity:**
