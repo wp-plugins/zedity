@@ -19,10 +19,10 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 **Advantages:**
 
 * **Design Freedom**: unprecedented flexibility for any creative design you want!
-* **Hassle-Free**: no more struggling with HTML/CSS code!
-* **Save Time**: get done in minutes not in days of hard work!
-* **Save Money**: finally you can be your own web designer!
-* **Professional results**: extremely easy to use, yet very powerful!
+* **Hassle-Free**: no more struggling with HTML/CSS code! 
+* **Super Easy to use**: absolutely no technical skills required, as easy as you've been wishing for!
+* **Productivity**: get done in minutes not in days of hard work!
+* **Professional results**: create engaging content that only web developer could achieve before!
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
 
 
