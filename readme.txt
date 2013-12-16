@@ -11,28 +11,33 @@ License URI: http://zedity.com/license/freewp
 An innovative editor to create content the way you have been wishing for: visually, quickly and super easily, for everybody!
 
 == Description ==
-Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any design you want, the way you want, without struggling and getting frustrated with Html/Css code! With no technical skills required, Zedity takes you to a new dimension, making your life much easier, while saving time and money!
+Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any content you need, the way you want, without struggling and getting frustrated with Html/Css code, easily and quickly!
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**Advantages:**
+**Here are the main advantages of using Zedity:**
 
-* **Design Freedom**: unprecedented flexibility for any creative design you want!
-* **Hassle-Free**: no more struggling with HTML/CSS code! 
-* **Super Easy to use**: absolutely no technical skills required, as easy as you've been wishing for!
-* **Productivity**: get done in minutes not in days of hard work!
-* **Professional results**: create engaging content that only web developer could achieve before!
+* **Design Freedom**: unprecedented flexibility and possibilities to create any content you need!
+
+* **Hassle-Free**: no more need to struggle with HTML/CSS code!
+
+* **Easy to Use**: real drag and drop, with modern and intuitive user interface!
+
+* **High Productivity**: get done in minutes not in days of hard work!
+
+* **Professional results**: create engaging content that only web developers could achieve before!
+
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
+
+... Zedity is the editor that many of us have been wishing for! How about you? Give it a try!
 
 
 **Discover more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-
 *   [Zedity Blog](http://zedity.com/blog/tutorials): tutorials and examples on how to use Zedity, release notes, etc.
 *   [Zedity Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
-
 *   [Twitter page](https://www.twitter.com/Zedity): Follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
  
