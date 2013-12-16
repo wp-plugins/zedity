@@ -16,7 +16,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**Zedity is the content editor you've been wishing for! Here is why:**
+**Here is why Zedity is the content editor we've been wishing for:**
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need!
 
