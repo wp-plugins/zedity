@@ -16,7 +16,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**Here are the main advantages of using Zedity:**
+**Zedity is the content editor you've been wishing for! Here is why:**
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need!
 
@@ -29,8 +29,6 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 * **Professional results**: create engaging content that only web developers could achieve before!
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
-
-... Zedity is the editor that many of us have been wishing for! How about you? Give it a try!
 
 
 **Discover more about Zedity:**
