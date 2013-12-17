@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -16,7 +16,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**Here is why Zedity is the content editor we've been wishing for:**
+**Zedity is the content editor you've been wishing for! Here is why:**
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need!
 
@@ -114,6 +114,9 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 2.0.1 =
+* Manage content loading when the Media Library, or users, generate urls with different domain from the admin area.
 
 = 2.0.0 =
 * Now Zedity contents are saved into the WordPress Media Library.  

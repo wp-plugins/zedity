@@ -142,17 +142,19 @@
 						this.needsPublish = true;
 					},this));
 				}
-				if ($(content).hasClass('zedity-editor')) {
-					//inline content
-					this.setContentInEditor(content);
-				} else if ($(content).find('.zedity-iframe').length) {
-					//iframe
-					var $iframe = $(content).find('.zedity-iframe');
-					this.title = $iframe.attr('title');
-					this.id = $iframe.attr('data-id');
-					this.loadFromFile($iframe.attr('src'));
-				}
-				zedityEditor.contentChanged = false;
+				//check if existing content
+				var $iframe = $(content).find('iframe.zedity-iframe');
+				if ($iframe.length) {
+				    //iframe
+				    this.title = $iframe.attr('title');
+                                    this.id = $iframe.attr('data-id');
+                                    this.loadFromFile($iframe.attr('src'));
+				} else if ($(content).hasClass('zedity-editor')) {
+                                     //inline content
+                                     this.setContentInEditor(content);
+                                } else if ($(content).length) {
+				    alert('The content may have been manually modified and got corrupted.');
+				} //new content otherwise
 			},
 			//send content to tinymce editor
 			sendToTinyMCE: function(content){
@@ -213,17 +215,65 @@
 				Zedity.core.store.delprefix('zedUn');
 				Zedity.core.gc.flushData();
 				zedityEditor.page._saveUndo();
+				zedityEditor.contentChanged = false;
 			},
-			//load content from file (via ajax)
+			//load content from file (via ajax direct url)
 			loadFromFile: function(url){
 				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
+                                console.log('Loading content from file via cached direct url='+url);
 				$.ajax({
 					type: 'GET',
 					url: url, //use direct url because is already cached
 					dataType: 'html',
 					success: $.proxy(function(data){
 						//get content between <body></body> (jQuery can't handle it)
-						data = data.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
+						//data = data.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
+						//let's not use jQuery and avoid reg exp
+						var docfrag = document.createDocumentFragment();
+						var d = document.createElement("div");
+						d.innerHTML = data;
+						docfrag.appendChild(d);
+						data = docfrag.querySelector('.zedity-editor');
+						
+						this.setContentInEditor(data);						
+					},this),
+					error: $.proxy(function(xhr,status,error){
+                                                console.log('Failed. Status=',status,'\n error=',error);
+						this.loadFromFile2(url); 
+					},this),
+					complete: function(){
+						zedityEditor.unlock();
+					}
+				});
+			},
+			//load content from file (via ajax helper)
+                        //(used if the cached url changed, causing an apparent cross domain)
+			loadFromFile2: function(){
+                                var url = 'index.php?page=zedity_ajax'; // ajax helper url
+                                console.log('Loading content from file (now via ajx helper), url='+url);
+				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');                                
+				$.ajax({
+					type: 'GET',
+					url: url,
+					data: {
+						action: 'load',
+						id: this.id
+					},
+					dataType: 'json',
+					success: $.proxy(function(data){
+						if (data.error) {
+							alert('Error during content load:\n'+data.error);
+							return;
+						}
+						//get content between <body></body> (jQuery can't handle it)
+						//data = data.content.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
+						//let's not use jQuery and avoid reg exp
+						var docfrag = document.createDocumentFragment();						
+						var d = document.createElement("div");
+						d.innerHTML = data.content; //here data.content
+						docfrag.appendChild(d);
+						data = docfrag.querySelector('.zedity-editor');
+												
 						this.setContentInEditor(data);
 					},this),
 					error: function(xhr,status,error){
@@ -263,7 +313,7 @@
 						//construct <iframe> and wrappers
 						content = $(
 							'<div class="zedity-wrapper'+align+'" id="'+zedityEditor.id+'">'+
-							'<div class="zedity-iframe-wrapper'+responsive+'" style="max-width:'+size.width+'px;max-height:'+size.height+'px" data-origw="'+size.width+'" data-origh="'+size.height+'">'+
+							'<div class="zedity-iframe-wrapper'+responsive+align+'" style="max-width:'+size.width+'px;max-height:'+size.height+'px" data-origw="'+size.width+'" data-origh="'+size.height+'">'+
 							'<iframe class="zedity-iframe" src="'+data.url+'?'+Zedity.core.genId('')+'" width="'+size.width+'" height="'+size.height+'" scrolling="no" data-id="'+data.id+'"></iframe>'+
 							'</div></div>'
 						).find('.zedity-iframe').attr('title',this.title).end().get(0).outerHTML;
@@ -338,6 +388,10 @@
 				zedityEditor.$this.find('[data-target=_self]').each(function(){
 					$(this).attr('data-target','_top');
 				});
+				<?php if ($this->is_premium()) { ?>
+					//responsive
+					zedityEditor.$this.toggleClass('zedity-responsive',this.responsive);
+				<?php } ?>
 				zedityEditor.save($.proxy(function(html){
 					if (html.length > maxSize) {
 						alert('The content you have created exceeds the maximum upload size for this site ('+Math.round(maxSize/1000000)+'MB).\n\nPlease review your content and try again.');
@@ -378,6 +432,14 @@
 				editor.$container.find('.zedity-mainmenu .zedity-menu-Responsive .zedity-menu-icon')
 					.toggleClass('zedity-icon-none',!content.responsive)
 					.toggleClass('zedity-icon-yes',content.responsive);
+				//force content alignment to center if content is responsive (#623)
+				var pamenu = editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlignMain');
+				if (content.responsive && !pamenu.hasClass('ui-state-disabled')) {
+					pamenu.addClass('ui-state-disabled');
+					editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type=center]').trigger('click');
+				} else {
+					pamenu.toggleClass('ui-state-disabled',content.responsive);
+				}
 			<?php } ?>
 		};
 
@@ -441,6 +503,7 @@
 			},
 			Text: {
 				fontSizes: fontSizes,
+				defaultFontSize: fontSizes.indexOf('14'),
 				fonts: fonts
 			},
 			Image: {
@@ -457,13 +520,13 @@
 		
 		//move 'Clear all' to 'Edit' menu
 		zedityMenu.find('li.zedity-menu-ClearAll')
-			.add('.zedity-mainmenu li:nth-child(1) .zedity-separator:eq(0)')
-			.appendTo('.zedity-mainmenu li:nth-child(2) ul');
+			.add(zedityMenu.find('li.zedity-menu-ClearAll').prev())
+			.appendTo('.zedity-mainmenu > li:nth-child(2) > ul');
 		
 		//add Alignment to menu
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
-			'<li class="ui-menu-item" role="presentation">'+
+			'<li class="ui-menu-item zedity-menu-PageAlignMain" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Alignment</a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
 					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="">'+
@@ -603,6 +666,7 @@
 		try {
 			content.getFromTinyMCE();
 		} catch(e) {}
+		resizeEditor(zedityEditor);
 		</script>
 	</body>
 	

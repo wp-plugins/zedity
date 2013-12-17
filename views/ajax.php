@@ -17,7 +17,7 @@ switch ($_REQUEST['action']) {
 			echo '{ "error": "Ooops... It looks like the content is empty." }';
 			exit;
 		}
-                if (empty($_POST['title'])) {
+		if (empty($_POST['title'])) {
 			echo '{ "error": "Ooops... The title is missing." }';
 			exit;
 		}
@@ -100,9 +100,7 @@ switch ($_REQUEST['action']) {
 		if (!is_wp_error($attach_id)) {
 			require_once(ABSPATH . '/wp-admin/includes/image.php');
 			$attachment_metadata = wp_generate_attachment_metadata($attach_id,$file['full_path']);
-			//print_r($attachment_metadata);
 			$a = wp_update_attachment_metadata($attach_id,$attachment_metadata);
-			//print_r($a);
 		}
 		
 		$response = array(

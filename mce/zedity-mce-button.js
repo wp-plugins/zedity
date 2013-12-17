@@ -8,8 +8,8 @@
 			ed.addButton('zedity', {
 				title: 'Zedity Editor',
 				cmd: 'startZedity',
-                                // NOTE: at the moment, the deploy scripts renames zedity-logo-premium.png into zedity-logo.png                                
-				image: url + '/zedity-logo.png'
+				// NOTE: at the moment, the deploy scripts renames zedity-logo-premium.png into zedity-logo.png
+				image: url + '/zedity-logo.png?' + this.getInfo().version
 			});
 			ed.addCommand('startZedity', function(){
 				if (t._zedityContent) {
@@ -248,8 +248,8 @@
 			});
 
 			var zEditButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
-                                // NOTE: at the moment, the deploy scripts renames zedity-logo-premium.png into zedity-logo.png
-				src: t.url+'/zedity-logo.png',
+				// NOTE: at the moment, the deploy scripts renames zedity-logo-premium.png into zedity-logo.png
+				src: t.url+'/zedity-logo.png?' + this.getInfo().version,
 				id: 'zedity_button_edit',
 				width: '24',
 				height: '24',
@@ -290,10 +290,10 @@
 		getInfo: function(){
 			return {
 				longname: 'Zedity Editor',
-				author: 'Zedity',
+				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '1.1'
+				version: '2.0'
 			};
 		}
 	});

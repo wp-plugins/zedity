@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.0.0
+Version: 2.0.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -204,7 +204,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					var $iframe = jQuery('#TB_iframeContent');
 					if ($iframe.hasClass('zedity-editor-iframe')) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
-							var ret = confirm('Are you sure you want to close the Zedity Editor?\nIf you close you will lose any unsaved changes.\n\nTo save changes, select Content->Save from the menu.');
+							var ret = confirm('You haven\'t saved your modifications!\n\nTo save changes, click on Cancel and then select Content->Save from the menu.\n\nTo discard the modifications and close the Zedity editor, click Ok.');
 							if (!ret) return;
 						}
 						//deselect
@@ -273,20 +273,17 @@ if (class_exists('WP_Zedity_Plugin')) {
 			<?php
 		}
 		
-		public function additional_editor_js($options){
-			//Temporary disabled until responsive feature is ready in Premium
-			/*
+		public function additional_editor_js($options){						
 			?>
 			<script type="text/javascript">
 			//add Responsive to menu (disabled)
 			zedityMenu.find('li.ui-menubar:first-child > ul > li:nth-child(5)').after(
 				'<li class="ui-state-disabled ui-menu-item" role="presentation" aria-disabled="true">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Responsive <small style="color:blue">(Premium)</small></a>'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Responsive Design <small style="color:blue">(Premium)</small></a>'+
 				'</li>'
 			);
 			</script>
-			<?php
-			*/
+			<?php			
 		}
 		
 		public function add_front_js(){
@@ -359,6 +356,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'customfontscss' => '',
 				'customfonts' => array(),
 				'responsive' => FALSE,
+				'responsive_noconflict' => FALSE,
 			);
 		}
 		

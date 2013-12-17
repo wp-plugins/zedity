@@ -3,8 +3,9 @@ Zedity Content (iframe version)
 */
 
 .zedity-iframe {
-	vertical-align: bottom;
-	max-width: none;
+	vertical-align: top;
+	max-width: none;        
+        margin: 0;        
 }
 .zedity-wrapper,
 .zedity-iframe {
@@ -15,10 +16,6 @@ Zedity Content (iframe version)
 .zedity-iframe {
 	padding: 0;
 	border: 0;
-}
-.zedity-iframe-wrapper,
-.zedity-iframe {
-	margin: 0;
 }
 .zedity-responsive{
 	-webkit-transform-origin: 0 0;
