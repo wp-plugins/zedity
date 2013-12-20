@@ -39,6 +39,7 @@
 				textParagraph: 'Premium feature: SEO friendly tags, e.g. title, paragraph, etc.<br/>'+linkMsg,
 				textLink: 'Premium feature: open link in a new tab.<br/>'+linkMsg,
 				imageFilters: 'Premium feature: enhance images with special effects.<br/>'+linkMsg,
+				colorButtons: 'Premium feature: set custom RGB or Hex colors',
 				additionalMedia: linkMsg,
 				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
 			}
@@ -145,16 +146,18 @@
 				//check if existing content
 				var $iframe = $(content).find('iframe.zedity-iframe');
 				if ($iframe.length) {
-				    //iframe
-				    this.title = $iframe.attr('title');
-                                    this.id = $iframe.attr('data-id');
-                                    this.loadFromFile($iframe.attr('src'));
+					//iframe
+					this.title = $iframe.attr('title');
+					this.id = $iframe.attr('data-id');
+					this.loadFromFile($iframe.attr('src'));
 				} else if ($(content).hasClass('zedity-editor')) {
-                                     //inline content
-                                     this.setContentInEditor(content);
-                                } else if ($(content).length) {
-				    alert('The content may have been manually modified and got corrupted.');
-				} //new content otherwise
+					//inline content
+					this.setContentInEditor(content);
+				} else if ($(content).length) {
+					alert('The content may have been manually modified and got corrupted.');
+				}
+				//new content otherwise
+				zedityEditor.contentChanged = false;
 			},
 			//send content to tinymce editor
 			sendToTinyMCE: function(content){
@@ -220,7 +223,7 @@
 			//load content from file (via ajax direct url)
 			loadFromFile: function(url){
 				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
-                                console.log('Loading content from file via cached direct url='+url);
+				console.log('Loading content from file via cached direct url='+url);
 				$.ajax({
 					type: 'GET',
 					url: url, //use direct url because is already cached
@@ -249,8 +252,8 @@
 			//load content from file (via ajax helper)
                         //(used if the cached url changed, causing an apparent cross domain)
 			loadFromFile2: function(){
-                                var url = 'index.php?page=zedity_ajax'; // ajax helper url
-                                console.log('Loading content from file (now via ajx helper), url='+url);
+				var url = 'index.php?page=zedity_ajax'; // ajax helper url
+				console.log('Loading content from file (now via ajx helper), url='+url);
 				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');                                
 				$.ajax({
 					type: 'GET',
@@ -259,7 +262,7 @@
 						action: 'load',
 						id: this.id
 					},
-					dataType: 'json',
+					dataType: 'json html',
 					success: $.proxy(function(data){
 						if (data.error) {
 							alert('Error during content load:\n'+data.error);
@@ -334,45 +337,41 @@
 			//add watermark to content
 			setWatermark: function(content){
 				var $html = $('<div/>').append(content);
-				if (this.watermarkposition=='none') {
-					$html.find('.zedity-editor').append('<div class="zedity-watermark" style="display:none" data-pos="none"/>');
-					return $html.html();
-				}
-				//construct watermark
-				$html.find('.zedity-editor').append(
-					'<div class="zedity-watermark" style="position:absolute;background:rgba(60,60,60,0.6);z-index:99999;padding:0 6px;border-radius:6px">'+
-					'<span style="color:white;font-size:12px;font-family:Arial,Tahoma,Verdana,sans-serif">Powered by '+
-					'<a href="http://zedity.com" target="_blank" style="color:yellow;font-size:12px">Zedity</a>'+
-					'</span>'+
-					'</div>'
-				);
-				var $wm = $html.find('.zedity-watermark');
+				//if (this.watermarkposition=='none') {
+				//	$html.find('.zedity-editor').append('<div class="zedity-watermark" style="display:none" data-pos="none"/>');
+				//	return $html.html();
+				//}
+				var datapos;
+				var css = "position:absolute;background:rgba(70,70,70,0.75);z-index:99999;padding:0 6px 1px;border-radius:6px;";
 				switch (this.watermarkposition) {
 					case 'topleft':
-						$wm.css({
-							top: '0px',
-							left: '0px'
-						}).attr('data-pos','topleft');
+						datapos = 'topleft';
+						css += "top:0;left:0;";						
 					break;
 					case 'topright':
-						$wm.css({
-							top: '0px',
-							right: '0px'
-						}).attr('data-pos','topright');
+						datapos = 'topright';
+						css += "top:0;right:0;";						
 					break;
 					case 'bottomleft':
-						$wm.css({
-							bottom: '0px',
-							left: '0px'
-						}).attr('data-pos','bottomleft');
+						datapos = 'bottomleft';
+						css += "bottom:0;left:0;";						
 					break;
-					case 'bottomright':
-						$wm.css({
-							bottom: '0px',
-							right: '0px'
-						}).attr('data-pos','bottomright');
+					case 'bottomright':	
+						datapos = 'bottomright';
+						css += "bottom:0;right:0;";						
+					break;
+					
+					default: // none 
+						datapos = 'none';
+						css = "display:none;top:0;left:0;";
 					break;
 				}
+								
+				//construct watermark
+				$html.find('.zedity-editor').append(
+					'<div class="zedity-watermark" style="'+css+'" data-pos="'+datapos+'">'+
+					'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="http://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
+				);				
 				return $html.html();
 			},
 			//save content from editor
@@ -413,7 +412,7 @@
 				$(elem).find('.zedity-menu-icon').removeClass('zedity-icon-yes').addClass('zedity-icon-none');
 			});
 		};
-
+		//TODO: rename it to refreshEditor
 		resizeEditor = function(editor){
 			//reposition to center the editor
 			var ew = Math.max(editor.page.size().width,480);
@@ -432,6 +431,8 @@
 				editor.$container.find('.zedity-mainmenu .zedity-menu-Responsive .zedity-menu-icon')
 					.toggleClass('zedity-icon-none',!content.responsive)
 					.toggleClass('zedity-icon-yes',content.responsive);
+				//set title for disk save icon (and save menu item) to reflect the actual the responsive setting
+				editor.$container.find('.zedity-mainmenu .zedity-menu-SavePage a').attr('title', 'Save ('+(content.responsive ? 'Responsive' : 'Not responsive')+')');
 				//force content alignment to center if content is responsive (#623)
 				var pamenu = editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlignMain');
 				if (content.responsive && !pamenu.hasClass('ui-state-disabled')) {
@@ -638,7 +639,7 @@
 				content.save();
 			} else {
 				Zedity.core.dialog({
-					question: 'Please provide a title to identify this Zedity content: <span class="zedity-tooltip" title="You should use one that briefly describes your Zedity content, which will be stored into the Media Library with that title as its name.">?</span>',
+					question: 'Please provide a title to identify this Zedity content: <span class="zedity-tooltip" title="You should use one that briefly describes your Zedity content, which will be stored into your Media Library with that title as its name.">?</span>',
 					mandatory: 'Please insert a title.',
 					ok: function(answer){
 						content.title = answer;

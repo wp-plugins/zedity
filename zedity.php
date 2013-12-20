@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.0.1
+Version: 2.0.2
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -103,12 +103,16 @@ if (class_exists('WP_Zedity_Plugin')) {
 			//max upload size
 			//ini_set('post_max_size',self::ATTEMPT_MAX_SIZE);
 			//ini_set('upload_max_filesize',self::ATTEMPT_MAX_SIZE);
-			$this->MAX_UPLOAD_SIZE = wp_max_upload_size();
+			if (function_exists('wp_max_upload_size')) {
+				$this->MAX_UPLOAD_SIZE = wp_max_upload_size();
+			} else {
+				$this->MAX_UPLOAD_SIZE = self::WARNING_CONTENT_SIZE;
+			}
 		}
 		
 		public function activate($network_wide) {
 			$defaults = $this->get_defaults();
-			add_option('zedity_settings',$defaults);
+			update_option('zedity_settings',$defaults);
 		}
 
 		
@@ -312,14 +316,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 
 		public function add_mce_css($mce_css) {
-			@session_start();
-			$options = $this->get_options();
-			$_SESSION['zedity_webfonts'] = $options['webfonts'];
-			$_SESSION['zedity_customfontscss'] = $options['customfontscss'];
-
 			if (!empty($mce_css)) $mce_css .= ',';
 			$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
-			$mce_css .= plugins_url('mce/webfonts.php', __FILE__);
+			$mce_css .= 'index.php?page=zedity_ajax&action=webfonts';
 			return $mce_css;
 		}
 		
@@ -331,9 +330,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 				$init['extended_valid_elements'] .= ',iframe[*]';
 			}
 			
-			//disable media plugin
+			//disable media plugin in standard TinyMCE editor
 			$plugins = explode(',',$init['plugins']);
 			if (($idx = array_search('media',$plugins)) !== false) {
+				unset($plugins[$idx]);
+			}
+			//disable media plugin bundled with other plugins (#627)
+			if (($idx = array_search('-media',$plugins)) !== false) {
 				unset($plugins[$idx]);
 			}
 			$init['plugins'] = implode(',',$plugins);
@@ -355,7 +358,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'watermark' => 'none',
 				'customfontscss' => '',
 				'customfonts' => array(),
-				'responsive' => FALSE,
+				'responsive' => TRUE,
 				'responsive_noconflict' => FALSE,
 			);
 		}

@@ -4,11 +4,11 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-Enabling everyone, with no technical skills required, to create their posts with unprecedented possibilities and flexibility, quickly and very easily!
+Enabling everyone, with no technical skills required, to create content with unprecedented possibilities and flexibility, quickly and very easily!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can create any content you need, the way you want, with no need to struggle with Html/Css code. Try the Zedity experience!
@@ -22,11 +22,11 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Hassle-Free**: no more need to struggle with HTML/CSS code!
 
-* **Easy to Use**: modern and intuitive user interface, drag and drop, type and click, that's all!
+* **Easy to Use**: real drag and drop, with modern and intuitive user interface!
 
 * **High Productivity**: get done in minutes not in days of hard work!
 
-* **Professional results**: everyone can now do what only web developers could achieve before!
+* **Professional results**: create engaging content that only web developers could achieve before!
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
 
@@ -115,6 +115,10 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 2.0.2 =
+* Better management of webfonts.
+* Enhanced compatibility with other plugins using their own media plugin.
 
 = 2.0.1 =
 * Manage content loading when the Media Library, or users, generate urls with different domain from the admin area.
