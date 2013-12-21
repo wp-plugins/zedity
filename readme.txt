@@ -16,9 +16,6 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
 
-**SEASONAL PROMO: up to 25% off to [upgrade](http://zedity.com)!**
-
-
 **Advantanges you get by using Zedity:**
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need!
@@ -32,6 +29,8 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 * **Professional results**: create engaging content that only web developers could achieve before!
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
+
+** * * * SEASONAL PROMO: up to 25% off to [upgrade](http://zedity.com)! * * * **
 
 
 **Discover more about Zedity:**
