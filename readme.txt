@@ -30,9 +30,9 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
 
-**==================================================================================
+**=================================================================**
 **=== SEASONAL PROMO: up to 25% OFF to [upgrade](http://zedity.com)!**
-**==================================================================================
+**=================================================================**
 
 **Discover more about Zedity:**
 
