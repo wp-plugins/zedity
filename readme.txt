@@ -8,7 +8,7 @@ Stable tag: 2.0.2
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-Finally you can create your posts and pages with unprecedented possibilities and flexibility, very easily and quickly!
+Finally you can create your posts and pages with unprecedented possibilities and flexibility, quickly and very easily!
 
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can finally create any content you need, the way you've been wishing for and with no need to struggle with Html/Css code. Try the difference with Zedity!
@@ -31,7 +31,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any modern device!
 
 **>=================================================================** 
-**>=== HAPPY HOLIDAYS with [PROMO CODE](http://zedity.com): get up to 25% OFF!** 
+**>=== WELCOME THE NEW YEAR with this special [PROMO CODE](http://zedity.com) to go Premium!** 
 **>=================================================================** 
 
 **Discover more about Zedity:**
