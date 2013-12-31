@@ -41,7 +41,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
  
 
 **>=================================================================** 
-**>=== WELCOME THE NEW YEAR with this special [PROMO CODE](http://zedity.com) to go Premium!!!** 
+**>=== WELCOME 2014 and go PREMIUM with this special [PROMO CODE](http://zedity.com)!** 
 **>=================================================================** 
 
 
