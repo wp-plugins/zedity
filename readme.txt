@@ -1,4 +1,4 @@
-=== Zedity™ Creating Your Content Is Finally Easy!===
+=== Zedity™ Creating Your Content Is Finally Very Easy!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -41,7 +41,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
  
 
 **>=================================================================** 
-**>=== WELCOME 2014 and go PREMIUM with this special [PROMO CODE](http://zedity.com)! (valid until Jan 6, 2014)** 
+**>=== WELCOME 2014 with this special [PROMO CODE](http://zedity.com)! (valid until Jan 6, 2014)** 
 **>=================================================================** 
 
 
