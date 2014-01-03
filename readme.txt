@@ -22,11 +22,11 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Easy for Everyone**: a modern and intuitive user interface, with real drag and drop and simple but powerful commands!
 
-* **No technical skills**: no more need to struggle with HTML/CSS code!
+* **Technical Skills NOT required**: you do not have to struggle with HTML/CSS code any more!
 
-* **Save a lot of time**: increase your productivity, getting things done in a fraction of the time that you're used to!
+* **Save Time**: increase your productivity, getting things done in a fraction of the time that you're used to!
 
-* **Impressive Results**: under the hood Zedity has everything you need to create content that only web developers could achieve before!
+* **Professional Results**: under the hood Zedity has everything you need to create content that only web developers could achieve before!
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
 
