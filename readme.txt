@@ -30,6 +30,10 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
 
+**>=================================================================** 
+**>=== WELCOME 2014 Promo! Get your special [PROMO CODE](http://zedity.com) now! (valid until Jan 6, 2014)** 
+**>=================================================================** 
+
 
 **Discover more about Zedity:**
 
@@ -39,11 +43,6 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 *   [Twitter page](https://www.twitter.com/Zedity): Follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
  
-
-**>=================================================================** 
-**>=== WELCOME 2014 with this special [PROMO CODE](http://zedity.com)! (valid until Jan 6, 2014)** 
-**>=================================================================** 
-
 
 **Enjoy Zedity!**
 
