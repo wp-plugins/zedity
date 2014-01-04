@@ -2,18 +2,21 @@
 Zedity Content (iframe version)
 */
 
-.zedity-iframe {
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
 	vertical-align: top;
 	max-width: none;        
         margin: 0;        
 }
 .zedity-wrapper,
-.zedity-iframe {
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
 	overflow: hidden;
 }
 .zedity-wrapper,
 .zedity-iframe-wrapper,
-.zedity-iframe {
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
 	padding: 0;
 	border: 0;
 }

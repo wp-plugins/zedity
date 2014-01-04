@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.0.2
+Version: 2.0.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -310,7 +310,11 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function add_mce_buttons($plugins) {
 			$plugins['zedity'] = plugins_url('mce/zedity-mce-button.js', __FILE__);
-			$plugins['newmedia'] = plugins_url('mce/media/editor_plugin.js', __FILE__);
+			$options = $this->get_options();
+			if ($options['iframe_preview']) {
+				//include custom media plugin for iframe preview
+				$plugins['newmedia'] = plugins_url('mce/media/editor_plugin.js', __FILE__);
+			}
 			return $plugins;
 		}
 
@@ -329,17 +333,19 @@ if (class_exists('WP_Zedity_Plugin')) {
 			} else {
 				$init['extended_valid_elements'] .= ',iframe[*]';
 			}
-			
-			//disable media plugin in standard TinyMCE editor
-			$plugins = explode(',',$init['plugins']);
-			if (($idx = array_search('media',$plugins)) !== false) {
-				unset($plugins[$idx]);
+			$options = $this->get_options();
+			if ($options['iframe_preview']) {
+				//disable media plugin in standard TinyMCE editor
+				$plugins = explode(',',$init['plugins']);
+				if (($idx = array_search('media',$plugins)) !== false) {
+					unset($plugins[$idx]);
+				}
+				//disable media plugin bundled with other plugins (#627)
+				if (($idx = array_search('-media',$plugins)) !== false) {
+					unset($plugins[$idx]);
+				}
+				$init['plugins'] = implode(',',$plugins);
 			}
-			//disable media plugin bundled with other plugins (#627)
-			if (($idx = array_search('-media',$plugins)) !== false) {
-				unset($plugins[$idx]);
-			}
-			$init['plugins'] = implode(',',$plugins);
 			return $init;
 		}
 
@@ -360,6 +366,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'customfonts' => array(),
 				'responsive' => TRUE,
 				'responsive_noconflict' => FALSE,
+				'iframe_preview' => TRUE,
 			);
 		}
 		
@@ -436,6 +443,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 				$options['watermark'] = $input['watermark'];
 			}
 
+			$options['iframe_preview'] = ($input['iframe_preview'] == 1);
+			
 			return $options;
 		}
 		

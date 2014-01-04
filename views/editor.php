@@ -144,7 +144,8 @@
 					},this));
 				}
 				//check if existing content
-				var $iframe = $(content).find('iframe.zedity-iframe');
+				//var $iframe = $(content).find('iframe.zedity-iframe');
+				var $iframe = $(content).find('.zedity-iframe-wrapper > iframe');
 				if ($iframe.length) {
 					//iframe
 					this.title = $iframe.attr('title');
@@ -188,10 +189,6 @@
 				var $div = $('<div/>').html(content);
 				//get watermark
 				this.watermarkposition = $div.find('.zedity-watermark').attr('data-pos') || this.watermarkposition;
-				<?php if ($this->is_premium()) { ?>
-					//get responsive
-					this.responsive = $div.find('.zedity-editor').hasClass('zedity-responsive');
-				<?php } ?>
 				//get alignment
 				var $el = $div.find('.zedity-editor') || $div.find('.zedity-iframe-container');
 				if ($el.hasClass('alignleft')) this.alignment='left';

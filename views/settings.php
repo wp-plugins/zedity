@@ -17,25 +17,37 @@
 
 	<form action="options.php" method="post">
 		<hr/>
-		<h3 class="title">Content</h3>
+		<h3 class="title">Content size</h3>
 		<p>Enter the default size (in pixels) for your Zedity contents (you can also change the size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Content width:</label></th>
+				<th scope="row"><label for="zedity_page_width">Content width:</label></th>
 				<td>
 					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
 					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Content height:</label></th>
+				<th scope="row"><label for="zedity_page_height">Content height:</label></th>
 				<td>
-					<input id="zedity_page_width" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
+					<input id="zedity_page_height" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
 					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
 				</td>
 			</tr>
 		</tbody></table>
 
+		<hr/>
+		<h3 class="title">Content preview</h3>
+		<p>Enable or disable the Zedity content preview.</p>
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label>Preview:</label></th>
+				<td>
+					<input type="radio" id="rbPreviewYes" name="zedity_settings[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> Yes</label> &nbsp;
+					<input type="radio" id="rbPreviewNo" name="zedity_settings[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> No</label>
+				</td>
+			</tr>
+		</tbody></table>
 		<hr/>
 
 		<h3 class="title">Watermark</h3>
@@ -64,7 +76,7 @@
 
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Video:</label></th>
+				<th scope="row"><label>Video:</label></th>
 				<td>
 					<?php
 					$content = array();
@@ -76,7 +88,7 @@
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="blogname">Audio:</label></th>
+				<th scope="row"><label>Audio:</label></th>
 				<td>
 					<?php
 					$content = array();

@@ -58,7 +58,8 @@ iframe
 */
 
 
-.zedity-iframe {
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
 	vertical-align: bottom;
 	overflow: hidden;
 	max-width: none;
@@ -80,3 +81,9 @@ iframe
 	z-index: 1000000;
 	/*background: rgba(0,200,0,.5);*/
 }
+
+/*TinyMCE placeholder*/
+.zedity-iframe-wrapper > img.mceItemIframe {
+	padding: 0 !important;
+}
+

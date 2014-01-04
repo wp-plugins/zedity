@@ -21,36 +21,55 @@
 			ed.onPreInit.add(function(){
 				//be sure iframes are allowed
 				ed.schema.addValidElements('iframe[*]');
-				
+				//set zedity wrapper size when in visual editor (to show full overlay)
+				ed.parser.addNodeFilter('div', function(nodes){
+					for (var i=nodes.length-1; i>=0; --i) {
+						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) continue;
+						nodes[i].attr({
+							style: 'width:'+nodes[i].attributes.map['data-origw']+'px;height:'+nodes[i].attributes.map['data-origh']+'px'
+						});
+					}
+				});
+				//set zedity wrapper real css on save
+				ed.serializer.addNodeFilter('div', function(nodes,name,args){
+					for (var i=nodes.length-1; i>=0; --i) {
+						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) continue;
+						nodes[i].attr({
+							'data-mce-style': 'max-width:'+nodes[i].attributes.map['data-origw']+'px;max-height:'+nodes[i].attributes.map['data-origh']+'px'
+						});
+					}
+				});
+				//temporarily disabled iframe management
+				/*
 				//set iframe wrapper size when in visual editor (to show full overlay)
 				ed.parser.addNodeFilter('iframe', function(nodes){
 					for (var i=nodes.length-1; i>=0; --i) {
 						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe')==-1) continue;
-						if (!nodes[i].parent) {						    
-						    alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
-						    break;
+						if (!nodes[i].parent) {
+							alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
+							break;
 						} else {
-						    nodes[i].parent.attr({
-							    style: 'width:'+nodes[i].attributes.map.width+'px;height:'+nodes[i].attributes.map.height+'px'
-						    });
+							nodes[i].parent.attr({
+								style: 'width:'+nodes[i].attributes.map.width+'px;height:'+nodes[i].attributes.map.height+'px'
+							});
 						}
 					}
 				});
 				//set iframe wrapper real css on save
 				ed.serializer.addNodeFilter('iframe', function(nodes,name,args){
 					for (var i=nodes.length-1; i>=0; --i) {
-						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe')==-1) continue;
-						
-						if (!nodes[i].parent) {						    
-						    alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
-						    break;
+						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe')==-1) continue;						
+						if (!nodes[i].parent) {
+							alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
+							break;
 						} else {
-						    nodes[i].parent.attr({
-							    'data-mce-style': 'max-width:'+nodes[i].attributes.map.width+'px;max-height:'+nodes[i].attributes.map.height+'px'
-						    });
+							nodes[i].parent.attr({
+								'data-mce-style': 'max-width:'+nodes[i].attributes.map.width+'px;max-height:'+nodes[i].attributes.map.height+'px'
+							});
 						}
 					}
 				});
+				*/
 			});
 
 			//manage overlay
