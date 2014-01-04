@@ -1,35 +1,144 @@
-/*reset image width in zedity content*/
-.zedity-editor img {
-	max-width: 100%;
+/*----------------------------------------------------------------------------------------
+Zedity Content (iframe version)
+*/
+
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	vertical-align: top;
+	max-width: none;        
+        margin: 0;        
 }
+.zedity-wrapper,
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	overflow: hidden;
+}
+.zedity-wrapper,
+.zedity-iframe-wrapper,
+.zedity-iframe,
+.zedity-iframe-wrapper > iframe {
+	padding: 0;
+	border: 0;
+}
+.zedity-responsive{
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Zedity Content
+*/
+
+.zedity-editor.zedity-notheme * {
+	all: default;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Generic box
+*/
+
+.zedity-editor.zedity-notheme .zedity-box {
+	margin: 0 !important;
+	box-shadow: none !important;
+}
+
+.zedity-editor .zedity-box {
+	box-sizing: content-box !important;
+}
+.zedity-editor .zedity-box.zedity-background {
+	box-sizing: border-box !important;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Box content
+*/
+
+.zedity-editor.zedity-notheme .zedity-box .zedity-content,
+.zedity-editor.zedity-notheme .zedity-box iframe,
+.zedity-editor.zedity-notheme .zedity-box object,
+.zedity-editor.zedity-notheme .zedity-box embed,
+.zedity-editor.zedity-notheme .zedity-box audio,
+.zedity-editor.zedity-notheme .zedity-box video {
+	min-width: 100% !important;
+	min-height: 100% !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+
+/*----------------------------------------------------------------------------------------
+Image box
+*/
 
 /*reset image wrapped in <p> by TinyMCE*/
 .zedity-editor .zedity-box-Image p {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
 }
 
 
-/*--------------------------------------------------------------------------------------*/
-/* Content overlay */
+/*----------------------------------------------------------------------------------------
+Text box
+*/
 
-#zedity_content_overlay {
-	display: none;
-	position: absolute;
-	background-color: rgba(80,210,80,0.6);
+.zedity-editor.zedity-notheme .zedity-box-Text span,
+.zedity-editor.zedity-notheme .zedity-box-Text a,
+.zedity-editor.zedity-notheme .zedity-box-Text p,
+.zedity-editor.zedity-notheme .zedity-box-Text h1,
+.zedity-editor.zedity-notheme .zedity-box-Text h2,
+.zedity-editor.zedity-notheme .zedity-box-Text h3,
+.zedity-editor.zedity-notheme .zedity-box-Text h4,
+.zedity-editor.zedity-notheme .zedity-box-Text h5,
+.zedity-editor.zedity-notheme .zedity-box-Text h6 {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
 }
 
-#zedity_content_overlay img {
-	border: 1px solid #999;
-	background-color: #eee;
-	margin: 5px 0 0 5px;
-	padding: 2px;
-	border-radius: 3px;
+.zedity-editor.zedity-notheme .zedity-box-Text a,
+.zedity-editor.zedity-notheme .zedity-box-Text a:link,
+.zedity-editor.zedity-notheme .zedity-box-Text a:visited,
+.zedity-editor.zedity-notheme .zedity-box-Text a:hover {
+	color: blue !important;
+	text-decoration: underline !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text a:hover {
+	cursor: pointer !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text a:active {
+	color: red !important;
+	text-decoration: underline !important;
 }
 
-#zedity_content_overlay img:hover {
-	border-color: #555;
-	background-color: #ccc;
+
+/*----------------------------------------------------------------------------------------
+Watermark
+*/
+
+.zedity-editor .zedity-watermark,
+.zedity-editor .zedity-watermark span {
+	height: 22px !important;
+	line-height: 22px !important;
+	text-decoration: none !important;
+	text-transform: none !important;
 }
+
+
