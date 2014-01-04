@@ -9,7 +9,7 @@ License: GPLv3
 License URI: http://zedity.com/license/freewp
 
 Finally you can create any desired content, with unprecedented possibilities and flexibility, quickly and very easily!
-
+  
 == Description ==
 Zedity is an innovative, powerful and extremely easy to use content editor that provides unprecedented flexibility and possibilities. Now you can finally create any content you need, the way you've been wishing for and with no need to struggle with Html/Css code. Try the difference with Zedity!
 
