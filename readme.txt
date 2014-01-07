@@ -118,7 +118,7 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 = 2.0.4 =
 * Fixed minor issue occurring in some cases when selecting text to create a link.
-* Enhanced content saving handling (addressing cases of post returning 302).
+* Enhanced content saving handling (addressing cases of ajax post returning 302).
 
 = 2.0.3 =
 * Added setting to enable/disable the Zedity content preview in the WP editor.
