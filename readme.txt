@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -15,8 +15,8 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
-  
-**Advantanges you get by using Zedity:**
+ 
+**Advantanges of using Zedity:**
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need and unleash your creativity with no more constraints or limitations!
 
@@ -115,6 +115,10 @@ A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutoria
 
 
 == Changelog ==
+
+= 2.0.4 =
+* Fixed minor issue occurring in some cases when selecting text to create a link.
+* Enhanced content saving handling (addressing cases of post returning 302).
 
 = 2.0.3 =
 * Added setting to enable/disable the Zedity content preview in the WP editor.

@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.0.3
+Version: 2.0.4
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -180,6 +180,29 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 
 		public function add_zedity_editor_page() {
+			if (!empty($_REQUEST['data']) && $_REQUEST['data']=='saved') {
+				//get data when ajax request is redirected with 302 Moved Temporarily
+				$attachments = get_posts(array(
+					'post_type' => 'attachment',
+					'posts_per_page' => 1,
+					'post_status' => null,
+					'post_mime_type' => 'application/zedity',
+				));
+				if (!empty($attachments[0])) {
+					$id = isset($attachments[0]->ID) ? $attachments[0]->ID : NULL;
+					$url = isset($attachments[0]->guid) ? $attachments[0]->guid : NULL;
+					if (empty($id) || empty($url)) {
+					    $response = array('error' => "Save content: empty id ($id) or url ($url).");
+					} else {
+					    $response = array('id' => $id, 'url' => $url);					    
+					}
+				} else {
+					$response = array('error' => 'Save content: could not find attachment.');
+				}
+				echo json_encode($response);
+				exit;
+			}
+
 			require(ABSPATH . WPINC . '/version.php');
 			$options = $this->get_options();
 			include(sprintf("%s/views/editor.php", dirname(__FILE__)));

@@ -198,9 +198,9 @@
 				$div.find('.zedity-box-Image').each(function(){
 					$(this).find('p img').unwrap();
 				});
-				//convert targets
-				$div.find('[target=_top]').each(function(){
-					$(this).attr('target','_self');
+				//convert target attributes
+				$div.find('[target=_top],a:not([target])').each(function(){
+					$(this).attr('target','_self').attr('data-target','_self');
 				});
 				$div.find('[data-target=_top]').each(function(){
 					$(this).attr('data-target','_self');
@@ -235,11 +235,11 @@
 						docfrag.appendChild(d);
 						data = docfrag.querySelector('.zedity-editor');
 						
-						this.setContentInEditor(data);						
+						this.setContentInEditor(data);
 					},this),
 					error: $.proxy(function(xhr,status,error){
                                                 console.log('Failed. Status=',status,'\n error=',error);
-						this.loadFromFile2(url); 
+						this.loadFromFile2(url);
 					},this),
 					complete: function(){
 						zedityEditor.unlock();
@@ -251,7 +251,7 @@
 			loadFromFile2: function(){
 				var url = 'index.php?page=zedity_ajax'; // ajax helper url
 				console.log('Loading content from file (now via ajx helper), url='+url);
-				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');                                
+				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
 				$.ajax({
 					type: 'GET',
 					url: url,
@@ -268,12 +268,12 @@
 						//get content between <body></body> (jQuery can't handle it)
 						//data = data.content.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
 						//let's not use jQuery and avoid reg exp
-						var docfrag = document.createDocumentFragment();						
+						var docfrag = document.createDocumentFragment();
 						var d = document.createElement("div");
 						d.innerHTML = data.content; //here data.content
 						docfrag.appendChild(d);
 						data = docfrag.querySelector('.zedity-editor');
-												
+
 						this.setContentInEditor(data);
 					},this),
 					error: function(xhr,status,error){
@@ -343,32 +343,32 @@
 				switch (this.watermarkposition) {
 					case 'topleft':
 						datapos = 'topleft';
-						css += "top:0;left:0;";						
+						css += "top:0;left:0;";
 					break;
 					case 'topright':
 						datapos = 'topright';
-						css += "top:0;right:0;";						
+						css += "top:0;right:0;";
 					break;
 					case 'bottomleft':
 						datapos = 'bottomleft';
-						css += "bottom:0;left:0;";						
+						css += "bottom:0;left:0;";
 					break;
-					case 'bottomright':	
+					case 'bottomright':
 						datapos = 'bottomright';
-						css += "bottom:0;right:0;";						
+						css += "bottom:0;right:0;";
 					break;
-					
-					default: // none 
+
+					default: // none
 						datapos = 'none';
 						css = "display:none;top:0;left:0;";
 					break;
 				}
-								
+
 				//construct watermark
 				$html.find('.zedity-editor').append(
 					'<div class="zedity-watermark" style="'+css+'" data-pos="'+datapos+'">'+
 					'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="http://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
-				);				
+				);
 				return $html.html();
 			},
 			//save content from editor
@@ -377,9 +377,9 @@
 				$('html,body').scrollTop(0);
 				var maxSize = <?php echo $this->MAX_UPLOAD_SIZE ?>;
 				this.size = zedityEditor.page.size();
-				//convert targets
-				zedityEditor.$this.find('[target=_self]').each(function(){
-					$(this).attr('target','_top');
+				//convert target attributes (avoid opening links inside the iframe)
+				zedityEditor.$this.find('[target=_self],a:not([target])').each(function(){
+					$(this).attr('target','_top').attr('data-target','_top');
 				});
 				zedityEditor.$this.find('[data-target=_self]').each(function(){
 					$(this).attr('data-target','_top');
