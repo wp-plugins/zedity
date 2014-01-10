@@ -26,7 +26,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Save a lot of Time**: increase your productivity, getting things done in a fraction of the time that you're used to!
 
-* **Amazing and Professional Results**: under the hood Zedity has everything you need to create content that only web developers could achieve before!
+* **Amazing Professional Results**: under the hood Zedity has everything you need to create content that only web developers could achieve before!
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
 
@@ -37,16 +37,14 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 
-*   [Zedity Forum](http://zedity.uservoice.com): we always welcome your feedback and ideas! 
-
 *   [Twitter page](https://www.twitter.com/Zedity): Follow Zedity on Twitter!
 
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
- 
+
+*   [Support and Assistance](http://zedity.uservoice.com): where to get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also [contact us](http://zedity.com). Note: If you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance! 
 
 **Enjoy Zedity!**
 
-If you think you have found a bug, please do not hesitate to email us at 'info @ zedity.com' or to post either into the [support section](http://wordpress.org/support/plugin/zedity) or into the [Zedity Forum](http://zedity.uservoice.com). If you can, try to provide specific information on what is not working, the version of browser, operating system, plugin, browser and, whenever possible, a link to a (test) page where we can see the issue. Thank you in advance!
 
 == Installation ==
 
