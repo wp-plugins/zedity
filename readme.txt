@@ -96,15 +96,14 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
-**Q: Can I include as many media as I want in my content?**  
-A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to save and load. If the maximum size allowed (which depends on the system configuration) is exceeded then it may not be possible to save the content.
-
 **Q: YouTube and Vimeo videos are supported. Is it possible to have other services, e.g. Dailymotion and others?**  
 A: Yes. There are 20+ audio and video services supported as a [Premium Feature](http://zedity.com/plugin/wpfeatures).
 
 **Q: Do you have tutorials?**  
-A: Yes, here is a YouTube channel for some [Video Tutorials](http://www.youtube.com/user/ZedityTutorials) and here additional [tutorials](zedity.com/blog/tutorials).
+A: Yes, here is a [Zedity YouTube channel](http://www.youtube.com/user/ZedityTutorials) and here are [Tutorials](zedity.com/blog/tutorials). 
 
+**Q: ... got another question not reported here?**  
+You can contact us for [Support and Assistance](http://zedity.uservoice.com).
 
 == Screenshots ==
 
