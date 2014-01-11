@@ -85,13 +85,13 @@ Furthermore if you upgraded to the Premium version, you can keep both version in
 == Frequently asked questions ==
 
 **Q: Why should I use the Zedity plugin?**  
-A: Zedity enables you to do things that cannot be done with the default WordPress editor. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media, and stylish effects, all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
+A: Zedity enables you to do things that cannot be done with the default WordPress editor. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media and stylish effects: all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do before. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
 
 **Q: How do I start using Zedity?**  
 A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Content" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
 
 **Q: How come audio and video boxes are not playing after I exit the Zedity Editor?**  
-A: No worries, that is normal behavior in WordPress: they will play normally when you publish your post.
+A: No worries, that is normal behavior in WordPress: they will play normally when you preview or publish your post.
 
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
@@ -99,14 +99,11 @@ A: From the standard WordPress editor, just click on the Zedity content that you
 **Q: Can I include as many media as I want in my content?**  
 A: Absolutely yes. Just keep in mind that if you add many big images, then the content may end up being slower to save and load. If the maximum size allowed (which depends on the system configuration) is exceeded then it may not be possible to save the content.
 
-**Q: Is it possible to have additional video/audio services supported?**  
-A: There are 20+ audio and video services supported as a premium feature in [Zedity Premium](http://zedity.com/plugin/wp).
+**Q: YouTube and Vimeo videos are supported. Is it possible to have other services, e.g. Dailymotion and others?**  
+A: Yes. There are 20+ audio and video services supported as a [Premium Feature](http://zedity.com/plugin/wpfeatures).
 
-**Q: Can I see any live content created with Zedity?**  
-A: Sure. At the moment we share some live examples on our [Zedity Facebook page](https://www.facebook.com/Zedity). 
-
-**Q: Is there any tutorial about Zedity?**  
-A: Yes, here is a YouTube channel where you can find some useful [Zedity Tutorials](http://www.youtube.com/user/ZedityTutorials). 
+**Q: Do you have tutorials?**  
+A: Yes, here is a YouTube channel for some [Video Tutorials](http://www.youtube.com/user/ZedityTutorials) and here additional [tutorials](zedity.com/blog/tutorials).
 
 
 == Screenshots ==
