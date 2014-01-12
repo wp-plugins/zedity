@@ -20,9 +20,9 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need; unleash your creativity, with no more constraints or limitations!
 
-* **Easy for Everyone**: a modern and intuitive user interface, with real drag and drop and simple but powerful commands!
+* **Easy for Everyone**: a modern and intuitive user interface, with real drag & drop and easy to operate, yet powerful, commands!
 
-* **Technical Skills NOT Required**: you do not have to struggle with HTML/CSS code any more!
+* **No Technical Skills Required**: you do not have to struggle with HTML/CSS code any more! 
 
 * **Save a lot of Time**: increase your productivity, getting things done in a fraction of the time that you're used to!
 
