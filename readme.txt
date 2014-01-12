@@ -41,8 +41,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 *   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
 
-*   [Support and Assistance](http://zedity.uservoice.com): where to get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also contact us [here](http://zedity.com). 
-Note: if you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of browser, operating system, plugin, and, whenever possible, a link to a (test) page showing the issue. Thank you in advance! 
+*   [Support and Assistance](http://zedity.uservoice.com): where to get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also contact us [here](http://zedity.com). Note: if you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of the browser, operating system, plugin and, whenever possible, a link to a (test) page showing the issue. Thank you in advance! 
  
 **Enjoy Zedity!**
 
