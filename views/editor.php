@@ -73,10 +73,11 @@
 			}
 			.zedity-mainmenu {
 				position: fixed !important;
+				top: 30px;
 				width: 99%;
 			}
 			.zedity-editor {
-				margin-top: 35px;
+				margin-top: 63px;
 			}
 			#filler {
 				width: 100%;
@@ -97,10 +98,71 @@
 			.zedity-menu-quick .zedity-icon-disk {
 				background-size: 100%;
 			}
+			/*Hide disabled features*/
+			.zedity-bar span[data-panel=zedity-imagefilters],
+			.zedity-menu-imglayout-menu,
+			.zedity-menu-imgqual-menu,
+			.zedity-dialog-image .tabs li[aria-controls=tab-image-disk] {
+				display: none !important;
+			}
+			/*status bar*/
+			#statusbar {
+				position: fixed;				
+				margin: 0 auto;
+				height: 26px;
+				font-family: Tahoma, Arial, Verdana, sans-serif;
+				font-size: 12px;				
+				border: 1px solid lightgray;
+				border-radius: 2px;				
+				z-index: 1999;
+				color: #444;
+				background: #e0f3fa;
+				background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 22%, #b8e2f6 96%, #b6dffd 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0f3fa), color-stop(22%,#d8f0fc), color-stop(96%,#b8e2f6), color-stop(100%,#b6dffd));
+				background: -webkit-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
+				background: -o-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
+				background: -ms-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
+				background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);		
+			}
+			#statusbar .info {
+				line-height: 26px;
+				margin-left: 15px;
+			}
+			#statusbar .info.premiumfeat {
+				color: white;
+				background: darkgoldenrod;
+				padding: 1px 4px 2px;
+				border-radius: 10px;				
+			}
+			#statusbar .info .yes{
+				color: darkgreen;
+				font-weight: bold;
+			}
+			#statusbar .info .no{
+				color: #40737a;
+				font-weight: bold;
+			}
+			/*
+			#statusbar .led {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 4px 5px 0 10px;
+				border: 1px solid black;
+				border-radius: 10px;
+			}
+			#statusbar .led.on {
+				background: #0C0;
+			}
+			#statusbar .led.off {
+				background: #E00;
+			}
+			*/
 		</style>
 	</head>
 	
 	<body>
+		<div id="statusbar"></div>
 		<div id="zedityEditorW"></div>
 		<div id="filler"></div>
 
@@ -118,6 +180,7 @@
 			needBrAfter: true,
 			watermarkposition: '<?php echo $options['watermark']?>',
 			responsive: <?php echo $options['responsive'] ? 'true' : 'false'?>,
+			savemode: '<?php echo $options['save_mode']?>', // 1: isolated (iframe); 2: standard (inline)
 			alignment: '',
 			needsPublish: false,
 			//get content from tinymce editor
@@ -128,7 +191,9 @@
 				//get the Zedity content element
 				this.element = this.mce.selection.getNode();
 				this.element = this.mce.dom.getParent(this.element,function(elem){
-					return $(elem).hasClass('zedity-editor') || $(elem).hasClass('zedity-wrapper');
+					var $elem = $(elem);
+					if ($elem.hasClass('zedity-editor') && $elem.parent().hasClass('zedity-wrapper')) return false;
+					return $elem.hasClass('zedity-editor') || $elem.hasClass('zedity-wrapper');
 				});
 				if (this.element) {
 					//select content
@@ -139,22 +204,24 @@
 					this.needBrBefore = $(this.element).prev(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
 					this.needBrAfter = $(this.element).next(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
 					//check when changes something that needs publishing
-					zedityMenu.find('.zedity-menu-PageSize,.zedity-menu-PageAlign,.zedity-menu-Responsive').on('click',$.proxy(function(){
+					zedityMenu.find('.zedity-menu-PageSize,.zedity-menu-PageAlign').on('click',$.proxy(function(){
 						this.needsPublish = true;
 					},this));
 				}
 				//check if existing content
-				//var $iframe = $(content).find('iframe.zedity-iframe');
-				var $iframe = $(content).find('.zedity-iframe-wrapper > iframe');
+				var $content = $(content);
+				var $iframe = $content.find('.zedity-iframe-wrapper > iframe');
 				if ($iframe.length) {
 					//iframe
+					this.savemode = 1;
 					this.title = $iframe.attr('title');
 					this.id = $iframe.attr('data-id');
 					this.loadFromFile($iframe.attr('src'));
-				} else if ($(content).hasClass('zedity-editor')) {
+				} else if ($content.find('.zedity-editor').length) {
 					//inline content
-					this.setContentInEditor(content);
-				} else if ($(content).length) {
+					this.savemode = 2;
+					this.setContentInEditor($content.find('.zedity-editor').get(0).outerHTML);
+				} else if ($content.length) {
 					alert('The content may have been manually modified and got corrupted.');
 				}
 				//new content otherwise
@@ -209,6 +276,7 @@
 			},
 			//set content into Zedity editor
 			setContentInEditor: function(content){
+				this.responsive = $(content).hasClass('zedity-responsive');
 				content = this.convert(content);
 				zedityEditor.page.content(content);
 				//reset undo data
@@ -339,7 +407,7 @@
 				//	return $html.html();
 				//}
 				var datapos;
-				var css = "position:absolute;background:rgba(70,70,70,0.75);z-index:99999;padding:0 6px 1px;border-radius:6px;";
+				var css = "position:absolute;background:rgba(70,70,70,0.75);z-index:99999;padding:0 6px 1px;border-radius:6px;height:20px;line-height:20px;";
 				switch (this.watermarkposition) {
 					case 'topleft':
 						datapos = 'topleft';
@@ -384,10 +452,14 @@
 				zedityEditor.$this.find('[data-target=_self]').each(function(){
 					$(this).attr('data-target','_top');
 				});
+				//alignment
+				if (content.alignment) zedityEditor.$this.addClass('align'+content.alignment);
 				<?php if ($this->is_premium()) { ?>
 					//responsive
 					zedityEditor.$this.toggleClass('zedity-responsive',this.responsive);
 				<?php } ?>
+				//size
+				zedityEditor.$this.attr('data-origw',this.size.width).attr('data-origh',this.size.height);
 				zedityEditor.save($.proxy(function(html){
 					if (html.length > maxSize) {
 						alert('The content you have created exceeds the maximum upload size for this site ('+Math.round(maxSize/1000000)+'MB).\n\nPlease review your content and try again.');
@@ -396,7 +468,20 @@
 					$(parent.document).find('#TB_iframeContent').removeClass('zedity-editor-iframe');
 					html = this.setWatermark(html);
 					setTimeout($.proxy(function(){
-						this.saveToFile(html);
+						if (this.savemode==2) {
+							//save inline
+							this.needsPublish = false;
+							var size = zedityEditor.page.size();
+							var align = this.alignment==='' ? '' : ' align'+this.alignment;
+							this.sendToTinyMCE(
+								'<div class="zedity-wrapper'+align+'" style="max-width:'+size.width+'px;max-height:'+size.height+'px">'+
+								html+
+								'</div>'
+							);
+						} else {
+							//save in iframe
+							this.saveToFile(html);
+						}
 					},this),10);
 				},this));
 			}
@@ -412,10 +497,14 @@
 		//TODO: rename it to refreshEditor
 		resizeEditor = function(editor){
 			//reposition to center the editor
-			var ew = Math.max(editor.page.size().width,480);
+			var ew = Math.max(editor.page.size().width,580);
 			var bw = $('body').width();
 			$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
 			editor.$container.css('margin-left', (ew<bw) ? (bw-ew)/2 : '');
+			$('#statusbar').css({
+				width: Math.min(ew,bw),
+				'margin-left': (ew<bw) ? (bw-ew)/2+1 : ''
+			});
 			//refresh alignment
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+content.alignment+']'));
 			//refresh watermark
@@ -423,11 +512,8 @@
 			//refresh theme style
 			var type = editor.$this.hasClass('zedity-notheme') ? 'no' : 'yes';
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyle[data-type='+type+']'));
+			editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyleMain').toggleClass('ui-state-disabled',content.savemode==1);
 			<?php if ($this->is_premium()){ ?>
-				//refresh responsive
-				editor.$container.find('.zedity-mainmenu .zedity-menu-Responsive .zedity-menu-icon')
-					.toggleClass('zedity-icon-none',!content.responsive)
-					.toggleClass('zedity-icon-yes',content.responsive);
 				//set title for disk save icon (and save menu item) to reflect the actual the responsive setting
 				editor.$container.find('.zedity-mainmenu .zedity-menu-SavePage a').attr('title', 'Save ('+(content.responsive ? 'Responsive' : 'Not responsive')+')');
 				//force content alignment to center if content is responsive (#623)
@@ -439,7 +525,77 @@
 					pamenu.toggleClass('ui-state-disabled',content.responsive);
 				}
 			<?php } ?>
+			//refresh status bar			
+			var ttMsg = content.savemode == 1 ? 
+				"<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs." : 
+				"<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is preferred mode for SEO and social sharing.";		    
+			
+			var $sb = $('#statusbar');									
+			$sb.html('<span class="info">Content mode: <select id="ddSaveMode"><option value="1" '+(content.savemode==1?'selected="selected"':'')+'>Isolated</option><option value="2" '+(content.savemode==2?'selected="selected"':'')+'>Standard</option></select> <span id="statusBarContentModeTT" class="zedity-tooltip" title="'+ttMsg+'">?</span></span>');
+			<?php if ($this->is_premium()) { ?>
+				$sb.append('<span class="info">Responsive: <select id="ddResponsive" ><option value="1" '+(content.responsive?'selected="selected"':'')+'>Yes</option><option value="0" '+(!content.responsive?'selected="selected"':'')+'>No</option></select></span>');
+			<?php } else { ?>
+				$sb.append('<span class="info">Responsive: <select><option disabled="disabled">Premium feature</option></select></span>'+
+				'<span class="info premiumfeat" style="display:none">Premium feature</span>');
+			<?php } ?>
+									
+			$('#statusBarContentModeTT').tooltip();			
 		};
+		
+		$('#statusbar').on('change','#ddSaveMode',function(){
+			content.savemode = parseInt($(this).val());
+			resizeEditor(zedityEditor);
+		});
+		$('#statusbar').on('change','#ddResponsive',function(){
+			content.responsive = parseInt($(this).val())==1;
+			content.needsPublish = true;
+			resizeEditor(zedityEditor);
+		});
+
+
+		//-----------------------------------------------------------------------------------------
+		//Media Library
+		
+		var zedity_ML_frame_image = null;
+		jQuery(document).on('click.zedity_media_library', '.zedity-propbar-Image .zedity-bar-icon.zedity-icon-image', function(event){
+			if (!zedity_ML_frame_image) {
+				var $tabs = $('.zedity-dialog-image .tabs');
+				$tabs.find('ul').prepend('<li><a href="#tab-image-ML">Media library</a></li>');
+				$tabs.append(
+					'<div id="tab-image-ML">'+
+					'<p>Insert an image from the WordPress Media Library.</p>'+
+					'<p>You can choose among the images you already have in your library, or upload a new one.</p>'+
+					'<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only zedity-open-ML"><span class="ui-button-text">Open Media Library...</span></button>'+
+					'</div>'
+				);
+				$tabs.tabs('refresh');
+				$tabs.tabs('selected','tab-image-ML');
+				$tabs.find('.zedity-open-ML').on('click.zedity',function(){
+					zedity_ML_frame_image.open();
+				});
+				
+				//create media library frame
+				zedity_ML_frame_image = parent.wp.media.frames.zedity_media_frame = parent.wp.media({
+					className: 'media-frame zedity-media-frame',
+					title: jQuery(this).data('uploader_title'),
+					button: {
+						text: jQuery(this).data('uploader_button_text'),
+					},
+					library: {
+						type: 'image'
+					},
+					multiple: false
+				});
+				zedity_ML_frame_image.on('select', function(){
+					var $dialog = $('.zedity-dialog-image');
+					var file = zedity_ML_frame_image.state().get('selection').first().toJSON();
+					console.log('file',file);
+					$dialog.find('.tabs').tabs('selected','tab-image-link');
+					$dialog.find('#zedity-txtImageLink').val(file.url);
+					$dialog.find('#zedity-txtImageDescription').val(file.alt||file.description||file.title||file.caption);
+				});
+			}
+		});
 
 		//-----------------------------------------------------------------------------------------
 		//Zedity editor
@@ -488,6 +644,8 @@
 			maxWidth: <?php echo WP_Zedity_Plugin::MAX_WIDTH?>,
 			minHeight: <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>,
 			maxHeight: <?php echo WP_Zedity_Plugin::MAX_HEIGHT?>,
+			snapPage: <?php echo $options['snap_to_page']?'true':'false'?>,
+			snapBoxes: <?php echo $options['snap_to_boxes']?'true':'false'?>,
 			onchange: function(){
 				this.contentChanged = true;
 				window.resizeEditor(this);
@@ -542,10 +700,9 @@
 				'</ul>'+
 			'</li>'
 		);
-		/*
 		//add Theme style to menu
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
-			'<li class="ui-menu-item" role="presentation">'+
+			'<li class="ui-menu-item zedity-menu-ThemeStyleMain" role="presentation">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Theme style</a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
 					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="yes">'+
@@ -557,7 +714,6 @@
 				'</ul>'+
 			'</li>'
 		);
-		*/
 		//add Watermark to menu
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-menu-item" role="presentation">'+
@@ -617,14 +773,12 @@
 			if (content.alignment) zedityEditor.$this.addClass('align'+content.alignment);
 			resizeEditor(zedityEditor);
 		});
-		/*
 		//theme style
 		zedityMenu.find('.zedity-menu-ThemeStyle').on('click',function(){
 			var type = $(this).attr('data-type');
 			zedityEditor.$this.toggleClass('zedity-notheme', type=='no');
 			resizeEditor(zedityEditor);
 		});
-		*/
 		//watermark
 		zedityMenu.find('.zedity-menu-Watermark').on('click',function(){
 			content.watermarkposition = $(this).attr('data-type');
@@ -632,11 +786,11 @@
 		});
 		//save
 		zedityMenu.find('.zedity-menu-SavePage').on('click',function(){
-			if (content.title) {
+			if (content.title || content.savemode==2) {
 				content.save();
 			} else {
 				Zedity.core.dialog({
-					question: 'Please provide a title to identify this Zedity content: <span class="zedity-tooltip" title="You should use one that briefly describes your Zedity content, which will be stored into your Media Library with that title as its name.">?</span>',
+					question: 'Please provide a title for this Zedity content: <span class="zedity-tooltip" title="A short description used as the name of the file into which the content is saved in your Media Library.">?</span>',
 					mandatory: 'Please insert a title.',
 					ok: function(answer){
 						content.title = answer;
@@ -647,6 +801,15 @@
 			return false;
 		});
 
+		<?php if (!$this->is_premium()) { ?>
+			//show "premium feature" notice in status bar			
+			Zedity.core.shortcuts.add('up down left right',zedityEditor,function(event){
+				if (this.$this.children('.zedity-box.zedity-selected').length>0) {					
+					$('#statusbar .info.premiumfeat').stop(true,true).fadeIn(100).delay(1000).fadeOut(500);
+					return true;
+				}
+			},true);
+		<?php } ?>
 
 
 		//-----------------------------------------------------------------------------------------

@@ -33,6 +33,10 @@ Zedity Content (iframe version)
 Zedity Content
 */
 
+.zedity-editor {
+	max-width: none !important;
+}
+
 .zedity-editor.zedity-notheme * {
 	all: default;
 }

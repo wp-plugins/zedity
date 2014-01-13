@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.0.4
+Version: 2.1.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -17,11 +17,11 @@ $filepremium = "$path/premium.php";
 if (class_exists('WP_Zedity_Plugin')) {
 	
 	if (file_exists($filepremium)) {
-		$thisp .= 'Premium';
-		$otherp.= 'free';
+		$thisp = 'Premium';
+		$otherp = 'free';
 	} else {
-		$thisp .= 'free';
-		$otherp.= 'Premium';
+		$thisp = 'free';
+		$otherp = 'Premium';
 	}
 
 	$message = "<b>Could not activate</b> Zedity $thisp plugin. You cannot enable both Zedity free and Zedity Premium plugins at the same time.<br/>Please <b>first deactivate</b> the Zedity $otherp plugin, <b>then activate</b> the Zedity $thisp plugin.";
@@ -112,7 +112,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		public function activate($network_wide) {
 			$defaults = $this->get_defaults();
-			update_option('zedity_settings',$defaults);
+			add_option($this->get_options_name(),$defaults);
 		}
 
 		
@@ -158,7 +158,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 
 		public function admin_init() {
-			register_setting('wp_zedity_plugin', 'zedity_settings', array($this,'zedity_settings_validate'));
+			register_setting('wp_zedity_plugin', $this->get_options_name(), array($this,'zedity_settings_validate'));
 			add_settings_section('zedity_main', 'Page', array($this,'section_zedity_page'), 'zedity_settings_section');
 		}
 
@@ -194,7 +194,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					if (empty($id) || empty($url)) {
 					    $response = array('error' => "Save content: empty id ($id) or url ($url).");
 					} else {
-					    $response = array('id' => $id, 'url' => $url);					    
+					    $response = array('id' => $id, 'url' => $url);
 					}
 				} else {
 					$response = array('error' => 'Save content: could not find attachment.');
@@ -381,6 +381,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		public function get_defaults(){
 			return array(
+				'save_mode' => 1,
 				'page_width' => self::DEFAULT_WIDTH,
 				'page_height' => self::DEFAULT_HEIGHT,
 				'webfonts' => array(),
@@ -390,11 +391,17 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'responsive' => TRUE,
 				'responsive_noconflict' => FALSE,
 				'iframe_preview' => TRUE,
+				'snap_to_page' => FALSE,
+				'snap_to_boxes' => FALSE,
 			);
 		}
 		
+		public function get_options_name(){
+			return 'zedity_settings';
+		}
+		
 		public function get_options(){
-			$options = get_option('zedity_settings',array());
+			$options = get_option($this->get_options_name(),array());
 			$defaults = $this->get_defaults();
 			return array_merge($defaults,$options);
 		}
@@ -430,6 +437,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 		//Validation
 		public function zedity_settings_validate($input) {
 			$options = $this->get_options();
+			
+			$options['save_mode'] = $input['save_mode'];
+			if ($options['save_mode']!=1 and $options['save_mode']!=2) $options['save_mode'] = 1;
 
 			$options['page_width'] = trim($input['page_width']);
 			if (!preg_match('/^[0-9]{3,5}$/i', $options['page_width'])) {

@@ -9,6 +9,8 @@
 		<link href='//fonts.googleapis.com/css?family=<?php echo $fontname?>' rel='stylesheet' type='text/css'>
 		<?php
 	}
+	
+	$settings = $this->get_options_name();
 ?>
 
 <div class="wrap">
@@ -17,20 +19,35 @@
 
 	<form action="options.php" method="post">
 		<hr/>
+		<h3 class="title">Content save mode</h3>
+		<p>Choose the way your content is saved.</p>
+		<p><b>Isolated mode:</b> the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.<br/>
+		<b>Standard mode:</b> the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is preferred for SEO and social sharing.</p>
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row">Save mode:</th>
+				<td>
+					<input type="radio" id="zedity_save_iframe" name="<?php echo $settings?>[save_mode]" value="1" <?php echo $options['save_mode']==1?'checked="checked"':''?> /><label for="zedity_save_iframe">Isolated mode.</label><br/>
+					<input type="radio" id="zedity_save_inline" name="<?php echo $settings?>[save_mode]" value="2" <?php echo $options['save_mode']==2?'checked="checked"':''?> /><label for="zedity_save_inline">Standard mode.</label><br/>
+				</td>
+			</tr>
+		</tbody></table>
+		
+		<hr/>
 		<h3 class="title">Content size</h3>
 		<p>Enter the default size (in pixels) for your Zedity contents (you can also change the size while editing):</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
 				<th scope="row"><label for="zedity_page_width">Content width:</label></th>
 				<td>
-					<input id="zedity_page_width" name="zedity_settings[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
+					<input id="zedity_page_width" name="<?php echo $settings?>[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
 					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
 				</td>
 			</tr>
 			<tr valign="top">
 				<th scope="row"><label for="zedity_page_height">Content height:</label></th>
 				<td>
-					<input id="zedity_page_height" name="zedity_settings[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
+					<input id="zedity_page_height" name="<?php echo $settings?>[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
 					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
 				</td>
 			</tr>
@@ -43,8 +60,8 @@
 			<tr valign="top">
 				<th scope="row"><label>Preview:</label></th>
 				<td>
-					<input type="radio" id="rbPreviewYes" name="zedity_settings[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> Yes</label> &nbsp;
-					<input type="radio" id="rbPreviewNo" name="zedity_settings[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> No</label>
+					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> Yes</label> &nbsp;
+					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> No</label>
 				</td>
 			</tr>
 		</tbody></table>
@@ -56,15 +73,15 @@
 		<!--<p>Select position:</p>-->
 
 		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
+			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
 			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
+			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
 			<label for="rbWM2">Top left</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
+			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
 			<label for="rbWM3">Top right</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
+			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
 			<label for="rbWM4">Bottom left</label><br/>
-			<input type="radio" name="zedity_settings[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
+			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
 			<label for="rbWM5">Bottom right</label><br/>
 		</div>
 		<br/>
@@ -121,7 +138,7 @@
 					$fontname = explode(',',$font);
 					$fontname = $fontname[0];
 					?>
-					<input type="checkbox" id="cbWB_<?php echo $i ?>" name="zedity_settings[webfonts][]" value="<?php echo $font ?>" <?php checked(in_array($font,$options['webfonts'])); ?>/>
+					<input type="checkbox" id="cbWB_<?php echo $i ?>" name="<?php echo $settings?>[webfonts][]" value="<?php echo $font ?>" <?php checked(in_array($font,$options['webfonts'])); ?>/>
 					<label for="cbWB_<?php echo $i ?>" style="font:16px <?php echo $font ?>"><?php echo $fontname ?></label>
 					<br />
 			<?php } ?>
@@ -138,7 +155,7 @@
 		<h4 class="title">License</h4>
 		<p>The <?php echo $this->plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $this->plugindata['LicenseURI'];?>"><?php echo $this->plugindata['License'];?></a> license.</p>
 		
-		<?php 
+		<?php
 			settings_fields('wp_zedity_plugin');
 			do_settings_fields('wp_zedity_plugin','zedity_settings');
 			submit_button();
