@@ -39,7 +39,7 @@ Zedity is an innovative, powerful and extremely easy to use content editor that 
 
 *   [Twitter page](https://www.twitter.com/Zedity): Follow Zedity on Twitter!
 
-*   [Facebook page](https://www.facebook.com/Zedity): Got a cool Zedity site to show? Contact us to share your link on our page!   
+*   [Facebook page](https://www.facebook.com/Zedity): Visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 
 *   [Support and Assistance](http://zedity.uservoice.com): where to get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also contact us [here](http://zedity.com). Note: if you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of the browser, operating system, plugin and, whenever possible, a link to a live page showing the issue. Thank you in advance! 
  
