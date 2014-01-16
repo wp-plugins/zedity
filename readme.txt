@@ -65,7 +65,7 @@ You may want to go for one of the following options:
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
-2. Activate the Zedity plugin (from your WordPress dashboard) and you're good to go!
+2. Activate the Zedity plugin (from your WordPress dashboard)
 
 == Tutorials ==
 Here are some tutorials that can help you get started and learn some useful tips:
