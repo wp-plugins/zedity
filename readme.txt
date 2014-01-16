@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, sidebar, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -80,6 +80,7 @@ Here are some tutorials that can help you get started and learn some useful tips
 Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) 
 Furthermore if you upgraded to the Premium version, you can keep both version installed, free and Premium, but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
 
+Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
 == Frequently asked questions ==
 
@@ -113,6 +114,10 @@ You can contact us for [Support and Assistance](http://zedity.uservoice.com).
 
 
 == Changelog ==
+
+= 2.1.1 =
+* Improved compatibility with secondary TinyMCE editors provided by other plugins.
+* Various optimizations in Image box image layout.
 
 = 2.1.0 =
 * New content save method. Choose between isolated mode or standard mode.
