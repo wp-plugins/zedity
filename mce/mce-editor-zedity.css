@@ -32,7 +32,7 @@ Reset some css modified by the WP visual editor
 .zedity-editor .zedity-box img {
 	padding: 0;
 	border: none;
-	max-width: 100%;
+	max-width: none;
 }
 
 

@@ -63,7 +63,7 @@ Generic box
 Box content
 */
 
-.zedity-editor.zedity-notheme .zedity-box .zedity-content,
+.zedity-editor.zedity-notheme .zedity-box div.zedity-content,
 .zedity-editor.zedity-notheme .zedity-box iframe,
 .zedity-editor.zedity-notheme .zedity-box object,
 .zedity-editor.zedity-notheme .zedity-box embed,
@@ -82,6 +82,9 @@ Box content
 	box-shadow: none !important;
 }
 
+.zedity-editor.zedity-notheme .zedity-box img.zedity-content {
+	max-width: none !important;
+}
 
 /*----------------------------------------------------------------------------------------
 Image box
