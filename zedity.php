@@ -295,6 +295,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					};
 				}
 				jQuery('body').on('click.zedity',function(){
+					if (!tinyMCE) return;
 					var ed = tinyMCE.activeEditor;
 					if (ed) ed.plugins.zedity._hideOverlay();
 				});
