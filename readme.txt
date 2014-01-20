@@ -1,4 +1,4 @@
-=== Zedity™ Create Better Content in a Much Easier Way!===
+=== Zedity™ Create Your Content in a Much Easier Way!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, filters, flexible, formatting, free, freedom, generator, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, sidebar, simple, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -8,7 +8,7 @@ Stable tag: 2.1.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-An innovative editor with unprecedented possibilities and flexibility to create your desired content very easily, like never before!
+The next generation editor to create your content with unprecedented possibilities and flexibility, quickly and extremely easily, like never before!
 
 == Description ==
 With a modern and sleek user interface to accomplish advanced operations in just few clicks and real drag&drop, Zedity is the next generation Editor: it gives you unprecedented flexibility and possibilities to create any desired content amazingly easily, like never before.
