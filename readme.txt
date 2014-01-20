@@ -103,7 +103,7 @@ A: Yes. There are 20+ audio and video services supported as a [Premium Feature](
 A: Yes, here is a [Zedity YouTube channel](http://www.youtube.com/user/ZedityTutorials) and here are [Tutorials](zedity.com/blog/tutorials). 
 
 **Q: ... got another question not reported here?**  
-You can contact us for [Support and Assistance](http://zedity.uservoice.com).
+Please contact us for [Support and Assistance](http://zedity.uservoice.com).
 
 == Screenshots ==
 
