@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.1.1
+Version: 2.1.2
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -242,7 +242,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 						*/
 					}
 					old_tb_remove.apply(this,arguments);
-					tinyMCE.activeEditor.plugins.zedity._closeZedity();
+					var ed = tinyMCE.activeEditor;
+					if (ed && ed.plugins.zedity) ed.plugins.zedity._closeZedity();
 				};
 				
 				window.askPublish = function(){
@@ -290,14 +291,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 					var old_go = switchEditors.go;
 					switchEditors.go = function(){
 						var ed = tinyMCE.activeEditor;
-						if (ed) ed.plugins.zedity._hideOverlay();
+						if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
 						old_go.apply(this,arguments);
 					};
 				}
 				jQuery('body').on('click.zedity',function(){
-					if (!tinyMCE) return;
+					if (!window.tinyMCE) return;
 					var ed = tinyMCE.activeEditor;
-					if (ed) ed.plugins.zedity._hideOverlay();
+					if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
 				});
 			});
 			</script>

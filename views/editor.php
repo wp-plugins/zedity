@@ -396,8 +396,6 @@
 					url: url, //use direct url because is already cached
 					dataType: 'html',
 					success: $.proxy(function(data){
-						//get content between <body></body> (jQuery can't handle it)
-						//data = data.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
 						//let's not use jQuery and avoid reg exp
 						var docfrag = document.createDocumentFragment();
 						var d = document.createElement("div");
@@ -435,8 +433,6 @@
 							alert('Error during content load:\n'+data.error);
 							return;
 						}
-						//get content between <body></body> (jQuery can't handle it)
-						//data = data.content.replace(/^[\s\S]*<body.*?>|<\/body>[\s\S]*$/g,'');
 						//let's not use jQuery and avoid reg exp
 						var docfrag = document.createDocumentFragment();
 						var d = document.createElement("div");

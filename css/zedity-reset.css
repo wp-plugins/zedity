@@ -35,6 +35,7 @@ Zedity Content
 
 .zedity-editor {
 	max-width: none !important;
+	z-index: 0 !important;
 }
 
 .zedity-editor.zedity-notheme * {
