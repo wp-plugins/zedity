@@ -30,7 +30,7 @@ An innovative Editor with a modern and intuitive user interface to achieve any a
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
 
-  
+   
 **Discover more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
