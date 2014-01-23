@@ -28,7 +28,7 @@ An innovative Editor with a simple and intuitive user interface that enables any
 
 * **Avoid looking unprofessional**: you can achieve professional results easily, creating content that only web developers could achieve before! 
 
-* **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
+* **Responsive design [Premium](http://zedity.com/plugin/wp)**: automatic content scaling to perfectly fit responsive layouts on any device!
 
    
 **Discover more about Zedity:**
