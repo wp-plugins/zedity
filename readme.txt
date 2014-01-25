@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 Next generation Editor to create your content with unprecedented possibilities and flexibility, very quickly and super easily, like never before!
 
 == Description ==
-An innovative Editor that enables anyone, with no technical skills required, to design any desired content, through an intuitive user interface, with unprecedented flexibility and possibilities, very quickly and extremely easily! Introducing Zedity, the next generation Editor...
+An innovative Editor that enables anyone, with no technical skills required, to design any desired content, through an intuitive user interface, with total flexibility and unprecedented possibilities, very quickly and extremely easily! Introducing Zedity, the next generation Editor...
 
 [youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
 
