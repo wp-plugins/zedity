@@ -128,7 +128,7 @@
 
 					while (i--) {
 						var parent = nodes[i].parent;
-						if (parent && parent.attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) {
+						if (parent && parent.attributes.map.class && parent.attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) {
 							self.objectToImg(nodes[i]);
 						}
 					}

@@ -104,6 +104,22 @@
 							ed.dom.events.prevent(e);
 							ed.dom.events.stop(e);
 						}
+					} else if (e.keyCode==46 || e.keyCode==8) {
+						if (ed.selection.isCollapsed()) {
+							var n = ed.selection.getNode();
+							if (n.getAttribute('class') && n.getAttribute('class').indexOf('zedity')>-1) {
+								ed.dom.events.prevent(e);
+								ed.dom.events.stop(e);
+								return;
+							}
+							var nc = n.textContent;
+							var empty = (nc.replace(/^\s+|\s+$/g, '') === '');
+							if (empty) {
+								tinymce.DOM.remove(n);
+								ed.dom.events.prevent(e);
+								ed.dom.events.stop(e);
+							}
+						}
 					}
 				});
 
@@ -152,9 +168,13 @@
 				} catch (e) {}
 				if (!t._zedityContent) {
 					var n = t.ed.selection.getNode();
-					n = t.ed.dom.select('.zedity-iframe-wrapper', n);
-					if (n.length>0) {
-						t._zedityContent = n[0];
+					if (!n.getAttribute('class') || n.getAttribute('class').indexOf('zedity-wrapper')==-1) {
+						n = t.ed.dom.select('.zedity-wrapper', n);
+						if (n.length>0) {
+							t._zedityContent = n[0];
+						}
+					} else {
+						t._zedityContent = n;
 					}
 				}
 				t._showOverlay(t.ed,t._zedityContent);
@@ -168,12 +188,20 @@
 			if (!n) return;
 			if (this.open) return;
 
+			/*
 			//disable editing
 			ed.getBody().setAttribute('contenteditable', 'false');
 			//avoid clicking on anchors
+			var t = this;
 			parent.jQuery('a',ed.getBody()).off('click.zedity-mce').on('click.zedity-mce',function(){
+				t.ed.selection.select(this);
+				t.ed.selection.collapse(true);
+				t.ed.nodeChanged();
+				ed.plugins.wordpress._hideButtons();
+				t._hideOverlay();
 				return false;
 			});
+			*/
 
 			//exit if it is the fullscreen editor (@qtranslate)
 			if (ed.id == 'wp_mce_fullscreen') return;
@@ -237,9 +265,11 @@
 			tinymce.DOM.hide(tinymce.DOM.select('#zedity_content_overlay'));
 			//re-enable editing
 			if (!block) {
+				/*
 				this.ed.getBody().setAttribute('contenteditable', 'true');
 				//re-enable clicking on anchors
 				parent.jQuery('a',this.ed.getBody()).off('click.zedity-mce');
+				*/
 				this._zedityContent = null;
 			}
 		},

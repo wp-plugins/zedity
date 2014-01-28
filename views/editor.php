@@ -156,7 +156,7 @@
 			}
 			#goPremiumLink.premiumfeat {
 				color: #444;
-				background:  #ffAA66;
+				background: #ffAA66;
 			}
 			#saveBtn {
 				color: white;
@@ -182,12 +182,12 @@
 				user-select: none;
 
 				background: #9dd53a;
-				background: -moz-linear-gradient(top,  #9dd53a 0%, #a1d54f 9%, #80c217 54%, #7cbc0a 100%);
+				background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 9%, #80c217 54%, #7cbc0a 100%);
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(9%,#a1d54f), color-stop(54%,#80c217), color-stop(100%,#7cbc0a));
-				background: -webkit-linear-gradient(top,  #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: linear-gradient(to bottom,  #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
+				background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
+				background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
+				background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
+				background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
 			}
 
 			#saveBtn:focus {
@@ -198,13 +198,13 @@
 
 			#saveBtn:hover,
 			#saveBtn:focus {
-				color:  #fcefa1;
+				color: #fcefa1;
 				text-decoration: none;
 			}
 
 			#saveBtn:active,
 			#saveBtn.active {
-				background-image: none;
+				/*background-image: none;*/
 				outline: 0;
 				-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 				box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -295,6 +295,7 @@
 				this.element = this.mce.dom.getParent(this.element,function(elem){
 					var $elem = $(elem);
 					if ($elem.hasClass('zedity-editor') && $elem.parent().hasClass('zedity-wrapper')) return false;
+					if ($elem.hasClass('zedity-iframe-wrapper') && $elem.parent().hasClass('zedity-wrapper')) return false;
 					return $elem.hasClass('zedity-editor') || $elem.hasClass('zedity-wrapper') || $elem.hasClass('zedity-iframe-wrapper');
 				});
 				if (this.element) {
@@ -360,6 +361,7 @@
 				this.watermarkposition = $div.find('.zedity-watermark').attr('data-pos') || this.watermarkposition;
 				//get alignment
 				var $el = $div.find('.zedity-editor') || $div.find('.zedity-iframe-container');
+				this.alignment = '';
 				if ($el.hasClass('alignleft')) this.alignment='left';
 				if ($el.hasClass('alignright')) this.alignment='right';
 				if ($el.hasClass('aligncenter')) this.alignment='center';

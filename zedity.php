@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.1.2
+Version: 2.1.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -290,7 +290,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				if (window.switchEditors) {
 					var old_go = switchEditors.go;
 					switchEditors.go = function(){
-						var ed = tinyMCE.activeEditor;
+						var ed = tinyMCE.get('content');
 						if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
 						old_go.apply(this,arguments);
 					};
@@ -343,6 +343,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 				//include custom media plugin for iframe preview
 				$plugins['newmedia'] = plugins_url('mce/media/editor_plugin.js', __FILE__);
 			}
+			//include custom noneditable plugin to disallow Zedity content edit inside TinyMCE
+			$plugins['newnoneditable'] = plugins_url('mce/noneditable/editor_plugin.js', __FILE__);
 			return $plugins;
 		}
 
@@ -362,18 +364,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 				$init['extended_valid_elements'] .= ',iframe[*]';
 			}
 			$options = $this->get_options();
+			
+			//disable conflicting tinymce plugins
+			$plugins = explode(',',$init['plugins']);
+			$plugins = array_diff($plugins, array('noneditable','-noneditable'));
 			if ($options['iframe_preview']) {
-				//disable media plugin in standard TinyMCE editor
-				$plugins = explode(',',$init['plugins']);
-				if (($idx = array_search('media',$plugins)) !== false) {
-					unset($plugins[$idx]);
-				}
-				//disable media plugin bundled with other plugins (#627)
-				if (($idx = array_search('-media',$plugins)) !== false) {
-					unset($plugins[$idx]);
-				}
-				$init['plugins'] = implode(',',$plugins);
+				$plugins = array_diff($plugins, array('media','-media'));
 			}
+			$init['plugins'] = implode(',',$plugins);
 			return $init;
 		}
 

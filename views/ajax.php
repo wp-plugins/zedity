@@ -63,7 +63,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 					$css .= "<link href=\"//fonts.googleapis.com/css?family=$fontname\" rel=\"stylesheet\" type=\"text/css\">";
 				}
 			}
-
+			if (isset($options['customfontscss'])) {
+				$css .= "<style>{$options['customfontscss']}</style>";
+			}
+			
 			//construct html
 			$content = "<html><head><title>$title</title>$css</head><body>$content $js</body></html>";
 

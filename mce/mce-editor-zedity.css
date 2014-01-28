@@ -48,7 +48,8 @@ p {
 }
 
 /*avoid clicks on links/popups*/
-a, [onclick] {
+/*a,*/
+[onclick] {
 	pointer-events: none;
 }
 
