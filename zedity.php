@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.1.3
+Version: 2.1.4
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -516,32 +516,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
 				<link rel="stylesheet" href="<?php echo plugins_url('mce/content-overlay.css', __FILE__); ?>" type="text/css" media="all" />
-				<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css', __FILE__)?>" type="text/css" media="all" />
-				<style type="text/css">
-				#zedity .button,
-				#zedity-premium .button {
-					padding: 0px 4px;
-					line-height: 16px;
-					height: auto;
-					border: 1px solid #E6DB55;
-					background: #FFFFE0;
-					background: -webkit-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
-					background: -moz-linear-gradient(top, #FFFFE0 0%, #E6DB55 100%);
-					background: -ms-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
-					background: -o-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
-					background: linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
-				}
-				#zedity .button:hover,
-				#zedity-premium .button:hover {
-					background: #FFFFE0;
-				}
-				.zedity-dialog {
-					z-index: 400000 !important;
-				}
-				.ui-widget-overlay.ui-front {
-					background: #000;
-				}
-				</style>
+				<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-admin.css', __FILE__)?>" type="text/css" media="all" />
 				<?php
 			}
 		}
