@@ -29,7 +29,7 @@ Zedity is an innovative Editor that makes it extremely easy and quick to create 
 * **Advanced results**: you can achieve professional results easily, creating content that only web developers could do before! 
 
 * **Responsive design [Premium](http://zedity.com/plugin/wp)**: automatic scaling to see your entire content exactly as created, in responsive layouts perfectly on any device!
-
+ 
    
 **Discover more about Zedity:**
 
@@ -41,7 +41,7 @@ Zedity is an innovative Editor that makes it extremely easy and quick to create 
 
 *   [Facebook page](https://www.facebook.com/Zedity): Visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 
-*   [Support and Assistance](http://zedity.uservoice.com): where to get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also contact us [here](http://zedity.com). Note: if you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of the browser, operating system, plugin and, whenever possible, a link to a live page showing the issue. Thank you in advance! 
+*   [Support and Assistance](http://zedity.uservoice.com): get assistance, ask for information, provide your suggestions and ideas! As an alternative, you can also contact us [here](http://zedity.com). Note: if you think you have found a bug, and haven't found the solution in the [support section](http://wordpress.org/support/plugin/zedity), please provide specific information on what is not working, the version of the browser, operating system, plugin and, whenever possible, a link to a live page showing the issue. Thank you in advance! 
  
 **Enjoy Zedity!**
 
