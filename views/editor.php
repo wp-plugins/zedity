@@ -419,14 +419,14 @@
 			//load content from file (via ajax helper)
 			//(used if the cached url changed, causing an apparent cross domain)
 			loadFromFile2: function(){
-				var url = 'index.php?page=zedity_ajax'; // ajax helper url
+				var url = 'admin-ajax.php?action=zedity_ajax';
 				console.log('Loading content from file (now via ajx helper), url='+url);
 				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
 				$.ajax({
 					type: 'GET',
 					url: url,
 					data: {
-						action: 'load',
+						zaction: 'load',
 						id: this.id
 					},
 					dataType: 'json html',
@@ -457,9 +457,9 @@
 				zedityEditor.lock('<p>Uploading content.<br/>Please wait...</p>');
 				$.ajax({
 					type: 'POST',
-					url: 'index.php?page=zedity_ajax',
+					url: 'admin-ajax.php?action=zedity_ajax',
 					data: {
-						action: 'save',
+						zaction: 'save',
 						id: this.id,
 						post_id: parent.post_id,
 						title: this.title,
@@ -546,10 +546,10 @@
 				var maxSize = <?php echo $this->MAX_UPLOAD_SIZE ?>;
 				this.size = zedityEditor.page.size();
 				//convert target attributes (avoid opening links inside the iframe)
-				zedityEditor.$this.find('[target=_self],a:not([target])').each(function(){
+				zedityEditor.$container.find('[target=_self],a:not([target])').each(function(){
 					$(this).attr('target','_top').attr('data-target','_top');
 				});
-				zedityEditor.$this.find('[data-target=_self]').each(function(){
+				zedityEditor.$container.find('[data-target=_self]').each(function(){
 					$(this).attr('data-target','_top');
 				});
 				//alignment

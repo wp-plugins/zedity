@@ -53,6 +53,7 @@ Generic box
 }
 
 .zedity-editor .zedity-box {
+	overflow: hidden !important;
 	box-sizing: content-box !important;
 }
 .zedity-editor .zedity-box.zedity-background {
@@ -100,6 +101,15 @@ Image box
 	border: 0 !important;
 	background: transparent !important;
 }
+
+.zedity-editor.zedity-notheme .zedity-box-Image a {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
 
 
 /*----------------------------------------------------------------------------------------

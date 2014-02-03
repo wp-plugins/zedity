@@ -155,7 +155,7 @@
 
 		_openZedity: function(){
 			this._hideOverlay(true);
-			tb_show('Zedity Editor', 'index.php?page=zedity_editor&TB_iframe=true');
+			tb_show('Zedity Editor', 'admin-ajax.php?action=zedity_editor&TB_iframe=true');
 			this.open = true;
 		},
 
@@ -168,14 +168,8 @@
 				} catch (e) {}
 				if (!t._zedityContent) {
 					var n = t.ed.selection.getNode();
-					if (!n.getAttribute('class') || n.getAttribute('class').indexOf('zedity-wrapper')==-1) {
-						n = t.ed.dom.select('.zedity-wrapper', n);
-						if (n.length>0) {
-							t._zedityContent = n[0];
-						}
-					} else {
-						t._zedityContent = n;
-					}
+					var z = t.ed.dom.select('.zedity-editor',n)[0] || t.ed.dom.select('.zedity-iframe-wrapper',n)[0];
+					t._zedityContent = z;
 				}
 				t._showOverlay(t.ed,t._zedityContent);
 			},100);
@@ -331,8 +325,8 @@
 
 			tinymce.dom.Event.add(zDelButton, 'mousedown', function(e){
 				var n = t._zedityContent;
-				//if is the iframe wrapper, get the outer wrapper
-				if (tinymce.DOM.hasClass(n,'zedity-iframe-wrapper')) {
+				//if is the inner content, get the outer wrapper
+				if (tinymce.DOM.hasClass(n,'zedity-iframe-wrapper') || tinymce.DOM.hasClass(n,'zedity-editor')) {
 					n = ed.dom.getParent(n,'div.zedity-wrapper');
 				}
 				ed.selection.select(n);

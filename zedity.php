@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.1.4
+Version: 2.2.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -88,9 +88,11 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 			//Zedity into ThickBox
 			add_action('admin_enqueue_scripts', array(&$this,'admin_enqueue_scripts'));
-			add_action('load-dashboard_page_zedity_editor', array(&$this,'add_zedity_editor_page'));
-			add_action('load-dashboard_page_zedity_ajax', array(&$this,'add_zedity_ajax_page'));
 			
+			//use ajax mechanism to load views
+			add_action('wp_ajax_zedity_editor', array(&$this,'add_zedity_editor_page'));
+			add_action('wp_ajax_zedity_ajax', array(&$this,'add_zedity_ajax_page'));
+
 			//Zedity into Media Library
 			add_filter('post_mime_types', array(&$this,'add_zedity_mime_type'));
 			
@@ -164,8 +166,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function add_menu() {
 			add_options_page('Zedity Settings', 'Zedity Editor', 'manage_options', 'wp_zedity_plugin', array(&$this, 'add_settings_page'));
-			add_submenu_page(null, 'Zedity Editor', 'Zedity Editor', 'edit_pages', 'zedity_editor', array(&$this, 'add_zedity_editor_page'));
-			add_submenu_page(null, 'Zedity Ajax', 'Zedity Ajax', 'edit_pages', 'zedity_ajax', array(&$this, 'add_zedity_uploader_page'));
 		}
 		
 
@@ -247,6 +247,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				};
 				
 				window.askPublish = function(){
+					if (!window.tinyMCE || !tinyMCE.get('content')) return;
 					jQuery('<div><p>You have modified your Zedity content.</p><p>Please don\'t forget to publish your post for the modifications to appear in your published post as well.</p></div>').dialog({
 						title: 'Zedity',
 						dialogClass: 'zedity-dialog',
@@ -352,7 +353,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_mce_css($mce_css) {
 			if (!empty($mce_css)) $mce_css .= ',';
 			$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
-			$mce_css .= 'index.php?page=zedity_ajax&action=webfonts';
+			$mce_css .= 'admin-ajax.php?action=zedity_ajax&zaction=webfonts';
 			return $mce_css;
 		}
 		

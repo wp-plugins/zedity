@@ -3,11 +3,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 	$response = array(
 	    'error' => "Post size may be too big ({$_SERVER['CONTENT_LENGTH']})."
 	);
-} else if (empty($_REQUEST['action'])) {
-	$response = array('error' => 'Malformed ajax request (missing action).');
+} else if (empty($_REQUEST['zaction'])) {
+	$response = array('error' => 'Malformed ajax request (missing zaction).');
 } else {
 
-    switch ($_REQUEST['action']) {
+    switch ($_REQUEST['zaction']) {
 		//------------------------------------------------------------------------------------
 		case 'save':
 			if (empty($_POST['content'])) {
@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 				$oldfile = get_attached_file($attach_id);
 				$filename = basename($oldfile);
 				$dirname = dirname($oldfile);
-				$dirname = trim($dirname,$dir['basedir']);
-				$dirname = trim($dirname,$filename);
+				$dirname = str_replace($dir['basedir'],$dirname,'');
+				$dirname = str_replace($filename,$dirname,'');
 				//get dir info (may be in older subdirectory)
 				$dir = wp_upload_dir($dirname);
 				$edit = TRUE;
@@ -149,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 		//------------------------------------------------------------------------------------
 		default:
 			$response = array('error' =>
-				"Malformed ajax request (unknown action: {$_REQUEST['action']})"
+				"Malformed ajax request (unknown action: {$_REQUEST['zaction']})"
 			);
 		break;
 	} // switch

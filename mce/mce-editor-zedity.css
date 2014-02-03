@@ -21,6 +21,9 @@ Reset some css modified by the WP visual editor
 }
 
 
+.zedity-editor .zedity-box {
+	overflow: hidden;
+}
 
 .zedity-editor .zedity-box-Image p {
 	width: 100%;
