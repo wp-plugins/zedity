@@ -24,7 +24,7 @@ Zedity is an innovative Editor that makes it extremely easy and quick to create 
 
 * **No more struggling**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code!
 
-* **Save time and effort**: increase your productivity, getting things done in a fraction of the time that you're used to!
+* **Save time and effort**: increase your productivity, getting things done in a fraction of the time you're used to!
 
 * **Advanced results**: you can achieve professional results easily, creating content that only web developers could do before! 
 
