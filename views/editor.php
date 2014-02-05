@@ -4,14 +4,6 @@
 
 		<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css',dirname(__FILE__))?>" type="text/css" media="all" />
 		<?php
-		//remove all external scripts/styles
-		global $wp_scripts, $wp_styles;
-		foreach($wp_scripts->queue as $handle) {
-			wp_dequeue_script($handle);
-		}
-		foreach($wp_styles->queue as $handle) {
-			wp_dequeue_style($handle);
-		}
 		//add jQuery and jQueryUI bundled with WordPress
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('jquery-ui-tabs');
