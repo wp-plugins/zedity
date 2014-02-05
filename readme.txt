@@ -18,11 +18,11 @@ Zedity is an innovative Editor that will amaze you for the easiness and quicknes
     
 **Advantanges of using Zedity:**
 
-* **Design freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
+* **Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
-* **Very easy for anyone**: a modern and intuitive user interface, very easy to operate with powerful operations accomplished in just few clicks with real drag and drop!
+* **Super Easy for everyone**: a modern and intuitive user interface, very easy to operate with powerful operations accomplished in just few clicks with real drag and drop!
 
-* **No more struggling**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code!
+* **No Code-struggling**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
 
 * **Save time and effort**: increase your productivity, getting things done in a fraction of the time you're used to!
 
