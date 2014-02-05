@@ -20,15 +20,15 @@ Zedity is an innovative Editor that will amaze you for the easiness and quicknes
 
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
-* **Super Easy for everyone**: a modern and intuitive user interface, very easy to operate with powerful operations accomplished in just few clicks with real drag and drop!
+* **Super Easy**: a modern and intuitive user interface, very easy to operate with powerful operations accomplished in just few clicks with real drag and drop!
 
-* **No Code-struggling**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
+* **NO Coding Skills**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
 
-* **Save time and effort**: increase your productivity, getting things done in a fraction of the time you're used to!
+* **Save a Lot of Time**: increase your productivity, getting things done in a fraction of the time you're used to!
 
-* **Advanced results**: you can achieve professional results easily, creating designs and effects that only web developers could do before! 
+* **Advanced Results**: you can achieve professional results easily, creating designs and effects that only web developers could do before! 
 
-* **Responsive design [Premium](http://zedity.com/plugin/wp)**: automatic scaling to see your entire content exactly as created, in responsive layouts perfectly on any device!
+* **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic scaling to see your entire content exactly as created, in responsive layouts perfectly on any device!
  
    
 **Discover more about Zedity:**
