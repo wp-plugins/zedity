@@ -24,9 +24,9 @@ Zedity is an innovative Editor that will amaze you for the easiness and quicknes
 
 * **NO Coding Skills**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
 
-* **Save a Lot of Time**: increase your productivity, getting things done in a fraction of the time you're used to!
+* **Saves you Time and Money**: you can create your content much more quickly and even just by yourself!
 
-* **Advanced Results**: you can achieve professional results easily, creating designs and effects that only web developers could do before! 
+* **Amazing Look**: you can achieve professional results easily, creating designs and effects that only web developers could do before! 
 
 * **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic scaling to see your entire content exactly as created, in responsive layouts perfectly on any device!
  
