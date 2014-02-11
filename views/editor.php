@@ -4,6 +4,18 @@
 
 		<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css',dirname(__FILE__))?>" type="text/css" media="all" />
 		<?php
+		//remove all external scripts/styles
+		global $wp_scripts, $wp_styles;
+		if (!empty($wp_scripts) && !empty($wp_scripts->queue)) {
+			foreach($wp_scripts->queue as $handle) {
+				wp_dequeue_script($handle);
+			}
+		}
+		if (!empty($wp_styles) && !empty($wp_styles->queue)) {
+			foreach($wp_styles->queue as $handle) {
+				wp_dequeue_style($handle);
+			}
+		}
 		//add jQuery and jQueryUI bundled with WordPress
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('jquery-ui-tabs');
@@ -20,22 +32,23 @@
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
-		var linkMsg = 'For information or to upgrade to Zedity Premium, please visit <a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>.';
+		var linkMsg = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
 		ZedityPromo = {
 			product: 'Zedity Premium',
 			productShort: 'Premium',
-			message: 'This is a Zedity Premium feature.<br/>'+linkMsg,
+			message: '<?php echo sprintf(addslashes(__('This is a %s feature.','zedity')),'Zedity Premium')?><br/>'+linkMsg,
 			feature: {
-				linkOnBox: 'Premium feature: associate a link to the box.<br/>'+linkMsg,
-				boxSize: 'Premium feature: view and set exact box size.<br/>'+linkMsg,
-				textParagraph: 'Premium feature: SEO friendly tags, e.g. title, paragraph, etc.<br/>'+linkMsg,
-				textLink: 'Premium feature: open link in a new tab.<br/>'+linkMsg,
-				imageFilters: 'Premium feature: enhance images with special effects.<br/>'+linkMsg,
-				colorButtons: 'Premium feature: set custom RGB or Hex colors',
+				linkOnBox: '<?php echo sprintf(addslashes(__('%s feature: associate a link to the box.','zedity')),'Premium')?><br/>'+linkMsg,
+				boxSize: '<?php echo sprintf(addslashes(__('%s feature: view and set exact box size.','zedity')),'Premium')?><br/>'+linkMsg,
+				textParagraph: '<?php echo sprintf(addslashes(__('%s feature: SEO friendly tags, e.g. title, paragraph, etc.','zedity')),'Premium')?><br/>'+linkMsg,
+				textLink: '<?php echo sprintf(addslashes(__('%s feature: open link in a new tab.','zedity')),'Premium')?><br/>'+linkMsg,
+				imageFilters: '<?php echo sprintf(addslashes(__('%s feature: enhance images with special effects.','zedity')),'Premium')?><br/>'+linkMsg,
+				colorButtons: '<?php echo sprintf(addslashes(__('%s feature: set custom RGB or Hex colors.','zedity')),'Premium')?>',
 				additionalMedia: linkMsg,
 				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
 			}
 		};
+		ZedityLang = '<?php echo substr(WPLANG,0,2)?>';
 		</script>
 		
 		<link rel="stylesheet" href="<?php echo plugins_url('zedity/zedity.min.css',dirname(__FILE__))?>" type="text/css" media="screen" />
@@ -62,6 +75,7 @@
 			html,body {
 				padding: 0;
 				margin: 1px 0;
+				background: white;
 			}
 			.zedity-mainmenu {
 				position: fixed !important;
@@ -222,39 +236,33 @@
 
 	<body>
 		<div id="statusbar">
-			<span class="info">Content mode:
-			<select id="ddSaveMode">
-				<option value="1">Isolated</option>
-				<option value="2">Standard</option>
-			</select>
-			<span id="statusBarContentModeTT" class="zedity-tooltip" title="">?</span>
+			<span class="info"><?php _e('Content mode:','zedity')?>
+				<select id="ddSaveMode">
+					<option value="1"><?php _e('Isolated','zedity')?></option>
+					<option value="2"><?php _e('Standard','zedity')?></option>
+				</select>
+				<span id="statusBarContentModeTT" class="zedity-tooltip" title="">?</span>
 			</span>
 
-			<?php
-			if ($this->is_premium()) {
-			?>
-			<span class="info">Responsive:
-				<select id="ddResponsive" >
-				<option value="1">Yes</option>
-				<option value="0">No</option>
-				</select>
-			</span>
-			<?php
-			} else {
-			?>
-			<span class="info">Responsive:
-				<select>
-				<option>No</option>
-				<option disabled="disabled">Yes (Premium)</option>
-				</select>
-			</span>
-			<!-- show disabled premium features in free version -->
-			<a target="_blank" id="goPremiumLink" href="http://zedity.com/plugin/wpfeatures" class="info">Go Premium</a>
-			<?php
-			}
-			?>
+			<?php if ($this->is_premium()) { ?>
+				<span class="info"><?php _e('Responsive:','zedity')?>
+					<select id="ddResponsive">
+						<option value="1"><?php _e('Yes','zedity')?></option>
+						<option value="0"><?php _e('No','zedity')?></option>
+					</select>
+				</span>
+			<?php } else { ?>
+				<span class="info"><?php _e('Responsive:','zedity')?>
+					<select>
+						<option><?php _e('No','zedity')?></option>
+						<option disabled="disabled"><?php _e('Yes','zedity')?> (Premium)</option>
+					</select>
+				</span>
+				<!-- show disabled premium features in free version -->
+				<a target="_blank" id="goPremiumLink" href="http://zedity.com/plugin/wpfeatures" class="info"><?php echo sprintf(__('Go %s','zedity'),'Premium')?></a>
+			<?php } ?>
 
-			<button id="saveBtn">Save</button>
+			<button id="saveBtn"><?php _e('Save','zedity')?></button>
 
 		</div>
 		<div id="zedityEditorW"></div>
@@ -317,7 +325,7 @@
 					this.savemode = 2;
 					this.setContentInEditor($content.find('.zedity-editor').get(0).outerHTML);
 				} else if ($content.children().length) {
-					alert('The content may have been manually modified and got corrupted.');
+					alert('<?php echo addslashes(__('The content may have been manually modified and got corrupted.','zedity'))?>');
 				}
 				//new content otherwise
 				zedityEditor.contentChanged = false;
@@ -383,7 +391,7 @@
 			},
 			//load content from file (via ajax direct url)
 			loadFromFile: function(url){
-				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
+				zedityEditor.lock('<p><?php echo addslashes(__('Loading content.','zedity'))?><br/><?php echo addslashes(__('Please wait...','zedity'))?></p>');
 				console.log('Loading content from file via cached direct url='+url);
 				$.ajax({
 					type: 'GET',
@@ -413,7 +421,7 @@
 			loadFromFile2: function(){
 				var url = 'admin-ajax.php?action=zedity_ajax';
 				console.log('Loading content from file (now via ajx helper), url='+url);
-				zedityEditor.lock('<p>Loading content.<br/>Please wait...</p>');
+				zedityEditor.lock('<p><?php echo addslashes(__('Loading content.','zedity'))?><br/><?php echo addslashes(__('Please wait...','zedity'))?></p>');
 				$.ajax({
 					type: 'GET',
 					url: url,
@@ -421,15 +429,15 @@
 						zaction: 'load',
 						id: this.id
 					},
-					dataType: 'json html',
+					dataType: 'json',
 					success: $.proxy(function(data){
 						if (data.error) {
-							alert('Error during content load:\n'+data.error);
+							alert('<?php echo addslashes(__('Error during content load:','zedity'))?>\n'+data.error);
 							return;
 						}
 						//let's not use jQuery and avoid reg exp
 						var docfrag = document.createDocumentFragment();
-						var d = document.createElement("div");
+						var d = document.createElement('div');
 						d.innerHTML = data.content; //here data.content
 						docfrag.appendChild(d);
 						data = docfrag.querySelector('.zedity-editor');
@@ -437,7 +445,7 @@
 						this.setContentInEditor(data);
 					},this),
 					error: function(xhr,status,error){
-						alert('Unexpected error during content load:\n'+error.toString());
+						alert('<?php echo addslashes(__('Unexpected error during content load:','zedity'))?>\n'+error.toString());
 					},
 					complete: function(){
 						zedityEditor.unlock();
@@ -446,7 +454,7 @@
 			},
 			//save content to file
 			saveToFile: function(content){
-				zedityEditor.lock('<p>Uploading content.<br/>Please wait...</p>');
+				zedityEditor.lock('<p><?php echo addslashes(__('Uploading content.','zedity'))?><br/><?php echo addslashes(__('Please wait...','zedity'))?></p>');
 				$.ajax({
 					type: 'POST',
 					url: 'admin-ajax.php?action=zedity_ajax',
@@ -460,11 +468,11 @@
 					dataType: 'json',
 					success: $.proxy(function(data){
 						if (!data) {
-							alert('Unexpected error during content save:\nNo data received from the server.');
+							alert('<?php echo addslashes(__('Unexpected error during content save:','zedity'))?>\n<?php echo addslashes(__('No data received from the server.','zedity'))?>');
 							return;
 						}
 						if (data.error) {
-							alert('Error during content save:\n'+data.error);
+							alert('<?php echo addslashes(__('Error during content save:','zedity'))?>\n'+data.error);
 							return;
 						}
 						var size = zedityEditor.page.size();
@@ -481,9 +489,9 @@
 					},this),
 					error: function(xhr,status,error){
 						if (error.name=='SyntaxError') {
-							alert('Unexpected error during content save.');
+							alert('<?php echo addslashes(__('Unexpected error during content save.','zedity'))?>');
 						} else {
-							alert('Unexpected error during content save:\n'+error.toString());
+							alert('<?php echo addslashes(__('Unexpected error during content save:','zedity'))?>\n'+error.toString());
 						}
 					},
 					complete: function(){
@@ -554,7 +562,11 @@
 				zedityEditor.$this.attr('data-origw',this.size.width).attr('data-origh',this.size.height);
 				zedityEditor.save($.proxy(function(html){
 					if (html.length > maxSize) {
-						alert('The content you have created exceeds the maximum upload size for this site ('+Math.round(maxSize/1000000)+'MB).\n\nPlease review your content and try again.');
+						alert(
+							'<?php echo addslashes(__('The content you have created exceeds the maximum upload size for this site','zedity'))?> ('+Math.round(maxSize/1000000)+'MB).'+
+							'\n\n'+
+							'<?php echo addslashes(__('Please review your content and try again.','zedity'))?>'
+						);
 						return;
 					}
 					$(parent.document).find('#TB_iframeContent').removeClass('zedity-editor-iframe');
@@ -610,7 +622,10 @@
 			editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyleMain').toggleClass('ui-state-disabled',content.savemode==1);
 			<?php if ($this->is_premium()){ ?>
 				//set title for disk save icon (and save menu item) to reflect the actual the responsive setting
-				editor.$container.find('.zedity-mainmenu .zedity-menu-SavePage a').attr('title', 'Save ('+(content.responsive ? 'Responsive' : 'Not responsive')+')');
+				editor.$container.find('.zedity-mainmenu .zedity-menu-SavePage a').attr(
+					'title',
+					'<?php echo addslashes(__('Save','zedity'))?> ('+(content.responsive ? '<?php echo addslashes(__('Responsive','zedity'))?>' : '<?php echo addslashes(__('Not responsive','zedity'))?>')+')'
+				);
 				//force content alignment to center if content is responsive (#623)
 				var pamenu = editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlignMain');
 				if (content.responsive && !pamenu.hasClass('ui-state-disabled')) {
@@ -627,9 +642,12 @@
 				$('#ddResponsive').val(content.responsive ? 1 : 0);
 			<?php } ?>
 
-			$('#statusBarContentModeTT').prop('title', content.savemode == 1 ?
-				"<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs." :
-				"<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is preferred mode for SEO and social sharing.").tooltip();
+			$('#statusBarContentModeTT').prop(
+				'title',
+				content.savemode == 1 ?
+					'<?php echo addslashes(__('<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.','zedity'))?>' :
+					'<?php echo addslashes(__('<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is the preferred mode for SEO and social sharing.','zedity'))?>'
+			).tooltip();
 		};
 
 		$('#statusbar').on('change','#ddSaveMode',function(){
@@ -647,15 +665,16 @@
 		//Media Library
 		
 		var zedity_ML_frame_image = null;
-		jQuery(document).on('click.zedity_media_library', '.zedity-propbar-Image .zedity-bar-icon.zedity-icon-image', function(event){
+		$(document).on('dialogcreate','.zedity-dialog-image',function(event,ui){
 			if (!zedity_ML_frame_image) {
+				//add new tab for media library
 				var $tabs = $('.zedity-dialog-image .tabs');
-				$tabs.find('ul').prepend('<li><a href="#tab-image-ML">Media library</a></li>');
+				$tabs.find('ul').prepend('<li><a href="#tab-image-ML"><?php echo addslashes(__('Media Library','zedity'))?></a></li>');
 				$tabs.append(
 					'<div id="tab-image-ML">'+
-					'<p>Insert an image from the WordPress Media Library.</p>'+
-					'<p>You can choose among the images you already have in your library, or upload a new one.</p>'+
-					'<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only zedity-open-ML"><span class="ui-button-text">Open Media Library...</span></button>'+
+					'<p><?php echo addslashes(__('Insert an image from the WordPress Media Library.','zedity'))?></p>'+
+					'<p><?php echo addslashes(__('You can choose among the images you already have in your library, or upload a new one.','zedity'))?></p>'+
+					'<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only zedity-open-ML"><span class="ui-button-text"><?php echo addslashes(__('Open Media Library...','zedity'))?></span></button>'+
 					'</div>'
 				);
 				$tabs.tabs('refresh');
@@ -679,11 +698,23 @@
 				zedity_ML_frame_image.on('select', function(){
 					var $dialog = $('.zedity-dialog-image');
 					var file = zedity_ML_frame_image.state().get('selection').first().toJSON();
-					console.log('file',file);
+					//console.log('file',file);
 					$dialog.find('.tabs').tabs('selected','tab-image-link');
 					$dialog.find('#zedity-txtImageLink').val(file.url);
 					$dialog.find('#zedity-txtImageDescription').val(file.alt||file.description||file.title||file.caption);
 				});
+				
+				<?php if (!$this->is_premium()) { ?>
+					$('#tab-image-link').prepend(
+						'<div id="zedity-pnlThumbML">'+
+						'<?php echo addslashes(__('Select size format from Media Library:','zedity'))?><br/>'+
+						'<select id="zedity-ddThumbML" style="width:170px" disabled="disabled">'+
+							'<option value="full"><?php echo addslashes(__('Full size','zedity'))?></option>'+
+						'</select>&nbsp;<span class="zedity-tooltip">?</span>'+
+						'</div><br/>'
+					);
+					$('#tab-image-link .zedity-tooltip').attr('title',ZedityPromo.message).tooltip();
+				<?php } ?>
 			}
 		});
 
@@ -742,7 +773,10 @@
 				<?php if (!$this->is_premium()) { ?>
 					if ($('.zedity-fss-menu').length && !$('.zedity-fss-menu .ui-menu-item-promo').length) {
 						$('.zedity-fss-menu').append(
-							'<li data-value="0" class="ui-menu-item ui-menu-item-promo ui-state-disabled" role="presentation"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><small>More sizes in Zedity Premium</small></a></li>'
+							'<li data-value="0" class="ui-menu-item ui-menu-item-promo ui-state-disabled" role="presentation">'+
+							'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem">'+
+							'<small><?php echo addslashes(sprintf(__('More sizes in %s','zedity'),'Zedity Premium'))?></small>'+
+							'</a></li>'
 						);
 					}
 				<?php } ?>
@@ -773,19 +807,19 @@
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
 			'<li class="ui-menu-item zedity-menu-PageAlignMain" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Alignment</a>'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Alignment','zedity'))?></a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
 					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span>None</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('None','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="left">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Left</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Left','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="center">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Center</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Center','zedit'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="right">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Right</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Right','zedity'))?></a>'+
 					'</li>'+
 				'</ul>'+
 			'</li>'
@@ -793,13 +827,13 @@
 		//add Theme style to menu
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-menu-item zedity-menu-ThemeStyleMain" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Theme style</a>'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Theme style','zedity'))?></a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
 					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="yes">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Enabled</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Enabled','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="no">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span>Disabled</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('Disabled','zedity'))?></a>'+
 					'</li>'+
 				'</ul>'+
 			'</li>'
@@ -807,22 +841,22 @@
 		//add Watermark to menu
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-menu-item" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Watermark</a>'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Watermark','zedity'))?></a>'+
 				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
 					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="none">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span>None</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('None','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="topleft">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Top left</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Top left','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="topright">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Top right</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Top right','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="bottomleft">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Bottom left</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Bottom left','zedity'))?></a>'+
 					'</li>'+
 					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="bottomright">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span>Bottom right</a>'+
+						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Bottom right','zedity'))?></a>'+
 					'</li>'+
 				'</ul>'+
 			'</li>'
@@ -831,7 +865,7 @@
 		zedityMenu.find('li.ui-menubar:first-child > ul').append(
 			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
 			'<li class="zedity-menu-SavePage ui-menu-item" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span>Save</a>'+
+				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span><?php echo addslashes(__('Save','zedity'))?></a>'+
 			'</li>'
 		);
 		//add shortcut buttons
@@ -839,10 +873,10 @@
 //			'<li class="zedity-menu-SavePage ui-menu-item zedity-menu-quick" role="presentation" title="Save">'+
 //				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span></a>'+
 //			'</li>'+
-			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="redo" role="presentation" title="Redo (ctrl+y)">'+
+			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="redo" role="presentation" title="<?php echo addslashes(__('Redo','zedity'))?> (ctrl+y)">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-redo" style="background-size:85%"></span></a>'+
 			'</li>'+
-			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="undo" role="presentation" title="Undo (ctrl+z)">'+
+			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="undo" role="presentation" title="<?php echo addslashes(__('Undo','zedity'))?> (ctrl+z)">'+
 				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-undo" style="background-size:85%"></span></a>'+
 			'</li>'
 //			+'<li class="zedity-menu-separator ui-menu-item ui-state-disabled zedity-menu-quick">'+
@@ -880,8 +914,9 @@
 				content.save();
 			} else {
 				Zedity.core.dialog({
-					question: 'Please provide a title for this Zedity content: <span class="zedity-tooltip" title="A short description used as the name of the file into which the content is saved in your Media Library.">?</span>',
-					mandatory: 'Please insert a title.',
+					question: '<?php echo addslashes(sprintf(__('Please provide a title for this %s content:','zedity'),'Zedity'))?> '+
+						'<span class="zedity-tooltip" title="<?php echo addslashes(__('A short description used as the name of the file into which the content is saved in your Media Library.','zedity'))?>">?</span>',
+					mandatory: '<?php echo addslashes(__('Please insert a title.','zedity'))?>',
 					ok: function(answer){
 						content.title = answer;
 						content.save();

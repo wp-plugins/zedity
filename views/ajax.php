@@ -1,21 +1,21 @@
 <?php
 if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LENGTH']>0) {
 	$response = array(
-	    'error' => "Post size may be too big ({$_SERVER['CONTENT_LENGTH']})."
+	    'error' => __('Post size may be too big','zedity') . " ({$_SERVER['CONTENT_LENGTH']})."
 	);
 } else if (empty($_REQUEST['zaction'])) {
-	$response = array('error' => 'Malformed ajax request (missing zaction).');
+	$response = array('error' => __('Malformed ajax request (missing zaction).','zedity'));
 } else {
 
     switch ($_REQUEST['zaction']) {
 		//------------------------------------------------------------------------------------
 		case 'save':
 			if (empty($_POST['content'])) {
-				$response = array('error' => 'The post content is empty.');
+				$response = array('error' => __('The post content is empty.','zedity'));
 				break;
 			}
 			if (empty($_POST['title'])) {
-				$response = array('error' => 'The post title is missing.');
+				$response = array('error' => __('The post title is missing.','zedity'));
 				break;
 			}
 			$content = stripslashes($_POST['content']);
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			}
 
 			if (!is_writable($dir['path'])) {
-				$response = array('error' => 'Upload directory is not writable.');
+				$response = array('error' => __('Upload directory is not writable.','zedity'));
 				break;
 			}
 
@@ -66,13 +66,13 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			if (isset($options['customfontscss'])) {
 				$css .= "<style>{$options['customfontscss']}</style>";
 			}
-			
+
 			//construct html
 			$content = "<html><head><title>$title</title>$css</head><body>$content $js</body></html>";
 
 			$ret = @file_put_contents("{$dir['path']}/$filename", $content);
 			if ($ret===FALSE) {
-				$response = array('error' => "Error writing to file ({$dir['path']}/$filename)");
+				$response = array('error' => __('Error writing to file','zedity') . " ({$dir['path']}/$filename).");
 				break;
 			}
 
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 		case 'load':
 
 			if (empty($_REQUEST['id'])) {
-				$response = array('error' => 'Missing id parameter in request.');
+				$response = array('error' => __('Missing id parameter in request.','zedity'));
 				break;
 			}
 
@@ -125,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			$content = @file_get_contents($filename);
 
 			$response = $content === FALSE ?
-				array('error' => "Error reading file ($filename).") :
+				array('error' => __('Error reading file','zedity')." ($filename).") :
 				array('content' => $content);
 		break;
 
@@ -148,8 +148,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 
 		//------------------------------------------------------------------------------------
 		default:
-			$response = array('error' =>
-				"Malformed ajax request (unknown action: {$_REQUEST['zaction']})"
+			$response = array(
+				'error' => sprintf(__('Malformed ajax request (unknown zaction: %s).','zedity'),$_REQUEST['zaction'])
 			);
 		break;
 	} // switch

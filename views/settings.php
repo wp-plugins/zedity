@@ -15,85 +15,86 @@
 
 <div class="wrap">
 	<?php screen_icon(); ?>
-	<h2>Zedity Settings</h2>
+	<h2><?php echo sprintf(__('%s Settings','zedity'),'Zedity')?></h2>
 
 	<form action="options.php" method="post">
 		<hr/>
-		<h3 class="title">Content save mode</h3>
-		<p>Choose the way your content is saved.</p>
-		<p><b>Isolated mode:</b> the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.<br/>
-		<b>Standard mode:</b> the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is preferred for SEO and social sharing.</p>
+		<h3 class="title"><?php _e('Content save mode','zedity')?></h3>
+		<p><?php echo sprintf(__('Choose the way your %s contents are saved.','zedity'),'Zedity')?></p>
+		<p>
+			<?php _e('<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.','zedity')?><br/>
+			<?php _e('<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is the preferred mode for SEO and social sharing.','zedity')?>
+		</p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row">Save mode:</th>
+				<th scope="row"><?php _e('Save mode:','zedity')?></th>
 				<td>
-					<input type="radio" id="zedity_save_iframe" name="<?php echo $settings?>[save_mode]" value="1" <?php echo $options['save_mode']==1?'checked="checked"':''?> /><label for="zedity_save_iframe">Isolated mode.</label><br/>
-					<input type="radio" id="zedity_save_inline" name="<?php echo $settings?>[save_mode]" value="2" <?php echo $options['save_mode']==2?'checked="checked"':''?> /><label for="zedity_save_inline">Standard mode.</label><br/>
+					<input type="radio" id="zedity_save_iframe" name="<?php echo $settings?>[save_mode]" value="1" <?php echo $options['save_mode']==1?'checked="checked"':''?> /><label for="zedity_save_iframe"><?php _e('Isolated mode.','zedity')?></label><br/>
+					<input type="radio" id="zedity_save_inline" name="<?php echo $settings?>[save_mode]" value="2" <?php echo $options['save_mode']==2?'checked="checked"':''?> /><label for="zedity_save_inline"><?php _e('Standard mode.','zedity')?></label><br/>
 				</td>
 			</tr>
 		</tbody></table>
 		
 		<hr/>
-		<h3 class="title">Content size</h3>
-		<p>Enter the default size (in pixels) for your Zedity contents (you can also change the size while editing):</p>
+		<h3 class="title"><?php _e('Content size','zedity')?></h3>
+		<p><?php echo sprintf(__('Enter the default size (in pixels) for your %s contents (you can also change the size while editing):','zedity'),'Zedity')?></p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label for="zedity_page_width">Content width:</label></th>
+				<th scope="row"><label for="zedity_page_width"><?php _e('Content width:','zedity')?></label></th>
 				<td>
 					<input id="zedity_page_width" name="<?php echo $settings?>[page_width]" size="5" maxlength="5" type="text" value="<?php echo $options['page_width']?>" />
-					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), numbers only.
+					(<?php echo self::MIN_WIDTH.'-'.self::MAX_WIDTH?>), <?php _e('numbers only.','zedity')?>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="zedity_page_height">Content height:</label></th>
+				<th scope="row"><label for="zedity_page_height"><?php _e('Content height:','zedity')?></label></th>
 				<td>
 					<input id="zedity_page_height" name="<?php echo $settings?>[page_height]" size="5" maxlength="5" type="text" value="<?php echo $options['page_height']?>" />
-					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), numbers only.
+					(<?php echo self::MIN_HEIGHT.'-'.self::MAX_HEIGHT?>), <?php _e('numbers only.','zedity')?>
 				</td>
 			</tr>
 		</tbody></table>
 
 		<hr/>
-		<h3 class="title">Content preview</h3>
-		<p>Enable or disable the Zedity content preview.</p>
+		<h3 class="title"><?php _e('Content preview','zedity')?></h3>
+		<p><?php echo sprintf(__('Enable or disable the %s content preview (this only applies for Isolated save mode).','zedity'),'Zedity')?></p>
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label>Preview:</label></th>
+				<th scope="row"><label><?php _e('Preview:','zedity')?></label></th>
 				<td>
-					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> Yes</label> &nbsp;
-					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> No</label>
+					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> <?php _e('Yes')?></label> &nbsp;
+					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> <?php _e('No')?></label>
 				</td>
 			</tr>
 		</tbody></table>
 		<hr/>
 
-		<h3 class="title">Watermark</h3>
-		<p>If you like Zedity, a simple way for you to support it is to enable the "Powered by Zedity" watermark.</p>
-		<p>Select the default watermark position, which can also be changed while creating content (under the "Content" menu):</p>
-		<!--<p>Select position:</p>-->
+		<h3 class="title"><?php _e('Watermark','zedity')?></h3>
+		<p><?php echo sprintf(__('If you like %s, a simple way for you to support it is to enable the "%s" watermark.','zedity'),'Zedity','Powered by Zedity')?></p>
+		<p><?php _e('Select the default watermark position, which can also be changed while creating content (under the "Content" menu):','zedity')?></p>
 
-		<div style="border:2px solid #ccc;width:300px;height:100px;padding:5px">
+		<div style="border:2px solid #ccc;width:500px;height:100px;padding:5px">
 			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM1" value="none" <?php echo ($options['watermark']=='none' ? 'checked="checked"':'') ?>>
-			<label for="rbWM1">Disabled (no watermark is shown)</label><br/>
+			<label for="rbWM1"><?php _e('Disabled (no watermark is shown)','zedity')?></label><br/>
 			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM2" value="topleft" <?php echo ($options['watermark']=='topleft' ? 'checked="checked"':'') ?>>
-			<label for="rbWM2">Top left</label><br/>
+			<label for="rbWM2"><?php _e('Top left','zedity')?></label><br/>
 			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM3" value="topright" <?php echo ($options['watermark']=='topright' ? 'checked="checked"':'') ?>>
-			<label for="rbWM3">Top right</label><br/>
+			<label for="rbWM3"><?php _e('Top right','zedity')?></label><br/>
 			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM4" value="bottomleft" <?php echo ($options['watermark']=='bottomleft' ? 'checked="checked"':'') ?>>
-			<label for="rbWM4">Bottom left</label><br/>
+			<label for="rbWM4"><?php _e('Bottom left','zedity')?></label><br/>
 			<input type="radio" name="<?php echo $settings?>[watermark]" id="rbWM5" value="bottomright" <?php echo ($options['watermark']=='bottomright' ? 'checked="checked"':'') ?>>
-			<label for="rbWM5">Bottom right</label><br/>
+			<label for="rbWM5"><?php _e('Bottom right','zedity')?></label><br/>
 		</div>
 		<br/>
 		
 		<hr/>
 
-		<h3 class="title">Media embed</h3>
-		<p>Supported media embed services.</p>
+		<h3 class="title"><?php _e('Media embed','zedity')?></h3>
+		<p><?php _e('Supported media embed services.','zedity')?></p>
 
 		<table class="form-table"><tbody>
 			<tr valign="top">
-				<th scope="row"><label>Video:</label></th>
+				<th scope="row"><label><?php _e('Video:','zedity')?></label></th>
 				<td>
 					<?php
 					$content = array();
@@ -105,7 +106,7 @@
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label>Audio:</label></th>
+				<th scope="row"><label><?php _e('Audio:','zedity')?></label></th>
 				<td>
 					<?php
 					$content = array();
@@ -121,15 +122,15 @@
 		<br/>
 
 		<?php if (!$this->is_premium()) { ?>
-			<p>Get <a href=<?php echo $this->plugindata['PluginURI']?>" target="_blank">Zedity Premium</a> with support to 20+ video and audio services embeds.</p>
+			<p><?php echo sprintf(__('Get %s with support to 20+ video and audio services embeds.','zedity'),"<a href=\"{$this->plugindata['PluginURI']}\" target=\"_blank\">Zedity Premium</a>")?></p>
 		<?php } ?>
 		
 		<hr/>
 
 		
-		<h3 class="title">Webfonts</h3>
-		<p>In addition to the standard fonts, you can select any of the following web-fonts, to give your content a distinctive style:</p>
-		<p>(<b>Note:</b> webfonts are loaded from <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> service. Enabling many fonts at once may result in slower page load.)</p>
+		<h3 class="title"><?php _e('Web fonts','zedity')?></h3>
+		<p><?php _e('In addition to the standard fonts, you can select any of the following web fonts, to give your content a distinctive style:','zedity')?></p>
+		<p><?php echo sprintf(__('(<b>Note:</b> web fonts are loaded from %s service. Enabling many web fonts at once may result in slower page load.)','zedity'),'<a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>')?></p>
 		<div style="border:2px solid #ccc;width:300px;height:200px;overflow-y:scroll;padding:5px">
 			<?php
 				$i = 0;
@@ -145,15 +146,15 @@
 		</div>
 	
 		<?php if (!$this->is_premium()) { ?>
-			<p>Get <a href="<?php echo $this->plugindata['PluginURI']?>" target="_blank">Zedity Premium</a> with 100+ webfonts.</p>
+			<p><?php echo sprintf(__('Get %s with support to 100+ web fonts.','zedity'),"<a href=\"{$this->plugindata['PluginURI']}\" target=\"_blank\">Zedity Premium</a>")?></p>
 		<?php } ?>
 
 		<hr/>
 
 		<?php $this->additional_settings_page($options); ?>
 		
-		<h4 class="title">License</h4>
-		<p>The <?php echo $this->plugindata['Name'];?> WP plugin is available under the <a href="<?php echo $this->plugindata['LicenseURI'];?>"><?php echo $this->plugindata['License'];?></a> license.</p>
+		<h4 class="title"><?php _e('License','zedity')?></h4>
+		<p><?php echo sprintf(__('The %s WP plugin is available under the %s license.','zedity'),$this->plugindata['Name'],"<a href=\"{$this->plugindata['LicenseURI']}\">{$this->plugindata['License']}</a>")?></p>
 		
 		<?php
 			settings_fields('wp_zedity_plugin');

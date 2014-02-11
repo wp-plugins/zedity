@@ -20,7 +20,7 @@ Zedity Content (iframe version)
 	padding: 0;
 	border: 0;
 }
-.zedity-responsive{
+.zedity-responsive {
 	-webkit-transform-origin: 0 0;
 	-moz-transform-origin: 0 0;
 	-ms-transform-origin: 0 0;
@@ -36,6 +36,8 @@ Zedity Content
 .zedity-editor {
 	max-width: none !important;
 	z-index: 0 !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 .zedity-editor.zedity-notheme * {

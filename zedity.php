@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.2.1
+Version: 2.3.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -12,6 +12,7 @@ License URI: http://zedity.com/license/freewp
 
 $path = plugin_dir_path(__FILE__);
 $filepremium = "$path/premium.php";
+load_plugin_textdomain('zedity', false, dirname(plugin_basename(__FILE__)).'/languages/');
 
 //check if another Zedity plugin is already enabled
 if (class_exists('WP_Zedity_Plugin')) {
@@ -24,7 +25,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 		$otherp = 'Premium';
 	}
 
-	$message = "<b>Could not activate</b> Zedity $thisp plugin. You cannot enable both Zedity free and Zedity Premium plugins at the same time.<br/>Please <b>first deactivate</b> the Zedity $otherp plugin, <b>then activate</b> the Zedity $thisp plugin.";
+	$message = sprintf(__('<b>Could not activate</b> %s plugin.','zedity'),"Zedity $thisp") . ' '.
+		sprintf(__('You cannot activate both %s and %s plugins at the same time.','zedity'),'Zedity free','Zedity Premium') . '<br/>' .
+		sprintf(__('Please <b>first deactivate</b> the %s plugin, <b>then activate</b> the %s plugin.','zedity'),"Zedity $otherp","Zedity $thisp");
 	
 	if (isset($_GET['action']) && $_GET['action'] == 'error_scrape') {
 		echo $message;
@@ -170,7 +173,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 
 		function add_zedity_mime_type($post_mime_types) {
-			$post_mime_types['application/zedity'] = array('Zedity', 'Manage Zedity contents', _n_noop('Zedity <span class="count">(%s)</span>','Zedity <span class="count">(%s)</span>'));
+			$post_mime_types['application/zedity'] = array('Zedity', sprintf(__('Manage %s contents','zedity'),'Zedity'), _n_noop('Zedity <span class="count">(%s)</span>','Zedity <span class="count">(%s)</span>'));
 			return $post_mime_types;
 		}
 
@@ -192,12 +195,12 @@ if (class_exists('WP_Zedity_Plugin')) {
 					$id = isset($attachments[0]->ID) ? $attachments[0]->ID : NULL;
 					$url = isset($attachments[0]->guid) ? $attachments[0]->guid : NULL;
 					if (empty($id) || empty($url)) {
-					    $response = array('error' => "Save content: empty id ($id) or url ($url).");
+					    $response = array('error' => sprintf(__('Save content: empty id (%s) or url (%s).','zedity'),$id,$url));
 					} else {
 					    $response = array('id' => $id, 'url' => $url);
 					}
 				} else {
-					$response = array('error' => 'Save content: could not find attachment.');
+					$response = array('error' => __('Save content: could not find attachment.','zedity'));
 				}
 				echo json_encode($response);
 				exit;
@@ -225,13 +228,26 @@ if (class_exists('WP_Zedity_Plugin')) {
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
 
+				tinyMCE.addI18n({'<?php echo _WP_Editors::$mce_locale?>': {
+					zedity: {
+						edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
+						delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
+					}
+				}});
+
 				//Handle ThickBox window close
 				var old_tb_remove = tb_remove;
 				tb_remove = function(){
 					var $iframe = jQuery('#TB_iframeContent');
 					if ($iframe.hasClass('zedity-editor-iframe')) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
-							var ret = confirm('You haven\'t saved your modifications!\n\nTo save changes, click on Cancel and then select Content->Save from the menu.\n\nTo discard the modifications and close the Zedity editor, click Ok.');
+							var ret = confirm(
+								'<?php echo addslashes(__('You haven\'t saved your modifications!','zedity'))?>'+
+								'\n\n'+
+								'<?php echo addslashes(__('To save changes, click on Cancel and then select Content->Save from the menu.','zedity'))?>'+
+								'\n\n'+
+								'<?php echo sprintf(addslashes(__('To discard the modifications and close the %s, click OK.','zedity')),'Zedity editor')?>'
+							);
 							if (!ret) return;
 						}
 						//deselect
@@ -248,7 +264,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 				
 				window.askPublish = function(){
 					if (!window.tinyMCE || !tinyMCE.get('content')) return;
-					jQuery('<div><p>You have modified your Zedity content.</p><p>Please don\'t forget to publish your post for the modifications to appear in your published post as well.</p></div>').dialog({
+					jQuery(
+						'<div><p>'+
+						'<?php echo sprintf(addslashes(__('You have modified your %s content.','zedity')),'Zedity')?>'+
+						'</p><p>'+
+						'<?php echo addslashes(__('Please don\'t forget to publish your post for the modifications to appear in your published post as well.','zedity'))?>'+
+						'</p></div>'
+					).dialog({
 						title: 'Zedity',
 						dialogClass: 'zedity-dialog',
 						autoOpen: true,
@@ -258,13 +280,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 							jQuery(this).dialog('destroy').remove();
 						},
 						buttons: [{
-							text: 'Publish now',
+							text: '<?php echo addslashes(__('Publish now','zedity'))?>',
 							click: function(){
 								jQuery(this).dialog('close');
 								jQuery('#publish').trigger('click');
 							}
 						},{
-							text: 'Publish later',
+							text: '<?php echo addslashes(__('Publish later','zedity'))?>',
 							click: function(){
 								jQuery(this).dialog('close');
 							}
@@ -280,7 +302,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 						'margin-left': ''
 					});
 					var $iframe = jQuery('#TB_iframeContent');
-					if ($iframe.length>0) {
+					if ($iframe.length>0 && $iframe[0].contentWindow.resizeEditor) {
 						$iframe.css('width','100%');
 						$iframe[0].contentWindow.resizeEditor($iframe[0].contentWindow.zedityEditor);
 					}
@@ -312,7 +334,11 @@ if (class_exists('WP_Zedity_Plugin')) {
 			//add Responsive to menu (disabled)
 			zedityMenu.find('li.ui-menubar:first-child > ul > li:nth-child(5)').after(
 				'<li class="ui-state-disabled ui-menu-item" role="presentation" aria-disabled="true">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span>Responsive Design <small style="color:blue">(Premium)</small></a>'+
+					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem">'+
+						'<span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>'+
+						'<span class="zedity-menu-icon zedity-icon-none"></span>'+
+						'<?php echo addslashes(__('Responsive Design','zedity'))?> <small style="color:blue">(Premium)</small>'+
+					'</a>'+
 				'</li>'
 			);
 			</script>
@@ -422,7 +448,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		// Add a link to the settings page onto the plugin page
 		public function settings_link($links) {
-			$settings_link = '<a href="options-general.php?page=wp_zedity_plugin">Settings</a>';
+			$settings_link = '<a href="options-general.php?page=wp_zedity_plugin">'.__('Settings').'</a>';
 			array_unshift($links, $settings_link);
 			return $links;
 		}
@@ -431,8 +457,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			if ($file == plugin_basename(__FILE__)) {
 				//Add "Donate" and "Get Premium" links if it is not Premium
 				if (!$this->is_premium()) {
-					$links[] = '<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ" target="_blank">Donate</a>';
-					$links[] = '<a class="button" href="'.$this->plugindata['PluginURI'].'" target="_blank">Get Zedity Premium</a>';
+					$links[] = '<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ" target="_blank">'.__('Donate','zedity').'</a>';
+					$links[] = '<a class="button" href="'.$this->plugindata['PluginURI'].'" target="_blank">'.sprintf(__('Get %s','zedity'),'Zedity Premium').'</a>';
 				}
 			}
 			return $links;

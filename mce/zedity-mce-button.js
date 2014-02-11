@@ -307,7 +307,7 @@
 				id: 'zedity_button_edit',
 				width: '24',
 				height: '24',
-				title: 'Edit Zedity content'
+				title: ed.getLang('zedity.edit_content')
 			});
 
 			tinymce.dom.Event.add(zEditButton, 'mousedown', function(e){
@@ -320,7 +320,7 @@
 				id: 'zedity_button_del',
 				width: '24',
 				height: '24',
-				title: 'Delete Zedity content'
+				title: ed.getLang('zedity.delete_content')
 			});
 
 			tinymce.dom.Event.add(zDelButton, 'mousedown', function(e){
