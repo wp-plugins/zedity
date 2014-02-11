@@ -101,7 +101,7 @@ A: From the standard WordPress editor, just click on the Zedity content that you
 A: Yes. There are 20+ audio and video services supported as a [Premium Feature](http://zedity.com/plugin/wpfeatures).
 
 **Q: Do you have tutorials?**  
-A: Yes, here they are [Tutorials](zedity.com/blog/tutorials) and others to follow. 
+A: Yes, here you can find our [Tutorials](zedity.com/blog/tutorials) and others will follow. 
 
 **Q: ... got another question not reported here?**  
 Please contact us for [Support and Assistance](http://zedity.com/support).
