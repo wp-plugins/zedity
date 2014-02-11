@@ -98,7 +98,7 @@ A: No worries, that is normal behavior in WordPress: they will play normally whe
 A: From the standard WordPress editor, just click on the Zedity content that you want to update and then click on the Zedity icon.
 
 **Q: YouTube and Vimeo videos are supported. Is it possible to have other services, e.g. Dailymotion and others?**  
-A: Yes. There are 20+ audio and video services supported as a [Premium Feature](http://zedity.com/plugin/wpfeatures).
+A: Yes. There are 20+ audio and video services supported in the [Premium version](http://zedity.com/plugin/wpfeatures).
 
 **Q: Do you have tutorials?**  
 A: Yes, here you can find our [Tutorials](zedity.com/blog/tutorials) and others will follow. 
