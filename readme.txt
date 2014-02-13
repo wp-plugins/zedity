@@ -8,7 +8,7 @@ Stable tag: 2.3.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-The modern editor to create your content, with unprecedented possibilities and flexibility, quickly and incredibly easily!
+The best editor to create your content with unprecedented possibilities and flexibility, quickly and incredibly easily for anyone!
 
 
 == Description ==
