@@ -13,7 +13,7 @@ The best editor to create your content with unprecedented possibilities and flex
 == Description ==
 Zedity is an innovative and modern Editor that makes it extremely easy and quick to create your posts or pages. Through an intuitive visual interface, Zedity gives you total flexibility and unprecedented possibilities to achieve any desired design very easily like on a piece of paper! Meet Zedity, the next generation Editor...
 
-[youtube http://www.youtube.com/watch?v=7FyhGvPwMvg]
+[youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
     
 **Advantanges of using Zedity:**
