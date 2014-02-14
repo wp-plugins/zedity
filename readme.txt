@@ -28,8 +28,6 @@ Zedity is an innovative and modern Editor that makes it extremely easy and quick
 
 * **Professional results**: you can achieve professional results easily, creating designs and effects that only web developers could get! 
 
-* **Responsive Design [Premium](http://zedity.com/plugin/wp)**: automatic scaling to see your entire content exactly as created, in responsive layouts perfectly on any device!
- 
    
 **Discover more about Zedity:**
 
