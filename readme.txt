@@ -28,19 +28,17 @@ Zedity is an innovative and modern Editor that makes it extremely easy and quick
 
 * **Professional results**: you can achieve professional results easily, creating designs and effects that only web developers could get! 
 
-   
+
+**Here is an example of Zedity free version in action:**
+[youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
+
 **Discover more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-
 *   **HOT!** [Zedity in your native language](http://zedity.com/translate/): be the first to translate in your native language and get rewarded!
-
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
-
-*   [Twitter page](https://www.twitter.com/Zedity): Follow Zedity on Twitter!
-
-*   [Facebook page](https://www.facebook.com/Zedity): Visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
-
+*   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
+*   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 *    **NEW!** [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **Enjoy Zedity!**
