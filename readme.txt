@@ -33,7 +33,7 @@ Zedity is an innovative and modern Editor that makes it extremely easy and quick
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
 
-*   **NEW!** [Zedity in your native language](http://zedity.com/translate/): be the first to translate in your native language and get rewarded!
+*   **HOT!** [Zedity in your native language](http://zedity.com/translate/): be the first to translate in your native language and get rewarded!
 
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 
@@ -41,7 +41,7 @@ Zedity is an innovative and modern Editor that makes it extremely easy and quick
 
 *   [Facebook page](https://www.facebook.com/Zedity): Visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 
-*   [Help and Support](http://zedity.com/support): **NEW!** Get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
+*    **NEW!**[Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **Enjoy Zedity!**
 
