@@ -41,7 +41,7 @@ Zedity is an innovative and modern Editor that makes it extremely easy and quick
 
 *   [Facebook page](https://www.facebook.com/Zedity): Visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 
-*    **NEW!**[Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
+*    **NEW!** [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **Enjoy Zedity!**
 
