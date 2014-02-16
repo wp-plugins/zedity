@@ -107,7 +107,7 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 == Screenshots ==
 
 1. By clicking on the Z icon the Zedity editor opens up.
-2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image.
+2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image, etc.
 3. Add other boxes, drag them around, add effects and eventually click on either "Save" (under the "Content" menu) or the "disk" icon.
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
