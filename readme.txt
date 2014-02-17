@@ -25,7 +25,7 @@ Here is the NEW video introducing Zedity for WordPress (at the bottom of this pa
 
 * **No Technical Skills**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
 
-* **Saves you Time and Money**: you can create your content much more quickly and even just by yourself!
+* **Saving Time and Money**: you can create your content much more quickly and even just by yourself!
 
 * **Professional results**: you can achieve professional results easily, creating designs and effects that only web developers could get! 
 
