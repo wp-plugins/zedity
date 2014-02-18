@@ -23,7 +23,7 @@ Here is the NEW video introducing Zedity for WordPress (at the bottom of this pa
 
 * **Total design freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
-* **Saves you time and money**: you can create your content much more quickly and even just by yourself!
+* **Saves you time and money**: create your content much more quickly and, since you can do it without hiring web developers, you can save money too!
 
 
 **Here is an example of Zedity free version in action:**
