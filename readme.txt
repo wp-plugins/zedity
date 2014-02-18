@@ -19,11 +19,9 @@ Here is the NEW video introducing Zedity for WordPress (at the bottom of this pa
     
 **Advantanges of using Zedity:**
 
+* **Everyone can use it**: with no technical skills required, you can design completely visually, with just drag and drop and mouse clicks!
+
 * **Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
-
-* **Super Easy for Anyone**: a modern and intuitive user interface, very easy to operate with powerful operations accomplished in just few clicks with real drag and drop!
-
-* **No Technical Skills**: with absolutely no technical skills required, there's no more need to struggle with HTML/CSS code to achieve the desired effects!
 
 * **Saving Time and Money**: you can create your content much more quickly and even just by yourself!
 
