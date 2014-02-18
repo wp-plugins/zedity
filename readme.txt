@@ -21,11 +21,9 @@ Here is the NEW video introducing Zedity for WordPress (at the bottom of this pa
 
 * **Everyone can use it**: with no technical skills required, you can design completely visually, with just drag and drop and mouse clicks!
 
-* **Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
+* **Total design freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
-* **Saving Time and Money**: you can create your content much more quickly and even just by yourself!
-
-* **Professional results**: you can achieve professional results easily, creating designs and effects that only web developers could get! 
+* **Saves you time and money**: you can create your content much more quickly and even just by yourself!
 
 
 **Here is an example of Zedity free version in action:**
