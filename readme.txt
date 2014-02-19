@@ -1,4 +1,4 @@
-=== Zedity™ The Easiest Way of Creating Your Content.===
+=== Zedity™ Being Your Own Web Designer? Now you can! ===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, flexible, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, seo, share, sidebar, simple, social, soundcloud, style, text, tool, twitter, url, video, visual, widget, widgets, wordpress, wysiwyg, youtube, zedity
@@ -8,15 +8,14 @@ Stable tag: 2.3.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-The editor for everyone to create posts and pages with unprecedented possibilities and flexibility, quickly and very easily!
+Everyone can now create posts and pages very easily, quickly and with unprecedented possibilities and flexibility!
 
 == Description ==
 Zedity is an innovative and modern Editor that makes it extremely easy and quick to create your posts or pages. Through an intuitive visual interface, Zedity gives you total flexibility and unprecedented possibilities to achieve any desired design very easily like on a piece of paper! 
 
-Here is the NEW video introducing Zedity for WordPress (at the bottom of this page you can also find a video of Zedity in action):
+Here is the NEW video introducing Zedity for WordPress:
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
-
-    
+   
 **Advantanges of using Zedity:**
 
 * **Everyone can use it**: with no technical skills required, you can design completely visually, with just drag and drop and mouse clicks!
@@ -24,7 +23,6 @@ Here is the NEW video introducing Zedity for WordPress (at the bottom of this pa
 * **Total design freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
 * **Saves you time and money**: create your content very quickly, hassle-free and, since you can do it without hiring web developers, saving money too!
-
 
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
