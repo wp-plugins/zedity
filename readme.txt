@@ -13,7 +13,6 @@ Everyone can now create posts and pages very easily, quickly and with unpreceden
 == Description ==
 > Zedity is an innovative content Editor to create posts or pages very easily and quickly! With no technical skill required, everyone can design any desired content with total flexibility and unprecedented possibilities, as easily as if you're doing it on a piece of paper!
 
-Here is the NEW video introducing Zedity for WordPress:
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
 **Advantanges of using Zedity:**
