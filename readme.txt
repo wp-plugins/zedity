@@ -7,7 +7,7 @@ Tested up to: 3.8.1
 Stable tag: 2.3.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
-
+ 
 Everyone can now create posts and pages very easily, quickly and with unprecedented possibilities and flexibility!
 
 == Description ==
