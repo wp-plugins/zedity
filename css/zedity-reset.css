@@ -20,7 +20,8 @@ Zedity Content (iframe version)
 	padding: 0;
 	border: 0;
 }
-.zedity-responsive {
+.zedity-responsive,
+.zedity-responsive .zedity-box-Text .zedity-content {
 	-webkit-transform-origin: 0 0;
 	-moz-transform-origin: 0 0;
 	-ms-transform-origin: 0 0;
@@ -130,23 +131,35 @@ Text box
 	margin: 0 !important;
 	padding: 0 !important;
 	border: 0 !important;
+	min-height: 17px;
 	background: transparent !important;
 }
 
+.zedity-editor.zedity-notheme .zedity-box-Text ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul {
+	display: block !important;
+	margin: initial !important;
+	padding: 0 0 0 40px !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text li {
+	display: list-item !important;
+	line-height: initial !important;
+}
+
+/*
 .zedity-editor.zedity-notheme .zedity-box-Text a,
 .zedity-editor.zedity-notheme .zedity-box-Text a:link,
 .zedity-editor.zedity-notheme .zedity-box-Text a:visited,
 .zedity-editor.zedity-notheme .zedity-box-Text a:hover {
 	color: blue !important;
 	text-decoration: underline !important;
-}
-.zedity-editor.zedity-notheme .zedity-box-Text a:hover {
 	cursor: pointer !important;
 }
 .zedity-editor.zedity-notheme .zedity-box-Text a:active {
 	color: red !important;
 	text-decoration: underline !important;
 }
+*/
 
 
 /*----------------------------------------------------------------------------------------

@@ -26,6 +26,7 @@
 		wp_enqueue_script('jquery-ui-menu');
 		wp_enqueue_script('jquery-ui-slider');
 		wp_enqueue_script('jquery-ui-tooltip');
+		wp_enqueue_script('jquery-ui-accordion');
 		//print scripts
 		wp_print_head_scripts();
 		wp_print_footer_scripts();
@@ -948,10 +949,9 @@
 
 		//-----------------------------------------------------------------------------------------
 		//resizing
-
-		parent.resizeForZedity();
-
 		$(parent.document).find('#TB_iframeContent').addClass('zedity-editor-iframe').css('width','100%');
+		parent.resizeForZedity();
+		
 		</script>
 		
 		<?php $this->additional_editor_js($options); ?>

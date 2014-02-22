@@ -4,10 +4,10 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, flexible, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, quick, seo, share, sidebar, simple, social, soundcloud, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 2.3.0
+Stable tag: 2.4.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
- 
+
 Everyone can now create posts and pages very easily, quickly and with unprecedented possibilities and flexibility!
 
 == Description ==
@@ -17,11 +17,11 @@ Everyone can now create posts and pages very easily, quickly and with unpreceden
    
 **Advantanges of using Zedity:**
 
-* **Everyone can use it**: with no technical skills required, you can design completely visually, with just drag and drop and mouse clicks!
+* **Super Easy for Everyone**: with no technical skills required, you can design completely visually, with full drag and drop! You can forget about any need for coding!
 
-* **Total design freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
 
-* **Saves you time and money**: create your content very quickly, hassle-free and, since you can do it without hiring web developers, saving money too!
+* **Saves You Time & Money**: create your content very quickly, hassle-free and, since you can do it without hiring web developers, saving money too!
 
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
@@ -107,6 +107,11 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 2.4.0 =
+* Image box: new features to set the box size to real image size and to have visual feedback (box border color) when the box size is different than the original image size.
+* Multi-language: added support for French.
+* Various fixes and optimizations.
 
 = 2.3.0 =
 * Multilanguage enabled. Now available in Italian.

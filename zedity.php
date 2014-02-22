@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.3.0
+Version: 2.4.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -228,18 +228,20 @@ if (class_exists('WP_Zedity_Plugin')) {
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
 
-				tinyMCE.addI18n({'<?php echo _WP_Editors::$mce_locale?>': {
-					zedity: {
-						edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
-						delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
-					}
-				}});
+				if (window.tinyMCE) {
+					tinyMCE.addI18n({'<?php echo (class_exists('_WP_Editors') ? _WP_Editors::$mce_locale : substr(WPLANG,0,2)) ?>': {
+						zedity: {
+							edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
+							delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
+						}
+					}});
+				}
 
 				//Handle ThickBox window close
 				var old_tb_remove = tb_remove;
 				tb_remove = function(){
-					var $iframe = jQuery('#TB_iframeContent');
-					if ($iframe.hasClass('zedity-editor-iframe')) {
+					var $iframe = jQuery('#TB_iframeContent.zedity-editor-iframe');
+					if ($iframe.length) {
 						if ($iframe[0].contentWindow.zedityEditor.contentChanged) {
 							var ret = confirm(
 								'<?php echo addslashes(__('You haven\'t saved your modifications!','zedity'))?>'+
@@ -296,12 +298,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 				//Handle ThickBox window resize
 				resizeForZedity = function(){
-					jQuery('#TB_window').css({
+					var $tb = jQuery('#TB_window');
+					if ($tb.find('.zedity-editor-iframe').length==0) return;
+					$tb.css({
 						width: '90%',
 						left: '5%',
 						'margin-left': ''
 					});
-					var $iframe = jQuery('#TB_iframeContent');
+					var $iframe = jQuery('#TB_iframeContent.zedity-editor-iframe');
 					if ($iframe.length>0 && $iframe[0].contentWindow.resizeEditor) {
 						$iframe.css('width','100%');
 						$iframe[0].contentWindow.resizeEditor($iframe[0].contentWindow.zedityEditor);
