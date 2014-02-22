@@ -18,7 +18,7 @@ Zedity is an innovative content Editor to create posts or pages very easily and 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
 **Advantanges of using Zedity:**
->
+
 * **Super Easy for Everyone**: with no technical skills required, you can design completely visually, with full drag and drop! You can forget about any need for coding!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
