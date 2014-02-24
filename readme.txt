@@ -35,7 +35,7 @@ Zedity is an innovative content Editor to create posts or pages very easily and 
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
-*    **NEW!** [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
+*   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **Enjoy Zedity!**
 
