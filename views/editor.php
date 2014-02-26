@@ -377,6 +377,8 @@
 				$div.find('[data-target=_top]').each(function(){
 					$(this).attr('data-target','_self');
 				});
+				//convert spacers
+				$div.find('.zedity-spacer').replaceWith('<br/>');
 				return $div.html();
 			},
 			//set content into Zedity editor
@@ -553,6 +555,15 @@
 				zedityEditor.$container.find('[data-target=_self]').each(function(){
 					$(this).attr('data-target','_top');
 				});
+				//add spacers
+				zedityEditor.$container.find('.zedity-box-Text').find('p,h1,h2,h3,h4,h5,h6').filter(':empty').append('<br/>');
+				zedityEditor.$container.find('.zedity-box-Text p br').each(function(){
+					var $this = $(this);
+					if ($.trim($this.parent().text())=='') {
+						$this.replaceWith('<span class="zedity-spacer">&nbsp;</span>');
+					}
+				});
+				
 				//alignment
 				if (content.alignment) zedityEditor.$this.addClass('align'+content.alignment);
 				<?php if ($this->is_premium()) { ?>

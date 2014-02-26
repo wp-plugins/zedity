@@ -146,6 +146,16 @@ Text box
 	line-height: initial !important;
 }
 
+.zedity-editor.zedity-notheme .zedity-box-Text blockquote {
+	margin: 0px 0px 0px 40px !important;
+	border: none !important;
+	padding: 0px !important;
+	background: none !important;
+	font: inherit !important;
+	color: inherit !important;
+}
+
+
 /*
 .zedity-editor.zedity-notheme .zedity-box-Text a,
 .zedity-editor.zedity-notheme .zedity-box-Text a:link,

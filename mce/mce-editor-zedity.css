@@ -38,6 +38,9 @@ Reset some css modified by the WP visual editor
 	max-width: none;
 }
 
+.zedity-editor .zedity-box-Text p {
+	margin: 0;
+}
 
 
 
