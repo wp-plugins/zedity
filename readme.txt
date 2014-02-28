@@ -39,7 +39,6 @@ Multi-language: Zedity is currently available also in **French**, **German**, **
  
 **Enjoy Zedity!**
 
-
 == Installation ==
 
 You may want to go for one of the following options:
