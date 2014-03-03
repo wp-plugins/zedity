@@ -155,6 +155,17 @@ Text box
 	color: inherit !important;
 }
 
+.zedity-editor.zedity-notheme .zedity-box-Text b,
+.zedity-editor.zedity-notheme .zedity-box-Text strong {
+	font-weight: bold !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text i,
+.zedity-editor.zedity-notheme .zedity-box-Text em {
+	font-style: italic !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text u {
+	text-decoration: underline !important;
+}
 
 /*
 .zedity-editor.zedity-notheme .zedity-box-Text a,

@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.5.0
+Version: 2.5.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -259,6 +259,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 						idoc.getSelection().removeAllRanges();
 						*/
 					}
+					$iframe.removeClass('zedity-editor-iframe');
 					old_tb_remove.apply(this,arguments);
 					var ed = tinyMCE.activeEditor;
 					if (ed && ed.plugins.zedity) ed.plugins.zedity._closeZedity();

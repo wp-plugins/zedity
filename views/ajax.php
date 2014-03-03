@@ -10,6 +10,13 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
     switch ($_REQUEST['zaction']) {
 		//------------------------------------------------------------------------------------
 		case 'save':
+			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+				$response = array(
+					'error' => __('Invalid request.','zedity'),
+					'reload' => 1
+				);
+				break;
+			}
 			if (empty($_POST['content'])) {
 				$response = array('error' => __('The post content is empty.','zedity'));
 				break;
@@ -115,7 +122,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 
 		//------------------------------------------------------------------------------------
 		case 'load':
-
+			if (empty($_REQUEST['tk']) || !wp_verify_nonce($_REQUEST['tk'],'zedity')) {
+				$response = array('error' => __('Invalid request.','zedity'));
+				break;
+			}
 			if (empty($_REQUEST['id'])) {
 				$response = array('error' => __('Missing id parameter in request.','zedity'));
 				break;
@@ -149,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 		//------------------------------------------------------------------------------------
 		default:
 			$response = array(
-				'error' => sprintf(__('Malformed ajax request (unknown zaction: %s).','zedity'),$_REQUEST['zaction'])
+				'error' => __('Malformed ajax request (unknown zaction).','zedity')
 			);
 		break;
 	} // switch

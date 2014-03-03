@@ -115,7 +115,7 @@
 			#statusbar {
 				position: fixed;
 				margin: 0 auto;
-				min-width:630px;
+				min-width: 630px;
 				height: 30px;
 				font-family: Tahoma, Arial, Verdana, sans-serif;
 				font-size: 12px;
@@ -342,6 +342,7 @@
 					content +
 					(this.needBrAfter ? '<p>&nbsp;</p>' : '')
 				);
+				zedityEditor.contentChanged = false;
 				//close editor window
 				parent.tb_remove();
 				//cleanup TinyMCE leftovers
@@ -370,6 +371,14 @@
 				$div.find('.zedity-box-Image').each(function(){
 					$(this).find('p img').unwrap();
 				});
+				//unwrap images from anchors and set link
+				$div.find('.zedity-box-Image a img').each(function(idx,elem){
+					var $elem = $(elem);
+					var href = $elem.parent().attr('href');
+					var target = $elem.parent().attr('target');
+					$elem.unwrap();
+					$elem.parent().attr('data-href',href).attr('data-target',target||'_self');
+				});
 				//convert target attributes
 				$div.find('[target=_top],a:not([target])').each(function(){
 					$(this).attr('target','_self').attr('data-target','_self');
@@ -390,7 +399,9 @@
 				Zedity.core.store.delprefix('zedUn');
 				Zedity.core.gc.flushData();
 				zedityEditor.page._saveUndo();
-				zedityEditor.contentChanged = false;
+				setTimeout(function(){
+					zedityEditor.contentChanged = false;
+				},0);
 			},
 			//load content from file (via ajax direct url)
 			loadFromFile: function(url){
@@ -430,6 +441,7 @@
 					url: url,
 					data: {
 						zaction: 'load',
+						tk: '<?php echo wp_create_nonce('zedity') ?>',
 						id: this.id
 					},
 					dataType: 'json',
@@ -463,6 +475,7 @@
 					url: 'admin-ajax.php?action=zedity_ajax',
 					data: {
 						zaction: 'save',
+						tk: '<?php echo wp_create_nonce('zedity') ?>',
 						id: this.id,
 						post_id: parent.post_id,
 						title: this.title,
@@ -476,6 +489,7 @@
 						}
 						if (data.error) {
 							alert('<?php echo addslashes(__('Error during content save:','zedity'))?>\n'+data.error);
+							if (data.reload) location.reload();
 							return;
 						}
 						var size = zedityEditor.page.size();
@@ -581,7 +595,6 @@
 						);
 						return;
 					}
-					$(parent.document).find('#TB_iframeContent').removeClass('zedity-editor-iframe');
 					html = this.setWatermark(html);
 					setTimeout($.proxy(function(){
 						if (this.savemode==2) {
@@ -919,6 +932,15 @@
 		zedityMenu.find('.zedity-menu-Watermark').on('click',function(){
 			content.watermarkposition = $(this).attr('data-type');
 			resizeEditor(zedityEditor);
+		});
+		//add boxes
+		zedityMenu.find('.zedity-menu-AddBox').off('click.zedity').on('click.zedity',function(event){
+			zedityEditor.menu.close();
+			zedityEditor.boxes.add($(this).attr('data-boxtype'),{
+				x: Math.max($(window).scrollLeft()-zedityEditor.$this.offset().left,0)+20,
+				y: Math.max($(window).scrollTop()-zedityEditor.$this.offset().top+65,0)+20
+			});
+			return false;
 		});
 		//save
 		var saveContent = function(){
