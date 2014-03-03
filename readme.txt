@@ -21,7 +21,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 
 * **Very Easy for Everyone!**: with no technical skills required, you can design completely visually, with full drag and drop! You can forget about any need for coding!
 
-* **Total Design Freedom!**: unprecedented flexibility and possibilities to create any content you need; with no more constraints, you're free to unleash your creativity!
+* **Total Design Freedom!**: unprecedented flexibility and possibilities to create any content you need. With no more constraints, you're free to unleash your creativity!
 
 * **Saves You Time & Money!**: create your content very quickly, hassle-free and, since you can do it without hiring web developers, saving money too!
 
