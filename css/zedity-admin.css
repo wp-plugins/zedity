@@ -1,0 +1,42 @@
+/*plugins list buttons*/
+
+#zedity .button,
+#zedity-premium .button {
+	padding: 0px 4px;
+	line-height: 16px;
+	height: auto;
+	border: 1px solid #E6DB55;
+	background: #FFFFE0;
+	background: -webkit-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+	background: -moz-linear-gradient(top, #FFFFE0 0%, #E6DB55 100%);
+	background: -ms-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+	background: -o-linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+	background: linear-gradient(top, #FFFFE0 0%,#E6DB55 100%);
+}
+#zedity .button:hover,
+#zedity-premium .button:hover {
+	background: #FFFFE0;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*dialog*/
+
+.zedity-dialog {
+	z-index: 400000 !important;
+	background: white;
+	border-radius: 5px;
+}
+
+.zedity-dialog .ui-dialog-titlebar {
+	font-weight: bold;
+	background: whitesmoke;
+	border-radius: 5px;
+}
+.zedity-dialog .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-widget-overlay.ui-front {
+	background: #000;
+}
