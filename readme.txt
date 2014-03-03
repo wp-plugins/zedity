@@ -8,7 +8,7 @@ Stable tag: 2.5.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-With no coding skill required, you can finally create your content very easily, quickly and with unprecedented design freedom!
+With no coding skill required, Zedity makes it very easy for everyone to create content quickly and with unprecedented design freedom!
 
 == Description ==
 Zedity is an innovative content Editor to create posts or pages very easily and quickly! With no technical skill required, everyone can design any desired content with total flexibility and unprecedented possibilities, as easily as if it's done on a piece of paper!
