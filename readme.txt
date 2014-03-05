@@ -23,7 +23,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 
 * **Total Design Freedom!**: unprecedented flexibility and possibilities to create any content you need. With no more constraints, you're free to unleash your creativity!
 
-* **Saves You Time & Money!**: create your content very quickly, hassle-free and, since you can do it without hiring web developers, saving money too!
+* **Saves You Time & Money!**: create your content very quickly, completely hassle-free and, since you can do it without hiring web developers, saving money too!
 
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
