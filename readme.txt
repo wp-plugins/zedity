@@ -17,7 +17,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
-**Advantanges of using Zedity:**
+**Why more and more people use and appreciate Zedity:**
 
 * **Very Easy for Everyone!**: with no technical skills required, you can design completely visually, with full drag and drop! You can forget about any need for coding!
 
