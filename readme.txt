@@ -19,7 +19,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
    
 **Why more and more people are using Zedity:**
 
-* **Very Easy for Everyone!**: Zedity enables everyone, with no technical skill required, to create any desired content as easily as doing it with a pen and paper. Now creating your posts and pages is a pleasure: forget about struggling with the code!
+* **Very Easy for Everyone!**: Zedity enables everyone, with no technical skill required, to create any desired content as easily as doing it with a pen and paper. With Zedity, creating your posts and pages becomes a pleasure!
 
 * **Total Design Freedom!**: unprecedented flexibility and possibilities to create any content you need. With no more constraints, you're free to unleash your creativity!
 
