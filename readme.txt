@@ -28,7 +28,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**Discover more about Zedity:**
+**Find more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Hot!!!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
