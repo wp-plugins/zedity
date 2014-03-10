@@ -38,7 +38,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 *   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **We recommend**
-
+Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/) 
 Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
 == Installation ==
