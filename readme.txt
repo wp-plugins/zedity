@@ -39,8 +39,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
  
 **We recommend**
 
-Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/) 
-
+Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
 == Installation ==
