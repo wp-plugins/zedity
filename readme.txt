@@ -8,7 +8,7 @@ Stable tag: 2.5.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-An innovative Editor that makes it amazingly easy for everyone to create posts and pages, quickly and with unprecedented design freedom!
+An innovative Editor that makes it amazingly easy for everyone to create posts and pages, very quickly and with unprecedented design freedom!
 
 == Description ==
 Zedity is an innovative content Editor to create posts or pages very easily and quickly! With no technical skill required, everyone can design any desired content with total flexibility and unprecedented possibilities, as easily as if it's done on a piece of paper!
@@ -38,7 +38,6 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 *   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
  
 **We recommend**
-
 Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
