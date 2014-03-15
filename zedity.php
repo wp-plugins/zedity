@@ -2,7 +2,7 @@
 /*
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
-Description: Finally you can create any design you want, the way you have been wishing for!
+Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
 Version: 2.5.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
