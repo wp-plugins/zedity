@@ -31,7 +31,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 **Find more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   **Hot!!!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
+*   **Hot!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
