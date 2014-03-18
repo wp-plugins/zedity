@@ -360,7 +360,7 @@
 			convert: function(content){
 				var $div = $('<div/>').html(content);
 				//get watermark
-				this.watermarkposition = $div.find('.zedity-watermark').attr('data-pos') || this.watermarkposition;
+				this.watermarkposition = $div.find('.zedity-watermark').attr('data-pos') || 'none';
 				//get alignment
 				var $el = $div.find('.zedity-editor') || $div.find('.zedity-iframe-container');
 				this.alignment = '';
@@ -543,17 +543,19 @@
 						css += "bottom:0;right:0;";
 					break;
 
-					default: // none
+					default:
 						datapos = 'none';
-						css = "display:none;top:0;left:0;";
+						//css = "display:none;top:0;left:0;";
 					break;
 				}
 
 				//construct watermark
-				$html.find('.zedity-editor').append(
-					'<div class="zedity-watermark" style="'+css+'" data-pos="'+datapos+'">'+
-					'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="http://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
-				);
+				if (datapos!='none') {
+					$html.find('.zedity-editor').append(
+						'<div class="zedity-watermark" style="'+css+'" data-pos="'+datapos+'">'+
+						'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="http://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
+					);
+				}
 				return $html.html();
 			},
 			//save content from editor

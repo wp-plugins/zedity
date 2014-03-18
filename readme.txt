@@ -1,27 +1,27 @@
-=== Zedity™ Your Best and Easiest Content Editor!===
+=== Zedity™ The Easiest Way To Create Your Content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, creator, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, free, freedom, flexible, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, quick, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 2.5.1
+Stable tag: 2.5.2
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
-The best Editor for everyone to create amazing posts and pages, very easily, quickly and with unprecedented design freedom!
+The best editor to create your posts and pages very easily, quickly and with unprecedented possibilities! 
 
 == Description ==
-Zedity is an innovative content Editor to create your posts or pages very easily and quickly! With no technical skill required, everyone can design any desired content with total flexibility and unprecedented possibilities, as easily as if it's done on a piece of paper!
+Zedity is a revolutionary Editor to create your posts or pages very easily and quickly! With no technical skill required, everyone can design any desired content with total flexibility and unprecedented possibilities, as easily as if it's done on a piece of paper!
 
 Multi-language: Zedity is already available also in **French**, **German**, **Greek**, **Italian** and [more languages](http://zedity.com/translate/) coming soon...
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
-**Why more and more people love Zedity:**
+**Why People Love Zedity:**
 
-* **Very Easy for Everyone!** Zedity enables everyone to create any desired content as easily as doing it with a pen and paper. With no more coding or technical skills required, creating your posts and pages becomes a pleasure!
+* **Super Easy for Everyone!** Zedity enables everyone to create any desired content as easily as doing it with a pen and paper. With no more coding or technical skills required, creating your posts and pages becomes a pleasure!
 
-* **Total Design Freedom!** Unprecedented flexibility and possibilities to create any content you need. With no more constraints, you're free to unleash your creativity!
+* **Total Design Freedom!** Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
 
 * **Saves You Time & Money!** Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
@@ -31,7 +31,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 **Find more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   **Hot!!!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
+*   **Hot Promo!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
@@ -110,6 +110,9 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 2.5.2 =
+* Minor optimizations and fixes.
 
 = 2.5.1 =
 * Fixed an XSS issue and improved overall security.
