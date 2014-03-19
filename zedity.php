@@ -43,7 +43,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 	class WP_Zedity_Plugin {
 		
 		const MIN_WIDTH = 50; // pixels
-		const MAX_WIDTH = 1920; // pixels
+		const MAX_WIDTH = 2500; // pixels
 		const DEFAULT_WIDTH = 600; // a typical width for some themes in wordpress
 		
 		const MIN_HEIGHT = 20; // pixels
