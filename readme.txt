@@ -1,7 +1,7 @@
 === Zedity™ The Easiest Way To Create Your Content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, quick, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, Post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: 2.5.2
