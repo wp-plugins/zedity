@@ -19,11 +19,11 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
    
 **Why You'll Love Zedity:**
 
-* **Easy Content Creation!** Zedity enables everyone to create any desired content as easily as doing it with a pen and paper. With no more coding or technical skills required, creating your posts and pages becomes a pleasure!
+* **Easy Content Creation**: Zedity enables everyone to create any desired content as easily as doing it with a pen and paper. With no more coding or technical skills required, creating your posts and pages becomes a pleasure!
 
-* **Total Design Freedom!** Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
+* **Total Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
 
-* **Saves You Time & Money!** Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
+* **Saves You Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
