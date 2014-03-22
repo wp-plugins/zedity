@@ -27,7 +27,7 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 
 **HOT PROMO!!!** [Welcome Spring Promo Code](http://zedity.com/plugin/wp): go Premium with great discount!
 
-**Here is an example of Zedity free version in action:**
+**Here is an example of Zedity (free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Find more about Zedity:**
