@@ -25,13 +25,15 @@ Multi-language: Zedity is already available also in **French**, **German**, **Gr
 
 * **Saves You Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
+**Limited Offer!!!** [Welcome Spring Promo Code](http://zedity.com/plugin/wp): go Premium with great discount!
+
 **Here is an example of Zedity free version in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Find more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   **Hot Promo!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
+*   **Most wanted!** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
