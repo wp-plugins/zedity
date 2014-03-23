@@ -13,7 +13,7 @@ The best editor to create your posts and pages very easily, quickly and with unp
 == Description ==
 Zedity is an innovative Editor to create your posts or pages completely visually, super easily and quickly! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if you did on a piece of paper!
 
-Multi-language: Zedity is already available also in **French**, **German**, **Greek**, **Italian** and [more languages](http://zedity.com/translate/) coming soon...
+Multi-language: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and [more languages](http://zedity.com/translate/) coming soon...
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
