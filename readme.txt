@@ -17,7 +17,7 @@ Multi-language: Zedity is available also in **English**, **French**, **German**,
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
-**Why You'll Love Zedity:**
+**Why People Like You Love Zedity:**
 
 * **Easy Content Creation**: Zedity enables everyone to create any desired content as easily as doing it with a pen and paper. With no more coding or technical skills required, creating your posts and pages becomes a pleasure!
 
