@@ -25,7 +25,7 @@ Multiple languages: Zedity is available also in **English**, **French**, **Germa
 
 * **Saves You Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
-**LIMITED PROMO!!!** [Welcome Spring Promo Code](http://zedity.com/plugin/wp): a limited special offer to get Zedity Premium with a great discount!
+**LIMITED PROMO!!!** [Welcome Spring Promo Code](http://zedity.com/plugin/wp): take advantage of this limited special offer to get Zedity Premium with a great discount!
 
 **Here is an example of Zedity (initial free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
