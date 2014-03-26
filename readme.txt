@@ -23,7 +23,7 @@ Multiple languages: Zedity is available also in **English**, **French**, **Germa
 
 * **Total Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
 
-* **Saves You Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
+* **Save a Lot of Time**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
 **LIMITED PROMO!!!** [Welcome Spring Promo Code](http://zedity.com/plugin/wp): take advantage of this limited special offer to get Zedity Premium with a great discount!
 
