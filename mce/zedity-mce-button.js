@@ -25,6 +25,7 @@
 				ed.parser.addNodeFilter('div', function(nodes){
 					for (var i=nodes.length-1; i>=0; --i) {
 						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) continue;
+						if (!nodes[i].attributes.map['data-origw'] || !nodes[i].attributes.map['data-origh']) continue;
 						nodes[i].attr({
 							style: 'width:'+nodes[i].attributes.map['data-origw']+'px;height:'+nodes[i].attributes.map['data-origh']+'px'
 						});
@@ -34,6 +35,7 @@
 				ed.serializer.addNodeFilter('div', function(nodes,name,args){
 					for (var i=nodes.length-1; i>=0; --i) {
 						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe-wrapper')==-1) continue;
+						if (!nodes[i].attributes.map['data-origw'] || !nodes[i].attributes.map['data-origh']) continue;
 						nodes[i].attr({
 							'data-mce-style': 'max-width:'+nodes[i].attributes.map['data-origw']+'px;max-height:'+nodes[i].attributes.map['data-origh']+'px'
 						});

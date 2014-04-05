@@ -1,3 +1,23 @@
+
+/*--------------------------------------------------------------------------------------*/
+/*ThickBox*/
+
+#TB_window.zedity-window {
+	width: 90% !important;
+	left: 5% !important;
+	margin-left: 0 !important;
+	z-index: 100000 !important;
+}
+
+
+#TB_overlay.zedity-overlay {
+	z-index: 100000 !important;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
 /*plugins list buttons*/
 
 #zedity .button,
