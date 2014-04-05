@@ -2,8 +2,8 @@
 /*
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
-Description: Finally you can create any design you want, the way you have been wishing for!
-Version: 2.5.1
+Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
+Version: 2.5.3
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -43,7 +43,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 	class WP_Zedity_Plugin {
 		
 		const MIN_WIDTH = 50; // pixels
-		const MAX_WIDTH = 1920; // pixels
+		const MAX_WIDTH = 2500; // pixels
 		const DEFAULT_WIDTH = 600; // a typical width for some themes in wordpress
 		
 		const MIN_HEIGHT = 20; // pixels
@@ -301,11 +301,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 				resizeForZedity = function(){
 					var $tb = jQuery('#TB_window');
 					if ($tb.find('.zedity-editor-iframe').length==0) return;
-					$tb.css({
-						width: '90%',
-						left: '5%',
-						'margin-left': ''
-					});
+					$tb.addClass('zedity-window');
+					jQuery('#TB_overlay').addClass('zedity-overlay');
 					var $iframe = jQuery('#TB_iframeContent.zedity-editor-iframe');
 					if ($iframe.length>0 && $iframe[0].contentWindow.resizeEditor) {
 						$iframe.css('width','100%');
@@ -323,11 +320,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 						old_go.apply(this,arguments);
 					};
 				}
-				jQuery('body').on('click.zedity',function(){
+
+				var hideOverlay = function(){
 					if (!window.tinyMCE) return;
 					var ed = tinyMCE.activeEditor;
 					if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
-				});
+				};
+				jQuery('body').on('click.zedity',hideOverlay);
+				jQuery('#adminmenu a.wp-has-submenu').on('mouseover',hideOverlay);
 			});
 			</script>
 			<?php
@@ -390,6 +390,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 		}
 		
 		public function mce_config($init) {
+			if (empty($init)) return;
+			
 			//ensure that iframes are allowed
 			if (!isset($init['extended_valid_elements'])) {
 				$init['extended_valid_elements'] = 'iframe[*]';
@@ -398,13 +400,15 @@ if (class_exists('WP_Zedity_Plugin')) {
 			}
 			$options = $this->get_options();
 			
-			//disable conflicting tinymce plugins
-			$plugins = explode(',',$init['plugins']);
-			$plugins = array_diff($plugins, array('noneditable','-noneditable'));
-			if ($options['iframe_preview']) {
-				$plugins = array_diff($plugins, array('media','-media'));
+			if (!empty($init['plugins'])) {
+				//disable conflicting tinymce plugins
+				$plugins = explode(',',$init['plugins']);
+				$plugins = array_diff($plugins, array('noneditable','-noneditable'));
+				if ($options['iframe_preview']) {
+					$plugins = array_diff($plugins, array('media','-media'));
+				}
+				$init['plugins'] = implode(',',$plugins);
 			}
-			$init['plugins'] = implode(',',$plugins);
 			return $init;
 		}
 
@@ -424,7 +428,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'watermark' => 'none',
 				'customfontscss' => '',
 				'customfonts' => array(),
-				'responsive' => TRUE,
+				'responsive' => 0,
 				'responsive_noconflict' => FALSE,
 				'iframe_preview' => TRUE,
 				'snap_to_page' => FALSE,
@@ -438,6 +442,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		public function get_options(){
 			$options = get_option($this->get_options_name(),array());
+			//convert from old versions
+			if ($options['responsive']===FALSE) $options['responsive']=0;
 			$defaults = $this->get_defaults();
 			return array_merge($defaults,$options);
 		}
