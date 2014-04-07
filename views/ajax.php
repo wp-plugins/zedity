@@ -58,7 +58,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 
 			$css = '<style>html,body{padding:0;margin:0}</style>';
 			$js = '';
-			if ($this->is_premium() && strpos($content,'zedity-responsive')!==FALSE) {
+			if ($this->is_premium() && strpos($content,'zedity-responsive-layout')!==FALSE) {
+				//responsive layout
+				$js = '<script type="text/javascript" src="' . plugins_url('zedity/zedity-responsive.min.js',dirname(__FILE__)) . '"></script>';
+			} else if ($this->is_premium() && strpos($content,'zedity-responsive')!==FALSE) {
+				//responsive scaling
 				$css .= '<style>.zedity-responsive{-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;-o-transform-origin:0 0;transform-origin:0 0}</style>';
 				$js = '<script type="text/javascript">(function(){var e=document.querySelector(\'.zedity-responsive\');if(!e)return;var ow=e.offsetWidth;var oh=e.offsetHeight;var ar=false;window.onresize=(function resize(){var w=window.innerWidth/ow;var h=window.innerHeight/oh;if (ar)w=h=Math.min(w,h);var y=e.style;y.webkitTransform=y.MozTransform=y.msTransform=y.OTransform=y.transform=\'scale(\'+w+\',\'+h+\')\';return resize;})();})();</script>';
 			}
