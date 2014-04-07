@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 2.5.3
+Version: 2.5.4
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -227,15 +227,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 			?>
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
-
-				if (window.tinyMCE) {
-					tinyMCE.addI18n({'<?php echo (class_exists('_WP_Editors') ? _WP_Editors::$mce_locale : substr(WPLANG,0,2)) ?>': {
-						zedity: {
-							edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
-							delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
-						}
-					}});
-				}
+				if (!window.tinyMCE) return;
+				
+				tinyMCE.addI18n({'<?php echo (class_exists('_WP_Editors') ? _WP_Editors::$mce_locale : substr(WPLANG,0,2)) ?>': {
+					zedity: {
+						edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
+						delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
+					}
+				}});
 
 				//Handle ThickBox window close
 				var old_tb_remove = tb_remove;
