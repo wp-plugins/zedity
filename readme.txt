@@ -47,7 +47,7 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 == Installation ==
 
-You may want to go for one of the following options:
+You can go for one of the following options:
 
 **Option A (from your WordPress dashboard):**
 
