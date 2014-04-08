@@ -15,7 +15,7 @@ Zedity is an innovative Editor to create your posts or pages amazingly easily, q
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, powerful and easy approach to create responsive content at best! 
 
-Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**. [More languages](http://zedity.com/translate/) coming soon...
+Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**. [More languages](http://zedity.com/translate/) and Spanish coming soon...
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
