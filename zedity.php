@@ -13,7 +13,7 @@ License URI: http://zedity.com/license/freewp
 $path = plugin_dir_path(__FILE__);
 $filepremium = "$path/premium.php";
 load_plugin_textdomain('zedity', false, dirname(plugin_basename(__FILE__)).'/languages/');
-
+  
 //check if another Zedity plugin is already enabled
 if (class_exists('WP_Zedity_Plugin')) {
 	
