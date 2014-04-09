@@ -29,7 +29,7 @@ Multiple languages: Zedity is available also in **English**, **French**, **Germa
 
 >[Welcome Spring Promo Code](http://zedity.com/plugin/wp): take advantage of an incredible limited offer to get Zedity Premium with a great discount!
 
-**Here is an example of Zedity (initial free version) in action:**
+**Here is an example of Zedity (the initial free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Find more about Zedity:**
