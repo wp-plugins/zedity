@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 2.5.4
+Version: 3.1.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -13,7 +13,7 @@ License URI: http://zedity.com/license/freewp
 $path = plugin_dir_path(__FILE__);
 $filepremium = "$path/premium.php";
 load_plugin_textdomain('zedity', false, dirname(plugin_basename(__FILE__)).'/languages/');
-  
+
 //check if another Zedity plugin is already enabled
 if (class_exists('WP_Zedity_Plugin')) {
 	
@@ -335,16 +335,39 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function additional_editor_js($options){						
 			?>
 			<script type="text/javascript">
-			//add Responsive to menu (disabled)
-			zedityMenu.find('li.ui-menubar:first-child > ul > li:nth-child(5)').after(
-				'<li class="ui-state-disabled ui-menu-item" role="presentation" aria-disabled="true">'+
-					'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem">'+
-						'<span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>'+
-						'<span class="zedity-menu-icon zedity-icon-none"></span>'+
-						'<?php echo addslashes(__('Responsive Design','zedity'))?> <small style="color:blue">(Premium)</small>'+
-					'</a>'+
-				'</li>'
-			);
+			//add promo tab for media library in video box
+			$(document).on('dialogcreate','.zedity-dialog-video',function(event,ui){
+				var $tabs = $('.zedity-dialog-video .tabs');
+				$tabs.find('ul').append('<li><a href="#tab-video-ML"><?php echo addslashes(__('Media Library','zedity'))?></a></li>');
+				$tabs.append(
+					'<div id="tab-video-ML">'+
+					'<p><?php echo addslashes(__('Insert a video from the WordPress Media Library.','zedity'))?></p>'+
+					'<p><?php echo addslashes(__('You can choose among the videos you already have in your library, or upload a new one.','zedity'))?></p>'+
+					'<p><?php echo addslashes(__('You can select multiple video sources (different encodings of the same video) and a picture as thumbnail.','zedity'))?></p>'+
+					'<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only zedity-open-ML"><span class="ui-button-text"><?php echo addslashes(__('Open Media Library...','zedity'))?></span></button>'+
+					'</div>'
+				);
+				$tabs.tabs('refresh');
+				$tabs.find('.zedity-open-ML').on('click.zedity',function(){
+					Zedity.core.dialog({message: ZedityPromo.message});
+				});
+			});
+			//add promo tab for media library in audio box
+			$(document).on('dialogcreate','.zedity-dialog-audio',function(event,ui){
+				var $tabs = $('.zedity-dialog-audio .tabs');
+				$tabs.find('ul').prepend('<li><a href="#tab-audio-ML"><?php echo addslashes(__('Media Library','zedity'))?></a></li>');
+				$tabs.append(
+					'<div id="tab-audio-ML">'+
+					'<p><?php echo addslashes(__('Insert an audio from the WordPress Media Library.','zedity'))?></p>'+
+					'<p><?php echo addslashes(__('You can choose among the audios you already have in your library, or upload a new one.','zedity'))?></p>'+
+					'<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only zedity-open-ML"><span class="ui-button-text"><?php echo addslashes(__('Open Media Library...','zedity'))?></span></button>'+
+					'</div>'
+				);
+				$tabs.tabs('refresh');
+				$tabs.find('.zedity-open-ML').on('click.zedity',function(){
+					Zedity.core.dialog({message: ZedityPromo.message});
+				});
+			});
 			</script>
 			<?php			
 		}
