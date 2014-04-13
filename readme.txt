@@ -13,7 +13,7 @@ The best editor to create your content: incredibly easy, quick and with unpreced
 == Description ==
 Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
->Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
+>Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an easy and powerful feature to create better responsive content!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
@@ -25,7 +25,7 @@ Zedity is an innovative Editor to create your posts or pages amazingly easily, q
 
 * **Save a Lot of Time**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
->Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an easy and powerful approach to create responsive content!
+>Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.$
 
 **Here is an example of Zedity (the initial free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
