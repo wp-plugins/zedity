@@ -3,39 +3,39 @@ Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
-Tested up to: 3.8.2
-Stable tag: 3.1.0
+Tested up to: 3.9
+Stable tag: 3.1.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
 
 == Description ==
->**WP 3.9 IMPORTANT NOTICE** WordPress 3.9 has been released and introduced many changes that affect plugins. Zedity is also affected and we are working on it to add support for WP 3.9. If you need to upgrade to 3.9 immediately, you may have to temporarily disable Zedity. If you keep on using previous versions of WP for another few days, you can keep on using Zedity without any problems.
+Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
-Zedity is an innovative Editor to create your posts or pages super easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
-
->Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an innovative, easy and powerful feature to create better responsive design!
+>Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
 **Why WordPress Users Love Zedity:**
 
+>Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an easy and powerful approach to create responsive content!
+
 * **Amazingly Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
 
 * **Total Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
 
-* **Save a Lot of Time**: Create your content very quickly, completely hassle-free and, since you can do it without hiring web developers, saving money too!
+* **Save a Lot of Time**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
->Multiple languages: Zedity is available in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [And more languages](http://zedity.com/translate) coming soon...
+>[Welcome Spring Promo Code](http://zedity.com/plugin/wp): take advantage of an incredible limited offer to get Zedity Premium with a great discount!
 
-**Here is an example of Zedity (in its initial free version) in action:**
+**Here is an example of Zedity (the initial free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Find more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   **Multilanguage** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
+*   **Translate** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
@@ -114,6 +114,9 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.1.1 =
+* Fixed compatibility issue with WordPress 3.9.
 
 = 3.1.0 =
 * Added Spanish translation.

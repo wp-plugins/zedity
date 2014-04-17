@@ -4,6 +4,7 @@
 			var t = this;
 			t.url = url;
 			t.ed = ed;
+			t.bind = tinyMCE.dom.Event.bind ? 'bind' : 'add';
 
 			ed.addButton('zedity', {
 				title: 'Zedity Editor',
@@ -77,15 +78,14 @@
 			//manage overlay
 			ed.onInit.add(function(ed){
 				//show overlay on click over zedity content
-				ed.dom.events.add(ed.getBody(), 'mousedown', function(e){
+				ed.dom.events[t.bind](ed.getBody(), 'mousedown', function(e){
 					var parent = ed.dom.getParent(e.target,'div.zedity-editor') || ed.dom.getParent(e.target,'div.zedity-iframe-wrapper');
 					if (parent) {
 						try {
 							ed.execCommand('mceFocus',false);
 						} catch (e) {}
 						t._showOverlay(ed,parent);
-						ed.dom.events.prevent(e);
-						ed.dom.events.stop(e);
+						ed.dom.events.cancel(e);
 						ed.plugins.wordpress._hideButtons();
 					}
 				});
@@ -99,52 +99,49 @@
 					}
 				});
 				//block enter key when overlay is open
-				ed.dom.events.add(ed.getBody(), 'keydown', function(e){
+				ed.dom.events[t.bind](ed.getBody(), 'keydown', function(e){
 					if (e.keyCode==13) {
 						var n = tinymce.DOM.get('zedity_content_overlay');
 						if (n && n.style.display=='block') {
-							ed.dom.events.prevent(e);
-							ed.dom.events.stop(e);
+							ed.dom.events.cancel(e);
 						}
 					} else if (e.keyCode==46 || e.keyCode==8) {
 						if (ed.selection.isCollapsed()) {
 							var n = ed.selection.getNode();
 							if (n.getAttribute('class') && n.getAttribute('class').indexOf('zedity')>-1) {
-								ed.dom.events.prevent(e);
-								ed.dom.events.stop(e);
+								ed.dom.events.cancel(e);
 								return;
 							}
 							var nc = n.textContent;
 							var empty = (nc.replace(/^\s+|\s+$/g, '') === '');
 							if (empty) {
 								tinymce.DOM.remove(n);
-								ed.dom.events.prevent(e);
-								ed.dom.events.stop(e);
+								ed.dom.events.cancel(e);
 							}
 						}
 					}
 				});
-
+				
 				//hide overlay when editor loses focus
-				tinyMCE.dom.Event.add(ed.getWin(), 'blur', function(){
+				tinyMCE.dom.Event[t.bind](ed.getWin(), 'blur', function(){
 					t._hideOverlay();
 				});
 
 				//reposition/resize overlay on WP editor scroll
-				tinyMCE.dom.Event.add(ed.getWin(), 'scroll', function(){
+				tinyMCE.dom.Event[t.bind](ed.getWin(), 'scroll', function(){
 					t._showOverlay(ed,t._zedityContent);
 				});
 				//reposition/resize overlay on WP editor resize
-				tinyMCE.dom.Event.add(ed.getWin(), 'resize', function(){
+				tinyMCE.dom.Event[t.bind](ed.getWin(), 'resize', function(){
 					t._showOverlay(ed,t._zedityContent);
 				});
 
 				//reposition/resize overlay on window scroll
-				tinyMCE.dom.Event.add(ed.getWin().parent, 'scroll', function(){
+				tinyMCE.dom.Event[t.bind](ed.getWin().parent, 'scroll', function(){
 					t._showOverlay(ed,t._zedityContent);
 				});
 				//reposition/resize overlay on window resize
-				tinyMCE.dom.Event.add(ed.getWin().parent, 'resize', function(){
+				tinyMCE.dom.Event[t.bind](ed.getWin().parent, 'resize', function(){
 					t._showOverlay(ed,t._zedityContent);
 				});
 			});
@@ -312,7 +309,7 @@
 				title: ed.getLang('zedity.edit_content')
 			});
 
-			tinymce.dom.Event.add(zEditButton, 'mousedown', function(e){
+			tinymce.dom.Event[t.bind](zEditButton, 'mousedown', function(e){
 				ed.selection.select(t._zedityContent);
 				t._openZedity();
 			});
@@ -325,7 +322,7 @@
 				title: ed.getLang('zedity.delete_content')
 			});
 
-			tinymce.dom.Event.add(zDelButton, 'mousedown', function(e){
+			tinymce.dom.Event[t.bind](zDelButton, 'mousedown', function(e){
 				var n = t._zedityContent;
 				//if is the inner content, get the outer wrapper
 				if (tinymce.DOM.hasClass(n,'zedity-iframe-wrapper') || tinymce.DOM.hasClass(n,'zedity-editor')) {
@@ -349,7 +346,7 @@
 				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '2.0'
+				version: '2.1'
 			};
 		}
 	});
