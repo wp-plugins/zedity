@@ -11,6 +11,8 @@ License URI: http://zedity.com/license/freewp
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
 
 == Description ==
+>**WP 3.9 IMPORTANT NOTICE** WordPress 3.9 has been released and introduced many changes that affect plugins. Zedity is also affected and we are working on it to add support for WP 3.9. If you need to upgrade to 3.9 immediately, you may have to temporarily disable Zedity. If you keep on using previous versions of WP for another few days, you can keep on using Zedity without any problems.
+
 Zedity is an innovative Editor to create your posts or pages super easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an innovative, easy and powerful feature to create better responsive design!
