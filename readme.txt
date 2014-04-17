@@ -13,9 +13,7 @@ The best editor to create your content: incredibly easy, quick and with unpreced
 == Description ==
 Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
->**WP 3.9 Notice**: due to changes introduced by WordPress 3.9, please make sure to install the latest version of Zedity. Versions older than 3.1.1 are not compatible with WP 3.9.
-
->Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
+>WP 3.9 UPDATE: due to changes introduced by WordPress 3.9, please make sure to install the latest version of Zedity. Versions older than 3.1.1 are not compatible with WP 3.9.
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
@@ -29,7 +27,7 @@ Zedity is an innovative Editor to create your posts or pages amazingly easily, q
 
 * **Save a Lot of Time**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
->[Welcome Spring Promo Code](http://zedity.com/plugin/wp): take advantage of an incredible limited offer to get Zedity Premium with a great discount!
+>Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
 
 **Here is an example of Zedity (the initial free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
