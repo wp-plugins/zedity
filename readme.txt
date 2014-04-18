@@ -13,7 +13,7 @@ The best editor to create your content: incredibly easy, quick and with unpreced
 == Description ==
 Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
->WP 3.9 COMPATIBILITY: due to the many changes introduced by WordPress 3.9, Zedity version older than 3.1.1 are not compatible with WP 3.9. Please make sure to install the latest Zedity version.
+>WP 3.9 COMPATIBILITY: due to the many changes introduced by WordPress 3.9, Zedity version older than 3.1.1 are not compatible with WP 3.9. As minor compatibility issues may still have to be fixed, please make sure to install the latest Zedity version.
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
