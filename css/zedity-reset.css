@@ -6,7 +6,7 @@ Zedity Content (iframe version)
 .zedity-iframe-wrapper > iframe {
 	vertical-align: top;
 	max-width: none;        
-        margin: 0;        
+	margin: 0;
 }
 .zedity-wrapper,
 .zedity-iframe,
@@ -29,6 +29,10 @@ Zedity Content (iframe version)
 	transform-origin: 0 0;
 }
 
+.zedity-iframe-wrapper.zedity-responsive-layout > iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
 
 /*----------------------------------------------------------------------------------------
 Zedity Content
