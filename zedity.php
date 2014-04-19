@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 3.1.1
+Version: 3.1.2
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -414,11 +414,19 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function mce_config($init) {
 			if (empty($init)) return;
 			
-			//ensure that iframes are allowed
+			//ensure that iframes and styles are allowed
+			$elems = 'iframe[*],style[*]';
 			if (!isset($init['extended_valid_elements'])) {
-				$init['extended_valid_elements'] = 'iframe[*]';
+				$init['extended_valid_elements'] = $elems;
 			} else {
-				$init['extended_valid_elements'] .= ',iframe[*]';
+				$init['extended_valid_elements'] .= ",$elems";
+			}
+			//ensure style tag is allowed in body and divs
+			$child = '+body[style],+div[style]';
+			if (!isset($init['valid_children'])) {
+				$init['valid_children'] = $child;
+			} else {
+				$init['valid_children'] .= ",$child";
 			}
 			$options = $this->get_options();
 			

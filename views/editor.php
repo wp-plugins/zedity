@@ -361,12 +361,19 @@
 				//re-select content
 				this.mce.selection.select(this.element);
 				//add a paragraph before and/or after the content (if needed) to permit adding text from WP editor if no other content is present
-				//insert raw HTML (mceInsertContent or send_to_editor() have problems #614)
-				this.mce.execCommand('mceInsertRawHTML',false,
-					(this.needBrBefore ? '<p>&nbsp;</p>' : '') +
-					content +
-					(this.needBrAfter ? '<p>&nbsp;</p>' : '')
-				);
+				if (this.element) {
+					//now even mceInsertRawHTML doesn't work with tinyMCE 4, so we use DOM manipulation
+					if (this.needBrBefore) this.element.parentNode.insertBefore($('<p>&nbsp;</p>')[0],this.element);
+					if (this.needBrAfter) this.element.parentNode.insertBefore($('<p>&nbsp;</p>')[0],this.element.nextSibling);
+					this.element.parentNode.replaceChild($(content)[0], this.element);
+				} else {
+					//insert raw HTML (mceInsertContent or send_to_editor() have problems #614)
+					this.mce.execCommand('mceInsertRawHTML',false,
+						(this.needBrBefore ? '<p>&nbsp;</p>' : '') +
+						content +
+						(this.needBrAfter ? '<p>&nbsp;</p>' : '')
+					);
+				}
 				zedityEditor.contentChanged = false;
 				//close editor window
 				parent.tb_remove();
@@ -749,7 +756,7 @@
 			//on dialog open, add link to tutorial
 			if ($(this).find('.zedity-tutorial').length) return;
 			$(this).append(
-				'<p class="zedity-tutorial" style="text-align:center"><a href="http://zedity.com/blog/multiple-layout-resposive-design/" target="_blank">'+
+				'<p class="zedity-tutorial" style="text-align:center"><a href="http://zedity.com/blog/multiple-layout-responsive-design/" target="_blank">'+
 					'<?php echo addslashes(__('Learn more about Multiple Layout Responsive Design','zedity'))?> (MLRD).'+
 				'</a></p>'
 			);

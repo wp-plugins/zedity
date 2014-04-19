@@ -1,10 +1,10 @@
 === Zedity™ The Easiest Way To Create Your Content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css3, custom, design, document, download, drag, drop, easy, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 3.1.1
+Stable tag: 3.1.2
 License: GPLv3
 License URI: http://zedity.com/license/freewp
 
@@ -13,7 +13,7 @@ The best editor to create your content: incredibly easy, quick and with unpreced
 == Description ==
 Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
->WP 3.9 COMPATIBILITY: due to the many changes introduced by WordPress 3.9, Zedity version older than 3.1.1 are not compatible with WP 3.9. As minor compatibility issues may still have to be fixed, please make sure to install the latest Zedity version.
+>WP 3.9 COMPATIBILITY: due to the many changes introduced by WordPress 3.9, Zedity versions prior to 3.1.1 are not compatible with WP 3.9. As minor compatibility issues might have to be fixed, please make sure to install the latest Zedity version.
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
    
@@ -114,6 +114,9 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.1.2 =
+* Adjustments to improve compatibility with new TinyMCE included in WordPress 3.9.
 
 = 3.1.1 =
 * Fixed compatibility issue with WordPress 3.9.

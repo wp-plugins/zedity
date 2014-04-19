@@ -20,8 +20,8 @@
 			});
 
 			ed.onPreInit.add(function(){
-				//be sure iframes are allowed
-				ed.schema.addValidElements('iframe[*]');
+				//be sure iframes and styles are allowed
+				ed.schema.addValidElements('iframe[*],style[*]');
 				//set zedity wrapper size when in visual editor (to show full overlay)
 				ed.parser.addNodeFilter('div', function(nodes){
 					for (var i=nodes.length-1; i>=0; --i) {
@@ -40,6 +40,16 @@
 						nodes[i].attr({
 							'data-mce-style': 'max-width:'+nodes[i].attributes.map['data-origw']+'px;max-height:'+nodes[i].attributes.map['data-origh']+'px'
 						});
+					}
+				});
+				//restore onclick on boxes with link
+				ed.serializer.addNodeFilter('div', function(nodes,name,args){
+					for (var i=nodes.length-1; i>=0; --i) {
+						if (nodes[i].attributes.map['data-href']) {
+							nodes[i].attr({
+								onclick: "window.open('"+nodes[i].attributes.map['data-href']+"','"+(nodes[i].attributes.map['data-target']||'_self')+"');" 
+							});
+						}
 					}
 				});
 				//temporarily disabled iframe management
@@ -95,6 +105,7 @@
 					if (parent) {
 						t._showOverlay(ed,parent);
 					} else {
+						if (n.attributes.class && ((' '+n.attributes.class.nodeValue+' ')||'').indexOf(' zedity-wrapper ')>-1) return;
 						t._hideOverlay();
 					}
 				});
