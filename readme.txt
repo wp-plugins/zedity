@@ -19,7 +19,7 @@ Zedity is an innovative Editor to create your posts or pages amazingly easily, q
    
 **Why WordPress Users Love Zedity:**
 
->Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an easy and powerful approach to create responsive content!
+>Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
 
 * **Amazingly Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
 
