@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
 
 == Description ==
-Zedity is an innovative Editor to create your posts or pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
+Zedity is an innovative Editor to create your posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
 
 >WordPress 3.9 COMPATIBILITY: due to the changes introduced by WordPress 3.9, Zedity versions prior to 3.1.2 are not compatible with WP 3.9. Please make sure to upgrade to the latest Zedity version available.
 
