@@ -40,7 +40,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
 *   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
- 
+  
 **We recommend:**
 Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
