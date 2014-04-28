@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 3.1.2
+Stable tag: 3.2.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
   
@@ -114,6 +114,12 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.2.0 =
+* Optimizations for WordPress 3.9.
+* Custom layouts in "Multiple Layout Responsive Design" (MLRD) (only Premium).
+* New fit to page width/height functions (only Premium).
+* MLRD improvements: auto-fit big boxes and abort MLRD (only Premium).
 
 = 3.1.2 =
 * Adjustments to improve compatibility with new TinyMCE included in WordPress 3.9.

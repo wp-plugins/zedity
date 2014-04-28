@@ -532,7 +532,7 @@
 							//new responsive layout
 							var $wrapper = $(
 								'<div id="'+zedityEditor.id+'" class="zedity-wrapper'+align+'">'+
-								'<div class="zedity-iframe-wrapper zedity-responsive-layout'+align+'">'+
+								'<div class="zedity-iframe-wrapper zedity-responsive-layout'+align+'" style="width:'+size.width+'px;height:'+size.height+'px">'+
 								'<iframe class="zedity-iframe" src="'+data.url+'?'+Zedity.core.genId('')+'" style="width:100%;height:100%" scrolling="no" data-id="'+data.id+'"></iframe>'+
 								'</div></div>'
 							);
@@ -711,9 +711,8 @@
 				} else {
 					pamenu.toggleClass('ui-state-disabled',!!content.responsive);
 				}
-				if (editor.responsive && content.responsive==2) {
-					var short = {1:'XS', 6:'S', 11:'L', 16:'XL'};
-					$('#currentLayout').show().text(short[editor.responsive.current]);
+				if (editor.responsive && content.responsive==2 && editor.responsive._options.layouts[editor.responsive.current]) {
+					$('#currentLayout').show().text(editor.responsive._options.layouts[editor.responsive.current].short);
 				} else {
 					$('#currentLayout').hide();
 				}
