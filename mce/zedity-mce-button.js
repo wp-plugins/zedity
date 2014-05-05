@@ -45,7 +45,7 @@
 				//restore onclick on boxes with link
 				ed.serializer.addNodeFilter('div', function(nodes,name,args){
 					for (var i=nodes.length-1; i>=0; --i) {
-						if (nodes[i].attributes.map['data-href']) {
+						if (nodes[i].attributes.map['data-href'] && nodes[i].attributes.map['class'] && nodes[i].attributes.map['class'].indexOf('zedity-box')>-1) {
 							nodes[i].attr({
 								onclick: "window.open('"+nodes[i].attributes.map['data-href']+"','"+(nodes[i].attributes.map['data-target']||'_self')+"');" 
 							});
@@ -110,7 +110,7 @@
 					}
 				});
 				//block enter key when overlay is open
-				ed.dom.events[t.bind](ed.getBody(), 'keydown', function(e){
+				ed.onKeyDown.addToTop(function(ed,e){
 					if (e.keyCode==13) {
 						var n = tinymce.DOM.get('zedity_content_overlay');
 						if (n && n.style.display=='block') {

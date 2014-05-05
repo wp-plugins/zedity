@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 3.2.0
+Version: 3.3.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -387,12 +387,16 @@ if (class_exists('WP_Zedity_Plugin')) {
 		//TINYMCE
 
 		public function register_mce_buttons($buttons) {
+			if (!current_user_can('unfiltered_html')) return $buttons;
+			
 			$buttons[] = 'zedity';
 			return $buttons;
 		}
 
 
 		public function add_mce_buttons($plugins) {
+			if (!current_user_can('unfiltered_html')) return $plugins;
+			
 			$plugins['zedity'] = plugins_url('mce/zedity-mce-button.js', __FILE__);
 			$options = $this->get_options();
 			if ($options['iframe_preview']) {
@@ -406,6 +410,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 
 		public function add_mce_css($mce_css) {
+			if (!current_user_can('unfiltered_html')) return $mce_css;
+			
 			if (!empty($mce_css)) $mce_css .= ',';
 			$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
 			$mce_css .= plugins_url('css/zedity-reset.css', __FILE__) . ',';
@@ -415,6 +421,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		public function mce_config($init) {
 			if (empty($init)) return;
+			if (!current_user_can('unfiltered_html')) return $init;
 			
 			//ensure that iframes and styles are allowed
 			$elems = 'iframe[*],style[*]';

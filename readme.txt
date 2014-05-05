@@ -4,15 +4,15 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 3.2.0
+Stable tag: 3.3.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
-              
+  
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
-       
+  
 == Description ==
 Zedity is an innovative Editor to create your posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
-  
+ 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
     
 **Why You'll Love Zedity:**
@@ -114,6 +114,11 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.3.0 =
+* Don't show the Z icon for user roles who don't have enough permissions.
+* Various optimizations.
+* Improved HTML box for social sharing scripts (only Premium).
 
 = 3.2.0 =
 * Optimizations for WordPress 3.9.

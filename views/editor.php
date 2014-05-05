@@ -111,6 +111,33 @@
 			.zedity-dialog-image .tabs li[aria-controls=tab-image-disk] {
 				display: none !important;
 			}
+			/*Normalize lists*/
+			.zedity-box-Text ul {
+				list-style-type: disc;
+			}
+			.zedity-box-Text ul ul,
+			.zedity-box-Text ol ul {
+				list-style-type: circle;
+			}
+			.zedity-box-Text ul ul ul,
+			.zedity-box-Text ul ol ul,
+			.zedity-box-Text ol ul ul,
+			.zedity-box-Text ol ol ul {
+				list-style-type: square;
+			}
+			.zedity-box-Text ol {
+				list-style-type: decimal;
+			}
+			.zedity-box-Text ol ol,
+			.zedity-box-Text ul ol {
+				list-style-type: lower-alpha;
+			}
+			.zedity-box-Text ol ol ol,
+			.zedity-box-Text ol ul ol,
+			.zedity-box-Text ul ol ol,
+			.zedity-box-Text ul ul ol {
+				list-style-type: lower-roman;
+			}
 			/*status bar*/
 			#statusbar {
 				position: fixed;

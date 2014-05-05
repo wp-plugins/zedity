@@ -144,7 +144,36 @@ Text box
 	display: block !important;
 	margin: initial !important;
 	padding: 0 0 0 40px !important;
+	list-style-position: inside;
 }
+.zedity-editor.zedity-notheme .zedity-box-Text ul {
+	list-style-type: disc;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul {
+	list-style-type: circle;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul ul,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol ul {
+	list-style-type: square;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol {
+	list-style-type: decimal;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol {
+	list-style-type: lower-alpha;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text ol ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ol ul ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ol ol,
+.zedity-editor.zedity-notheme .zedity-box-Text ul ul ol {
+	list-style-type: lower-roman;
+}
+
+
 .zedity-editor.zedity-notheme .zedity-box-Text li {
 	display: list-item !important;
 	line-height: initial !important;
