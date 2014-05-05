@@ -7,7 +7,7 @@ Tested up to: 3.9
 Stable tag: 3.2.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
-             
+              
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
        
 == Description ==
