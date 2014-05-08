@@ -1,7 +1,7 @@
 === Zedity™ The Easiest Way To Create Your Content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ
-Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9
 Stable tag: 3.3.0
@@ -16,7 +16,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
     
 **Why You'll Love Zedity:**
- 
+  
 * **Amazingly Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
 
 * **Total Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're free to unleash your creativity!
