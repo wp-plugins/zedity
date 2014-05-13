@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 3.3.0
+Version: 3.4.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3

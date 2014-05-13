@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 3.3.0
+Stable tag: 3.4.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -114,6 +114,11 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.4.0 =
+* Content width and height can also be resized easily with a drag handle (only Premium).
+* Snap to page/box now available also for box resizing (only Premium).
+* Enabled Video box to support Facebook videos (only Premium).
 
 = 3.3.0 =
 * Don't show the Z icon for user roles who don't have enough permissions.
