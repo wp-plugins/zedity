@@ -114,7 +114,7 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
-          
+           
 = 3.4.0 =
 * Content width and height can also be resized easily with a drag handle (only Premium).
 * Snap to page/box now available also for box resizing (only Premium).
