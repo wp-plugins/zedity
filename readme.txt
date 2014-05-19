@@ -113,7 +113,7 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 
-== Changelog ==
+== Changelog == 
             
 = 3.4.0 =
 * Content width and height can also be resized easily with a drag handle (only Premium).
