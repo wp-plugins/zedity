@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 3.4.0
+Stable tag: 3.5.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -25,7 +25,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
 
->Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
+>Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**, **Russian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
 
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
@@ -113,8 +113,12 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 4. In your WordPress dashboard, you can control the Zedity Settings for the default content size of your posts, the watermark position, the web fonts you intend to use in your contents, etc.
 
 
-== Changelog == 
-               
+== Changelog ==
+
+= 3.5.0 =
+* Added Russian translation.
+* Enabled Video box to support Instagram videos (only Premium).
+
 = 3.4.0 =
 * Content width and height can also be resized easily with a drag handle (only Premium).
 * Snap to page/box now available also for box resizing (only Premium).
