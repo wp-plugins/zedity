@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, css3, custom, design, document, download, drag, drop, easy, e-commerce, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 3.5.0
+Stable tag: 3.6.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -12,9 +12,9 @@ The best editor to create your content: incredibly easy, quick and with unpreced
     
 == Description ==
 Zedity is an innovative Editor to create your posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
-                 
+ 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
-             
+    
 **Why You'll Love Zedity:**
   
 * **Amazingly Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
@@ -25,7 +25,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
 
->Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**, **Russian** and **Spanish**. [More languages](http://zedity.com/translate/) coming soon...
+>Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**, **Russian** and **Spanish**, **Ukrainian**. [More languages](http://zedity.com/translate/) coming soon...
 
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
@@ -114,6 +114,10 @@ Please contact us for [Support and Assistance](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 3.6.0 =
+* Added Ukrainian translation.
+* Some fixes and optimizations.
 
 = 3.5.0 =
 * Added Russian translation.
