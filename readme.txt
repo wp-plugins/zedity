@@ -69,7 +69,7 @@ Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) 
 2. Activate the Zedity plugin (from your WordPress dashboard)
 
 == Tutorials ==
-Here are some tutorials that can help you get started and learn some useful tips:
+Here are some tutorials to help you get started and learn some tips:
 
 **From A to... Zedity! This tutorial shows you how to get started with Zedity:**
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
@@ -78,8 +78,8 @@ Here are some tutorials that can help you get started and learn some useful tips
 **Do you need to update your Zedity content? This short tutorial shows how to do it:**
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
-Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) 
-Furthermore if you upgraded to the Premium version, you can keep both version installed, free and Premium, but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
+Please notice that some of the features shown may be available in [Zedity Premium](http://zedity.com/plugin/wp) 
+If you upgraded to the Premium version, you can keep both versions, free and Premium, installed but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
 
 Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
