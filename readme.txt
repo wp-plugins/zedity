@@ -31,9 +31,9 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
->WordPress 3.9 COMPATIBILITY: due to the changes introduced by WordPress 3.9, Zedity versions prior to 3.1.2 are not compatible with WP 3.9. Please make sure to upgrade to the latest Zedity version available.
+>WordPress 3.9 COMPATIBILITY: due to the changes introduced in WordPress 3.9, Zedity versions prior to 3.1.2 are not compatible with WP 3.9. Please make sure to upgrade to the latest Zedity version available. 
 
-**Find more about Zedity:**
+**Discover more about Zedity:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Translate** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
