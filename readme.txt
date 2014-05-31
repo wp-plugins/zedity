@@ -40,7 +40,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
-*   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
+*   [Help, FAQ and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
 **We recommend:**
 Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
