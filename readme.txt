@@ -15,8 +15,10 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
  
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->Zedity is currently available in the following languages: 
+Zedity is currently available in the following languages: 
+
 **English** + **French** + **German** + **Greek** + **Italian** + **Russian** + **Spanish** + **Ukrainian**
+
 [More languages](http://zedity.com/translate/) coming soon...
     
 **Why You'll Love Zedity:**
@@ -29,7 +31,6 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
   
-
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
@@ -50,7 +51,7 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 == Installation ==
 
-You can go for one of the following options:
+Please follow one of the following standard options:
 
 **Option A (from your WordPress dashboard):**
 
