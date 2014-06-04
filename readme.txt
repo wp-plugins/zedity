@@ -63,7 +63,7 @@ Please follow one of the following standard options:
 
 4. Click on "Install now", activate it and you're done!
 
-Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step directions and screen-shots.
+Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
 **Option B (via FTP):**
 
