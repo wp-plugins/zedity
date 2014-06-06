@@ -107,7 +107,7 @@ A: Yes. There are 20+ audio and video services supported in the [Premium version
 A: Yes, here you can find our [Tutorials](zedity.com/blog/tutorials) and others will follow. 
 
 **Q: ...got another question?**  
-Please contact us for [Support and Assistance](http://zedity.com/support).
+Feel free to [contact us](http://zedity.com/support).
 
 == Screenshots ==
 
