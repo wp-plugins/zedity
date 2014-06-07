@@ -8,12 +8,16 @@ Stable tag: 3.6.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
-The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Available in multiple languages.
-    
+The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Now available in multiple languages.
+     
 == Description ==
-Zedity is an innovative Editor to create your posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as if done on a piece of paper!
+Zedity is an innovative Editor to create your posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as you'd do on a piece of paper!
  
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
+
+>Zedity is currently available in the following languages: 
+**English** + **French** + **German** + **Greek** + **Italian** + **Russian** + **Spanish** + **Ukrainian**
+[More languages](http://zedity.com/translate/) coming soon...
     
 **Why You'll Love Zedity:**
   
@@ -24,22 +28,20 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 * **Save Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without hiring developers, saving money too!
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
- 
->Multiple languages: Zedity is available also in **English**, **French**, **German**, **Greek**, **Italian**, **Russian** and **Spanish**, **Ukrainian**. [More languages](http://zedity.com/translate/) coming soon...
-
+  
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
->WordPress 3.9 COMPATIBILITY: due to the changes introduced by WordPress 3.9, Zedity versions prior to 3.1.2 are not compatible with WP 3.9. Please make sure to upgrade to the latest Zedity version available.
+>WordPress 3.9 COMPATIBILITY: WordPress 3.9 introduced substantial changes. Zedity (3.1.2+) is fully compatible with WP3.9, please make sure to upgrade to the latest Zedity version available. 
 
-**Find more about Zedity:**
+**More about Zedity...**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
-*   **Translate** [Zedity in your native language](http://zedity.com/translate/): translate Zedity into your native language and [get rewarded](http://zedity.com/translate/)!
+*   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the hall of fame and get rewarded!](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
-*   [Help and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
+*   [Help, FAQ and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
 **We recommend:**
 Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
@@ -47,9 +49,9 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 == Installation ==
 
-You can go for one of the following options:
+Please follow one of the following standard options:
 
-**Option A (from your WordPress dashboard):**
+**Option A - From your WordPress dashboard:**
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
@@ -59,16 +61,16 @@ You can go for one of the following options:
 
 4. Click on "Install now", activate it and you're done!
 
-Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step directions and screen-shots.
+Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
-**Option B (via FTP):**
+**Option B - via FTP:**
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
 2. Activate the Zedity plugin (from your WordPress dashboard)
 
 == Tutorials ==
-Here are some tutorials that can help you get started and learn some useful tips:
+Here are some tutorials to help you get started and learn some tips:
 
 **From A to... Zedity! This tutorial shows you how to get started with Zedity:**
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
@@ -77,8 +79,8 @@ Here are some tutorials that can help you get started and learn some useful tips
 **Do you need to update your Zedity content? This short tutorial shows how to do it:**
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
-Please notice that some of the features shown may be available in the [Zedity Premium](http://zedity.com/plugin/wp) 
-Furthermore if you upgraded to the Premium version, you can keep both version installed, free and Premium, but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
+Please notice that some of the features shown may be available in [Zedity Premium](http://zedity.com/plugin/wp) 
+If you upgraded to the Premium version, you can keep both versions, free and Premium, installed but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
 
 Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
@@ -87,7 +89,7 @@ Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 **Q: Why should I use the Zedity plugin?**  
 A: Zedity enables you to do things that cannot be done with the default WordPress editor, creating your posts and pages, very easily, quickly and hassle-free. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media and stylish effects: all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do before. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
 
-**Q: How do I start using Zedity?**  
+**Q: How can I start creating content with Zedity?**  
 A: After installing and enabling the plugin, a new button ("Z") appears in the WordPress visual editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save ("Content" -> "Save") to exit the Zedity Editor and your content will be ready for preview or publishing. You can add Zedity content anywhere in your blog or site, as many times as you want.
 
 **Q: How come audio and video boxes are not playing after I exit the Zedity Editor?**  
@@ -102,8 +104,8 @@ A: Yes. There are 20+ audio and video services supported in the [Premium version
 **Q: Do you have tutorials?**  
 A: Yes, here you can find our [Tutorials](zedity.com/blog/tutorials) and others will follow. 
 
-**Q: ...got another question not reported here?**  
-Please contact us for [Support and Assistance](http://zedity.com/support).
+**Q: ...got other questions?**  
+Feel free to [contact us](http://zedity.com/support).
 
 == Screenshots ==
 
