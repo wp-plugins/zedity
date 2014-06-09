@@ -40,7 +40,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the hall of fame and get rewarded!](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
-*   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us to share your link!
+*   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, access solutions, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
 **We recommend:**
