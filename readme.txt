@@ -34,7 +34,7 @@ Zedity is an innovative Editor to create your posts and pages amazingly easily, 
 
 >WordPress 3.9 COMPATIBILITY: WordPress 3.9 introduced substantial changes. Zedity (3.1.2+) is fully compatible with WP3.9, please make sure to upgrade to the latest Zedity version available. 
 
-**More about Zedity...**
+**All about Zedity...**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the hall of fame and get rewarded!](http://zedity.com/translate/)!
