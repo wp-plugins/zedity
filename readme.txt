@@ -51,7 +51,7 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 Here are the two standard options to install Zedity:
 
-**Option A - From your WordPress dashboard:**
+** Option 1 - From your WordPress dashboard:**
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
@@ -63,7 +63,7 @@ Here are the two standard options to install Zedity:
 
 Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
-**Option B - via FTP:**
+**Option 2 - via FTP:**
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
