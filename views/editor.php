@@ -106,6 +106,7 @@
 				background-size: 100%;
 			}
 			/*Hide disabled features*/
+			.zedity-dialog-responsive-outer .zedity-button-abort,
 			.zedity-bar span[data-panel=zedity-imagefilters],
 			.zedity-menu-imgqual-menu,
 			.zedity-dialog-image .tabs li[aria-controls=tab-image-disk] {
@@ -704,18 +705,20 @@
 		};
 		//TODO: rename it to refreshEditor
 		resizeEditor = function(editor){
-			//reposition to center the editor
-			var ew = Math.max(editor.page.size().width,630);
-			var bw = $('body').width();
-			$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
-			editor.$container.css({
-				width: Math.min(ew,bw)+4,
-				'margin-left': (ew<bw) ? (bw-ew)/2 : ''
-			});
-			$('#statusbar').css({
-				width: Math.min(ew,bw),
-				'margin-left': (ew<bw) ? (bw-ew)/2+1 : ''
-			});
+			setTimeout(function(){
+				//reposition to center the editor
+				var ew = Math.max(editor.page.size().width,630);
+				var bw = $('body').width();
+				$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
+				editor.$container.css({
+					width: Math.min(ew,bw)+4,
+					'margin-left': (ew<bw) ? (bw-ew)/2 : ''
+				});
+				$('#statusbar').css({
+					width: Math.min(ew,bw),
+					'margin-left': (ew<bw) ? (bw-ew)/2+1 : ''
+				});
+			},0);
 			//refresh alignment
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+content.alignment+']'));
 			//refresh watermark

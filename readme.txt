@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, vimeo, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 3.6.1
+Stable tag: 4.0.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -51,7 +51,7 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 Here are the two standard options to install Zedity:
 
-** Option 1 - From your WordPress dashboard:**
+**Option A - From your WordPress dashboard:**
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
@@ -63,7 +63,7 @@ Here are the two standard options to install Zedity:
 
 Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
-**Option 2 - via FTP:**
+**Option B - via FTP:**
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
@@ -116,6 +116,12 @@ Feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.0.0 =
+* Improved MLRD (Multiple Layout Responsive Design) (only Premium):
+  - Start design from any layout.
+  - Add boxes in any layout.
+  - Hide boxes added in other layouts.
 
 = 3.6.1 =
 * Updated Russian and Ukrainian translations.
