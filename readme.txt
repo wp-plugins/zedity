@@ -27,7 +27,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
 
 * **Save Time & Money**: You can finally create your content very quickly, completely hassle-free even by yourself without hiring developers and, so, saving money too!
 
->Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
+>Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an advanced and powerful approach to take control directly on how your responsive content looks on different devices!
   
 **Here is an example of Zedity (the initial 1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
