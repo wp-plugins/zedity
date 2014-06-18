@@ -25,7 +25,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
 
 * **Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally free to come up with what your creative ideas!
 
-* **Save Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without developers, saving money too!
+* **Save Time & Money**: You can finally create your content very quickly, completely hassle-free even by yourself without hiring developers and, so, saving money too!
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
   
