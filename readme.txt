@@ -21,7 +21,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
     
 **Here is why you'll Love Zedity:**
   
-* **Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
+* **Easy to Use**: Zedity enables everyone to create any desired content just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages has never been easier!
 
 * **Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally free to come up with what your creative ideas!
 
