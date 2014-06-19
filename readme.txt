@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 The best editor to create your content: incredibly easy, quick and with unprecedented possibilities! Now available in multiple languages.
      
 == Description ==
-Zedity is an innovative Editor to create posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as you'd do on a piece of paper!
+Zedity is an innovative editor to create posts and pages amazingly easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as easily as you'd do on a piece of paper!
  
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
@@ -21,7 +21,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
     
 **Here is why you'll Love Zedity:**
   
-* **Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
+* **Easy to Use**: Zedity enables everyone to create any desired content just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages has never been easier!
 
 * **Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally free to come up with what your creative ideas!
 
@@ -29,7 +29,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an advanced and powerful approach to take control directly on how your responsive content looks on different devices!
   
-**Here is an example of Zedity (the initial 1.0 free version) in action:**
+**Here is an example of Zedity (1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 >WordPress 3.9 COMPATIBILITY: Zedity (3.1.2+) is fully compatible with WP3.9, please make sure to upgrade to the latest Zedity version. 
