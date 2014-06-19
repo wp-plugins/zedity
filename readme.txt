@@ -29,7 +29,7 @@ Czech and [other languages](http://zedity.com/translate/) are coming coming soon
 
 >Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an advanced and powerful approach to take control directly on how your responsive content looks on different devices!
   
-**Here is an example of Zedity (the initial 1.0 free version) in action:**
+**Here is an example of Zedity (1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 >WordPress 3.9 COMPATIBILITY: Zedity (3.1.2+) is fully compatible with WP3.9, please make sure to upgrade to the latest Zedity version. 
