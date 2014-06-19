@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.0.0
+Version: 4.1.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -81,6 +81,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			//add javascript
 			add_action('admin_print_footer_scripts', array(&$this, 'add_admin_js'));
 
+			//capabilities filter
+			add_filter('map_meta_cap', array(&$this,'fix_map_meta_cap'), 10, 4);
 			//add TinyMCE css
 			add_filter('mce_css', array(&$this, 'add_mce_css'));
 			//add TinyMCE buttons
@@ -385,6 +387,17 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		//----------------------------------------------------------------------------------------------
 		//TINYMCE
+
+		public function fix_map_meta_cap($caps, $cap, $user_id, $args) {
+			//ensure that unfiltered_html capability is honored
+			if ($cap=='unfiltered_html') {
+				$user = get_user_by('id',$user_id);
+				if (!empty($user->allcaps['unfiltered_html']) && $user->allcaps['unfiltered_html']) {
+					$caps = array($cap);
+				}
+			}
+			return $caps;
+		}
 
 		public function register_mce_buttons($buttons) {
 			if (!current_user_can('unfiltered_html')) return $buttons;
