@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, sidebar, simple, social, style, text, tool, twitter, url, video, vimeo, visual, web, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 3.6.1
+Stable tag: 4.0.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -19,17 +19,17 @@ Zedity is an innovative Editor to create posts and pages amazingly easily, quick
 **English** + **French** + **German** + **Greek** + **Italian** + **Russian** + **Spanish** + **Ukrainian**
 Czech and [other languages](http://zedity.com/translate/) are coming coming soon...
     
-**Why you'll Love Zedity:**
+**Here is why you'll Love Zedity:**
   
 * **Easy to Use**: Zedity enables everyone to create any desired content as easily as never before, just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages becomes a pleasure!
 
 * **Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally free to come up with what your creative ideas!
 
-* **Save Time & Money**: Create your content very quickly, completely hassle-free and, since you can do it without developers, saving money too!
+* **Save Time & Money**: You can finally create your content very quickly, completely hassle-free even by yourself without hiring developers and, so, saving money too!
 
->Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an innovative, easy and powerful approach to create responsive content!
+>Introducing Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)), an advanced and powerful approach to take control directly on how your responsive content looks on different devices!
   
-**Here is an example of Zedity (the initial 1.0 free version) in action:**
+**Here is an example of Zedity (1.0 free version) in action:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 >WordPress 3.9 COMPATIBILITY: Zedity (3.1.2+) is fully compatible with WP3.9, please make sure to upgrade to the latest Zedity version. 
@@ -51,7 +51,7 @@ Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect
 
 Here are the two standard options to install Zedity:
 
-** Option 1 - From your WordPress dashboard:**
+**Option A - From your WordPress dashboard:**
 
 1. Click on "Plugins" in the left panel, then click on "Add new".
 
@@ -63,7 +63,7 @@ Here are the two standard options to install Zedity:
 
 Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
-**Option 2 - via FTP:**
+**Option B - via FTP:**
 
 1. Upload and unzip the "zedity.zip" file into your 'wp-content/plugins' directory.
 
@@ -116,6 +116,12 @@ Feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.0.0 =
+* Improved MLRD (Multiple Layout Responsive Design) (only Premium):
+  - Start design from any layout.
+  - Add boxes in any layout.
+  - Hide boxes added in other layouts.
 
 = 3.6.1 =
 * Updated Russian and Ukrainian translations.
