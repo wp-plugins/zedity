@@ -80,7 +80,7 @@ Here are some tutorials to help you get started and learn some usage tips:
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
 Please notice that some of the features are available in [Zedity Premium](http://zedity.com/plugin/wp) 
-If you upgraded to the Premium version, you can keep both versions, free and Premium, installed but only one at the time can be active. So, before activating one, please make sure that you deactivated the other.
+If you upgraded to the Premium version, you can keep both versions, Free and Premium, installed at the same time but only one of the twoa can be active. So, before activating one, please make sure that you deactivated the other.
 
 Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
