@@ -19,7 +19,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 **Czech**, **English**, **French**, **German**, **Greek**, **Italian**, **Russian**, **Spanish**, **Ukrainian**.
 [Other languages](http://zedity.com/translate/) are coming soon... Would you like to collaborate to [translate Zedity into your language](http://zedity.com/translate/)?
     
-**Here is why you'll Love Zedity:**
+**Here is why WordPress users love Zedity:**
   
 * **Easy to Use**: Zedity enables everyone to create any desired content just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages has never been easier!
 
