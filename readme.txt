@@ -25,7 +25,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 * **Total Design Freedom**: Unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally free to come up with what your creative ideas!
 
-* **Saves Your Time & Money**: You can finally create your content very quickly, completely hassle-free even by yourself without hiring developers and, so, saving money too!
+* **Saves Your Time & Money**: You can finally create your content by yourself without hiring developers and, so, saving money too!
 
 >Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful Premium feature to take control directly on how your responsive content looks on different devices!
   
