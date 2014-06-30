@@ -30,6 +30,8 @@
 		//print scripts
 		wp_print_head_scripts();
 		wp_print_footer_scripts();
+		//get version data
+		$version = $this->version_check();
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
@@ -83,6 +85,7 @@
 				top: 32px;
 				width: 99%;
 			}
+			.zedity-grid,
 			.zedity-editor {
 				margin-top: 65px;
 			}
@@ -284,6 +287,19 @@
 				background: #E00;
 			}
 			*/
+			#lblVersion {
+				float: right;
+				margin: 6px;
+				padding: 1px 3px;
+				border: 1px solid lightgray;
+				border-radius: 3px;
+			}
+			#lblVersion.update {
+				background: yellow;
+			}
+			#lblVersion.ok {
+				background: greenyellow;
+			}
 		</style>
 	</head>
 
@@ -317,8 +333,8 @@
 				<!-- show disabled premium features in free version -->
 				<a target="_blank" id="goPremiumLink" href="http://zedity.com/plugin/wpfeatures" class="info"><?php echo sprintf(__('Go %s','zedity'),'Premium')?></a>
 			<?php } ?>
-
 			<button id="saveBtn"><?php _e('Save','zedity')?></button>
+			<span id="lblVersion" title="<?php echo $version['message']?>" class="<?php echo $version['class']?>">v<?php echo $version['installed']?></span>
 
 		</div>
 		<div id="zedityEditorW"></div>
@@ -896,6 +912,11 @@
 			maxHeight: <?php echo WP_Zedity_Plugin::MAX_HEIGHT?>,
 			snapPage: <?php echo $options['snap_to_page']?'true':'false'?>,
 			snapBoxes: <?php echo $options['snap_to_boxes']?'true':'false'?>,
+			snapGrid: <?php echo $options['snap_to_grid']?'true':'false'?>,
+			grid: {
+				width: parseInt('<?php echo $options['grid_width']?>') || 100,
+				height: parseInt('<?php echo $options['grid_height']?>') || 100
+			},
 			onchange: function(){
 				this.contentChanged = true;
 				window.resizeEditor(this);

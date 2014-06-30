@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.1.0
+Version: 4.2.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -157,6 +157,22 @@ if (class_exists('WP_Zedity_Plugin')) {
 				}
 			}
 			delete_option('zedity_admin_notices');
+		}
+		
+		public function version_check(){
+			$version = array();
+			$version['latest'] = get_site_transient('zedity_latest_version');
+			if ($version['latest']===FALSE) {
+				if (!function_exists('plugins_api')) require_once(ABSPATH.'wp-admin/includes/plugin-install.php');
+				$call_api = plugins_api('plugin_information', array('slug'=>'zedity','fields'=>array('version'=>true)));
+				if (!is_wp_error($call_api) && !empty($call_api->version)) $version['latest'] = $call_api->version;
+				if (!empty($version['latest'])) set_site_transient('zedity_latest_version',$version['latest'],86400);
+			}
+			$version['installed'] = $this->plugindata['Version'];
+			$version['update_available'] = empty($version['latest']) ? 'error' : version_compare($version['installed'], $version['latest'], '<');
+			$version['message'] = $version['update_available']===TRUE ? sprintf(_('There is a new update available (%s).'),$version['latest']) : $version['update_available']===FALSE ? _('You have the latest version.') : '';
+			$version['class'] = $version['update_available']===TRUE ? 'update' : $version['update_available']===FALSE ? 'ok' : 'error';
+			return $version;
 		}
 		
 		
@@ -485,6 +501,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'iframe_preview' => TRUE,
 				'snap_to_page' => FALSE,
 				'snap_to_boxes' => FALSE,
+				'snap_to_grid' => FALSE,
+				'grid_width' => 100,
+				'grid_height' => 100,
 			);
 		}
 		
