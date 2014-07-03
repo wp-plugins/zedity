@@ -29,6 +29,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 >[SUMMER LIMITED PROMO!](http://zedity.com/plugin/wp): Enter SUMMER14 promo code and get instant discount! Hurry up, promo codes are limited!
 
+
 >Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful Premium feature to take control directly on how your responsive content looks on different devices!
   
 **Here is an example of Zedity (1.0 free version) in action:**
