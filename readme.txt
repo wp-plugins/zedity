@@ -31,7 +31,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 >Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful feature to take control directly on how your responsive content looks on different devices!
   
-**Here is an example of Zedity (1.0 free version) in action:**
+**Here is a showcase of the original idea that started it all (Zedity 1.0):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 >WordPress 3.9 COMPATIBILE: Zedity is fully compatible with WP3.9 starting from version 3.1.2. We recommend to upgrade always to the latest Zedity version available. 
