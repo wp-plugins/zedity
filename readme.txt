@@ -25,7 +25,7 @@ Other languages are coming soon... Would you like to collaborate and **get rewar
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you can think of!
 
->[SUMMER LIMITED PROMO!](http://zedity.com/plugin/wp): Enter SUMMER14 promo code and get instant discount! Hurry up, promo codes are limited!
+>[SUMMER LIMITED PROMO!](http://zedity.com/plugin/wp): Enter SUMMER14 in the promo code field before purchasing and get instant discount! Hurry up, promo codes are limited!
 
 * **Saves Your Time & Money**: finally, you can create your content by yourself with no need to hire developers, and saving money too!
 
