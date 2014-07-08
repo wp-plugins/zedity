@@ -45,7 +45,7 @@ Other languages are coming soon... Would you like to collaborate and **get rewar
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
-**Some friend plugins:**
+**Friend plugins:**
 Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
