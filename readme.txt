@@ -46,8 +46,8 @@ Other languages are coming soon... Would you like to collaborate and **get rewar
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
 **Friend plugins:**
-Audience engagement plugin [Feedweb](http://wordpress.org/plugins/feedweb/)
-Anti-spam plugin [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
+Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
+Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
 == Installation ==
 
