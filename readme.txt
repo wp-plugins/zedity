@@ -78,7 +78,7 @@ Here are some tutorials to help you get started and learn some usage tips:
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
 
 
-**Do you need to update your Zedity content? This short tutorial shows how to do it:**
+**A short tutorial on how to update your Zedity content:**
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
 Please notice that some of the features are available in [Zedity Premium](http://zedity.com/plugin/wp) 
