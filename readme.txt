@@ -12,6 +12,9 @@ The best editor to create your content easily, quickly and with unprecedented po
      
 == Description ==
 Zedity is an innovative editor to create posts and pages very easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as naturally as sketching it out on a piece of paper!
+
+
+>[SUMMER LIMITED PROMO!](http://zedity.com/plugin/wp): Enter SUMMER14 in the promo code field before purchasing and get **15%** instant discount! Hurry up, promo codes are limited!
  
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
@@ -24,8 +27,6 @@ Other languages are coming soon... Would you like to collaborate and **get rewar
 * **Easy to Use**: Zedity enables everyone to create any desired content just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages has never been easier!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you can think of!
-
->[SUMMER LIMITED PROMO!](http://zedity.com/plugin/wp): Enter SUMMER14 in the promo code field before purchasing and get instant discount! Hurry up, promo codes are limited!
 
 * **Saves Your Time & Money**: finally, you can create your content by yourself with no need to hire developers, and saving money too!
 
