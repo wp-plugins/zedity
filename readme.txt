@@ -27,7 +27,7 @@ Other languages are coming soon... Would you like to collaborate and **get rewar
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you can think of!
 
-* **Saves Your Time & Money**: finally, you can create your content by yourself with no need to hire developers, and saving money too!
+* **Saves Your Time & Money**: finally, you can create your content by yourself with no need to hire developers and so saving money!
 
 >Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful feature to take control directly on how your responsive content looks on different devices!
   
