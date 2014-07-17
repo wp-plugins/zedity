@@ -13,8 +13,6 @@ The best editor to create your content easily, quickly and with unprecedented po
 == Description ==
 Zedity is an innovative editor to create posts and pages very easily, quickly and absolutely hassle-free! With no technical skill required, it gives you total flexibility and unprecedented possibilities to create any desired design, as naturally as sketching it out on a piece of paper!
 
->[SUMMER PROMO!](http://zedity.com/plugin/wp): Enter **SUMMER14** into the Promo Code field before purchasing and get **15% instant discount!** Hurry up, promo codes are limited!
- 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 >Zedity is currently available in the following languages: 
@@ -45,6 +43,8 @@ Other languages are coming soon... You can also collaborate to [translate Zedity
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
   
+>[SUMMER PROMO!](http://zedity.com/plugin/wp): Enter **SUMMER14** into the Promo Code field before purchasing and get **15% instant discount!** Hurry up, promo codes are limited!
+ 
 **Friend plugins:**
 Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
