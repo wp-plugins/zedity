@@ -32,7 +32,7 @@ Other languages are coming soon... You can also collaborate to [translate Zedity
 **Here is video that shows you the original concept that started it all (Zedity version 1.0):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
->WordPress 3.9 COMPATIBILE: Zedity 3.1.2+ is fully compatible with WP3.9. Please make sure to upgrade to the latest Zedity version available. 
+>WordPress 3.9 COMPATIBILE: Zedity is fully compatible with WP3.9 starting from version 3.1.2. Please make sure to upgrade to the latest Zedity version available. 
 
 **More about Zedity:**
 
