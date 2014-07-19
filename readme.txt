@@ -42,8 +42,6 @@ Other languages are coming soon... You can also collaborate to [translate Zedity
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)!
-  
->[SUMMER PROMO!](http://zedity.com/plugin/wp): Enter **SUMMER14** into the Promo Code field before purchasing and get **15% instant discount!** Hurry up, promo codes are limited!
  
 **Friend plugins:**
 Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
