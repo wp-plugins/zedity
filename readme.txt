@@ -27,12 +27,12 @@ Other languages are coming soon... You can also collaborate to [translate Zedity
 
 * **Saves Your Time & Money**: finally, you can create your content by yourself with no need to hire developers and so saving money!
 
->Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful feature to take control directly on how your responsive content looks on different devices!
+>Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful Premium feature to take full control on how your responsive content looks on different devices!
   
 **Here is video that shows you the original concept that started it all (Zedity version 1.0):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
->WordPress 3.9 COMPATIBILE: Zedity is fully compatible with WP3.9 starting from version 3.1.2. Please make sure to upgrade to the latest Zedity version available. 
+>WordPress 3.9 COMPATIBILE: Zedity is fully compatible with WP3.9 starting from version 3.1.2. Please make sure to install the latest Zedity version available. 
 
 **More about Zedity:**
 
