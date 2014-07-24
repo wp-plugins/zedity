@@ -17,7 +17,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 >Zedity is available in various languages: 
 **Czech**, **English**, **French**, **German**, **Greek**, **Italian**, **Russian**, **Spanish**, **Ukrainian**.
-Other languages are coming soon... Would you like to enter the Hall of Fame? [Translate Zedity into your language](http://zedity.com/translate/) and **get rewarded**!
+Other languages are coming soon... Would you like to [translate Zedity into your language](http://zedity.com/translate/) and enter the **Hall of Fame**!
     
 **Here is why you'll love Zedity:**
   
