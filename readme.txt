@@ -49,7 +49,7 @@ Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
 == Installation ==
 
-Here are two standard options to install Zedity:
+Here are two options to install Zedity:
 
 **Option A - From your WordPress dashboard:**
 
