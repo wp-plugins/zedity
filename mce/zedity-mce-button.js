@@ -233,6 +233,8 @@
 			var yo = Math.min(Y - w.parent.pageYOffset - barh, 0);
 			X = Math.max(X, w.parent.pageXOffset);
 			Y = Math.max(Y, w.parent.pageYOffset + barh);
+			//padding in WP4+
+			Y += parseInt(tinymce.DOM.getStyle(tinymce.DOM.select('.mce-edit-area')[0],'padding-top') || 0);
 
 			//calculate size
 			if (d.h>vp.h && this.sb) vp.w -= this.sb.w;
@@ -241,7 +243,7 @@
 			var h = Math.min(p2.y - vp.y, 0) + p2.h;
 			w = Math.min(w, vp.w-(p2.x-vp.x), vp.w) + xo;
 			h = Math.min(h, vp.h-(p2.y-vp.y), vp.h) + yo;
-
+			
 			//not enough room for buttons, exit
 			//this should be the smallest rectangle that can accommodate the buttons (90x50),
 			//now Zedity content can be even smaller (MIN_WIDTH and MIN_HEIGHT values in zedity.php), so we let it anyway
@@ -357,7 +359,7 @@
 				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '2.1'
+				version: '2.2'
 			};
 		}
 	});

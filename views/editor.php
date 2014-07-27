@@ -736,7 +736,7 @@
 				});
 			},0);
 			//refresh alignment
-			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+content.alignment+']'));
+			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+(content.alignment||'left')+']'));
 			//refresh watermark
 			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-Watermark[data-type='+content.watermarkposition+']'));
 			//refresh theme style
@@ -781,8 +781,9 @@
 			content.savemode = parseInt($(this).val());
 			resizeEditor(zedityEditor);
 		});
+		old_responsive = 0;
 		$('#statusbar').on('change','#ddResponsive',function(){
-			var old = content.responsive;
+			old_responsive = content.responsive;
 			var val = parseInt($(this).val());
 			content.responsive = val;
 			if (val==2 && zedityEditor.responsive) {
@@ -790,7 +791,7 @@
 			} else if (zedityEditor.$this.hasClass('zedity-responsive-layout') && zedityEditor.responsive) {
 				zedityEditor.responsive.revert();
 				if (zedityEditor.$this.hasClass('zedity-responsive-layout')) {
-					content.responsive = old;
+					content.responsive = old_responsive;
 				}
 			}
 			content.needsPublish = true;
