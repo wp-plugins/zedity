@@ -350,9 +350,9 @@
 			title: null,
 			needBrBefore: true,
 			needBrAfter: true,
-			watermarkposition: '<?php echo $options['watermark']?>',
-			responsive: <?php echo $options['responsive']?>,
-			savemode: '<?php echo $options['save_mode']?>', // 1: isolated (iframe); 2: standard (inline)
+			watermarkposition: '<?php echo !empty($options['watermark']) ? $options['watermark'] : 'none' ?>',
+			responsive: <?php echo !empty($options['responsive']) ? $options['responsive'] : 0 ?>,
+			savemode: '<?php echo !empty($options['save_mode']) ? $options['save_mode'] : 1 ?>', // 1: isolated (iframe); 2: standard (inline)
 			alignment: '',
 			needsPublish: false,
 			//get content from tinymce editor

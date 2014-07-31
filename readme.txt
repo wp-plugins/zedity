@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 4.2.1
+Stable tag: 4.3.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -16,7 +16,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 >Zedity is already available in various languages: 
-**Czech**, **English**, **French**, **German**, **Greek**, **Italian**, **Russian**, **Spanish**, **Ukrainian**.
+**Czech**, **English**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Other languages are coming soon... Would you like to [translate Zedity into your language](http://zedity.com/translate/) and enter the **Hall of Fame**!
     
 **Here is why you'll love Zedity:**
@@ -116,6 +116,10 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.3.0 =
+* Added Polish translation.
+* Minor optimizations.
 
 = 4.2.1 =
 * Adjustments for upcoming WP4.
