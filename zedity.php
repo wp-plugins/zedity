@@ -170,8 +170,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			}
 			$version['installed'] = $this->plugindata['Version'];
 			$version['update_available'] = empty($version['latest']) ? 'error' : version_compare($version['installed'], $version['latest'], '<');
-			$version['message'] = $version['update_available']===TRUE ? sprintf(_('There is a new update available (%s).'),$version['latest']) : $version['update_available']===FALSE ? _('You have the latest version.') : '';
-			$version['class'] = $version['update_available']===TRUE ? 'update' : $version['update_available']===FALSE ? 'ok' : 'error';
+			$version['message'] = $version['update_available']===TRUE ? sprintf(_('There is a new update available (%s).'),$version['latest']) : ($version['update_available']===FALSE ? _('You have the latest version.') : '');
+			$version['class'] = $version['update_available']===TRUE ? 'update' : ($version['update_available']===FALSE ? 'ok' : 'error');
 			return $version;
 		}
 		
