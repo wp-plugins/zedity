@@ -25,7 +25,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you can think of!
 
-* **Time and Money Saving**: finally, you can create your content even by yourself, with no need to hire developers and so saving money!
+* **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours take minutes with Zedity and, since you can do it without hiring developers, you will save money too!
 
 >Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful Premium feature to take full control on how your responsive content looks on different devices!
   
