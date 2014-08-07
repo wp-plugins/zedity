@@ -23,7 +23,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
   
 * **Easy to Use**: Zedity enables everyone to create any desired content just like doing it with a pen and paper. With no coding or technical skills required, creating your posts and pages has never been easier!
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you can think of!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you have in mind!
 
 * **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours take minutes with Zedity and, since you can do it without hiring developers, you can save money too!
 
