@@ -112,7 +112,7 @@ Please feel free to [contact us](http://zedity.com/support).
 1. By clicking on the Z icon, the Zedity editor opens up.
 2. To get started, click on the "Add box" menu and then, for example, on "Image" to add an image, on "Text" to add text, etc.
 3. Add other boxes, drag them around to create the desired design and, eventually, click on either "Save" (under the "Content" menu) or the "disk" icon.
-4. From the WordPress dashboard, you can control settings for the default content size of your new contents, the web fonts you intend to use, the default content responsiveness, and many others.
+4. From the WordPress dashboard, you can control settings for the default content size of your new contents, the web fonts you intend to use, the default content responsiveness, and many others to customize Zedity the way you want.
 
 
 == Changelog ==
