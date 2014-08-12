@@ -86,7 +86,7 @@ Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
 == Frequently asked questions ==
 
-**Q: Why should I use the Zedity plugin?**  
+**Q: Why should I use Zedity?**  
 A: Zedity enables you to do things that cannot be done with the default WordPress editor, creating your posts and pages, very easily, quickly and hassle-free. For example, you can drag and drop any element (videos, images, text, audio, etc.) exactly where you want, with total flexibility for any creative layouts, add any media and stylish effects: all in just few clicks! Zedity has been designed to enable anyone to create impressive results, which only skilled developers could do before. Thank your for your interest and, if you decided to give Zedity a try, we would absolutely welcome your feedback!
 
 **Q: How can I start creating content with Zedity?**  
