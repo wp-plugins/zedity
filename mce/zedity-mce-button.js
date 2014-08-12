@@ -185,6 +185,13 @@
 			},100);
 		},
 
+		_openTemplates: function(){
+			//select content
+			this.ed.selection.select(this._zedityContent);
+			this._hideOverlay(true);
+			tb_show(this.ed.getLang('zedity.copy_content_title'), 'admin-ajax.php?action=zedity_template&TB_iframe=true');
+		},
+
 		//-------------------------------------------------------------------------------
 		//Manage overlay
 
@@ -321,10 +328,21 @@
 				height: '24',
 				title: ed.getLang('zedity.edit_content')
 			});
-
 			tinymce.dom.Event[t.bind](zEditButton, 'mousedown', function(e){
 				ed.selection.select(t._zedityContent);
 				t._openZedity();
+			});
+                        //Content duplication
+			var zCopyButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
+				src: t.url+'/editcopy.png?' + this.getInfo().version,
+				id: 'zedity_button_copy',
+				width: '24',
+				height: '24',
+				title: ed.getLang('zedity.copy_content')
+			});
+			tinymce.dom.Event[t.bind](zCopyButton, 'mousedown', function(e){
+				ed.selection.select(t._zedityContent);
+				t._openTemplates();
 			});
 
 			var zDelButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
@@ -334,7 +352,6 @@
 				height: '24',
 				title: ed.getLang('zedity.delete_content')
 			});
-
 			tinymce.dom.Event[t.bind](zDelButton, 'mousedown', function(e){
 				var n = t._zedityContent;
 				//if is the inner content, get the outer wrapper
@@ -359,7 +376,7 @@
 				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '2.2'
+				version: '3.0'
 			};
 		}
 	});

@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 				break;
 			}
 			if (empty($_REQUEST['id'])) {
-				$response = array('error' => __('Missing id parameter in request.','zedity'));
+				$response = array('error' => sprintf(__('Missing %s parameter in request.','zedity'),'id'));
 				break;
 			}
 
@@ -160,6 +160,68 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			die;
 		break;
 
+		//------------------------------------------------------------------------------------
+		
+		//------------------------------------------------------------------------------------
+		case 'addcontent':
+			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+				$response = array(
+					'error' => __('Invalid request.','zedity'),
+					'reload' => 1
+				);
+				break;
+			}
+			if (empty($_POST['content'])) {
+				$response = array('error' => __('The post content is empty.','zedity'));
+				break;
+			}
+			if (empty($_POST['id'])) {
+				$response = array('error' => sprintf(__('Missing %s parameter in request.','zedity'),'id'));
+				break;
+			}
+			if (!$this->is_premium() && (($_POST['id']<0) || ($_POST['type']=='page'))) {
+				$response = array('error' => __('Invalid request.','zedity'));
+				break;
+			}
+
+			$content = "<p>&nbsp;</p>" . stripslashes($_POST['content']) . "<p>&nbsp;</p>";
+			if ($_POST['id']<0) {
+				if (empty($_POST['type'])) {
+					$response = array('error' => sprintf(__('Missing %s parameter in request.','zedity'),'type'));
+					break;
+				}
+				global $user_ID;
+				//create new post
+				$post_id = wp_insert_post(array(
+					'post_content' => $content,
+					'post_status' => 'draft',
+					'post_author' => $user_ID,
+					'post_type' => $_POST['type'],
+				));
+				if ($post_id===0) {
+					$response = array('error' => __('Could not save post/page content.','zedity'));
+					break;
+				}
+				$response = array('id' => $post_id);
+			} else {
+				//get post
+				$post = get_post($_POST['id']);
+				//add content
+				if (!empty($_POST['position']) && $_POST['position']=='above') {
+					$post->post_content = $content . $post->post_content;
+				} else {
+					$post->post_content .= $content;
+				}
+				//update post
+				$ret = wp_update_post($post);
+				if ($ret===0) {
+					$response = array('error' => __('Could not save post/page content.','zedity'));
+					break;
+				}
+				$response = array('id' => $_POST['id']);
+			}
+		break;
+		
 		//------------------------------------------------------------------------------------
 		default:
 			$response = array(

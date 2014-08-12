@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.2
-Stable tag: 4.3.0
+Stable tag: 4.4.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -116,6 +116,9 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.4.0 =
+* New feature to copy a Zedity content into another post or page. It can also be used to create templates.
 
 = 4.3.0 =
 * Added Polish translation.

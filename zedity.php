@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.3.0
+Version: 4.4.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -97,6 +97,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 			//use ajax mechanism to load views
 			add_action('wp_ajax_zedity_editor', array(&$this,'add_zedity_editor_page'));
 			add_action('wp_ajax_zedity_ajax', array(&$this,'add_zedity_ajax_page'));
+			add_action('wp_ajax_zedity_template', array(&$this,'add_zedity_template_page'));
 
 			//Zedity into Media Library
 			add_filter('post_mime_types', array(&$this,'add_zedity_mime_type'));
@@ -236,7 +237,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 			include(sprintf("%s/views/ajax.php", dirname(__FILE__)));
 			exit;
 		}
-
+		
+		public function add_zedity_template_page() {
+			require(ABSPATH . WPINC . '/version.php');
+			$options = $this->get_options();
+			include(sprintf("%s/views/template.php", dirname(__FILE__)));
+			exit;
+		}
 
 		//----------------------------------------------------------------------------------------------
 		//JAVASCRIPT
@@ -250,7 +257,9 @@ if (class_exists('WP_Zedity_Plugin')) {
 				tinyMCE.addI18n({'<?php echo (class_exists('_WP_Editors') ? _WP_Editors::$mce_locale : substr(WPLANG,0,2)) ?>': {
 					zedity: {
 						edit_content: '<?php echo sprintf(addslashes(__('Edit %s content','zedity')),'Zedity')?>',
-						delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>'
+						copy_content: '<?php echo sprintf(addslashes(__('Copy this %s content into another post or page','zedity')),'Zedity')?>',
+						delete_content: '<?php echo sprintf(addslashes(__('Delete %s content','zedity')),'Zedity')?>',
+						copy_content_title: '<?php echo sprintf(addslashes(__('%s Content Duplication','zedity')),'Zedity')?>',
 					}
 				}});
 
@@ -350,7 +359,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 			<?php
 		}
 		
-		public function additional_editor_js($options){						
+		public function additional_editor_js($options){
 			?>
 			<script type="text/javascript">
 			//add promo tab for media library in video box
@@ -388,6 +397,36 @@ if (class_exists('WP_Zedity_Plugin')) {
 			});
 			</script>
 			<?php			
+		}
+		
+		public function additional_template_js(){
+			?>
+			<script type="text/javascript">
+			$(function(){
+				$.widget('ui.tooltip',$.ui.tooltip,{options:{content:function(){return $(this).prop('title')}}});
+				var keepTooltipOpen = function(event){
+					var $target = $(event.target);
+					if (!$target.hasClass('zedity-promo')) $target = $target.parents('.zedity-promo');
+					if ($target.length==0) return;
+					event.stopImmediatePropagation();
+					var fixed = setTimeout(function(){$target.tooltip('close')},200);
+					$('.ui-tooltip').hover(function(){clearTimeout(fixed)},function(){$target.tooltip('close')});
+					false;
+				};
+				//disable unavailable options
+				$('#tabs').tabs('option','disabled',[1]);
+				$('table.posts tr.new').addClass('disabled');
+				//add promo tooltips
+				var link = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
+				$('a[href="#tab-pages"]').addClass('zedity-promo')
+					.attr('title','<?php echo sprintf(addslashes(__('%s feature: copy content into a page.','zedity')),'Premium')?><br/>'+link)
+					.tooltip().on('mouseleave',keepTooltipOpen);
+				$('table.posts.above').addClass('zedity-promo')
+					.attr('title','<?php echo sprintf(addslashes(__('%s feature: copy content into a new post.','zedity')),'Premium')?><br/>'+link)
+					.tooltip().on('mouseleave',keepTooltipOpen);
+			});
+			</script>
+			<?php
 		}
 		
 		public function add_front_js(){
