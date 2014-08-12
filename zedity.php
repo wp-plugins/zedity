@@ -13,7 +13,7 @@ License URI: http://zedity.com/license/freewp
 $path = plugin_dir_path(__FILE__);
 $filepremium = "$path/premium.php";
 load_plugin_textdomain('zedity', false, dirname(plugin_basename(__FILE__)).'/languages/');
-
+ 
 //check if another Zedity plugin is already enabled
 if (class_exists('WP_Zedity_Plugin')) {
 	
@@ -44,7 +44,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		const MIN_WIDTH = 50; // pixels
 		const MAX_WIDTH = 2500; // pixels
-		const DEFAULT_WIDTH = 600; // a typical width for some themes in wordpress
+		const DEFAULT_WIDTH = 600; // typical width for some WP themes
 		
 		const MIN_HEIGHT = 20; // pixels
 		const MAX_HEIGHT = 6000; // pixels
