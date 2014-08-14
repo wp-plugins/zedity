@@ -93,7 +93,7 @@ A: Zedity enables you to do things that cannot be done with the default WordPres
 A: After installing and enabling the plugin, the "Z" icon (button) appears among the other icons in your WordPress Visual Editor. Just click on the "Z" button to open Zedity, and you can start adding your content right away. Once you're done, save your content ("Content" -> "Save") to exit the Zedity Editor: your content is now ready to be either previewed or published. You can add Zedity content anywhere in your blog or site, as many times as you want.
 
 **Q: How come audio and video boxes are not playing after I exit the Zedity Editor?**  
-A: No worries, that is normal behavior in WordPress: they are played back when you either preview or publish your content.
+A: No worries, that is the normal behavior in WordPress: they can be played back when you either preview or publish your content.
 
 **Q: How can I update the Zedity content after saving it?**  
 A: From the standard WordPress Visual editor, click on the Zedity content that you want to update and then click on the Zedity icon that appears on top of the content.
