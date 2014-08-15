@@ -96,7 +96,7 @@ A: After installing and enabling the plugin, the "Z" icon (button) appears among
 A: No worries, that is the normal behavior in WordPress: they can be played back when you either preview or publish your content.
 
 **Q: How can I update the Zedity content after saving it?**  
-A: From the standard WordPress Visual editor, click on the Zedity content that you want to update and then click on the Zedity icon that appears on top of the content.
+A: From the standard WordPress Visual editor: 1) click on the Zedity content that you want to update; 2) click on the Zedity icon that appears on top of the content.
 
 **Q: YouTube and Vimeo videos are supported. Is it possible to have other services, e.g. Dailymotion and others?**  
 A: Yes. There are 20+ audio and video services supported in the [Premium version](http://zedity.com/plugin/wpfeatures).
