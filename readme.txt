@@ -43,7 +43,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)! 
  
-**Friend plugins:**
+**Other plugins you may like:**
 Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
