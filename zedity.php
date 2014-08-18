@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.4.0
+Version: 4.4.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -13,7 +13,7 @@ License URI: http://zedity.com/license/freewp
 $path = plugin_dir_path(__FILE__);
 $filepremium = "$path/premium.php";
 load_plugin_textdomain('zedity', false, dirname(plugin_basename(__FILE__)).'/languages/');
- 
+
 //check if another Zedity plugin is already enabled
 if (class_exists('WP_Zedity_Plugin')) {
 	
@@ -44,7 +44,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		
 		const MIN_WIDTH = 50; // pixels
 		const MAX_WIDTH = 2500; // pixels
-		const DEFAULT_WIDTH = 600; // typical width for some WP themes
+		const DEFAULT_WIDTH = 600; // a typical width for some themes in wordpress
 		
 		const MIN_HEIGHT = 20; // pixels
 		const MAX_HEIGHT = 6000; // pixels
@@ -116,6 +116,15 @@ if (class_exists('WP_Zedity_Plugin')) {
 			} else {
 				$this->MAX_UPLOAD_SIZE = self::WARNING_CONTENT_SIZE;
 			}
+			
+			//get the environment from the file
+			$this->zedityServerBaseUrl = 'http://zedity.com';
+			$serverUrlFile = sprintf("%s/data/serverurl.txt", dirname(__FILE__));
+			if (file_exists($serverUrlFile)) {
+				$this->zedityServerBaseUrl = @file_get_contents($serverUrlFile);
+			}
+			
+			$this->promo_check();
 		}
 		
 		public function activate($network_wide) {
@@ -171,11 +180,38 @@ if (class_exists('WP_Zedity_Plugin')) {
 			}
 			$version['installed'] = $this->plugindata['Version'];
 			$version['update_available'] = empty($version['latest']) ? 'error' : version_compare($version['installed'], $version['latest'], '<');
-			$version['message'] = $version['update_available']===TRUE ? sprintf(_('There is a new update available (%s).'),$version['latest']) : ($version['update_available']===FALSE ? _('You have the latest version.') : '');
+			$version['message'] = $version['update_available']===TRUE ?
+					sprintf(__('There is a new update available (%s), please %s.'),$version['latest'],"<b>".__('update now','zedity').'</b>') :
+					($version['update_available']===FALSE ? __('You have the latest version.') : ''); //do not change 'update now', used in version_check in premium.php
 			$version['class'] = $version['update_available']===TRUE ? 'update' : ($version['update_available']===FALSE ? 'ok' : 'error');
 			return $version;
 		}
 		
+		public function promo_check(){
+			//check if promo is available
+			if (($promocode = get_site_transient('zedity_promo'))===FALSE) {
+				//call API on zedity site
+				$request = wp_remote_get("{$this->zedityServerBaseUrl}/plugin/wppromo");
+				if (!is_wp_error($request) && wp_remote_retrieve_response_code($request)==200) {
+					$promocode = wp_remote_retrieve_body($request);
+					//set promo in a transient, expire in 8 hours
+					set_site_transient('zedity_promo', $promocode, 8 * HOUR_IN_SECONDS);
+				}
+			}
+			$message = '';
+			if (!empty($promocode)) {
+				$message = sprintf(__('%s is available at a discounted price for a limited time only!','zedity'),'<b>Zedity Premium</b>') . '<br/>' .
+					sprintf(__('Grab it now at %s by using the promo code "%s".','zedity'), "<a target=\"_blank\" href=\"{$this->zedityServerBaseUrl}/plugin/wp\">zedity.com</a>","<b>$promocode</b>");
+				$this->show_message(
+					"<p>$message</p>",
+					array('plugins.php','update-core.php','edit.php','options-general.php')
+				);
+			}
+			return array(
+				'promocode' => $promocode,
+				'message' => $message,
+			);
+		}
 		
 		//----------------------------------------------------------------------------------------------
 		//VIEWS
@@ -420,10 +456,10 @@ if (class_exists('WP_Zedity_Plugin')) {
 				var link = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
 				$('a[href="#tab-pages"]').addClass('zedity-promo')
 					.attr('title','<?php echo sprintf(addslashes(__('%s feature: copy content into a page.','zedity')),'Premium')?><br/>'+link)
-					.tooltip().on('mouseleave',keepTooltipOpen);
+					.tooltip({show:{delay:750}}).on('mouseleave',keepTooltipOpen);
 				$('table.posts.above').addClass('zedity-promo')
 					.attr('title','<?php echo sprintf(addslashes(__('%s feature: copy content into a new post.','zedity')),'Premium')?><br/>'+link)
-					.tooltip().on('mouseleave',keepTooltipOpen);
+					.tooltip({show:{delay:750}}).on('mouseleave',keepTooltipOpen);
 			});
 			</script>
 			<?php
@@ -465,14 +501,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_mce_buttons($plugins) {
 			if (!current_user_can('unfiltered_html')) return $plugins;
 			
-			$plugins['zedity'] = plugins_url('mce/zedity-mce-button.js', __FILE__);
+			$plugins['zedity'] = plugins_url("mce/zedity-mce-button.js?{$this->plugindata['Version']}", __FILE__);
 			$options = $this->get_options();
 			if ($options['iframe_preview']) {
 				//include custom media plugin for iframe preview
-				$plugins['newmedia'] = plugins_url('mce/media/editor_plugin.js', __FILE__);
+				$plugins['newmedia'] = plugins_url("mce/media/editor_plugin.js?{$this->plugindata['Version']}", __FILE__);
 			}
 			//include custom noneditable plugin to disallow Zedity content edit inside TinyMCE
-			$plugins['newnoneditable'] = plugins_url('mce/noneditable/editor_plugin.js', __FILE__);
+			$plugins['newnoneditable'] = plugins_url("mce/noneditable/editor_plugin.js?{$this->plugindata['Version']}", __FILE__);
 			return $plugins;
 		}
 
@@ -481,8 +517,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			if (!current_user_can('unfiltered_html')) return $mce_css;
 			
 			if (!empty($mce_css)) $mce_css .= ',';
-			$mce_css .= plugins_url('mce/mce-editor-zedity.css', __FILE__) . ',';
-			$mce_css .= plugins_url('css/zedity-reset.css', __FILE__) . ',';
+			$mce_css .= plugins_url("mce/mce-editor-zedity.css?{$this->plugindata['Version']}", __FILE__) . ',';
+			$mce_css .= plugins_url("css/zedity-reset.css?{$this->plugindata['Version']}", __FILE__) . ',';
 			$mce_css .= 'admin-ajax.php?action=zedity_ajax&zaction=webfonts';
 			return $mce_css;
 		}
@@ -645,7 +681,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_head_css() {
 			$options = $this->get_options();
 			?>
-			<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-reset.css', __FILE__); ?>" type="text/css" media="all" />
+			<link rel="stylesheet" href="<?php echo plugins_url("css/zedity-reset.css?{$this->plugindata['Version']}", __FILE__); ?>" type="text/css" media="all" />
 			<?php
 			if (isset($options['webfonts'])) {
 				foreach ($options['webfonts'] as $font) {
@@ -664,8 +700,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 				//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
-				<link rel="stylesheet" href="<?php echo plugins_url('mce/content-overlay.css', __FILE__); ?>" type="text/css" media="all" />
-				<link rel="stylesheet" href="<?php echo plugins_url('css/zedity-admin.css', __FILE__)?>" type="text/css" media="all" />
+				<link rel="stylesheet" href="<?php echo plugins_url("mce/content-overlay.css?{$this->plugindata['Version']}", __FILE__); ?>" type="text/css" media="all" />
+				<link rel="stylesheet" href="<?php echo plugins_url("css/zedity-admin.css?{$this->plugindata['Version']}", __FILE__)?>" type="text/css" media="all" />
 				<?php
 			}
 		}

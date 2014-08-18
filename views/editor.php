@@ -2,7 +2,7 @@
 	<head>
 		<title>Zedity - Create Content Easily</title>
 
-		<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css',dirname(__FILE__))?>" type="text/css" media="all" />
+		<link rel="stylesheet" href="<?php echo plugins_url("jquery/jquery-ui.min.css?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/css" media="all" />
 		<?php
 		//remove all external scripts/styles
 		global $wp_scripts, $wp_styles;
@@ -32,6 +32,7 @@
 		wp_print_footer_scripts();
 		//get version data
 		$version = $this->version_check();
+		$promo = $this->promo_check();
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
@@ -54,8 +55,8 @@
 		ZedityLang = '<?php echo substr(WPLANG,0,2)?>';
 		</script>
 		
-		<link rel="stylesheet" href="<?php echo plugins_url('zedity/zedity.min.css',dirname(__FILE__))?>" type="text/css" media="screen" />
-		<script src="<?php echo plugins_url('zedity/zedity.min.js',dirname(__FILE__))?>" type="text/javascript"></script>
+		<link rel="stylesheet" href="<?php echo plugins_url("zedity/zedity.min.css?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/css" media="screen" />
+		<script src="<?php echo plugins_url("zedity/zedity.min.js?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/javascript"></script>
 
 		<?php
 		if (isset($options['webfonts'])) {
@@ -146,7 +147,7 @@
 			#statusbar {
 				position: fixed;
 				margin: 0 auto;
-				min-width: 630px;
+				min-width: 750px;
 				height: 30px;
 				font-family: Tahoma, Arial, Verdana, sans-serif;
 				font-size: 12px;
@@ -161,6 +162,7 @@
 				background: -o-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
 				background: -ms-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
 				background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
+				overflow: hidden;
 			}
 			#statusbar select {
 				max-width: 100px;
@@ -168,6 +170,7 @@
 			#statusbar .info {
 				line-height: 30px;
 				margin-left: 15px;
+				vertical-align: middle;
 			}
 			#statusbar .info .yes {
 				color: darkgreen;
@@ -178,6 +181,9 @@
 				font-weight: bold;
 			}
 			#goPremiumLink {
+				display: inline-block;
+				max-width: 90px;
+				height: 18px;
 				font-family: tahoma, Helvetica, tahoma;
 				color: #999;
 				background: none;
@@ -186,9 +192,12 @@
 				padding: 0 2px;
 				outline: none;
 				text-decoration: none;
-				line-height: 30px;
+				line-height: 18px !important;
 				-webkit-transition: 0.8s;
 				transition: 0.8s;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
 			}
 			#goPremiumLink:hover {
 				color: #444;
@@ -293,12 +302,29 @@
 				padding: 1px 3px;
 				border: 1px solid lightgray;
 				border-radius: 3px;
+				cursor: default;
 			}
 			#lblVersion.update {
 				background: yellow;
 			}
 			#lblVersion.ok {
 				background: greenyellow;
+			}
+			#lblPromo {
+				display: inline-block;
+				max-width: 50px;
+				float: right;
+				margin: 6px;
+				padding: 1px 3px;
+				background: gold;
+				border-radius: 3px;
+				box-shadow: 0px 0px 5px 5px white;
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
 			}
 		</style>
 	</head>
@@ -334,7 +360,10 @@
 				<a target="_blank" id="goPremiumLink" href="http://zedity.com/plugin/wpfeatures" class="info"><?php echo sprintf(__('Go %s','zedity'),'Premium')?></a>
 			<?php } ?>
 			<button id="saveBtn"><?php _e('Save','zedity')?></button>
-			<span id="lblVersion" title="<?php echo $version['message']?>" class="<?php echo $version['class']?>">v<?php echo $version['installed']?></span>
+			<?php if (!empty($promo['promocode'])) { ?>
+				<a id="lblPromo" class="zedity-tt" target="_blank" href="<?php echo $this->zedityServerBaseUrl?>/plugin/wp"><?php _e('Promo','zedity')?></a>
+			<?php } ?>
+			<span id="lblVersion" class="zedity-tt <?php echo $version['class']?>">v<?php echo $version['installed']?></span>
 
 		</div>
 		<div id="zedityEditorW"></div>
@@ -723,7 +752,7 @@
 		resizeEditor = function(editor){
 			setTimeout(function(){
 				//reposition to center the editor
-				var ew = Math.max(editor.page.size().width,630);
+				var ew = Math.max(editor.page.size().width,750);
 				var bw = $('body').width();
 				$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
 				editor.$container.css({
@@ -1121,6 +1150,29 @@
 			},true);
 		<?php } ?>
 
+		var keepTooltipOpen = function(event){
+			var $target = $(event.target);
+			if (!$target.hasClass('zedity-tt')) $target = $target.parents('.zedity-tt');
+			if ($target.length==0) return;
+
+			event.stopImmediatePropagation();
+			var fixed = setTimeout(function(){
+				$target.tooltip('close');
+			},200);
+			$('.ui-tooltip').hover(function(){
+				clearTimeout(fixed);
+			}, function(){
+				$target.tooltip('close');
+			});
+			false;
+		};
+		$('#lblVersion').attr('title','<?php echo addslashes($version['message'])?>');
+		<?php if ($version['update_available']) { ?>
+			$('#lblVersion').tooltip({show:{delay:250}}).on('mouseleave',keepTooltipOpen);
+		<?php } ?>
+		<?php if (!empty($promo['promocode'])) { ?>
+			$('#lblPromo').attr('title','<?php echo addslashes($promo['message'])?>').tooltip({show:{delay:550}}).on('mouseleave',keepTooltipOpen);
+		<?php } ?>
 
 		//-----------------------------------------------------------------------------------------
 		//resizing

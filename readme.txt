@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.2
-Stable tag: 4.4.0
+Stable tag: 4.4.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -17,7 +17,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 >Zedity is already available in multiple languages, in addition to **English**:
 **Czech**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Isn't your language available yet? Be the first to translate Zedity into your language and [enter the "Hall of Fame" to get rewarded with a special promo code!](http://zedity.com/translate/)
+Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
     
 **Here is why you'll love Zedity:**
   
@@ -116,6 +116,10 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.4.1 =
+* Promo notifications.
+* Various improvements including cache optimizations.
 
 = 4.4.0 =
 * New feature to copy a Zedity content into another post or page. It can also be used to create templates.

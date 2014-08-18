@@ -68,7 +68,7 @@ function print_list($posts){
 <html>
 	<head>
 		<title>Zedity - Content duplication</title>
-		<link rel="stylesheet" href="<?php echo plugins_url('jquery/jquery-ui.min.css',dirname(__FILE__))?>" type="text/css" media="all" />
+		<link rel="stylesheet" href="<?php echo plugins_url("jquery/jquery-ui.min.css?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/css" media="all" />
 
 		<?php
 		//print scripts
