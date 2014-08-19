@@ -13,7 +13,7 @@ A revolutionary editor to create your content very easily, quickly and with unpr
 == Description ==
 Zedity is an innovative editor to create posts and pages very easily, quickly and absolutely with no technical skills required. It gives you total flexibility and unprecedented possibilities to create any desired design, as naturally as if you're sketching it out on a piece of paper! Watch the video and try it for free!
 
->**Happy Birthday Zedity**! Let's celebrate the first Anniversary together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
+>**Happy Birthday Zedity**! We're glad to celebrate 1 year, since Zedity was launched, together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
