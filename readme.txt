@@ -15,9 +15,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->Zedity is already available in multiple languages, in addition to **English**:
-**Czech**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
+>**Happy Birthday Zedity**! We're glad to celebrate 1 year, since Zedity was launched, together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
     
 **Here is why you'll love Zedity:**
   
@@ -28,7 +26,9 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 * **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours take minutes with Zedity and, since you can do it without hiring developers, you can save money too!
 
 
->**Happy Birthday Zedity**! We're glad to celebrate 1 year, since Zedity was launched, together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
+>Zedity is already available in multiple languages, in addition to **English**:
+**Czech**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
+Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
   
 **Here is video that shows you the original concept that started it all (Zedity version 1.0):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
