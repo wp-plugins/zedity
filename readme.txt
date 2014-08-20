@@ -13,8 +13,6 @@ A revolutionary editor to create your content very easily, quickly and with unpr
 == Description ==
 Zedity is an innovative editor to create posts and pages very easily, quickly and absolutely with no technical skills required. It gives you total flexibility and unprecedented possibilities to create any desired design, as naturally as if you're sketching it out on a piece of paper! Watch the video and try it for free!
 
->**Happy Birthday Zedity**! We're glad to celebrate 1 year, since Zedity was launched, together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
-
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 >Zedity is already available in multiple languages, in addition to **English**:
@@ -29,7 +27,8 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 * **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours take minutes with Zedity and, since you can do it without hiring developers, you can save money too!
 
->Multiple Layout Responsive Design ([MLRD](http://zedity.com/plugin/wpfeatures)): an advanced and powerful Premium feature to take full control on how your responsive content looks on different devices!
+
+>**Happy Birthday Zedity**! We're glad to celebrate 1 year, since Zedity was launched, together with a special promo code to upgrade to the Premium version. Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
   
 **Here is video that shows you the original concept that started it all (Zedity version 1.0):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
