@@ -23,7 +23,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you have in mind!
 
-* **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours take minutes with Zedity and, since you can do it without hiring developers, you can save money too!
+* **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours will take you minutes with Zedity and, since you can do it without hiring developers, you can save money too!
 
 >Zedity is already available in multiple languages, in addition to **English**:
 **Czech**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
