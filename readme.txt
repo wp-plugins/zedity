@@ -15,7 +15,7 @@ Zedity is an innovative editor to create posts and pages very easily, quickly an
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->**Happy Birthday Zedity**! We're glad to celebrate the first year, since Zedity was launched, together with you guys! Grab the opportunity to upgrade to the Premium version with a special discount to **save up to $27**! Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
+>**Happy Birthday Zedity**! We're glad to celebrate the first year, since Zedity was launched, together with you guys! Grab the opportunity to upgrade to the Premium version with a special discount to get a **15% immediate discount**! Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
     
 **Here is why you'll love Zedity:**
   
