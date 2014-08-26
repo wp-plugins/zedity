@@ -46,7 +46,7 @@
 				boxSize: '<?php echo sprintf(addslashes(__('%s feature: view and set exact box size.','zedity')),'Premium')?><br/>'+linkMsg,
 				textParagraph: '<?php echo sprintf(addslashes(__('%s feature: SEO friendly tags, e.g. title, paragraph, etc.','zedity')),'Premium')?><br/>'+linkMsg,
 				textLink: '<?php echo sprintf(addslashes(__('%s feature: open link in a new tab.','zedity')),'Premium')?><br/>'+linkMsg,
-				imageFilters: '<?php echo sprintf(addslashes(__('%s feature: enhance images with special effects.','zedity')),'Premium')?><br/>'+linkMsg,
+				imageFilters: false, //'<?php echo sprintf(addslashes(__('%s feature: enhance images with special effects.','zedity')),'Premium')?><br/>'+linkMsg,
 				colorButtons: '<?php echo sprintf(addslashes(__('%s feature: set custom RGB or Hex colors.','zedity')),'Premium')?>',
 				additionalMedia: linkMsg,
 				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
