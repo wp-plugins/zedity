@@ -21,11 +21,11 @@ Isn't your language available yet? Be the first to translate Zedity into your la
     
 **Here is why you'll love Zedity:**
   
-* **Easy to Use**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. With no coding or technical skills required, you can finally focus on what you want to do and not on how to do it anymore!
+* **Easy to Use**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. With no coding or technical skills required, you can finally focus on what you want to do and not struggling on how to do it!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're finally enabled to implement any creative design you have in mind!
 
-* **Time and Money Saving**: cut the time spent to create your posts and pages. What took hours will take you minutes with Zedity and, since you can do it without hiring developers, you can save money too!
+* **Time and Money Saving**: what usually took hours takes minutes with Zedity! Furthermore, since you can do it without hiring developers, you can save money too.
 
 >**Happy Birthday Zedity**! We're glad to celebrate the first year, since Zedity was launched, together with you guys! Grab the opportunity to upgrade to the Premium version with a special discount to get a **15% immediate discount**! Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
   
