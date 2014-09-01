@@ -29,7 +29,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 >**Happy Birthday Zedity**! Let's celebrate one year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
   
-**Here is a video showing the initial version that started it all (Zedity 1.0):**
+**Here is the video showing the initial version, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **WordPress 3.9**: Zedity (3.1.2+) is fully compatible with WP3.9. Please make sure to install the latest Zedity version available. 
