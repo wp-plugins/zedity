@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.5.0
+Version: 4.5.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -181,8 +181,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			$version['installed'] = $this->plugindata['Version'];
 			$version['update_available'] = empty($version['latest']) ? 'error' : version_compare($version['installed'], $version['latest'], '<');
 			$version['message'] = $version['update_available']===TRUE ?
-					sprintf(__('There is a new update available (%s), please %s.'),$version['latest'],"<b>".__('update now','zedity').'</b>') :
-					($version['update_available']===FALSE ? __('You have the latest version.') : ''); //do not change 'update now', used in version_check in premium.php
+					sprintf(__('There is a new update available (%s), please %s.','zedity'),$version['latest'],"<b>".__('update now','zedity').'</b>') :
+					($version['update_available']===FALSE ? __('You have the latest version.','zedity') : ''); //do not change 'update now', used in version_check in premium.php
 			$version['class'] = $version['update_available']===TRUE ? 'update' : ($version['update_available']===FALSE ? 'ok' : 'error');
 			return $version;
 		}
@@ -589,7 +589,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function get_options(){
 			$options = get_option($this->get_options_name(),array());
 			//convert from old versions
-			if ($options['responsive']===FALSE) $options['responsive']=0;
+			if (isset($options['responsive']) && $options['responsive']===FALSE) $options['responsive']=0;
 			$defaults = $this->get_defaults();
 			return array_merge($defaults,$options);
 		}

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 3.9.2
-Stable tag: 4.5.0
+Stable tag: 4.5.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -116,6 +116,12 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.5.1 =
+* Addded a workaround to cope with a bug in Chrome causing problems with the text selection.
+* Improved grid when there is a background box.
+* Enhanced Dialogs, Image box and translations.
+* Updated YouTube video API.
 
 = 4.5.0 =
 * Added content templating system (only Premium).
