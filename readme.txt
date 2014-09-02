@@ -70,7 +70,8 @@ Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) 
 2. Activate the Zedity plugin (from your WordPress dashboard)
 
 == Tutorials ==
-Here are some tutorials to help you get started and learn some usage tips:
+
+Here are some tutorials to help you get started and learn useful tips:
 
 **From A to... Zedity! This tutorial shows you how to get started with Zedity:**
 [youtube http://www.youtube.com/watch?v=wdUkypagojc]
