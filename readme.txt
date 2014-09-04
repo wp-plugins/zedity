@@ -27,7 +27,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 * **Time and Money Saving**: what usually took hours takes minutes with Zedity! Furthermore, since you can do it without hiring developers, you can save money too.
 
->**Happy Birthday Promo**! Let's celebrate one year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** [here](http://zedity.com/plugin/wp) 
+>**Happy Birthday Promo**! Let's celebrate one year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** as the Promo Code [here](http://zedity.com/plugin/wp) 
   
 **Here is the video showing the initial version, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
