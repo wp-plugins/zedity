@@ -34,7 +34,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 **WordPress Compatibility**: WP 4.0+ is compatible with Zedity 4.2.1+. WP 3.9+ is compatible with Zedity 3.1.2+. Please make sure to install the latest Zedity version available. 
 
-**More about Zedity:**
+**Useful links:**
 
 *   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)!
