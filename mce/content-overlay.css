@@ -6,7 +6,7 @@
 	display: none;
 	position: absolute;
 	background-color: rgba(80,210,80,0.6);
-	z-index: 100;
+	z-index: 998;
 }
 
 #zedity_content_overlay img {
