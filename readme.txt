@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, javascript, layout, link, linkedin, links, media, modern, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 4.5.1
+Stable tag: 4.5.2
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -32,7 +32,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **Here is the video showing the initial version, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**WordPress Compatibility**: WP 4.0+ is compatible with Zedity 4.2.1+. WP 3.9+ is compatible with Zedity 3.1.2+. Please make sure to install the latest Zedity version available. 
+**WordPress and Zedity**: if you use WP 4.0+, make sure to download Zedity 4.2.1+. If you use WP 3.9+, make sure to download Zedity 3.1.2+. Rule of thumb: install the latest Zedity version available. 
 
 **Useful links:**
 
@@ -117,6 +117,9 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.5.2 =
+* Zedity core enhancements.
 
 = 4.5.1 =
 * Addded a workaround to cope with a bug in Chrome causing problems with the text selection.
