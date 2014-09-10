@@ -26,13 +26,11 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're now able to implement any creative design you like!
 
 * **Time and Money Saving**: what usually took hours takes minutes with Zedity! Furthermore, since you can do it without hiring developers, you can save money too.
-
->**Happy Birthday Promo**! Let's celebrate one year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** before checking out [here](http://zedity.com/plugin/wp) **This is a limited offer, hurry up!**
   
 **Here is the video showing the initial version, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**100% WordPress Compatible**: Zedity works on any version of WordPress starting from 3.5 up to the latest 4.0. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires Zedity at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2). Again, get the latest version to be 100% up-to-date.
+>**Happy Birthday Promo**! Let's celebrate one year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** before checking out [here](http://zedity.com/plugin/wp) **This is a limited offer, hurry up!**
 
 **Useful links:**
 
@@ -42,6 +40,8 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)! 
+
+**100% WordPress Compatible**: Zedity works on any version of WordPress starting from 3.5 up to the latest 4.0. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires Zedity at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2). Again, get the latest version to be 100% up-to-date.
  
 **Friend plugins:**
 Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
