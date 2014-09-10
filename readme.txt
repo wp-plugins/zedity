@@ -32,7 +32,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **Here is the video showing the initial version, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**WordPress and Zedity**: if you use WP 4.0+, make sure to download Zedity 4.2.1+. If you use WP 3.9+, make sure to download Zedity 3.1.2+. Rule of thumb: install the latest Zedity version available. 
+**100% WordPress Compatible**: Zedity works on any version of WordPress starting from 3.5 up to the latest 4.0. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires Zedity at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2). Again, get the latest version to be 100% up-to-date.
 
 **Useful links:**
 
