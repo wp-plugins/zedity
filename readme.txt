@@ -34,7 +34,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 **Useful links:**
 
-*   [Zedity Site](http://zedity.com): visit the official website to discover more about Zedity!
+*   [Zedity Official Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)!
 *   [Zedity Turorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
