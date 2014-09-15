@@ -204,6 +204,15 @@ Text box
 	text-decoration: underline !important;
 }
 
+.zedity-editor.zedity-notheme .zedity-box-Text sub {
+	font-size: 0.7em !important;
+	vertical-align: sub !important;
+}
+.zedity-editor.zedity-notheme .zedity-box-Text sup {
+	font-size: 0.7em !important;
+	vertical-align: super !important;
+}
+
 /*
 .zedity-editor.zedity-notheme .zedity-box-Text a,
 .zedity-editor.zedity-notheme .zedity-box-Text a:link,

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, drag&drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, generator, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 4.5.2
+Stable tag: 4.6.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -16,7 +16,7 @@ Zedity is an innovative editor to create posts and pages very easily and quickly
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 >Zedity is already available in multiple languages, in addition to **English**:
-**Czech**, **French**, **German**, **Greek**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
+**Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
     
 **Here is why you'll love Zedity:**
@@ -117,6 +117,11 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.6.0 =
+* Added line spacing feature in Text box Paragraph settings (only Premium).
+* Added subscript and superscript features in Text box Font settings (only Premium).
+* Added Indonesian translation.
 
 = 4.5.2 =
 * Zedity core enhancements.

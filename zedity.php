@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.5.2
+Version: 4.6.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -65,14 +65,14 @@ if (class_exists('WP_Zedity_Plugin')) {
 			//add javascript for responsive content
 			add_action('wp_print_footer_scripts', array(&$this, 'add_front_js'));
 
+			$this->plugindata = $this->get_plugin_data();
+			
 			//stop here if we are not in admin area
 			if (!is_admin()) return;
 
 			// register actions
 			add_action('admin_init', array(&$this, 'admin_init'));
 			add_action('admin_menu', array(&$this, 'add_menu'));
-			
-			$this->plugindata = $this->get_plugin_data();
 
 			//additional links
 			add_filter("plugin_action_links_$plugin", array(&$this,'settings_link'));
