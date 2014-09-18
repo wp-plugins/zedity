@@ -44,6 +44,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **100% WordPress Compatible**: Zedity works on any version of WordPress starting from 3.5 up to the latest one. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires Zedity at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2). Again, get the latest version to be 100% up-to-date.
  
 **Friend plugins:**
+The Best Gallery & Photo Album [Easy Media Gallery](https://wordpress.org/plugins/easy-media-gallery/)
 Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
 Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
 
