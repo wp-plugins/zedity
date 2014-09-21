@@ -21,7 +21,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
     
 **Here is why you'll love Zedity:**
   
-* **Easy to Use**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. With no coding or technical skills required, you can finally focus on what you want to do and not struggling on how to do it!
+* **Easy Content Creation: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. With no coding or technical skills required, you can finally focus on what you want to do and not struggling on how to do it!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're now able to implement any creative design you like!
 
