@@ -30,8 +30,6 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **Here is a video showing the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
->**Happy Birthday Promo**! Let's celebrate 1 year since Zedity was launched! Grab the opportunity to upgrade to Zedity Premium with a special promo code to get a **15% immediate discount**! Enter **ANNIVERSARY** before checking out [here](http://zedity.com/plugin/wp) **Few more codes are available, hurry up (LAST FEW CODES)!**
-
 **Useful links:**
 
 *   [Zedity Official Site](http://zedity.com): visit the official website to discover more about Zedity!
