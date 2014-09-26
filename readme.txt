@@ -27,7 +27,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 * **Time and Money Saving**: what usually took hours takes minutes with Zedity! Furthermore, since you can do it without hiring developers, you can save money too.
   
-**Here is the video of the first milestone, Zedity 1.0:**
+**Here is the video of Zedity 1.0 (first milestone!):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Useful links:**
