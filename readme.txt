@@ -30,7 +30,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **Here is the video of Zedity 1.0 (first milestone!):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**Some useful links:**
+**Discover more about Zedity:**
 
 *   [Zedity Official Site](http://zedity.com): visit the official website to discover more about Zedity!
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)!
