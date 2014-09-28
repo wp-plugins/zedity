@@ -15,10 +15,6 @@ Zedity is an innovative editor to create posts and pages very easily and quickly
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->Zedity is already available in multiple languages, in addition to **English**:
-**Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
-    
 **Here is why you'll love Zedity:**
   
 * **Easy Content Creation: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. With no coding or technical skills required, you can finally focus on what you want to do and not struggling on how to do it!
@@ -27,6 +23,10 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 * **Time and Money Saving**: what usually took hours takes minutes with Zedity! Furthermore, since you can do it without hiring developers, you can save money too.
   
+>Zedity is already available in multiple languages, in addition to **English**:
+**Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
+Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded with a special promo code!](http://zedity.com/translate/)
+    
 **Here is the video of Zedity 1.0 (first milestone!):**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
@@ -39,7 +39,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
 *   [Help, FAQ and Support](http://zedity.com/support): get assistance, view solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)! 
 
-**Versions**: Zedity works on any version of WordPress starting from 3.5 up to the latest ones. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
+**Versions**: Zedity works on any version of WordPress, starting from 3.5 up to the latest ones. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
  
 **Friend plugins:**
 The Best Gallery & Photo Album [Easy Media Gallery](https://wordpress.org/plugins/easy-media-gallery/)
