@@ -269,7 +269,7 @@
 			});
 
 			//keep overlay while scrolling (avoid onNodeChange)
-			ed.selection.select(n.firstChild);
+			ed.selection.select(n);
 			ed.selection.collapse(false);
 			
 			this._zedityContent = n;
@@ -376,7 +376,7 @@
 				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '3.0'
+				version: '3.1'
 			};
 		}
 	});
