@@ -13,9 +13,6 @@
 				image: url + '/zedity-logo.png?' + this.getInfo().version
 			});
 			ed.addCommand('startZedity', function(){
-				if (t._zedityContent) {
-					ed.selection.select(t._zedityContent);
-				}
 				t._openZedity();
 			});
 
@@ -52,60 +49,28 @@
 						}
 					}
 				});
-				//temporarily disabled iframe management
-				/*
-				//set iframe wrapper size when in visual editor (to show full overlay)
-				ed.parser.addNodeFilter('iframe', function(nodes){
-					for (var i=nodes.length-1; i>=0; --i) {
-						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe')==-1) continue;
-						if (!nodes[i].parent) {
-							alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
-							break;
-						} else {
-							nodes[i].parent.attr({
-								style: 'width:'+nodes[i].attributes.map.width+'px;height:'+nodes[i].attributes.map.height+'px'
-							});
-						}
-					}
-				});
-				//set iframe wrapper real css on save
-				ed.serializer.addNodeFilter('iframe', function(nodes,name,args){
-					for (var i=nodes.length-1; i>=0; --i) {
-						if (!nodes[i].attributes.map.class || nodes[i].attributes.map.class.indexOf('zedity-iframe')==-1) continue;						
-						if (!nodes[i].parent) {
-							alert('Warning! Something is not right. A plugin may be interfering with the Zedity iframe.\n\nIn case of errors please provide the list of all plugins you have active at this time or try disabling the other plugins.');
-							break;
-						} else {
-							nodes[i].parent.attr({
-								'data-mce-style': 'max-width:'+nodes[i].attributes.map.width+'px;max-height:'+nodes[i].attributes.map.height+'px'
-							});
-						}
-					}
-				});
-				*/
 			});
 
 			//manage overlay
 			ed.onInit.add(function(ed){
-				//show overlay on click over zedity content
+				//change node on click over zedity content (fixes iframe selection on Firefox)
 				ed.dom.events[t.bind](ed.getBody(), 'mousedown', function(e){
-					var parent = ed.dom.getParent(e.target,'div.zedity-editor') || ed.dom.getParent(e.target,'div.zedity-iframe-wrapper');
-					if (parent) {
-						try {
-							ed.execCommand('mceFocus',false);
-						} catch (e) {}
-						t._showOverlay(ed,parent);
-						ed.dom.events.cancel(e);
-						ed.plugins.wordpress._hideButtons();
+					var element = t._getZedityElement(e.target);
+					if (element) {
+						ed.selection.select(element);
+						ed.nodeChanged();
 					}
 				});
-				//show overlay on caret inside zedity content
+				//show overlay when caret goes inside zedity content
 				ed.onNodeChange.add(function(ed,cm,n){
-					var parent = ed.dom.getParent(n,'div.zedity-editor') || ed.dom.getParent(n,'div.zedity-iframe-wrapper');
-					if (parent) {
-						t._showOverlay(ed,parent);
+					if ((n.id=='mce_noneditablecaret') || (n.id=='zedity_content_overlay')) {
+						ed.selection.select(t._zedityContent);
+						return;
+					}
+					var element = t._getZedityElement(n);
+					if (element) {
+						t._showOverlay(element);
 					} else {
-						if (n.attributes.class && ((' '+n.attributes.class.nodeValue+' ')||'').indexOf(' zedity-wrapper ')>-1) return;
 						t._hideOverlay();
 					}
 				});
@@ -113,9 +78,7 @@
 				ed.onKeyDown.addToTop(function(ed,e){
 					if (e.keyCode==13) {
 						var n = tinymce.DOM.get('zedity_content_overlay');
-						if (n && n.style.display=='block') {
-							ed.dom.events.cancel(e);
-						}
+						if (n) ed.dom.events.cancel(e);
 					} else if (e.keyCode==46 || e.keyCode==8) {
 						if (ed.selection.isCollapsed()) {
 							var n = ed.selection.getNode();
@@ -132,39 +95,15 @@
 						}
 					}
 				});
-				
-				//hide overlay when editor loses focus
-				tinyMCE.dom.Event[t.bind](ed.getWin(), 'blur', function(){
-					t._hideOverlay();
-				});
-
-				//reposition/resize overlay on WP editor scroll
-				tinyMCE.dom.Event[t.bind](ed.getWin(), 'scroll', function(){
-					t._showOverlay(ed,t._zedityContent);
-				});
-				//reposition/resize overlay on WP editor resize
-				tinyMCE.dom.Event[t.bind](ed.getWin(), 'resize', function(){
-					t._showOverlay(ed,t._zedityContent);
-				});
-
-				//reposition/resize overlay on window scroll
-				tinyMCE.dom.Event[t.bind](ed.getWin().parent, 'scroll', function(){
-					t._showOverlay(ed,t._zedityContent);
-				});
-				//reposition/resize overlay on window resize
-				tinyMCE.dom.Event[t.bind](ed.getWin().parent, 'resize', function(){
-					t._showOverlay(ed,t._zedityContent);
-				});
 			});
-
-			t._createOverlay(ed);
 		},
 		createControl: function(n,cm){
 			return null;
 		},
 
 		_openZedity: function(){
-			this._hideOverlay(true);
+			this.ed.plugins.wordpress._hideButtons();
+			if (this._zedityContent) this.ed.selection.select(this._zedityContent.firstChild);
 			tb_show('Zedity Editor', 'admin-ajax.php?action=zedity_editor&TB_iframe=true');
 			this.open = true;
 		},
@@ -181,176 +120,107 @@
 					var z = t.ed.dom.select('.zedity-editor',n)[0] || t.ed.dom.select('.zedity-iframe-wrapper',n)[0];
 					t._zedityContent = z;
 				}
-				t._showOverlay(t.ed,t._zedityContent);
+				t._showOverlay(t._zedityContent);
 			},100);
 		},
 
 		_openTemplates: function(){
 			//select content
-			this.ed.selection.select(this._zedityContent);
-			this._hideOverlay(true);
+			this.ed.plugins.wordpress._hideButtons();
+			this.ed.selection.select(this._zedityContent.firstChild);
 			tb_show(this.ed.getLang('zedity.copy_content_title'), 'admin-ajax.php?action=zedity_template&TB_iframe=true');
+		},
+		
+		_getZedityElement: function(n){
+			var s = ' '+(n.className||'')+' ';
+			if ((s.indexOf(' zedity-editor ')>-1) || (s.indexOf(' zedity-wrapper ')>-1) || (s.indexOf(' zedity-iframe-wrapper ')>-1)) return n;
+			return this.ed.dom.getParent(n,'div.zedity-editor') || this.ed.dom.getParent(n,'div.zedity-iframe-wrapper');
 		},
 
 		//-------------------------------------------------------------------------------
 		//Manage overlay
 
-		_showOverlay: function(ed,n){
+		_showOverlay: function(n){
 			if (!n) return;
 			if (this.open) return;
-
-			/*
-			//disable editing
-			ed.getBody().setAttribute('contenteditable', 'false');
-			//avoid clicking on anchors
-			var t = this;
-			parent.jQuery('a',ed.getBody()).off('click.zedity-mce').on('click.zedity-mce',function(){
-				t.ed.selection.select(this);
-				t.ed.selection.collapse(true);
-				t.ed.nodeChanged();
-				ed.plugins.wordpress._hideButtons();
-				t._hideOverlay();
-				return false;
-			});
-			*/
-
-			//exit if it is the fullscreen editor (@qtranslate)
-			if (ed.id == 'wp_mce_fullscreen') return;
-
-			var w = ed.getWin();
-			var vp = ed.dom.getViewPort(ed.getWin());
-			var p1 = tinymce.DOM.getPos(ed.getContentAreaContainer());
-			var p2 = ed.dom.getRect(n);
-			var d = {
-				w: ed.getDoc().documentElement.scrollWidth,
-				h: ed.getDoc().documentElement.scrollHeight
-			};
-			var barh = (function(){
-				var h = 0;
-				if (tinymce.DOM.select('#wpadminbar')[0] && (getComputedStyle(tinymce.DOM.select('#wpadminbar')[0]).display != 'none')) {
-					h = tinymce.DOM.getRect('wpadminbar').h;
-				}
-				return h;
-			})();
-
-			//calculate position
-			var X = Math.max(p2.x - vp.x, 0) + p1.x;
-			var Y = Math.max(p2.y - vp.y, 0) + p1.y;
-			var xo = Math.min(X - w.parent.pageXOffset, 0);
-			var yo = Math.min(Y - w.parent.pageYOffset - barh, 0);
-			X = Math.max(X, w.parent.pageXOffset);
-			Y = Math.max(Y, w.parent.pageYOffset + barh);
-			//padding in WP4+
-			Y += parseInt(tinymce.DOM.getStyle(tinymce.DOM.select('.mce-edit-area')[0],'padding-top') || 0);
-
-			//calculate size
-			if (d.h>vp.h && this.sb) vp.w -= this.sb.w;
-			if (d.w>vp.w && this.sb) vp.h -= this.sb.h;
-			var w = Math.min(p2.x - vp.x, 0) + p2.w;
-			var h = Math.min(p2.y - vp.y, 0) + p2.h;
-			w = Math.min(w, vp.w-(p2.x-vp.x), vp.w) + xo;
-			h = Math.min(h, vp.h-(p2.y-vp.y), vp.h) + yo;
 			
-			//not enough room for buttons, exit
-			//this should be the smallest rectangle that can accommodate the buttons (90x50),
-			//now Zedity content can be even smaller (MIN_WIDTH and MIN_HEIGHT values in zedity.php), so we let it anyway
-			if (w<50 || h<20) {
-				this._hideOverlay(true);
-				return;
-			}
+			var ed = this.ed;
+			var overlay = ed.dom.get('zedity_content_overlay');
+			if (!overlay) overlay = this._createOverlay();
 
-			//show overlay
-			tinymce.DOM.setStyles('zedity_content_overlay', {
-				left: X+'px',
-				top: Y+'px',
-				width: w+'px',
-				height: h+'px',
-				display: 'block'
+			ed.plugins.wordpress._hideButtons();
+			var rect = ed.dom.getRect(n);
+			ed.dom.setStyles(overlay, {
+				top: rect.y,
+				left: rect.x,
+				width: Math.max(rect.w,110),
+				height: Math.max(rect.h,40)
 			});
-
-			//keep overlay while scrolling (avoid onNodeChange)
-			ed.selection.select(n);
-			ed.selection.collapse(false);
 			
 			this._zedityContent = n;
+			ed.selection.select(n);
 		},
+		
 		_hideOverlay: function(block){
-			tinymce.DOM.hide(tinymce.DOM.select('#zedity_content_overlay'));
-			//re-enable editing
-			if (!block) {
-				/*
-				this.ed.getBody().setAttribute('contenteditable', 'true');
-				//re-enable clicking on anchors
-				parent.jQuery('a',this.ed.getBody()).off('click.zedity-mce');
-				*/
-				this._zedityContent = null;
-			}
+			var overlay = this.ed.dom.get('zedity_content_overlay');
+			if (overlay) this.ed.dom.remove(overlay);
+			if (!block) this._zedityContent = null;
+			return;
 		},
-		_createOverlay: function(ed){
+		
+		_createOverlay: function(){
 			var t = this;
+			var ed = this.ed;
 			if (tinymce.DOM.get('zedity_content_overlay')) return;
-
-			//calculate scrollbars
-			this.sb = (function(){
-				var inner = document.createElement('p');
-				inner.style.width = '100%';
-				inner.style.height = '100%';
-				var outer = document.createElement('div');
-				outer.style.position = 'absolute';
-				outer.style.top = '0px';
-				outer.style.left = '0px';
-				outer.style.visibility = 'hidden';
-				outer.style.width = '100px';
-				outer.style.height = '100px';
-				outer.style.overflow = 'hidden';
-				outer.appendChild(inner);
-				document.body.appendChild(outer);
-				var w1 = inner.offsetWidth;
-				var h1 = inner.offsetHeight;
-				outer.style.overflow = 'scroll';
-				var w2 = inner.offsetWidth;
-				var h2 = inner.offsetHeight;
-				if (w1 == w2) w2 = outer.clientWidth;
-				if (h1 == h2) h2 = outer.clientHeight;
-				document.body.removeChild(outer);
-				return { w: (w1 - w2), h: (h1 - h2) };
-			})();
-
-			tinymce.DOM.add(document.body, 'div', {
-				id: 'zedity_content_overlay'
+			
+			var overlay = ed.dom.create('div',{
+				id: 'zedity_content_overlay',
+				'data-mce-bogus': 'all',
+				contenteditable: false
 			});
+			ed.getBody().appendChild(overlay);
 
-			var zEditButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
-				// NOTE: at the moment, the deploy scripts renames zedity-logo-premium.png into zedity-logo.png
+			//Edit button
+			var zEditButton = ed.dom.create('img',{
 				src: t.url+'/zedity-logo.png?' + this.getInfo().version,
 				id: 'zedity_button_edit',
 				width: '24',
 				height: '24',
-				title: ed.getLang('zedity.edit_content')
+				title: ed.getLang('zedity.edit_content'),
+				'data-mce-bogus': 'all',
+				contenteditable: false
 			});
 			tinymce.dom.Event[t.bind](zEditButton, 'mousedown', function(e){
-				ed.selection.select(t._zedityContent);
 				t._openZedity();
+				ed.dom.events.cancel(e);
 			});
-                        //Content duplication
-			var zCopyButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
+			overlay.appendChild(zEditButton);
+			
+			//Copy button
+			var zCopyButton = ed.dom.create('img',{
 				src: t.url+'/editcopy.png?' + this.getInfo().version,
 				id: 'zedity_button_copy',
 				width: '24',
 				height: '24',
-				title: ed.getLang('zedity.copy_content')
+				title: ed.getLang('zedity.copy_content'),
+				'data-mce-bogus': 'all',
+				contenteditable: false
 			});
 			tinymce.dom.Event[t.bind](zCopyButton, 'mousedown', function(e){
-				ed.selection.select(t._zedityContent);
 				t._openTemplates();
+				ed.dom.events.cancel(e);
 			});
+			overlay.appendChild(zCopyButton);
 
-			var zDelButton = tinymce.DOM.add('zedity_content_overlay', 'img', {
+			//Delete button
+			var zDelButton = ed.dom.create('img',{
 				src: t.url+'/delete.png',
 				id: 'zedity_button_del',
 				width: '24',
 				height: '24',
-				title: ed.getLang('zedity.delete_content')
+				title: ed.getLang('zedity.delete_content'),
+				'data-mce-bogus': 'all',
+				contenteditable: false
 			});
 			tinymce.dom.Event[t.bind](zDelButton, 'mousedown', function(e){
 				var n = t._zedityContent;
@@ -358,8 +228,8 @@
 				if (tinymce.DOM.hasClass(n,'zedity-iframe-wrapper') || tinymce.DOM.hasClass(n,'zedity-editor')) {
 					n = ed.dom.getParent(n,'div.zedity-wrapper');
 				}
-				ed.selection.select(n);
 				t._hideOverlay();
+				ed.selection.select(n);
 				try {
 					ed.execCommand('mceStartTyping','');
 				} catch (e) {}
@@ -367,16 +237,19 @@
 				try {
 					ed.execCommand('mceEndTyping','');
 				} catch (e) {}
+				ed.dom.events.cancel(e);
 			});
+			overlay.appendChild(zDelButton);
+			return overlay;
 		},
-
+		
 		getInfo: function(){
 			return {
 				longname: 'Zedity Editor',
 				author: 'Zuyoy LLC',
 				authorurl: 'http://zedity.com',
 				infourl: 'http://zedity.com',
-				version: '3.1'
+				version: '4.0'
 			};
 		}
 	});

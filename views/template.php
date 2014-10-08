@@ -266,7 +266,7 @@ function print_list($posts){
 				var html = mce.selection.getContent({format:'html'});
 			} else {
 				alert('Error during content load.');
-				tb_remove();
+				parent.tb_remove();
 			}
 			
 			//status filter

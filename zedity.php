@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.7.1
+Version: 4.8.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -372,24 +372,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 					}
 				};
 				jQuery(window).on('resize',resizeForZedity);
-
-				//Handle WP editor switch
-				if (window.switchEditors) {
-					var old_go = switchEditors.go;
-					switchEditors.go = function(){
-						var ed = tinyMCE.get('content');
-						if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
-						old_go.apply(this,arguments);
-					};
-				}
-
-				var hideOverlay = function(){
-					if (!window.tinyMCE) return;
-					var ed = tinyMCE.activeEditor;
-					if (ed && ed.plugins.zedity) ed.plugins.zedity._hideOverlay();
-				};
-				jQuery('body').on('click.zedity',hideOverlay);
-				jQuery('#adminmenu a.wp-has-submenu').on('mouseover',hideOverlay);
 			});
 			</script>
 			<?php
@@ -518,6 +500,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 			
 			if (!empty($mce_css)) $mce_css .= ',';
 			$mce_css .= plugins_url("mce/mce-editor-zedity.css?{$this->plugindata['Version']}", __FILE__) . ',';
+			$mce_css .= plugins_url("mce/content-overlay.css?{$this->plugindata['Version']}", __FILE__) . ',';
 			$mce_css .= plugins_url("css/zedity-reset.css?{$this->plugindata['Version']}", __FILE__) . ',';
 			$mce_css .= 'admin-ajax.php?action=zedity_ajax&zaction=webfonts';
 			return $mce_css;
@@ -700,7 +683,6 @@ if (class_exists('WP_Zedity_Plugin')) {
 				//add thickbox css here because using wp_enqueue_style() or add_thickbox() breaks RTL
 				?>
 				<link rel="stylesheet" href="<?php echo get_bloginfo('wpurl')?>/wp-includes/js/thickbox/thickbox.css" type="text/css" />
-				<link rel="stylesheet" href="<?php echo plugins_url("mce/content-overlay.css?{$this->plugindata['Version']}", __FILE__); ?>" type="text/css" media="all" />
 				<link rel="stylesheet" href="<?php echo plugins_url("css/zedity-admin.css?{$this->plugindata['Version']}", __FILE__)?>" type="text/css" media="all" />
 				<?php
 			}
