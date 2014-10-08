@@ -94,3 +94,23 @@ iframe
 	padding: 0 !important;
 }
 
+
+
+/*--------------------------------------------------------------------------------------
+zedity content selection
+*/
+
+.zedity-iframe-wrapper::selection,
+.zedity-wrapper::selection,
+.zedity-editor::selection,
+.zedity-wrapper *::selection {
+	color: initial !important;
+	background-color: transparent !important;
+}
+.zedity-iframe-wrapper::-moz-selection,
+.zedity-wrapper::-moz-selection,
+.zedity-editor::-moz-selection,
+.zedity-wrapper *::-moz-selection {
+	color: initial !important;
+	background-color: transparent !important;
+}
