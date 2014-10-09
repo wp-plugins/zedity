@@ -21,7 +21,7 @@ Zedity is an innovative editor to create posts and pages very easily and quickly
   
 * **Easy Content Creation: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. Before, you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel: now, with Zedity, no coding or technical skills are required and you can finally focus on what you want to do and not struggling on how to do it!
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're now able to implement any creative design you like!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're now able to implement any creative design you can think of!
 
 * **Time and Money Saving**: what used to take you hours, will take only minutes with Zedity. Furthermore, since you can do it without hiring developers, you can save money too.
   
