@@ -19,7 +19,7 @@ Zedity is an innovative editor to create posts and pages very easily and quickly
 
 **Here is why you'll love Zedity:**
   
-* **Easy Content Creation: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. Before, you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel: now, with Zedity, no coding or technical skills are required and you can finally focus on what you want to do and not struggling on how to do it!
+* **Easy Content Creation**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. Before, you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel: now, with Zedity, no coding or technical skills are required and you can finally focus on what you want to do and not struggling on how to do it!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired content. With no more constraints, you're now able to implement any creative design you can think of!
 
@@ -32,7 +32,7 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 **Here is the video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**Discover more about Zedity:**
+**Discover more about Zedity...**
 
 *   [Zedity Official Site](http://zedity.com): find the latest information, downloads, special offers and all about Zedity!
 *   **Translate** [Zedity into your native language](http://zedity.com/translate/): provide the translation to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)!
