@@ -23,7 +23,7 @@ Zedity is an innovative editor that gives you total flexibility and unprecedente
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. What if you'd like to place text partially overlapping or around some images, which you also want to be a bit rotated and have a cool shadow effect too? That's just a very simple example of the many things you'll be able to do with Zedity!
 
-* **Time and Money Saving**: what used to take you hours, will take only minutes with Zedity. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you will save money too!
+* **Time and Money Saving**: what used to take you hours, will take only minutes now. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you will save money too!
   
 >Zedity is already available in multiple languages, in addition to **English**:
 **Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
