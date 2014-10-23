@@ -39,7 +39,7 @@ Others are coming soon. Looking for a language that is not available yet? Be the
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** Not only, you will also **get rewarded** with a special promo code!
 *   [Zedity Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
-*   [Help, FAQ and Support](http://zedity.com/support): get assistance, access solutions to common cases, ask for information or provide your feedback directly from your [Zedity account](http://zedity.com/support)! 
+*   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
 **Requirements**: Zedity works on any version of WordPress, starting from 3.5 up to the latest ones. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
  
