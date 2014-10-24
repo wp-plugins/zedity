@@ -43,11 +43,7 @@ Others are coming soon. Looking for a language that is not available yet? Be the
 
 **Requirements**: Zedity works on any version of WordPress, starting from 3.5 up to the latest ones. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
  
-**Friend plugins:**
-The Best Gallery & Photo Album [Easy Media Gallery](https://wordpress.org/plugins/easy-media-gallery/)
-Audience engagement [Feedweb](http://wordpress.org/plugins/feedweb/)
-Anti-spam [CleanTalk](http://wordpress.org/plugins/cleantalk-spam-protect/)
-
+**Do you like Zedity? Thanks!**: we'd appreciate it if you can take the time to add [your review](https://wordpress.org/support/view/plugin-reviews/zedity).
 == Installation ==
  
 Here are two options to install Zedity:
