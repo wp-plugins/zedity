@@ -13,9 +13,6 @@ A revolutionary editor for anyone to create content very easily and quickly, wit
 == Description ==
 Zedity is an innovative editor that gives you total flexibility and unprecedented possibilities to create posts and pages as naturally as if you're sketching them out on a piece of paper! With absolutely no technical skills required and professional results finally achievable by anyone, Zedity will make your WordPress experience amazingly easier and quicker!
 
-> SYSTEM UPDATE: Our server is being updated, the site zedity.com is temporarily not available. We're working to take it back within the next hour. Thank you for your patience and understading.
-
-
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 ...download Zedity now and see the difference for yourself!
