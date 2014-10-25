@@ -17,7 +17,7 @@ Zedity is an innovative editor that gives you total flexibility and unprecedente
 
 ...download Zedity now and see the difference for yourself!
 
-**Here is why people love Zedity:**
+**Here is why people like you love Zedity:**
   
 * **Super Easy Content Creation**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. While, before, you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel, now, with Zedity, you can finally get the desired resuls in a fraction of the time, very easily and with no coding or technical skills required!
 
