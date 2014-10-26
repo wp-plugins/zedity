@@ -19,7 +19,7 @@ Zedity is an innovative editor that gives you total flexibility and unprecedente
 
 **Here is why people like you love Zedity:**
   
-* **Super Easy Content Creation**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. Not only, but while before you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel, now, with Zedity, you can finally get the desired resuls with a real and innovative approach, with absolutely no coding skills required!
+* **Super Easy For Anyone**: with Zedity, creating your posts and pages becomes as easy as sketching on a piece of paper. Not only, but while before you had to be familiar with HTML, CSS and JavaScript code to achieve a professional look and feel, now, with Zedity, you can finally get the desired resuls with a real and innovative approach, with absolutely no coding skills required!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. What if you'd like to place text partially overlapping or around some images, which you also want to be a bit rotated and have a cool shadow effect too? That's just a very simple example of the many things you'll be able to do with Zedity!
 
