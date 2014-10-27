@@ -15,7 +15,7 @@ Zedity is an innovative editor that gives you total flexibility and unprecedente
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-...download Zedity now and see the difference for yourself!
+Get started: download Zedity now and see the difference for yourself!
 
 **Here is why people like you love Zedity:**
   
