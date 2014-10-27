@@ -27,7 +27,7 @@ Zedity is an innovative editor that gives you total flexibility and unprecedente
   
 >Zedity is already available in multiple languages, in addition to **English**:
 **Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Others are coming soon. Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
+Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
 **Here is the video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
