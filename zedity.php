@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.8.0
+Version: 4.8.1
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -47,7 +47,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		const DEFAULT_WIDTH = 600; // a typical width for some themes in wordpress
 		
 		const MIN_HEIGHT = 20; // pixels
-		const MAX_HEIGHT = 6500; // pixels
+		const MAX_HEIGHT = 6000; // pixels
 		const DEFAULT_HEIGHT = 600;
 		
 		const WARNING_CONTENT_SIZE = 1000000; // 1MB (system dependent, current value based on observed cases)
@@ -596,6 +596,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 		public function plugin_row($links,$file) {
 			if ($file == plugin_basename(__FILE__)) {
+				//Add "Rate Zedity!" link
+				$links[] = '<a class="button" href="https://wordpress.org/support/view/plugin-reviews/zedity" target="_blank">'.sprintf(__('Rate %s!','zedity'),'Zedity').'</a>';
 				//Add "Donate" and "Get Premium" links if it is not Premium
 				if (!$this->is_premium()) {
 					$links[] = '<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ" target="_blank">'.__('Donate','zedity').'</a>';

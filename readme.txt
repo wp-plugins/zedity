@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, drag&drop, dropbox, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 4.8.0
+Stable tag: 4.8.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -115,6 +115,10 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.8.1 =
+* Added "Rate Zedity" link in Plugins page.
+* Fixed a problem in Audio boxes when using HTML5 audio in a responsive design (only Premium).
 
 = 4.8.0 =
 * Rewritten integration with TinyMCE. Increased stability and compatibility with other plugins, including the Fullscreen feature of WP.
