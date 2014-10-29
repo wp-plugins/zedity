@@ -33,7 +33,7 @@ Looking for a language that is not available yet? Be the first to translate Zedi
 **Here is the video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**Discover more about Zedity...**
+**Discover more about Zedity:**
 
 *   [Zedity Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
 *   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
