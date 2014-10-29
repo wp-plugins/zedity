@@ -15,8 +15,6 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Get started: download Zedity now and see the difference for yourself!
-
 **Here is why people love Zedity:**
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place text partially overlapping or around some images, which you also want to be a bit rotated and have a cool shadow effect too? It's just impossible with the standard WordPress visual editor, isn't it? Zedity enables you to do anything you want!
@@ -26,6 +24,8 @@ Get started: download Zedity now and see the difference for yourself!
 
 * **Time and Money Saving**: what used to take hours, takes only minutes with Zedity. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
+Download Zedity plugin now and see the difference for yourself!
+
 >Zedity is already available in multiple languages, in addition to **English**:
 **Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
