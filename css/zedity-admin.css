@@ -1,3 +1,23 @@
+
+/*--------------------------------------------------------------------------------------*/
+/*ThickBox*/
+
+#TB_window.zedity-window {
+	width: 90% !important;
+	left: 5% !important;
+	margin-left: 0 !important;
+	z-index: 150050 !important;
+}
+
+
+#TB_overlay.zedity-overlay {
+	z-index: 150050 !important;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
 /*plugins list buttons*/
 
 #zedity .button,
@@ -25,16 +45,25 @@
 .zedity-dialog {
 	z-index: 400000 !important;
 	background: white;
+	border: 1px solid lightgrey;
 	border-radius: 5px;
 }
 
 .zedity-dialog .ui-dialog-titlebar {
+	padding: 5px 10px;
 	font-weight: bold;
 	background: whitesmoke;
 	border-radius: 5px;
 }
 .zedity-dialog .ui-dialog-titlebar-close {
 	display: none;
+}
+.zedity-dialog .ui-dialog-content {
+	padding: 5px 20px;
+}
+.zedity-dialog .ui-dialog-buttonset {
+	padding: 5px 10px;
+	text-align: right;
 }
 
 .ui-widget-overlay.ui-front {
