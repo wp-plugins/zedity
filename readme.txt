@@ -30,7 +30,7 @@ Download Zedity plugin now and see the difference for yourself!
 **Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
-**Here is the video of the first milestone, Zedity 1.0:**
+**Here is a video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Discover more about Zedity:**
