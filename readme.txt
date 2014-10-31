@@ -15,6 +15,8 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
+>On Halloween... the Scary Zalloween promo is here! Enter ZALLOWEEN promo code and get a super discount to upgrade to [Zedity Premium](http://zedity.com/plugin/wp)! 
+
 **Here is why you're going to love Zedity:**
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place text partially overlapping or around some images, which you also want to be a bit rotated and have a cool shadow effect too? Well, it's just impossible with the standard WordPress visual editor, isn't it? Zedity enables you to do that and anything else you want!
