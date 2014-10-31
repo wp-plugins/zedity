@@ -26,8 +26,8 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
   
 Download Zedity plugin now and see the difference for yourself!
 
->Zedity is already available in multiple languages, in addition to **English**:
-**Czech**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
+>Zedity is already available in multiple languages already:
+**Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
 **Here is a video of the first milestone, Zedity 1.0:**
