@@ -15,7 +15,7 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->On the Halloween week-end... the Scary Zalloween promo is here! Enter ZALLOWEEN promo code and get a super discount to upgrade to [Zedity Premium](http://zedity.com/plugin/wp)! 
+>On the Halloween week-end... don't miss the Scary Zalloween promo! Enter ZALLOWEEN promo code and get a super discount to upgrade to [Zedity Premium](http://zedity.com/plugin/wp)! 
 
 **Here is why you're going to love Zedity:**
 
