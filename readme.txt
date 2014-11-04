@@ -22,7 +22,6 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
   
 * **Super Easy For Anyone**:  do you like to deal with HTML, CSS and JavaScript code to achieve a professional and unique look and feel? Probably not!!! That's what Zedity can do for you: you just design visually by dragging and dropping, just like if you're sketching on a piece of paper and Zedity will generate plain HTML5 code automatically for you!
 
-
 * **Time and Money Saving**: what used to take hours, takes only minutes with Zedity. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
 Download Zedity plugin now and see the difference for yourself!
@@ -43,7 +42,7 @@ Looking for a language that is not available yet? Be the first to translate Zedi
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
-**Requirements**: Zedity works on any version of WordPress, starting from 3.5 up to the latest ones. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
+**Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
  
 **Do you like Zedity? Thanks!**: we'd appreciate it if you can take the time to add [your review](https://wordpress.org/support/view/plugin-reviews/zedity).
 == Installation ==
