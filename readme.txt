@@ -18,7 +18,7 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
 
 **Here is why you're going to love Zedity:**
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place text partially overlapping or around some images, which you also want to be a bit rotated and have a cool shadow effect too? Well, it's just impossible with the standard WordPress visual editor, isn't it? Zedity enables you to do that and anything else you want!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place some text overlapping or around some images, maybe adding borders and rotate it too? Well, it's just impossible with the standard WordPress visual editor, isn't it? Zedity enables you to do that and anything else you want!
   
 * **Super Easy For Anyone**:  do you like to deal with HTML, CSS and JavaScript code to achieve a professional and unique look and feel? Probably not!!! That's what Zedity can do for you: you just design visually by dragging and dropping, just like if you're sketching on a piece of paper and Zedity will generate plain HTML5 code automatically for you!
 
