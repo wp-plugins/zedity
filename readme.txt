@@ -42,7 +42,7 @@ Looking for a language that is not available yet? Be the first to translate Zedi
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
-**Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version (if you use outdated versions, WP 4.0+ requires at least Zedity 4.2.1, while WP 3.9+ requires at least Zedity 3.1.2).
+**Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
  
 **Do you like Zedity? Thanks!**: we'd appreciate it if you can take the time to add [your review](https://wordpress.org/support/view/plugin-reviews/zedity).
 == Installation ==
