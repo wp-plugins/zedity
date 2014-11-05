@@ -36,7 +36,7 @@ Looking for a language that is not available yet? Be the first to translate Zedi
 **Discover more about Zedity:**
 
 *   [Zedity Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
-*   [Facebook page](https://www.facebook.com/Zedity): visit Zedity on Facebook. Got a cool Zedity site to show? Contact us and we can share your link!
+*   [Facebook page](https://www.facebook.com/Zedity): follow us to get notified about new releases, promos and the latest news!
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** Not only, you will also **get rewarded** with a special promo code!
 *   [Zedity Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
