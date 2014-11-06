@@ -24,6 +24,8 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
 
 * **Time and Money Saving**: what used to take hours, takes only minutes with Zedity. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
+* **Support and Assistance**: simply stated, we're always here to help you. While our Premium customers are prioritized, we offer free technical assistance to the Free users as well! Whenever you have a problem, just [submit a ticket](http://zedity.com/support) and we'll get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
+
 Download Zedity plugin now and see the difference for yourself!
 
 >Zedity is already available in multiple languages already:
