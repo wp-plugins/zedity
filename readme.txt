@@ -26,7 +26,7 @@ Take your WordPress experience to the next level with Zedity, an innovative edit
   
 * **Support and Assistance**: simply stated, we're here whenever you need help. While our Premium customers are prioritized, we offer free technical assistance to free users as well. Whenever you have a problem, just [submit a ticket](http://zedity.com/support) and we'll get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
 
-Download Zedity plugin now and see the difference for yourself!
+Download Zedity now and see the difference for yourself!
 
 >Zedity is already available in multiple languages already:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
