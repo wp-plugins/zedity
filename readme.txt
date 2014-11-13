@@ -26,14 +26,14 @@ Would you like to stop struggling, spend much less time creating your content an
   
 * **Top Quality Assistance**: we love what we do and we're always willing to help whenever you face a problem. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you have a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
 
-Download Zedity now and see the difference for yourself!
-
 >Zedity is already available in multiple languages already:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
 **Here is a video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
+
+Download Zedity now and see the difference for yourself!
 
 **Discover more about Zedity:**
 
