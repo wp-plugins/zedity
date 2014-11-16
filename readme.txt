@@ -24,7 +24,7 @@ Would you like to stop struggling, spend much less time creating your content an
 
 * **Time and Money Saving**: what used to take hours, takes only minutes with Zedity. For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
-* **Top Quality Assistance**: we love what we do and we're always willing to help whenever you face a problem. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you have a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
+* **Top Quality Assistance**: we love what we do and we're always willing to help. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you have a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
 
 >Zedity is already available in multiple languages already:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
