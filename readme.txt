@@ -37,11 +37,12 @@ Download Zedity now and see the difference for yourself!
 
 **Discover more about Zedity:**
 
-*   [Zedity Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
+*   [Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
 *   [Facebook page](https://www.facebook.com/Zedity): follow us to get notified about new releases, promos and the latest news!
-*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** Not only, you will also **get rewarded** with a special promo code!
 *   [Zedity Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
+*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** Not only, you will also **get rewarded** with a special promo code!
+
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
 **Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
