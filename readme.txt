@@ -49,7 +49,7 @@ Download Zedity now and see the difference for yourself!
 
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
-**Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
+**Version Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
  
 **Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity).
 
