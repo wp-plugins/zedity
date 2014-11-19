@@ -49,7 +49,7 @@ Download Zedity now and see the difference for yourself!
 
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
-**Version Requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
+**Version requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
  
 **Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity).
 
@@ -63,7 +63,7 @@ Here are two options to install Zedity:
 
 2. You should now see the Install Plugins page. Click on "Upload".
 
-3. Click on Browse and select your "zedity.zip" file.
+3. Click on Browse and select your "zedity.zip" file. NOTE: in some cases, if you use Safari and you do not see the .zip file, it is because your browser is unzipping the .zip file automatically. No worries, though: just right click on the unzipped folder and compress it again. Your .zip file is there again.
 
 4. Click on "Install now", activate it and you're done!
 
