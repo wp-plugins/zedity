@@ -63,7 +63,7 @@ Here are two options to install Zedity:
 
 2. You should now see the Install Plugins page. Click on "Upload".
 
-3. Click on Browse and select your "zedity.zip" file. NOTE: in some cases, if you use Safari and after downloading you can't .zip file, it is because your browser is unzipping it automatically. If so, just right click on the unzipped folder and compress it back. Your .zip file is there again.
+3. Click on Browse and select your "zedity.zip" file.
 
 4. Click on "Install now", activate it and you're done!
 
@@ -74,6 +74,8 @@ Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) 
 1. Upload and unzip the "zedity.zip" file into the 'wp-content/plugins' directory.
 
 2. Activate the Zedity plugin (from your WordPress dashboard)
+
+NOTE: in some cases, if you use Safari and after downloading you can't .zip file, it is because your browser is unzipping it automatically. If so, just right click on the unzipped folder and compress it back. Your .zip file is there again.
 
 == Tutorials ==
 
