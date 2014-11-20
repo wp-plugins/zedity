@@ -223,6 +223,35 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 		break;
 		
 		//------------------------------------------------------------------------------------
+		case 'closeadminnotice':
+			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+				$response = array('error' => __('Invalid request.','zedity'));
+				break;
+			}
+			if (empty($_POST['dismiss'])) {
+				$response = array('error' => sprintf(__('Missing %s parameter in request.','zedity'),'dismiss'));
+				break;
+			}
+			
+			//set transient for the specific message to not show it again:
+			//for 12 hours if it is "remind later" for 60 days if it is "close"
+			set_transient("zedity_an_dismiss_{$_POST['dismiss']}",'1', $_POST['type']=='close' ? 60*DAY_IN_SECONDS : 12*HOUR_IN_SECONDS);
+			
+			//clear message if it was already set
+			$notices = get_option('zedity_admin_notices', array());
+                        if (is_array($notices)) {
+                            foreach ($notices as $key => $notice) {
+                                    if ($notice[2]==$_POST['dismiss']) unset($notices[$key]);
+                            }
+                        }
+			update_option('zedity_admin_notices', $notices);
+			
+			$response = array();
+			
+		break;
+		
+		
+		//------------------------------------------------------------------------------------
 		default:
 			$response = array(
 				'error' => __('Malformed ajax request (unknown zaction).','zedity')

@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: http://zedity.com/plugin/wp
 Description: The Best Editor to create any design you want, very easily and with unprecedented possibilities!
-Version: 4.8.2
+Version: 4.9.0
 Author: Zuyoy LLC
 Author URI: http://zuyoy.com
 License: GPL3
@@ -148,10 +148,19 @@ if (class_exists('WP_Zedity_Plugin')) {
 			));
 		}
 
-		
-		public function show_message($message, $pages=TRUE) {
+		/**
+		 * Show admin notice message.
+		 * @param {string} $message - Message string.
+		 * @param {string[]} [$pages=TRUE] - Array of pages where to show the message.
+		 * @param {string} [$dismiss=FALSE] - String that identifies the message.
+		 */
+		public function show_message($message, $pages=TRUE, $dismiss=FALSE) {
 			$notices = get_option('zedity_admin_notices', array());
-			$newmsg = array($message,$pages);
+			if ($dismiss!==FALSE) {
+				//if this message was already dismissed then exit
+				if (get_transient("zedity_an_dismiss_$dismiss")!==FALSE) return;
+			}
+			$newmsg = array($message,$pages,$dismiss);
 			if (!in_array($newmsg,$notices)) $notices[] = $newmsg;
 			update_option('zedity_admin_notices', $notices);
 		}
@@ -163,7 +172,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 				if (is_string($notice)) $notice = array($notice,TRUE);
 				if (!is_array($notice)) continue;
 				if ($notice[1]===TRUE || in_array($pagenow,$notice[1])) {
-					echo "<div class='updated'>{$notice[0]}</div>";
+					$msg = "<div class='zedity-admin-notice updated'>{$notice[0]}";
+					if ($notice[2]) {
+						//show "remind later" and "close" buttons
+						$msg .= "<p><button class='button zedity-notice-close' data-type='remind' data-dismiss='{$notice[2]}'>".__('Remind me later')."</button> <button class='button zedity-notice-close' data-type='close' data-dismiss='{$notice[2]}'>".__('No, thanks')."</button></p>";
+					}
+					$msg .= '</div>';
+					echo $msg;
 				}
 			}
 			delete_option('zedity_admin_notices');
@@ -204,7 +219,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 					sprintf(__('Grab it now at %s by using the promo code "%s".','zedity'), "<a target=\"_blank\" href=\"{$this->zedityServerBaseUrl}/plugin/wp\">zedity.com</a>","<b>$promocode</b>");
 				$this->show_message(
 					"<p>$message</p>",
-					array('plugins.php','update-core.php','edit.php','options-general.php')
+					array('plugins.php','plugin-install.php','update-core.php','edit.php','options-general.php','post.php','post-new.php'),
+					"promo-$promocode"
 				);
 			}
 			return array(
@@ -288,6 +304,24 @@ if (class_exists('WP_Zedity_Plugin')) {
 			?>
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
+				jQuery('.zedity-notice-close').on('click',function(){
+					var $this = jQuery(this);
+					var dismiss = $this.attr('data-dismiss');
+					var type = $this.attr('data-type');
+					jQuery.ajax({
+						url: 'admin-ajax.php?action=zedity_ajax',
+						type: 'POST',
+						data: {
+							zaction: 'closeadminnotice',
+							tk: '<?php echo wp_create_nonce('zedity') ?>',
+							type: type,
+							dismiss: dismiss
+						}
+					});
+					$this.closest('.zedity-admin-notice').slideUp();
+					return false;
+				});
+
 				if (!window.tinyMCE) return;
 				
 				tinyMCE.addI18n({'<?php echo (class_exists('_WP_Editors') ? _WP_Editors::$mce_locale : substr(WPLANG,0,2)) ?>': {
@@ -601,7 +635,13 @@ if (class_exists('WP_Zedity_Plugin')) {
 				//Add "Donate" and "Get Premium" links if it is not Premium
 				if (!$this->is_premium()) {
 					$links[] = '<a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXNQFRAGR5WKQ" target="_blank">'.__('Donate','zedity').'</a>';
-					$links[] = '<a class="button" href="'.$this->plugindata['PluginURI'].'" target="_blank">'.sprintf(__('Get %s','zedity'),'Zedity Premium').'</a>';
+					
+					$promo = $this->promo_check();
+					$title = ($promo['promocode'] ? 'title="'.sprintf(__('Use promo code: %s'),$promo['promocode']).'"' : '');
+					$links[] = '<a class="button" href="'.$this->plugindata['PluginURI']."\" target=\"_blank\" $title>".
+							sprintf(__('Get %s','zedity'),'Zedity Premium').
+							($promo['promocode'] ? '<br/>'.__('at a discounted price!') : '').
+							'</a>';
 				}
 			}
 			return $links;
