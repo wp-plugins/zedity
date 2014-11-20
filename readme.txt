@@ -16,7 +16,7 @@ Would you like to stop struggling, spend less time creating your content and ach
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 
-**Here is why you'll love Zedity:**
+**Here is why more and more users love Zedity:**
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place some text overlapping or around some images, maybe adding borders and rotate it too? Well, that is just impossible with the standard WordPress visual editor. Zedity enables you to do anything you want!
   
