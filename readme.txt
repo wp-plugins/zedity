@@ -24,7 +24,7 @@ Would you like to stop struggling, spend less time creating your content and ach
 
 * **Time and Money Saving**: what would take hours of coding, takes only few minutes with Zedity! For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
-* **Top Quality Assistance**: we love what we do and we're always willing to help. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you encounter a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. If you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :)
+* **Top Quality Assistance**: we love what we do and we're always willing to help. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you encounter a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) 
 
 >Zedity is already available in multiple languages already:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
@@ -51,7 +51,7 @@ Download Zedity now and see the difference for yourself!
 
 **Version requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
  
-**Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity).
+**Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
 
 == Installation ==
  
