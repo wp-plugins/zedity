@@ -28,7 +28,7 @@ Wouldn't you like to stop struggling with the code, spend amazingly less time cr
 
 >Zedity is already available in multiple languages already:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Looking for a language that is not available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
+Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
 **Here is a video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
