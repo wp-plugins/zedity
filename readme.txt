@@ -75,7 +75,7 @@ Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) 
 
 2. Activate the Zedity plugin (from your WordPress dashboard)
 
-NOTE: in some cases, if you use Safari and after the download you can't find the .zip file, it may be your browser unzipping it automatically. If so, just right click on the unzipped folder and compress it back. Your .zip file is there again.
+NOTE: in some cases, if you use Safari and after the download you can't find the .zip file, it may be your browser unzipping it automatically. If so, you can right click on the unzipped folder and compress it back. Your .zip file is now there again.
 
 == Tutorials ==
 
