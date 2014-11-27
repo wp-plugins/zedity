@@ -35,6 +35,8 @@ Isn't your language available yet? Be the first to translate Zedity into your la
 
 Download Zedity now and see the difference for yourself!
 
+>EXCEPTIONAL BLACK FRIDAY PROMO! This is the best time to get [Zedity Premium plugin for WordPress](http://zedity.com/plugin/wp) with up to **40% OFF!**
+
 **Discover more about Zedity:**
 
 *   [Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
