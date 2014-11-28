@@ -175,7 +175,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 					$msg = "<div class='zedity-admin-notice updated'>{$notice[0]}";
 					if ($notice[2]) {
 						//show "remind later" and "close" buttons
-						$msg .= "<p><button class='button zedity-notice-close' data-type='remind' data-dismiss='{$notice[2]}'>".__('Remind me later')."</button> <button class='button zedity-notice-close' data-type='close' data-dismiss='{$notice[2]}'>".__('No, thanks')."</button></p>";
+						$msg .= "<p><button class='button zedity-notice-close' data-type='close' data-dismiss='{$notice[2]}'>".__('No, thanks')."</button> <button class='button zedity-notice-close' data-type='remind' data-dismiss='{$notice[2]}'>".__('Remind me later')."</button></p>";
 					}
 					$msg .= '</div>';
 					echo $msg;
