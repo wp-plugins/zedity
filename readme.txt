@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.0.1
-Stable tag: 4.9.0
+Stable tag: 4.9.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -51,7 +51,12 @@ Download Zedity now and see the difference for yourself!
 
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
-**Version requirements**: Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version: if you are using an outdated versions, WP 4.0+ requires Zedity 4.2.1+, whereas WP 3.9+ requires Zedity 3.1.2+.
+>**Version requirements**  
+Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version.  
+If you are using an outdated version, here is the compatibility table:  
+* WP 4.1+ requires Zedity 4.9.1+
+* WP 4.0+ requires Zedity 4.2.1+
+* WP 3.9+ requires Zedity 3.1.2+
  
 **Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
 
@@ -91,7 +96,7 @@ Here are some tutorials to help you get started and learn useful tips:
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
 Please notice that some of the [features](http://zedity.com/plugin/wpfeatures) are available in [Zedity Premium](http://zedity.com/plugin/wp) 
-If you upgrade to the Premium version, you can keep both versions, Free and Premium, installed at the same time but only one of the twoa can be active. So, before activating one, please make sure that you deactivated the other.
+If you upgrade to the Premium version, you can keep both versions, Free and Premium, installed at the same time but only one of the two can be active. So, before activating one, please make sure that you deactivated the other.
 
 Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
 
@@ -127,6 +132,9 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.9.1 =
+* Compatibility adjustments for upcoming WP 4.1.
 
 = 4.9.0 =
 * Promo notification messages are now dismissable.

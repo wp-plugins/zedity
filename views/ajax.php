@@ -239,11 +239,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			
 			//clear message if it was already set
 			$notices = get_option('zedity_admin_notices', array());
-                        if (is_array($notices)) {
-                            foreach ($notices as $key => $notice) {
-                                    if ($notice[2]==$_POST['dismiss']) unset($notices[$key]);
-                            }
-                        }
+			if (is_array($notices)) {
+				foreach ($notices as $key => $notice) {
+					if ($notice[2]==$_POST['dismiss']) unset($notices[$key]);
+				}
+			}
 			update_option('zedity_admin_notices', $notices);
 			
 			$response = array();
