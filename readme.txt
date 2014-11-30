@@ -20,7 +20,7 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place some text overlapping or around some images, maybe adding borders and rotate it too? Well, that is just impossible with the standard WordPress visual editor. Zedity enables you to do anything you want!
 
->**EXCEPTIONAL PROMO THROUGH BLACK FRIDAY WEEK-END!** This is the best time to get [Zedity Premium plugin for WordPress](http://zedity.com/plugin/wp) with up to **40% OFF!** Few more hours left...
+>**Last chances to get the EXCEPTIONAL BLACK FRIDAY WEEK-END PROMO!** This is the best time to get [Zedity Premium plugin for WordPress](http://zedity.com/plugin/wp) with up to **40% OFF!** 
   
 * **Incredibly Easy For Anyone**: do you know HTML, CSS and JavaScript well enough to achieve the results your audience expect? If not, Zedity is the tool for you! You can design visually with a real drag and drop, just like if you're sketching on a piece of paper and Zedity generates the code **automatically for you** under the hood!
 
