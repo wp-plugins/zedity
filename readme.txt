@@ -15,6 +15,7 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
+>**CYBER MONDAY PROMO EXTENDED!** Great news! The Cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code to get **Zedity Premium** with up to **25% OFF!**
 
 **Here is why more and more users love Zedity:**
 
@@ -30,8 +31,6 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
     
->**CYBER WEEK PROMO!** The cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code to get **Zedity Premium** with up to **25% OFF!**
-
 **Here is a video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
