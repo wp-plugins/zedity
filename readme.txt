@@ -15,7 +15,7 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->**CYBER MONDAY PROMO EXTENDED!** Great news! The Cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code to get **Zedity Premium** with up to **25% OFF!**
+>**CYBER MONDAY PROMO EXTENDED!** The Cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code to get **Zedity Premium** with up to **25% OFF!**
 
 **Here is why more and more users love Zedity:**
 
