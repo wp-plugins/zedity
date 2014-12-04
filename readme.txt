@@ -32,17 +32,17 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 
 >Zedity is already available in multiple languages:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
-Isn't your language available yet? Be the first to translate Zedity into your language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
+Isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
 Download Zedity now and see the difference for yourself!
 
 **Discover more about Zedity:**
 
-*   [Official Site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
+*   [Official site](http://zedity.com): find the latest information, download the Premium version, grab special offers and additional information about Zedity...
 
 *   [Facebook page](https://www.facebook.com/Zedity): follow us to get notified about new releases, special offers and the latest news!
 
-*   [Zedity Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
+*   [Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, etc.
 
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 
