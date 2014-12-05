@@ -15,6 +15,8 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
+>**CYBER MONDAY PROMO EXTENDED!** The Cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code and get **Zedity Premium** with up to **20% OFF!**
+
 **Here is why more and more users love Zedity:**
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired result. For example, what if you'd like to place some text overlapping or around some images, maybe adding borders and rotate it too? Well, that is just impossible with the standard WordPress visual editor. Zedity enables you to do anything you want!
@@ -24,8 +26,6 @@ Wouldn't you like to stop struggling with the code and spend much less time crea
 * **Time and Money Saving**: what would take hours of coding, takes only few minutes with Zedity! For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
 * **Dedicated Support**: we love what we do and we're always willing to help. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! Yes, that's true. If you encounter a problem, just [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) 
-
->**CYBER MONDAY PROMO EXTENDED!** The Cyber Monday Promo will last all the week long! Use [ZEDITYCYBER](http://zedity.com/plugin/wp) promo code and get **Zedity Premium** with up to **20% OFF!**
 
 **Here is a video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
