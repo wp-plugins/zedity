@@ -44,7 +44,7 @@ Download Zedity now and see the difference for yourself!
 
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 
-*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** Not only, you will also **get rewarded** with a special promo code!
+*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language and you'll enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
