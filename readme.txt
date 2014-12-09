@@ -50,7 +50,7 @@ Download Zedity now and see the difference for yourself!
 
 >**Version requirements**  
 Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version.  
-If you are using an outdated version, here is the compatibility table:  
+If you are using an outdated version, here is the compatibility requirements:  
 * WP 4.1+ requires Zedity 4.9.1+
 * WP 4.0+ requires Zedity 4.2.1+
 * WP 3.9+ requires Zedity 3.1.2+
