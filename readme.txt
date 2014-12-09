@@ -50,12 +50,12 @@ Download Zedity now and see the difference for yourself!
 
 >**Version requirements**  
 Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version.  
-If you are using an outdated version, here is the compatibility requirements:  
+If you are using an outdated version, here are the compatibility requirements:  
 * WP 4.1+ requires Zedity 4.9.1+
 * WP 4.0+ requires Zedity 4.2.1+
 * WP 3.9+ requires Zedity 3.1.2+
  
-**Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
+**Do you like Zedity? Great!**: if you can, please support the free version with a little donation. If it's not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
 
 == Installation ==
  
