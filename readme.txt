@@ -59,7 +59,7 @@ If you are using an outdated version, here are the compatibility requirements:
 
 == Installation ==
  
-Here are two options to install Zedity:
+Here are two common ways to install Zedity:
 
 **Option A - From your WordPress dashboard:**
 
