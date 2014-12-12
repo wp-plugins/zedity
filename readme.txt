@@ -11,7 +11,7 @@ License URI: http://zedity.com/license/freewp
 A revolutionary editor to create content super easily and quickly with amazing results and unprecedented possibilities for anyone!
      
 == Description ==
-Zedity is an innovative editor that enables you to create posts and pages as naturally as if you're sketching them out on a piece of paper! With absolutely no technical skills required, you can finally create amazing content very easily, with total flexibility and unprecedented possibilities!
+Zedity is an innovative editor that enables you to create posts and pages as naturally as if you're sketching them out on a piece of paper! With absolutely no technical skills required, you can finally create your content very easily, with total flexibility and unprecedented possibilities!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
