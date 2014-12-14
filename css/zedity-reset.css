@@ -110,7 +110,12 @@ Image box
 }
 
 .zedity-editor .zedity-box-Image img {
-	vertical-align: top;
+	vertical-align: top !important;
+	max-height: none !important;
+}
+
+.zedity-editor.zedity-notheme .zedity-box-Image img {
+	border: none !important;
 }
 
 .zedity-editor.zedity-notheme .zedity-box-Image a {
