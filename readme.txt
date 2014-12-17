@@ -1,7 +1,7 @@
 === Zedity™ The easiest way of creating your content.===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
-Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, box, builder, business, button, code, comments, content, create, creative, creativity, css, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, formatting, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, pages, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.0.1
 Stable tag: 4.10.0
@@ -54,7 +54,7 @@ If you are using an outdated version, here are the compatibility requirements:
 
 * WP 3.9+ requires Zedity 3.1.2+  
 
-**For those of you interested on how it all started, here is a video of the first milestone, Zedity 1.0:**
+**For those of you curious to watch how the first milestone, Zedity 1.0, looked like, here is a video:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
