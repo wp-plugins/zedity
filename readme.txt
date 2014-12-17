@@ -25,9 +25,6 @@ Wouldn't you like to create your content in a fraction of the time that you usua
   
 * **24/7 Technical Support**: we love what we do and we're available to help you. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! If you encounter a problem, all you have to do is to [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) 
 
-**Here is a video of the first milestone, Zedity 1.0:**
-[youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
-
 >Zedity is already available in multiple languages:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
@@ -56,6 +53,9 @@ If you are using an outdated version, here are the compatibility requirements:
 * WP 4.0+ requires Zedity 4.2.1+  
 
 * WP 3.9+ requires Zedity 3.1.2+  
+
+**For those of you that like to know about how it all started, here is a video of the first milestone, Zedity 1.0:**
+[youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
 **Do you like Zedity? Thanks!**: please support the free version with a little donation. If not the right time to [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY), no worries... we'd appreciate it much if you can take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). 
 
