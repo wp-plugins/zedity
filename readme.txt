@@ -21,7 +21,7 @@ Wouldn't you like to create your content in a fraction of the time that you usua
    
 * **Incredibly Easy For Anyone**: do you know HTML, CSS and JavaScript well enough to achieve the results your audience expect? If not, Zedity is the tool for you! You can design visually with a real drag and drop, just like if you're sketching on a piece of paper and Zedity generates the code **automatically for you** under the hood!
 
-* **Time and Money Saving**: what would take hours of coding, takes only few minutes with Zedity! For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
+* **Saves you Time and Money**: what would take hours of coding, takes only few minutes with Zedity! For instance, the example above can be done in less than 10 seconds with Zedity, i.e. much much less than what it'd take if you attempted to do it with HTML, CSS and JS codes! Furthermore, since you can do it without hiring developers, you can save money too!
   
 * **24/7 Technical Support**: we love what we do and we're available to help you. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! If you encounter a problem, all you have to do is to [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) 
 
@@ -45,13 +45,12 @@ Download Zedity now and see the difference for yourself!
 
 *   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
 
->**Version requirements**  
+
+**Version requirements**  
 Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version.  
 If you are using an outdated version, here are the compatibility requirements:  
 * WP 4.1+ requires Zedity 4.9.1+  
-
 * WP 4.0+ requires Zedity 4.2.1+  
-
 * WP 3.9+ requires Zedity 3.1.2+  
 
 **For those of you curious to watch how the first milestone, Zedity 1.0, looked like, here is a video:**
