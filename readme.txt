@@ -31,7 +31,7 @@ Download the free version and see the difference for yourself!
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
-Download Zedity now and see the difference for yourself!
+Download Zedity now and see the difference for yourself!!!
 
 **Discover more about Zedity:**
 
