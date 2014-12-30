@@ -25,7 +25,7 @@ Zedity is an innovative editor that enables you to create posts and pages as nat
   
 * **24/7 Technical Support**: we love what we do and we're available to help you. Even if you're not ready to upgrade to the Premium version, which comes with many benefits, including priority assistance, no worries: we offer free technical assistance to free users as well! If you encounter a problem, all you have to do is to [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Constructive feedback is always welcome!
 
->Zedity is already available in multiple languages:
+>What more? Zedity is already available in multiple languages:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**.
 Isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
