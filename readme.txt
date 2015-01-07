@@ -15,9 +15,9 @@ Zedity is an innovative editor that enables you to create posts and pages as nat
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
->We'd like to welcome 2015 with a special promo code to get Zedity Premium: [use **ZEDITY2015**](http://zedity.com/plugin/wp) before checking out and get up to 20% Off!!! Today is the last day, take it now on http://zedity.com/plugin/wp!
+>We'd like to welcome 2015 with a special promo code to get Zedity Premium: [use **ZEDITY2015**](http://zedity.com/plugin/wp) before checking out and get up to 20% Off!!! Few more hours left, get it now on http://zedity.com/plugin/wp!
 
-**Here is why more and more users are adopting Zedity:**
+**Here is why many people are already using Zedity daily:**
 
 * **Super Easy For Anyone**: do you know HTML, CSS and JavaScript well enough to achieve the desired results for your audience? If not, Zedity is the tool you were waiting for! You can create your content entirely visually with a real drag and drop, just like if you're sketching on a piece of paper! Zedity generates the code **automatically for you**, under the hood, totally hassle-free!
 
