@@ -16,7 +16,7 @@ Zedity is an innovative editor that enables you to create posts and pages as nat
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 
-**Here is why many people are already using Zedity daily:**
+**Here is why many people like you adopted Zedity to design their posts and pages:**
 
 * **Super Easy For Anyone**: do you know HTML, CSS and JavaScript well enough to achieve the desired results for your audience? If not, Zedity is the tool you were waiting for! You can create your content entirely visually with a real drag and drop, just like if you're sketching on a piece of paper! Zedity generates the code **automatically for you**, under the hood, totally hassle-free!
 
