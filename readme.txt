@@ -38,7 +38,7 @@ Download Zedity now and see the difference for yourself!!!
 
 *   [Facebook page](https://www.facebook.com/Zedity): follow us to get notified about new releases, special offers and the latest news!
 
-*   [Tutorials](http://zedity.com/blog/tutorials): tutorials on how to use Zedity, from installation to usage tips, release notes, including videos, etc.
+*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, including video tutorials, etc.
 
 *   [Twitter page](https://www.twitter.com/Zedity): follow Zedity on Twitter!
 
