@@ -34,7 +34,7 @@ Download Zedity now and see the difference for yourself!!!
 
 **Discover more about Zedity:**
 
-*   [Official site](http://zedity.com): Zedity comes in different flavors, Free WordPress plugin, Premium WordPress plugin and Online Editor. Visit the official site to find all the information you need, grab special offers and more...
+*   [Official site](http://zedity.com): Free WordPress plugin, Premium WordPress plugin and Online Editor are the different flavors of Zedity to address all your needs. Visit the official site to find all the information, grab special offers, get in touch with us and more...
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest news!
 
