@@ -16,7 +16,7 @@ Zedity is an innovative editor that enables you to create your posts and pages a
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 
-**Here is why Zedity quickly gained high popularity among the WordPress community:**
+**Here is why Zedity quickly gained very high popularity among the WordPress community:**
 
 * **Super Easy For Anyone**: do you know HTML, CSS and JavaScript well enough to achieve the desired results for your audience? If not, Zedity is the tool that you need! You can create your content entirely visually with a real drag and drop, just like if you're sketching on a piece of paper, and Zedity will generate the code **automatically for you**, under the hood, totally hassle-free!
 
