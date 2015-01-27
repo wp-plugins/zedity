@@ -34,15 +34,15 @@ Download Zedity now and see the difference for yourself!!!
 
 **Discover more about Zedity:**
 
-*   [Official site](http://zedity.com): Free WordPress plugin, Premium WordPress plugin and Online Editor are the different flavors of Zedity to address all your needs. Visit the official site to find more information.
+*   [Official site](http://zedity.com): Free WordPress plugin, Premium WordPress plugin and Online Editor are the different flavors of Zedity to address all your needs! Visit the official site to find more information.
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest news!
 
-*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, including video tutorials, etc.
+*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, including video tutorials and solutions to common issues, etc.
 
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language and you'll enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
-*   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, access solutions to common cases, ask for information or provide your feedback directly from your Zedity account. 
+*   [Help, FAQ and Support](http://zedity.com/support): get technical assistance, ask for information or provide your feedback directly from your Zedity account. 
 
 
 **Version requirements**  
