@@ -38,7 +38,7 @@ Download Zedity now and see the difference for yourself!!!
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest news!
 
-*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, including video tutorials and solutions to common issues, etc.
+*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, video tutorials, etc.
 
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language and you'll enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
