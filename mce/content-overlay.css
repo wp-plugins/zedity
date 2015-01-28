@@ -3,10 +3,11 @@
 /* Content overlay */
 
 #zedity_content_overlay {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	background-color: rgba(80,210,80,0.6);
-	z-index: 100;
+	z-index: 1000001;
+	cursor: default;
 }
 
 #zedity_content_overlay img {
@@ -15,6 +16,7 @@
 	margin: 5px 0 0 5px;
 	padding: 2px;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 #zedity_content_overlay img:hover {

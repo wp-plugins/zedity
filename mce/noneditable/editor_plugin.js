@@ -15,7 +15,12 @@
 (function() {
 	var TreeWalker = tinymce.dom.TreeWalker;
 	var externalName = 'contenteditable', internalName = 'data-mce-' + externalName;
-	var VK = tinymce.VK;
+	var VK = {
+		BACKSPACE: 8,
+		DELETE: 46,
+		LEFT: 37,
+		RIGHT: 39
+	};
 
 	function handleContentEditableSelection(ed) {
 		var dom = ed.dom, selection = ed.selection, invisibleChar, caretContainerId = 'mce_noneditablecaret', invisibleChar = '\uFEFF';
@@ -351,7 +356,7 @@
 			nonEditableParent = getNonEditableParent(startElement) || getNonEditableParent(endElement);
 			
 			//no event if it is Zedity content
-			if (nonEditableParent && nonEditableParent.getAttribute('class') && nonEditableParent.getAttribute('class').indexOf('zedit')>-1) {
+			if (nonEditableParent && nonEditableParent.getAttribute('class') && nonEditableParent.getAttribute('class').indexOf('zedity')>-1) {
 				e.preventDefault();
 				e.stopPropagation();
 				return;
