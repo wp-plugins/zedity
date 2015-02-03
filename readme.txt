@@ -22,7 +22,7 @@ Zedity is an innovative visual editor to create posts and pages as naturally as 
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to achieve any desired design. For example, what if you'd like to place some text overlapping or around some images, maybe slightly rotated too? Well, that is just impossible with the standard WordPress visual editor. Zedity enables you to do anything you want!
    
-* **Time and Money Saver**: what would take hours of coding, takes only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
+* **Time and Money Saver**: imagine that what would take you hours of coding, takes only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
   
 * **24/7 Technical Support**: we love what we do and we're available to assist you. Even if you're not ready to upgrade to the Premium version, which, among the many other benefits, comes with high priority assistance, no worries: we offer technical assistance to free users as well! If you encounter a problem, all you have to do is to [submit a ticket](http://zedity.com/support) and we will get back to you. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
