@@ -112,6 +112,7 @@ Image box
 .zedity-editor .zedity-box-Image img {
 	vertical-align: top !important;
 	max-height: none !important;
+	max-width: none !important;
 }
 
 .zedity-editor.zedity-notheme .zedity-box-Image img {

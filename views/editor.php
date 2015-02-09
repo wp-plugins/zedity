@@ -109,6 +109,10 @@
 			.zedity-menu-quick .zedity-icon-disk {
 				background-size: 100%;
 			}
+			/*Menu fixes*/
+			.ui-menu:not(.zedity-contextmenu) .ui-menu-item:not(.ui-state-focus):not(.ui-state-active) {
+				border: 1px solid transparent;
+			}
 			/*Hide disabled features*/
 			.zedity-dialog-responsive-outer .zedity-button-abort,
 			.zedity-bar span[data-panel=zedity-imagefilters],
