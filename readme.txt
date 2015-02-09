@@ -1,14 +1,14 @@
 === Zedity™ The new easy way of creating your content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
-Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, pages, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, vimeo, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, pages, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.1
 Stable tag: 4.12.0
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
-A revolutionary visual editor to create posts and pages super easily and quickly, with unprecedented possibilities and absolutely no coding skill!
+A revolutionary visual editor to create your posts and pages super easily and quickly, with unprecedented possibilities and absolutely no coding skill!
      
 == Description ==
 Zedity is an innovative visual editor to create posts and pages as naturally as if you're sketching them out on a piece of paper! With absolutely no technical skill required, you can now create your content super easily, with total flexibility and unprecedented possibilities!
