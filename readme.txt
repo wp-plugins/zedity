@@ -34,7 +34,7 @@ Latest version released on: **Feb 9, 2015**
 
 **Discover more about Zedity:**
 
-*   [Official site](http://zedity.com): Free WordPress plugin, Premium WordPress plugin and Online Editor are the different flavors of Zedity to address all your needs! Visit the official site to find more information.
+*   [Official site](http://zedity.com): Zedity comes in different flavors, Free WordPress plugin, Premium WordPress plugin and Online Editor to address all your needs! Visit the official site to find more information.
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest news!
 
