@@ -46,7 +46,7 @@ Latest version released on: **Feb 9, 2015**
 
 
 **Version requirements**  
-Zedity works on any version of WordPress 3.5+. As a rule of thumb, please download the latest version.  
+Zedity works on any version of WordPress 3.5+. As a rule of thumb, we recommend to download the latest version.  
 If you are using an outdated version, here are the compatibility requirements:  
 
 * WP 4.1+ requires Zedity 4.9.1+  
