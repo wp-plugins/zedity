@@ -75,7 +75,7 @@ Here are two common ways to install Zedity:
 
 4. Click on "Install now" and activate the plugin.
 
-Here is an [Installation Tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
+Here is an [installation tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
 **Option B - via FTP:**
 
