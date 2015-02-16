@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, easy, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, multimedia, music, page, pages, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 4.13.0
+Stable tag: 4.13.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -133,6 +133,10 @@ Please feel free to [contact us](http://zedity.com/support).
 
 
 == Changelog ==
+
+= 4.13.1 =
+* Content save optimizations.
+* Minor styling adjustments.
 
 = 4.13.0 =
 * Improved box handles interface.
