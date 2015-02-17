@@ -15,7 +15,7 @@ Zedity is an innovative visual editor to create posts and pages as naturally as 
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Latest version released on: **Feb 9, 2015**
+Latest version released on: **Feb 17, 2015**
 
 **Here are four main reasons why Zedity is already very popular in the WordPress community:**
 
