@@ -30,7 +30,7 @@ Latest version released on: **Feb 17, 2015**
 >Zedity is already available in multiple languages:
 **Czech**,  **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
-Download Zedity now and see the difference for yourself!
+Ready for a new WordPress experience? Download Zedity and see the difference for yourself!
 
 **Discover more about Zedity:**
 
