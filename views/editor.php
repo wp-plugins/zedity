@@ -52,7 +52,7 @@
 				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
 			}
 		};
-		ZedityLang = '<?php echo substr(WPLANG,0,2)?>';
+		ZedityLang = '<?php echo substr(get_bloginfo('language'),0,2);?>';
 		</script>
 		
 		<link rel="stylesheet" href="<?php echo plugins_url("zedity/zedity.min.css?{$this->plugindata['Version']}",dirname(__FILE__))?>" type="text/css" media="screen" />
