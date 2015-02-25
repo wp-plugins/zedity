@@ -42,7 +42,7 @@ Ready for a new WordPress experience? Download Zedity and see the difference for
 
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language and you'll enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
-*   [Help, FAQ and Support](http://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account.
+*   [Help and Support](http://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account.
 
 
 **Version requirements**  
