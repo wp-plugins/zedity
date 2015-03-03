@@ -486,7 +486,7 @@
 					var href = $elem.parent().attr('href');
 					var target = $elem.parent().attr('target');
 					$elem.unwrap();
-					$elem.parent().attr('data-href',href).attr('data-target',target||'_self');
+					$elem.closest('.zedity-box').attr('data-href',href).attr('data-target',target||'_self');
 				});
 				//convert target attributes
 				$div.find('[target=_top],a:not([target])').each(function(){
