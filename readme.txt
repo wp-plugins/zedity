@@ -17,7 +17,7 @@ Zedity is an innovative visual editor to create your posts and pages as naturall
 
 **Why is Zedity already very popular with the WordPress community?**
 
-* **Super Easy**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code **automatically for you**, totally hassle-free!
+* **Super Easy**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
 * **Save Your Time and Money**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
