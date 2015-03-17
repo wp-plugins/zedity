@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, money, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.1.1
-Stable tag: 5.0.0
+Stable tag: 5.0.1
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -19,7 +19,7 @@ Zedity is an innovative visual editor to create your posts and pages as naturall
 
 * **Super Easy**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
-* **Save Your Time and Money**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
+* **Time Saving**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. For example, what if you'd like to place some text overlapping or around some images, maybe slightly rotated too? Well, that is just impossible with the standard WordPress visual editor. Zedity enables you to do anything you like!
 
@@ -133,6 +133,10 @@ Please feel free to [contact us](http://zedity.com/support)...
 
 
 == Changelog ==
+
+= 5.0.1 =
+* Fixes for minor bugs affecting text boxes (text selection with keyboard, link styling).
+* Minor optimizations.
 
 = 5.0.0 =
 * Dialogs interface major restyling and functionality improvements.
