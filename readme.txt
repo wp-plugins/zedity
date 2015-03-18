@@ -25,7 +25,7 @@ Zedity is an innovative visual editor to create your posts and pages as naturall
 
 * **Works with Any Theme**: Zedity generates HTML5 code and is designed to work with any theme or template!
 
-* **Direct Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ): Premium users are prioritized but we do offer support to the Free users too. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
+* **Direct Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ): while prioritizing Premium users, we do offer dedicated support to the Free users too. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
 >Zedity is already available in multiple languages:
 **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
