@@ -40,9 +40,9 @@ Ready for an amazing new experience? Get Zedity now and see the difference for y
 
 *   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, video tutorials, etc.
 
-*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language and you'll enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
+*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
-*   [Help and Support](http://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account.
+*   [Help and Support](http://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account!
 
 
 **Version requirements**  
