@@ -30,7 +30,7 @@ Zedity is an innovative visual editor to create your posts and pages as naturall
 >Zedity is already available in multiple languages:
 **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language to [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
-Ready for a new WordPress experience? Get Zedity now and see the difference for yourself!
+Ready for an amazing new experience? Get Zedity now and see the difference for yourself!
 
 **Discover more about Zedity:**
 
