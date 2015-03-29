@@ -15,13 +15,13 @@ Zedity is a revolutionary visual editor to create your posts and pages as natura
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-**Here is why Zedity will take your WordPress experience to the next level:**
+**Here is why Zedity takes your WordPress experience to the next level:**
 
-* **Really Easy for Everyone**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
+* **Easy to Use**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
 * **Time Saving**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Just to give you an idea, let's consider a very simple case where you'd like to add a touch of creativity to your content by, for example, placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can finally do anything you like!
+* **Do Anything You Like**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Just to give you an idea, let's consider a very simple case where you'd like to add a touch of creativity to your content by, for example, placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. Zedity gives you total design freedom to do anything you like!
 
 * **It Works With Your Theme**: Zedity is designed to work with any theme or template, no worries!
 
