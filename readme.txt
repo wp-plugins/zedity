@@ -15,7 +15,7 @@ Zedity is a revolutionary visual editor to create your posts and pages as natura
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-**Here is why Zedity takes your WordPress experience to the next level:**
+Here is why Zedity takes your WordPress experience to the next level:
 
 * **Really Easy to Use**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
@@ -46,7 +46,7 @@ Ready for an amazing new experience? Get Zedity now and see the difference for y
 
 
 **Version requirements**  
-Zedity works on any WordPress version not older than WP 3.5. As a rule of thumb, we recommend to download the latest version.  
+Zedity works on any WordPress version not older than WP 3.5. To take advantage of the latest features and fixes, please make sure to **download and install the latest version**.  
 If you are using an outdated version, here are the compatibility requirements:  
 
 * WP 4.1+ requires Zedity 4.9.1+  
