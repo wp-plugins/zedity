@@ -19,9 +19,9 @@ Here is why Zedity takes your WordPress experience to the next level:
 
 * **Really Easy to Use**: simply stated, just forget about dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
-* **Do Anything You Like**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Just to give you an idea, let's consider a very simple case where you'd like to add a touch of creativity to your content by, for example, placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. Zedity gives you total design freedom to do anything you like!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Just to give you an idea, let's consider a very simple case where you'd like to add a touch of creativity to your content by, for example, placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. Zedity gives you total design freedom to do anything you like!
 
-* **Theme and Template Independent**: Zedity is an HTML5 visual editor that is designed to work with any theme or template, no worries!
+* **Works with any theme or template**: Zedity is an HTML5 visual editor that is designed to work with any theme or template, no worries!
 
 * **Time Saving**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
