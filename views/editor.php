@@ -550,7 +550,7 @@
 					url: url,
 					data: {
 						zaction: 'load',
-						tk: '<?php echo wp_create_nonce('zedity') ?>',
+						tk: '<?php echo (!empty($_REQUEST['att']) ? wp_create_nonce("zedity-load-{$_REQUEST['att']}") : '') ?>',
 						id: this.id
 					},
 					dataType: 'json',
@@ -584,7 +584,7 @@
 					url: 'admin-ajax.php?action=zedity_ajax',
 					data: {
 						zaction: 'save',
-						tk: '<?php echo wp_create_nonce('zedity') ?>',
+						tk: '<?php echo wp_create_nonce("zedity-save-{$_REQUEST['post_id']}") ?>',
 						id: this.id,
 						post_id: parent.post_id,
 						title: this.title,

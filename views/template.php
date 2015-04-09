@@ -54,7 +54,7 @@ function print_list($posts){
 		<table class="posts" cellspacing="0">
 			<?php foreach ($posts as $post) { ?>
 				<tr>
-					<td><input type="radio" name="post" id="rbPost<?php echo $post->ID?>" value="<?php echo $post->ID?>" data-status="<?php echo $post->post_status?>" data-type="<?php echo $post->post_type?>"></td>
+					<td><input type="radio" name="post" id="rbPost<?php echo $post->ID?>" value="<?php echo $post->ID?>" data-status="<?php echo $post->post_status?>" data-type="<?php echo $post->post_type?>" data-tk="<?php echo wp_create_nonce("zedity-addcontent-{$post->post_type}-{$post->ID}")?>"></td>
 					<td><label for="rbPost<?php echo $post->ID?>" class="title"><?php echo !empty($post->post_title) ? $post->post_title : __('(no title)','zedity')?></label></td>
 					<td><label for="rbPost<?php echo $post->ID?>"><?php echo $post->ID ?></label></td>
 				</tr>
@@ -162,7 +162,7 @@ function print_list($posts){
 			<div id="tab-posts" class="tab">
 				<table class="posts above" cellspacing="0">
 					<tr class="new">
-						<td><input type="radio" name="post" id="rbPost-1" value="-1" data-status="" data-type="post"></td>
+						<td><input type="radio" name="post" id="rbPost-1" value="-1" data-status="" data-type="post" data-tk="<?php echo wp_create_nonce("zedity-addcontent-post")?>"></td>
 						<td><label for="rbPost-1"><?php _e('New Post','zedity')?></label></td>
 						<td></td>
 					</tr>
@@ -172,7 +172,7 @@ function print_list($posts){
 			<div id="tab-pages" class="tab">
 				<table class="posts above" cellspacing="0">
 					<tr class="new">
-						<td><input type="radio" name="post" id="rbPost-2" value="-2" data-status="" data-type="page"></td>
+						<td><input type="radio" name="post" id="rbPost-2" value="-2" data-status="" data-type="page" data-tk="<?php echo wp_create_nonce("zedity-addcontent-page")?>"></td>
 						<td><label for="rbPost-2"><?php _e('New Page','zedity')?></label></td>
 						<td></td>
 					</tr>
@@ -324,7 +324,7 @@ function print_list($posts){
 					url: 'admin-ajax.php?action=zedity_ajax',
 					data: {
 						zaction: 'addcontent',
-						tk: '<?php echo wp_create_nonce('zedity') ?>',
+						tk: $selected.attr('data-tk'),
 						content: html,
 						id: id,
 						type: type,

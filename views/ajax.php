@@ -1,5 +1,8 @@
 <?php
-if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LENGTH']>0) {
+if (!is_user_logged_in()) {
+	//user is not logged in
+	$response = array('error' => __('Forbidden.','zedity'));
+} if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LENGTH']>0) {
 	$response = array(
 	    'error' => __('Post size may be too big','zedity') . " ({$_SERVER['CONTENT_LENGTH']})."
 	);
@@ -10,11 +13,17 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
     switch ($_REQUEST['zaction']) {
 		//------------------------------------------------------------------------------------
 		case 'save':
-			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+			//check nonce token
+			if (empty($_POST['tk']) || empty($_POST['post_id']) || !wp_verify_nonce($_POST['tk'],"zedity-save-{$_POST['post_id']}")) {
 				$response = array(
 					'error' => __('Invalid request.','zedity'),
 					'reload' => 1
 				);
+				break;
+			}
+			//check user permission for post
+			if (!current_user_can('edit_post',$_POST['post_id'])) {
+				$response = array('error' => __('Forbidden.','zedity'));
 				break;
 			}
 			if (empty($_POST['content'])) {
@@ -34,6 +43,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			$dir = wp_upload_dir();
 
 			if (!empty($_POST['id']) && $_POST['id']>0) {
+				//check user permission for attachment
+				if (!current_user_can('edit_post',$_POST['id'])) {
+					$response = array('error' => __('Forbidden.','zedity'));
+					break;
+				}
 				$attach_id = $_POST['id'];
 				//get file name
 				$oldfile = get_attached_file($attach_id);
@@ -126,12 +140,14 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 
 		//------------------------------------------------------------------------------------
 		case 'load':
-			if (empty($_REQUEST['tk']) || !wp_verify_nonce($_REQUEST['tk'],'zedity')) {
+			//check nonce token
+			if (empty($_REQUEST['tk']) || empty($_REQUEST['id']) || !wp_verify_nonce($_REQUEST['tk'],"zedity-load-{$_REQUEST['id']}")) {
 				$response = array('error' => __('Invalid request.','zedity'));
 				break;
 			}
-			if (empty($_REQUEST['id'])) {
-				$response = array('error' => sprintf(__('Missing %s parameter in request.','zedity'),'id'));
+			//check user permission for post
+			if (!current_user_can('edit_post',$_REQUEST['id'])) {
+				$response = array('error' => __('Forbidden.','zedity'));
 				break;
 			}
 
@@ -160,15 +176,20 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 			die;
 		break;
 
-		//------------------------------------------------------------------------------------
 		
 		//------------------------------------------------------------------------------------
 		case 'addcontent':
-			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+			//check nonce token
+			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'], "zedity-addcontent-{$_POST['type']}".(($_POST['id']<0) ? '' : "-{$_POST['id']}"))) {
 				$response = array(
 					'error' => __('Invalid request.','zedity'),
 					'reload' => 1
 				);
+				break;
+			}
+			//check user permission for post
+			if ((($_POST['id']>=0) && !current_user_can('edit_post',$_POST['id'])) || (($_POST['id']<0) && !current_user_can('edit_posts'))) {
+				$response = array('error' => __('Forbidden.','zedity'));
 				break;
 			}
 			if (empty($_POST['content'])) {
@@ -224,7 +245,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST' && empty($_POST) && $_SERVER['CONTENT_LEN
 		
 		//------------------------------------------------------------------------------------
 		case 'closeadminnotice':
-			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity')) {
+			if (empty($_POST['tk']) || !wp_verify_nonce($_POST['tk'],'zedity-closeadminnotice')) {
 				$response = array('error' => __('Invalid request.','zedity'));
 				break;
 			}

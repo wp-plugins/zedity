@@ -103,8 +103,18 @@
 
 		_openZedity: function(){
 			this.ed.plugins.wordpress._hideButtons();
-			if (this._zedityContent) this.ed.selection.select(this._zedityContent.firstChild);
-			tb_show('Zedity Editor', 'admin-ajax.php?action=zedity_editor&TB_iframe=true');
+			var att_param = '';
+			if (this._zedityContent) {
+				//select content
+				this.ed.selection.select(this._zedityContent.firstChild);
+				//get post id if it is iframe
+				var n = this._zedityContent;
+				do {
+					if (n.tagName=='IFRAME' && n.attributes.getNamedItem('data-id')) break;
+				} while (n = n.firstChild);
+				att_param = (n && n.attributes && n.attributes.getNamedItem('data-id')) ? '&att='+n.attributes.getNamedItem('data-id').value : '';
+			}
+			tb_show('Zedity Editor', 'admin-ajax.php?action=zedity_editor&post_id='+window.post_id+att_param+'&TB_iframe=true');
 			this.open = true;
 		},
 
