@@ -61,7 +61,7 @@ If you are using an outdated version, here are the compatibility requirements:
 **For those of you interested, here is the video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
 
-**Do you like Zedity?**: please support the free version with a [little donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY&lc=US). We'd appreciate it much if you could take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). Thanks and happy Zedity!!!
+**Do you like Zedity?**: please support the free version with a [little donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=US&hosted_button_id=PRACALSXMQ5PY). We'd appreciate it much if you could take the time to [add your review](https://wordpress.org/support/view/plugin-reviews/zedity). Thanks and happy Zedity!!!
 
 == Installation ==
  
