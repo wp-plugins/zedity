@@ -17,7 +17,7 @@ Zedity is a revolutionary visual editor to create your posts and pages as natura
 
 >Security update: please upgrade to the latest version 5.0.3
 
-Here are some of the benefits of using Zedity:
+Here are the main reasons why people love Zedity:
 
 * **Super Easy**: simply stated, you can just forget about having to dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
