@@ -17,17 +17,15 @@ Zedity is a revolutionary visual editor to create your posts and pages as natura
 
 >Security update: please upgrade to the latest version 5.0.3
 
-Here are the main reasons why people love Zedity:
+Here are four main reasons why WordPress users use Zedity:
 
-* **Super Easy**: simply stated, you can just forget about having to dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
+* **Very Easy for Anyone**: simply stated, you can just forget about having to dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Just to give you an idea, let's consider a very simple case where you'd like to add a touch of creativity to your content by, for example, placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. Zedity gives you total design freedom to do anything you like!
+* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
 * **Time and Money Saving**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
 * **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ): while prioritizing Premium users, we do offer dedicated support to the Free users too. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
-
-Last but not least, Zedity is designed to work with any theme or template.
 
 >Zedity has been already translated in multiple languages:
 **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
