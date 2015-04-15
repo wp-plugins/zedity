@@ -30,7 +30,6 @@ Here are four main reasons why WordPress users use Zedity:
 >Zedity has been already translated in multiple languages:
 **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
-Ready for an amazing new experience? Get Zedity now and see the difference for yourself!
 
 **Discover more about Zedity:**
 
