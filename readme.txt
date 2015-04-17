@@ -23,7 +23,7 @@ Here are four main reasons why WordPress users use Zedity:
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
-* **Time and Money Saving**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
+* **Save Your Time and Money**: since you can do everything visually, what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it without hiring developers, you may also save money!
 
 * **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ): while prioritizing Premium users, we do offer dedicated support to the Free users too. We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
