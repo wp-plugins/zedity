@@ -62,8 +62,8 @@
 			<tr valign="top">
 				<th scope="row"><label><?php _e('Preview:','zedity')?></label></th>
 				<td>
-					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> <?php _e('Yes')?></label> &nbsp;
-					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> <?php _e('No')?></label>
+					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> <?php _e('Yes','zedity')?></label> &nbsp;
+					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> <?php _e('No','zedity')?></label>
 				</td>
 			</tr>
 		</tbody></table>
