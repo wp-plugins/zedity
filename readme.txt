@@ -35,7 +35,7 @@ Here are four main reasons why WordPress users use Zedity:
 
 *   [Official site](http://zedity.com): Zedity is available as a Free WordPress plugin, Premium WordPress plugin and Online Editor to address all your needs! Visit the official site to find more information.
 
-*   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest news!
+*   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest about Zedity!
 
 *   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, video tutorials, etc.
 
