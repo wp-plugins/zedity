@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, money, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.1.1
-Stable tag: 5.0.3
+Stable tag: 5.0.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
@@ -14,8 +14,6 @@ Zedity is the visual editor to create your posts and pages very easily and quick
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as sketching on a piece of paper! With absolutely no coding skill required, you can now create content super easily, with total flexibility and unprecedented possibilities!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
-
->Security update: please upgrade to the latest version 5.0.3
 
 Here are four main reasons why WordPress users use Zedity:
 
@@ -28,7 +26,7 @@ Here are four main reasons why WordPress users use Zedity:
 * **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
 >Zedity has been already translated in multiple languages:
-**Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Others are on their way... isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
+**Chinese**, **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. Isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
 
 
 **Discover more about Zedity:**
@@ -132,6 +130,10 @@ Please feel free to [contact us](http://zedity.com/support)...
 
 
 == Changelog ==
+
+= 5.0.4 =
+* Added Chinese translation.
+* Color picker and misc optimizations.
 
 = 5.0.3 =
 * Fixed a security issue.
