@@ -8,7 +8,7 @@ Stable tag: 5.0.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
-Zedity is the visual editor to create your posts and pages very easily and quickly, with unprecedented design freedom and possibilities!
+Zedity, the new visual editor to create your posts and pages very easily, with unprecedented design freedom and possibilities, saving a lot of time too!
      
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as sketching on a piece of paper! With absolutely no coding skill required, you can now create content super easily, with total flexibility and unprecedented possibilities!
