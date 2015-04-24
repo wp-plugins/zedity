@@ -15,7 +15,7 @@ Zedity is a revolutionary visual editor to create your posts and pages as natura
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Here are four main reasons why WordPress users use Zedity:
+Here are four main reasons why people like you love Zedity:
 
 * **Very Easy for Anyone**: simply stated, you can just forget about having to dealing with HTML, CSS and JavaScript coding! With Zedity you can create your content entirely visually, as naturally as if you're sketching on a piece of paper: Zedity generates HTML5 code automatically for you, totally hassle-free!
 
