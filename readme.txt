@@ -96,7 +96,7 @@ Here are some tutorials to help you get started and learn useful tips:
 Please notice that some of the [features](http://zedity.com/plugin/wpfeatures) are available in [Zedity Premium](http://zedity.com/plugin/wp) 
 If you upgrade to the Premium version, you can keep both versions, Free and Premium, installed at the same time but only one of the two can be active. So, before activating one, please make sure that you deactivated the other.
 
-Here you can find more [Zedity Turorials](http://zedity.com/blog/tutorials).
+Here you can find more [Zedity Tutorials](http://zedity.com/blog/tutorials).
 
 == Frequently asked questions ==
 
@@ -436,3 +436,4 @@ Please feel free to [contact us](http://zedity.com/support)...
 
 = 1.0.0 =
 * Initial version.
+
