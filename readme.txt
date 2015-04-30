@@ -35,7 +35,7 @@ Here are four main reasons why people like you love Zedity:
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest about Zedity!
 
-*   [Tutorials](http://zedity.com/blog/tutorials): from installation to usage tips, release notes, video tutorials, etc.
+*   [Blog](http://zedity.com/blog): from installation to usage tips, release notes, video tutorials, etc.
 
 *   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
