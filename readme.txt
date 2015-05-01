@@ -8,7 +8,7 @@ Stable tag: 5.0.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
-A revolutionary editor to create your content as easily as drawing on paper, with unprecedented possibilities and in a fraction of the time!
+A revolutionary editor to create your content as easily as drawing on paper, with unprecedented possibilities and flexibility, all in a fraction of the time!
 
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and all the flexibility you want!
