@@ -1,14 +1,14 @@
-=== Zedity™ The Easy Way To Create Posts and Pages!===
+=== Zedity™ The Easiest Way To Create Your Content!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
-Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, infographics, javascript, layout, link, linkedin, links, media, money, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, visual editor, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
+Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 6.0.0
+Stable tag: 5.0.4
 License: GPLv3
 License URI: http://zedity.com/license/freewp
                       
-A revolutionary editor to create your content as naturally as drawing on paper, with unprecedented possibilities and very very for anyone!
+A revolutionary editor to create your posts and pages as naturally as drawing on paper, with unprecedented possibilities and really easy for anyone!
 
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and all the flexibility you want!
@@ -131,15 +131,6 @@ Please feel free to [contact us](http://zedity.com/support)...
 
 
 == Changelog ==
-
-= 6.0.0 =
-* Completely redesigned interface.
-* Support for touch screen devices.
-* Easier box one-click selection and drag.
-* Many minor improvements and optimizations.
-* Ability to specify text alignment for single paragraphs or for the whole Text box (only Premium).
-* Paragraph spacing in Text box (only Premium).
-* New option for the links: open in same frame (only Premium).
 
 = 5.0.4 =
 * Added Chinese translation.
