@@ -67,13 +67,13 @@ If you are using an outdated version, here are the compatibility requirements:
 
 2. Type Zedity in the search bar.
 
-3. Click on "Install now" 
+3. Click on "Install now". 
 
 4. Click on "Activate Plugin".
 
-Here is an [installation tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
+Here is also an [installation tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
 
-NOTE: in some cases, if you use Safari and after the download you can't find the .zip file, it may be your browser that unzips it automatically (and you'd see a folder with many files). If so, you can right click on the unzipped folder and compress it back. Your .zip file is now ready for to be installed.
+NOTE: in some cases, if you use Safari and after the download you can't find the .zip file, it may be your browser that unzips it automatically (and you'd see a folder with many files). If so, you can right click on the unzipped folder and compress it back. Your .zip file is now ready to be installed.
 
 == Tutorials ==
 
