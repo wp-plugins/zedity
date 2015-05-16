@@ -27,7 +27,7 @@ Here are four main reasons why you're going to love Zedity:
 
 >Zedity has been translated in several languages already:
 **Chinese**, **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. 
-Isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](http://zedity.com/translate/)
+Isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community, but you will also [enter the "Hall of Fame" and get rewarded!](http://zedity.com/translate/)
 
 
 **Discover more about Zedity:**
