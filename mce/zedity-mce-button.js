@@ -2,6 +2,7 @@
 	tinymce.create('tinymce.plugins.Zedity', {
 		init: function(ed,url){
 			var t = this;
+			t.premium = ed.getLang('zedity.premium')=='yes';
 			t.url = url;
 			t.ed = ed;
 			t.bind = tinyMCE.dom.Event.bind ? 'bind' : 'add';
@@ -44,7 +45,7 @@
 					for (var i=nodes.length-1; i>=0; --i) {
 						if (nodes[i].attributes.map['data-href'] && nodes[i].attributes.map['class'] && nodes[i].attributes.map['class'].indexOf('zedity-box')>-1) {
 							nodes[i].attr({
-								onclick: "window.open('"+nodes[i].attributes.map['data-href']+"','"+(nodes[i].attributes.map['data-target']||'_self')+"');" 
+								onclick: "window.open('"+nodes[i].attributes.map['data-href']+"','"+(nodes[i].attributes.map['data-target']||'_top')+"');"
 							});
 						}
 					}
@@ -67,6 +68,10 @@
 						ed.selection.select(t._zedityContent);
 						return;
 					}
+					//keep track of node to avoid IE loop
+					if (n==t.p_node) return;
+					t.p_node = n;
+					
 					var element = t._getZedityElement(n);
 					if (element) {
 						t._showOverlay(element);
@@ -143,8 +148,8 @@
 		
 		_getZedityElement: function(n){
 			var s = ' '+(n.className||'')+' ';
-			if ((s.indexOf(' zedity-editor ')>-1) || (s.indexOf(' zedity-wrapper ')>-1) || (s.indexOf(' zedity-iframe-wrapper ')>-1)) return n;
-			return this.ed.dom.getParent(n,'div.zedity-editor') || this.ed.dom.getParent(n,'div.zedity-iframe-wrapper');
+			if ((s.indexOf(' zedity-editor ')>-1) || (s.indexOf(' zedity-wrapper ')>-1) || (s.indexOf(' zedity-iframe-wrapper ')>-1)) var node=n;
+			return this.ed.dom.getParent(n,'div.zedity-wrapper') || this.ed.dom.getParent(n,'div.zedity-editor') || this.ed.dom.getParent(n,'div.zedity-iframe-wrapper') || node;
 		},
 
 		//-------------------------------------------------------------------------------
@@ -153,6 +158,7 @@
 		_showOverlay: function(n){
 			if (!n) return;
 			if (this.open) return;
+			if (this._zedityContent==n) return;
 			
 			var ed = this.ed;
 			var overlay = ed.dom.get('zedity_content_overlay');
@@ -167,14 +173,23 @@
 				height: Math.max(rect.h,40)
 			});
 			
+			if (!this.premium) {
+				//free plugin: don't allow editing premium content, show message
+				var pc = ed.dom.hasClass(n,'zedity-premium') ? [n] : ed.dom.select('.zedity-premium',n);
+				ed.dom.setStyles(ed.dom.select('.zedity_button'), {display: (pc.length ? 'none' : 'inline')});
+				ed.dom.setStyles('zedity_premium_msg', {display: (pc.length ? 'block' : 'none')});
+				ed.controlManager.setDisabled('zedity',!!pc.length);
+			}
+			
 			this._zedityContent = n;
 			ed.selection.select(n);
 		},
 		
-		_hideOverlay: function(block){
+		_hideOverlay: function(){
 			var overlay = this.ed.dom.get('zedity_content_overlay');
 			if (overlay) this.ed.dom.remove(overlay);
-			if (!block) this._zedityContent = null;
+			this._zedityContent = null;
+			this.ed.controlManager.setDisabled('zedity',false);
 			return;
 		},
 		
@@ -194,6 +209,7 @@
 			var zEditButton = ed.dom.create('img',{
 				src: t.url+'/zedity-logo.png?' + this.getInfo().version,
 				id: 'zedity_button_edit',
+				class: 'zedity_button',
 				width: '24',
 				height: '24',
 				title: ed.getLang('zedity.edit_content'),
@@ -210,6 +226,7 @@
 			var zCopyButton = ed.dom.create('img',{
 				src: t.url+'/editcopy.png?' + this.getInfo().version,
 				id: 'zedity_button_copy',
+				class: 'zedity_button',
 				width: '24',
 				height: '24',
 				title: ed.getLang('zedity.copy_content'),
@@ -226,6 +243,7 @@
 			var zDelButton = ed.dom.create('img',{
 				src: t.url+'/delete.png',
 				id: 'zedity_button_del',
+				class: 'zedity_button',
 				width: '24',
 				height: '24',
 				title: ed.getLang('zedity.delete_content'),
@@ -250,16 +268,26 @@
 				ed.dom.events.cancel(e);
 			});
 			overlay.appendChild(zDelButton);
+			
+			if (!t.premium) {
+				//free plugin: add premium warning message
+				var zPremium = ed.dom.create('div',{
+					id: 'zedity_premium_msg',
+					'data-mce-bogus': 'all',
+					contenteditable: false
+				},ed.getLang('zedity.need_premium'));
+				overlay.appendChild(zPremium);
+			}
 			return overlay;
 		},
 		
 		getInfo: function(){
 			return {
 				longname: 'Zedity Editor',
-				author: 'Zuyoy LLC',
-				authorurl: 'http://zedity.com',
-				infourl: 'http://zedity.com',
-				version: '4.0'
+				author: 'Pridea Company',
+				authorurl: 'https://zedity.com',
+				infourl: 'https://zedity.com/blog',
+				version: '4.1'
 			};
 		}
 	});

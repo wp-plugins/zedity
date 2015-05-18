@@ -4,9 +4,9 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 5.0.4
+Stable tag: 6.0.0
 License: GPLv3
-License URI: http://zedity.com/license/freewp
+License URI: https://zedity.com/license/freewp
                       
 A revolutionary editor to create your posts and pages as naturally as drawing on paper, with unprecedented possibilities. Super easy for anyone!
 
@@ -23,24 +23,24 @@ Here are four main reasons why you're going to love Zedity:
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. What does that mean? Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
-* **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( http://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
+* **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
 >Zedity has been translated in several languages already:
 **Chinese**, **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. 
-Isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community, but you will also [enter the "Hall of Fame" and get rewarded!](http://zedity.com/translate/)
+Isn't your language available yet? Be the first to translate Zedity into your native language! Not only will you help the community but you will also [enter the "Hall of Fame" and get rewarded too!](https://zedity.com/translate/)
 
 
 **Discover more about Zedity:**
 
-*   [Official site](http://zedity.com): Zedity is available for WordPress, either as a Free or Premium Plugin, and as Online Editor. Find all the information on the official Zedity site.
+*   [Official site](https://zedity.com): Zedity is available for WordPress, either as a Free or Premium Plugin, and as Online Editor. Find all the information on the official Zedity site.
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest about Zedity!
 
-*   [Blog](http://zedity.com/blog): from installation to usage tips, release notes, video tutorials, etc.
+*   [Blog](https://zedity.com/blog): from installation to usage tips, release notes, video tutorials, etc.
 
-*   [Translate Zedity](http://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
+*   [Translate Zedity](https://zedity.com/translate/): provide the translation into your native language to enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
-*   [Help and Support](http://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account!
+*   [Help and Support](https://zedity.com/support): get assistance, ask for information or provide your feedback directly from your free Zedity account!
 
 
 **Version requirements**  
@@ -71,7 +71,7 @@ If you are using an outdated version, here are the compatibility requirements:
 
 4. Click on "Activate Plugin".
 
-Here is also an [installation tutorial](http://zedity.com/blog/plugin-installation/) with step by step instructions.
+Here is an [installation tutorial](https://zedity.com/blog/plugin-installation/) with step by step instructions.
 
 NOTE: in some cases, if you use Safari and after the download you can't find the .zip file, it may be your browser that unzips it automatically (and you'd see a folder with many files). If so, you can right click on the unzipped folder and compress it back. Your .zip file is now ready to be installed.
 
@@ -86,10 +86,10 @@ Here are some tutorials to help you get started and learn useful tips:
 **A short tutorial on how to update your Zedity content:**
 [youtube http://www.youtube.com/watch?v=UOJ15OFWbFU]
 
-Please notice that some of the [features](http://zedity.com/plugin/wpfeatures) are available in [Zedity Premium](http://zedity.com/plugin/wp) 
+Please notice that some of the [features](https://zedity.com/plugin/wpfeatures) are available in [Zedity Premium](https://zedity.com/plugin/wp) 
 If you upgrade to the Premium version, you can keep both versions, Free and Premium, installed at the same time but only one of the two can be active. So, before activating one, please make sure that you deactivated the other.
 
-Here you can find more [Zedity Tutorials](http://zedity.com/blog/tutorials).
+Here you can find more [Zedity Tutorials](https://zedity.com/blog/tutorials).
 
 == Frequently asked questions ==
 
@@ -106,13 +106,13 @@ A: No worries, that is the normal behavior in WordPress: they can be played back
 A: From the standard WordPress Visual editor: 1) click on the Zedity content that you want to update; 2) click on the Zedity icon that appears on top of the content.
 
 **Q: YouTube and Vimeo videos are supported. Is it possible to have other services, e.g. Dailymotion and others?**  
-A: Yes. There are 20+ audio and video services supported in the [Premium version](http://zedity.com/plugin/wpfeatures).
+A: Yes. There are 20+ audio and video services supported in the [Premium version](https://zedity.com/plugin/wpfeatures).
 
 **Q: Do you have tutorials?**  
-A: Yes, here you can find useful information, video and tutorials [Zedity Blog](http://zedity.com/blog)
+A: Yes, here you can find useful information, video and tutorials [Zedity Blog](https://zedity.com/blog)
 
 **Q: Any other question you'd like to ask?**  
-Please feel free to [contact us](http://zedity.com/support)...
+Please feel free to [contact us](https://zedity.com/support)...
 
 == Screenshots ==
 
@@ -123,6 +123,15 @@ Please feel free to [contact us](http://zedity.com/support)...
 
 
 == Changelog ==
+
+= 6.0.0 =
+* Completely redesigned interface.
+* Support for touch screen devices.
+* Easier box one-click selection and drag.
+* Many minor improvements and optimizations.
+* Ability to specify text alignment for single paragraphs or for the whole Text box (only Premium).
+* Paragraph spacing in Text box (only Premium).
+* New option for the links: open in same frame (only Premium).
 
 = 5.0.4 =
 * Added Chinese translation.

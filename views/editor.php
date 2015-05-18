@@ -27,6 +27,7 @@
 		wp_enqueue_script('jquery-ui-slider');
 		wp_enqueue_script('jquery-ui-tooltip');
 		wp_enqueue_script('jquery-ui-accordion');
+		wp_enqueue_script('jquery-ui-selectmenu');
 		//print scripts
 		wp_print_head_scripts();
 		wp_print_footer_scripts();
@@ -36,7 +37,7 @@
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
-		var linkMsg = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="http://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
+		var linkMsg = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="https://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
 		ZedityPromo = {
 			product: 'Zedity Premium',
 			productShort: 'Premium',
@@ -78,48 +79,14 @@
 		<style>
 			html,body {
 				padding: 0;
-				margin: 1px 0;
+				margin: 0;
 				background: white;
-			}
-			.zedity-mainmenu {
-				position: fixed !important;
-				top: 32px;
-				width: 99%;
-			}
-			.zedity-grid,
-			.zedity-editor {
-				margin-top: 65px;
 			}
 			#filler {
 				width: 100%;
-				height: 250px;
+				height: 100px;
 			}
-			.zedity-menu-quick {
-				float: right;
-			}
-			.zedity-menu-quick a {
-				height: 21px;
-				padding: 2px 5px !important;
-			}
-			.zedity-menu-quick.zedity-menu-separator {
-				height: 27px;
-				width: 5px !important;
-				border-left: 1px solid gray;
-			}
-			.zedity-menu-quick .zedity-icon-disk {
-				background-size: 100%;
-			}
-			/*Menu fixes*/
-			.ui-menu:not(.zedity-contextmenu) .ui-menu-item:not(.ui-state-focus):not(.ui-state-active) {
-				border: 1px solid transparent;
-			}
-			/*Hide disabled features*/
-			.zedity-dialog-responsive-outer .zedity-button-abort,
-			.zedity-bar span[data-panel=zedity-imagefilters],
-			.zedity-menu-imgqual-menu,
-			.zedity-dialog-image .tabs li[aria-controls=tab-image-disk] {
-				display: none !important;
-			}
+			
 			/*Normalize lists*/
 			.zedity-box-Text ul {
 				list-style-type: disc;
@@ -147,229 +114,31 @@
 			.zedity-box-Text ul ul ol {
 				list-style-type: lower-roman;
 			}
-			/*status bar*/
-			#statusbar {
-				position: fixed;
-				margin: 0 auto;
-				min-width: 750px;
-				height: 30px;
-				font-family: Tahoma, Arial, Verdana, sans-serif;
-				font-size: 12px;
-				border: 1px solid lightgray;
-				border-radius: 2px;
-				z-index: 1999;
-				color: #444;
-				background: #e0f3fa;
-				background: -moz-linear-gradient(top,  #e0f3fa 0%, #d8f0fc 22%, #b8e2f6 96%, #b6dffd 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0f3fa), color-stop(22%,#d8f0fc), color-stop(96%,#b8e2f6), color-stop(100%,#b6dffd));
-				background: -webkit-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
-				background: -o-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
-				background: -ms-linear-gradient(top,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
-				background: linear-gradient(to bottom,  #e0f3fa 0%,#d8f0fc 22%,#b8e2f6 96%,#b6dffd 100%);
-				overflow: hidden;
+			
+			/*Hide disabled features*/
+			.zedity-dialog-responsive-outer .zedity-button-abort,
+			.zedity-dialog-image .tabs li[aria-controls=tab-image-disk] {
+				display: none !important;
 			}
-			#statusbar select {
-				max-width: 100px;
+			
+			.zicon-zedity {
+				background-image: url("//ps.w.org/zedity/assets/icon.svg?<?php echo $this->plugindata['Version']?>");
 			}
-			#statusbar .info {
-				line-height: 30px;
-				margin-left: 15px;
-				vertical-align: middle;
-			}
-			#statusbar .info .yes {
-				color: darkgreen;
-				font-weight: bold;
-			}
-			#statusbar .info .no {
-				color: #40737a;
-				font-weight: bold;
-			}
-			#goPremiumLink {
-				display: inline-block;
-				max-width: 90px;
-				height: 18px;
-				font-family: tahoma, Helvetica, tahoma;
-				color: #999;
-				background: none;
-				border-radius: 5px;
-				border: 1px inset transparent;
-				padding: 0 2px;
-				outline: none;
-				text-decoration: none;
-				line-height: 18px !important;
-				-webkit-transition: 0.8s;
-				transition: 0.8s;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
-			}
-			#goPremiumLink:hover {
-				color: #444;
-				background: white;
-				border: 1px inset #999;
-			}
-			#goPremiumLink.premiumfeat {
-				color: #444;
-				background: #ffAA66;
-			}
-			#saveBtn {
-				color: white;
-				float: right;
-				display: inline-block;
-				padding: 2px 15px;
-				margin-bottom: 0;
-				margin-right: 20px;
-				font-size: 14px;
-				font-weight: normal;
-				line-height: 1.428571429;
-				text-align: center;
-				white-space: nowrap;
-				vertical-align: middle;
-				cursor: pointer;
-				background-image: none;
-				border: 1px solid transparent;
+			.zedity-ribbon-group-subpanel[data-name=version] span.update {
+				padding: 2px 5px;
 				border-radius: 4px;
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				-o-user-select: none;
-				user-select: none;
-
-				background: #9dd53a;
-				background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 9%, #80c217 54%, #7cbc0a 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(9%,#a1d54f), color-stop(54%,#80c217), color-stop(100%,#7cbc0a));
-				background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
-				background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 9%,#80c217 54%,#7cbc0a 100%);
 			}
-
-			#saveBtn:focus {
-				outline: thin dotted;
-				outline: 5px auto -webkit-focus-ring-color;
-				outline-offset: -2px;
+			.zedity-ribbon-group-subpanel[data-name=version] span.update.ok {
+				background-color: chartreuse;
 			}
-
-			#saveBtn:hover,
-			#saveBtn:focus {
-				color: #fcefa1;
-				text-decoration: none;
-			}
-
-			#saveBtn:active,
-			#saveBtn.active {
-				/*background-image: none;*/
-				outline: 0;
-				-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-				box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-			}
-			#currentLayout {
-				position: relative;
-				display: inline-block;
-				padding: 1px 5px;
-				line-height: 16px;
-				font-weight: bold;
-				background: whitesmoke;
-				cursor: pointer;
-				border-radius: 10px;
-				border: none;
-				outline: none;
-				box-shadow: 0px 0px 4px 1px black;
-			}
-			#currentLayout:hover {
-				background: lightgray;
-			}
-			#currentLayout:active {
-				background: lightgray;
-				top: -1px;
-				box-shadow: 0px 0px 1px 1px black;
-			}
-			/*
-			#statusbar .led {
-				display: inline-block;
-				width: 10px;
-				height: 10px;
-				margin: 4px 5px 0 10px;
-				border: 1px solid black;
-				border-radius: 10px;
-			}
-			#statusbar .led.on {
-				background: #0C0;
-			}
-			#statusbar .led.off {
-				background: #E00;
-			}
-			*/
-			#lblVersion {
-				float: right;
-				margin: 6px;
-				padding: 1px 3px;
-				border: 1px solid lightgray;
-				border-radius: 3px;
-				cursor: default;
-			}
-			#lblVersion.update {
-				background: yellow;
-			}
-			#lblVersion.ok {
-				background: greenyellow;
-			}
-			#lblPromo {
-				display: inline-block;
-				max-width: 50px;
-				float: right;
-				margin: 6px;
-				padding: 1px 3px;
-				background: gold;
-				border-radius: 3px;
-				box-shadow: 0px 0px 5px 5px white;
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
+			.zedity-ribbon-group-subpanel[data-name=version] span.update.outdated {
+				background-color: yellow;
 			}
 		</style>
 	</head>
 
 	<body>
-		<div id="statusbar">
-			<span class="info"><?php _e('Content mode:','zedity')?>
-				<select id="ddSaveMode">
-					<option value="1"><?php _e('Isolated','zedity')?></option>
-					<option value="2"><?php _e('Standard','zedity')?></option>
-				</select>
-				<span id="statusBarContentModeTT" class="zedity-tooltip" title="">?</span>
-			</span>
-
-			<?php if ($this->is_premium()) { ?>
-				<span class="info"><?php _e('Responsive:','zedity')?>
-					<select id="ddResponsive">
-						<option value="0"><?php _e('No','zedity')?></option>
-						<option value="1"><?php _e('Scaling','zedity')?></option>
-						<option value="2"><?php _e('Multiple layout','zedity')?></option>
-					</select>
-				</span>
-				<span class="info"><button id="currentLayout" style="display:none" title="<?php _e('Current layout','zedity')?>"></button></span>
-			<?php } else { ?>
-				<span class="info"><?php _e('Responsive:','zedity')?>
-					<select>
-						<option><?php _e('No','zedity')?></option>
-						<option disabled="disabled"><?php _e('Scaling','zedity')?> (Premium)</option>
-						<option disabled="disabled"><?php _e('Multiple layout','zedity')?> (Premium)</option>
-					</select>
-				</span>
-				<!-- show disabled premium features in free version -->
-				<a target="_blank" id="goPremiumLink" href="http://zedity.com/plugin/wpfeatures" class="info"><?php echo sprintf(__('Go %s','zedity'),'Premium')?></a>
-			<?php } ?>
-			<button id="saveBtn"><?php _e('Save','zedity')?></button>
-			<?php if (!empty($promo['promocode'])) { ?>
-				<a id="lblPromo" class="zedity-tt" target="_blank" href="<?php echo $this->zedityServerBaseUrl?>/plugin/wp"><?php _e('Promo','zedity')?></a>
-			<?php } ?>
-			<span id="lblVersion" class="zedity-tt <?php echo $version['class']?>">v<?php echo $version['installed']?></span>
-
-		</div>
+		<?php $this->open_editor() ?>
 		<div id="zedityEditorW"></div>
 		<div id="filler"></div>
 
@@ -409,10 +178,6 @@
 					//check if <br> is needed before/after the content
 					this.needBrBefore = $(this.element).prev(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
 					this.needBrAfter = $(this.element).next(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
-					//check when changes something that needs publishing
-					zedityMenu.find('.zedity-menu-PageSize,.zedity-menu-PageAlign').on('click',$.proxy(function(){
-						this.needsPublish = true;
-					},this));
 				}
 				//check if existing content
 				var $content = $('<div/>').html(content);
@@ -486,14 +251,11 @@
 					var href = $elem.parent().attr('href');
 					var target = $elem.parent().attr('target');
 					$elem.unwrap();
-					$elem.closest('.zedity-box').attr('data-href',href).attr('data-target',target||'_self');
+					$elem.closest('.zedity-box').attr('data-href',href).attr('data-target',target||'_top');
 				});
-				//convert target attributes
-				$div.find('[target=_top],a:not([target])').each(function(){
-					$(this).attr('target','_self').attr('data-target','_self');
-				});
-				$div.find('[data-target=_top]').each(function(){
-					$(this).attr('data-target','_self');
+				//find links with missing target (avoid opening links inside the iframe)
+				$div.find('a:not([target])').each(function(){
+					$(this).attr('target','_top').attr('data-target','_top');
 				});
 				//convert spacers
 				$div.find('.zedity-spacer').replaceWith('<br/>');
@@ -608,7 +370,7 @@
 						if ($div.hasClass('zedity-responsive-layout')) {
 							//new responsive layout
 							var $wrapper = $(
-								'<div id="'+zedityEditor.id+'" class="zedity-wrapper'+align+'">'+
+								'<div id="'+zedityEditor.id+'" class="zedity-wrapper '+(zedityEditor._data.addClass||'')+align+'">'+
 								'<div class="zedity-iframe-wrapper zedity-responsive-layout'+align+'" style="width:'+size.width+'px;height:'+size.height+'px">'+
 								'<iframe class="zedity-iframe" src="'+data.url+'?'+Zedity.core.genId('')+'" style="width:100%;height:100%" scrolling="no" data-id="'+data.id+'"></iframe>'+
 								'</div></div>'
@@ -621,7 +383,7 @@
 						} else {
 							var responsive = this.responsive==1 ? ' zedity-responsive' : '';
 							var $wrapper = $(
-								'<div id="'+zedityEditor.id+'" class="zedity-wrapper'+align+'">'+
+								'<div id="'+zedityEditor.id+'" class="zedity-wrapper '+(zedityEditor._data.addClass||'')+align+'">'+
 								'<div class="zedity-iframe-wrapper'+responsive+align+'" style="max-width:'+size.width+'px;max-height:'+size.height+'px" data-origw="'+size.width+'" data-origh="'+size.height+'">'+
 								'<iframe class="zedity-iframe" src="'+data.url+'?'+Zedity.core.genId('')+'" width="'+size.width+'" height="'+size.height+'" scrolling="no" data-id="'+data.id+'"></iframe>'+
 								'</div></div>'
@@ -679,7 +441,7 @@
 				if (datapos!='none') {
 					$html.find('.zedity-editor').append(
 						'<div class="zedity-watermark" style="'+css+'" data-pos="'+datapos+'">'+
-						'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="http://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
+						'<span style="color:#ffd6ba;font-size:11px;font-family:Tahoma,Arial,sans-serif">Powered by <a href="https://zedity.com" target="_blank" style="font-size:11px;font-weight:bold;color:white;font-family:Verdana,Tahoma;text-decoration:none;">Zedity</a></span>'+'</div>'
 					);
 				}
 				return $html.html();
@@ -690,12 +452,9 @@
 				$('html,body').scrollTop(0);
 				var maxSize = <?php echo $this->MAX_UPLOAD_SIZE ?>;
 				this.size = zedityEditor.page.size();
-				//convert target attributes (avoid opening links inside the iframe)
-				zedityEditor.$container.find('[target=_self],a:not([target])').each(function(){
+				//find links with missing target (avoid opening links inside the iframe)
+				zedityEditor.$container.find('a:not([target])').each(function(){
 					$(this).attr('target','_top').attr('data-target','_top');
-				});
-				zedityEditor.$container.find('[data-target=_self]').each(function(){
-					$(this).attr('data-target','_top');
 				});
 				//add spacers
 				zedityEditor.$container.find('.zedity-box-Text').find('p,h1,h2,h3,h4,h5,h6').filter(':empty').append('<br/>');
@@ -732,7 +491,7 @@
 							var align = this.alignment==='' ? '' : ' align'+this.alignment;
 							var style = this.responsive==1 ? ' style="max-width:'+size.width+'px;max-height:'+size.height+'px"' : '';
 							this.sendToTinyMCE(
-								'<div id="'+zedityEditor.id+'" class="zedity-wrapper'+align+'"'+style+'>'+
+								'<div id="'+zedityEditor.id+'" class="zedity-wrapper '+(zedityEditor._data.addClass||'')+align+'"'+style+'>'+
 								html+
 								'</div>'
 							);
@@ -752,90 +511,12 @@
 				$(elem).find('.zedity-menu-icon').removeClass('zedity-icon-yes').addClass('zedity-icon-none');
 			});
 		};
-		//TODO: rename it to refreshEditor
-		resizeEditor = function(editor){
-			setTimeout(function(){
-				//reposition to center the editor
-				var ew = Math.max(editor.page.size().width,750);
-				var bw = $('body').width();
-				$('.zedity-mainmenu').css('width', Math.min(ew,bw)-4);
-				editor.$container.css({
-					width: Math.min(ew,bw)+4,
-					'margin-left': (ew<bw) ? (bw-ew)/2 : ''
-				});
-				$('#statusbar').css({
-					width: Math.min(ew,bw),
-					'margin-left': (ew<bw) ? (bw-ew)/2+1 : ''
-				});
-			},0);
-			//refresh alignment
-			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type='+(content.alignment||'left')+']'));
-			//refresh watermark
-			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-Watermark[data-type='+content.watermarkposition+']'));
-			//refresh theme style
-			var type = editor.$this.hasClass('zedity-notheme') ? 'no' : 'yes';
-			tickMenu(editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyle[data-type='+type+']'));
-			editor.$container.find('.zedity-mainmenu .zedity-menu-ThemeStyleMain').toggleClass('ui-state-disabled',content.savemode==1);
-			<?php if ($this->is_premium()){ ?>
-				//set title for disk save icon (and save menu item) to reflect the actual the responsive setting
-				editor.$container.find('.zedity-mainmenu .zedity-menu-SavePage a').attr(
-					'title',
-					'<?php echo addslashes(__('Save','zedity'))?> ('+(content.responsive ? '<?php echo addslashes(__('Responsive','zedity'))?>' : '<?php echo addslashes(__('Not responsive','zedity'))?>')+')'
-				);
-				//force content alignment to center if content is responsive (#623)
-				var pamenu = editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlignMain');
-				if (content.responsive && !pamenu.hasClass('ui-state-disabled')) {
-					pamenu.addClass('ui-state-disabled');
-					editor.$container.find('.zedity-mainmenu .zedity-menu-PageAlign[data-type=center]').trigger('click');
-				} else {
-					pamenu.toggleClass('ui-state-disabled',!!content.responsive);
-				}
-				if (editor.responsive && content.responsive==2 && editor.responsive._options.layouts[editor.responsive.current]) {
-					$('#currentLayout').show().text(editor.responsive._options.layouts[editor.responsive.current].short);
-				} else {
-					$('#currentLayout').hide();
-				}
-			<?php } ?>
-			//refresh status bar
-			$('#ddSaveMode').val(content.savemode);
-			//content.responsive = editor.$this.hasClass('zedity-responsive-layout') ? 1 : editor.$this.hasClass('zedity-responsive-layout') ? 2 : 0;
-			$('#ddResponsive').val(content.responsive);
-			//$('#ddResponsive').val(content.responsive ? 1 : (editor.$this.hasClass('zedity-responsive-layout')) ? 2 : 0);
-
-			$('#statusBarContentModeTT').prop(
-				'title',
-				content.savemode == 1 ?
-					'<?php echo addslashes(__('<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.','zedity'))?>' :
-					'<?php echo addslashes(__('<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is the preferred mode for SEO and social sharing.','zedity'))?>'
-			).tooltip();
-		};
-
-		$('#statusbar').on('change','#ddSaveMode',function(){
-			content.savemode = parseInt($(this).val());
-			resizeEditor(zedityEditor);
-		});
-		old_responsive = 0;
-		$('#statusbar').on('change','#ddResponsive',function(){
-			old_responsive = content.responsive;
-			var val = parseInt($(this).val());
-			content.responsive = val;
-			if (val==2 && zedityEditor.responsive) {
-				zedityEditor.responsive.start();
-			} else if (zedityEditor.$this.hasClass('zedity-responsive-layout') && zedityEditor.responsive) {
-				zedityEditor.responsive.revert();
-				if (zedityEditor.$this.hasClass('zedity-responsive-layout')) {
-					content.responsive = old_responsive;
-				}
-			}
-			content.needsPublish = true;
-			resizeEditor(zedityEditor);
-		});
 
 		$(document).on('dialogopen','.zedity-dialog-responsive',function(event,ui){
 			//on dialog open, add link to tutorial
 			if ($(this).find('.zedity-tutorial').length) return;
 			$(this).append(
-				'<p class="zedity-tutorial" style="text-align:center"><a href="http://zedity.com/blog/multiple-layout-responsive-design/" target="_blank">'+
+				'<p class="zedity-tutorial" style="text-align:center"><a href="https://zedity.com/blog/multiple-layout-responsive-design/" target="_blank">'+
 					'<?php echo addslashes(__('Learn more about Multiple Layout Responsive Design','zedity'))?> (MLRD).'+
 				'</a></p>'
 			);
@@ -953,7 +634,6 @@
 			},
 			onchange: function(){
 				this.contentChanged = true;
-				window.resizeEditor(this);
 				<?php if (!$this->is_premium()) { ?>
 					if ($('.zedity-fss-menu').length && !$('.zedity-fss-menu .ui-menu-item-promo').length) {
 						$('.zedity-fss-menu').append(
@@ -984,135 +664,258 @@
 		zedityEditor.page._sizeConstraints.minWidth = <?php echo WP_Zedity_Plugin::MIN_WIDTH?>;
 		zedityEditor.page._sizeConstraints.minHeight = <?php echo WP_Zedity_Plugin::MIN_HEIGHT?>;
 		zedityEditor.$this.addClass('zedity-notheme');
-
-		var zedityMenu = zedityEditor.$container.find('.zedity-mainmenu');
 		
-		//move 'Clear all' to 'Edit' menu
-		zedityMenu.find('li.zedity-menu-ClearAll')
-			.add(zedityMenu.find('li.zedity-menu-ClearAll').prev())
-			.appendTo('.zedity-mainmenu > li:nth-child(2) > ul');
+		zedityEditor.menu.add({
+			tabs: {
+				content: {
+					groups: {
+						save: {
+							order: -2000,
+							features: {
+								save: {
+									type: 'button',
+									icon: 'save',
+									label: '<?php echo addslashes(__('Save','zedity'))?>',
+									onclick: function(){
+										saveContent();
+									},
+									refresh: function(ed){
+										this.$button.find('.zedity-ribbon-button-label').html(
+											ed.responsive && ed.responsive.current ? 
+												Zedity.t('Save "%s"',ed.responsive._options.layouts[ed.responsive.current].short) :
+												'<?php echo addslashes(__('Save','zedity'))?>'
+										);
+									}
+								},
+								savemodelabel: {
+									type: 'smallpanel',
+									build: function($panel,ed){
+										$panel.css('margin','0 0 10px 5px').append(
+											'<span> <?php echo addslashes(__('Save mode:','zedity'))?></span> '+
+											'<span class="zedity-contentmode-tt zedity-tooltip" title="">?</span>'
+										);
+										$panel.find('.zedity-contentmode-tt').prop('title',
+											'<?php echo addslashes(__('<b>Isolated mode</b>: the HTML content is saved into a file in your Media Library and loaded inside an iframe into your page. This is useful to prevent the theme or other plugins from causing undesired modifications to your designs.','zedity'))?>'+'<br/>'+
+											'<?php echo addslashes(__('<b>Standard mode</b>: the HTML content is saved inline, just like if it was created with the WordPress editor (and, as such, other plugins or the theme may modify it). This is the preferred mode for SEO and social sharing.','zedity'))?>'
+										).tooltip();
+									}
+								},
+								savemode: {
+									type: 'menu',
+									items: [{
+										value: 1,
+										label: '<?php echo addslashes(__('Isolated','zedity'))?>'
+									},{
+										value: 2,
+										label: '<?php echo addslashes(__('Standard','zedity'))?>'
+									}],
+									onclick: function(value,ed){
+										content.savemode = value;
+									},
+									refresh: function(ed){
+										this.$menu.val(content.savemode).selectmenu('refresh');
+									}
+								},
+								separator: {
+									type: 'separator'
+								},
+								wordpress: {
+									type: 'extpanel',
+									icon: 'config2',
+									label: 'WordPress',
+									title: 'WordPress',
+									build: function($panel,ed){
+										$panel.append(
+											'<table>'+
+												'<tr class="zedity-wp-align-feat">'+
+													'<td><span><?php echo addslashes(__('Alignment','zedity'))?> &nbsp;</span></td>'+
+													'<td><select class="zedity-wp-align">'+
+														'<option value=""><?php echo addslashes(__('None','zedity'))?></option>'+
+														'<option value="left"><?php echo addslashes(__('Left','zedity'))?></option>'+
+														'<option value="center"><?php echo addslashes(__('Center','zedity'))?></option>'+
+														'<option value="right"><?php echo addslashes(__('Right','zedity'))?></option>'+
+													'</select></td>'+
+												'</tr>'+
+												'<tr class="zedity-wp-theme-feat">'+
+													'<td><span><?php echo addslashes(__('Theme style','zedity'))?> &nbsp;</span></td>'+
+													'<td><select class="zedity-wp-theme">'+
+														'<option value="yes"><?php echo addslashes(__('Enabled','zedity'))?></option>'+
+														'<option value="no"><?php echo addslashes(__('Disabled','zedity'))?></option>'+
+													'</select></td>'+
+												'</tr>'+
+												'<tr class="zedity-wp-watermark-feat">'+
+													'<td><span><?php echo addslashes(__('Watermark','zedity'))?> &nbsp;</span></td>'+
+													'<td><select class="zedity-wp-watermark">'+
+														'<option value="none"><?php echo addslashes(__('None','zedity'))?></option>'+
+														'<option value="topleft"><?php echo addslashes(__('Top left','zedity'))?></option>'+
+														'<option value="topright"><?php echo addslashes(__('Top right','zedity'))?></option>'+
+														'<option value="bottomleft"><?php echo addslashes(__('Bottom left','zedity'))?></option>'+
+														'<option value="bottomright"><?php echo addslashes(__('Bottom right','zedity'))?></option>'+
+													'</select></td>'+
+												'</tr>'+
+											'</table>'
+										);
+										$panel.find('.zedity-wp-align').selectmenu({
+											width: 130,
+											appendTo: $panel,
+											change: function(e,ui){
+												content.alignment = ui.item.value;
+												ed.$this.removeClass('alignleft alignright aligncenter');
+												if (content.alignment) ed.$this.addClass('align'+content.alignment);
+											}
+										});
+										$panel.find('.zedity-wp-theme').selectmenu({
+											width: 130,
+											appendTo: $panel,
+											change: function(e,ui){
+												ed.$this.toggleClass('zedity-notheme', ui.item.value=='no');
+											}
+										});
+										$panel.find('.zedity-wp-watermark').selectmenu({
+											width: 130,
+											appendTo: $panel,
+											change: function(e,ui){
+												content.watermarkposition = ui.item.value;
+											}
+										});
+									},
+									refresh: function(ed){
+										this.$extpanel.find('.zedity-wp-align').val(content.alignment||'').selectmenu('refresh');
+										this.$extpanel.find('.zedity-wp-theme').val(ed.$this.hasClass('zedity-notheme')?'no':'yes').selectmenu('refresh');
+										this.$extpanel.find('.zedity-wp-theme-feat').toggleClass('zedity-disabled',content.savemode==1);
+										this.$extpanel.find('.zedity-wp-watermark').val(content.watermarkposition).selectmenu('refresh');
+									}
+								}
+							}
+						},
+						responsivefree: {
+							title: Zedity.t('Responsive'),
+							order: 300,
+							features: {
+								responsivelabel: {
+									type: 'smallpanel',
+									build: function($panel){
+										$panel.css('margin','0 0 10px 5px').append('<span> <?php echo addslashes(__('Responsive:','zedity'))?></span>');
+									}
+								},
+								responsive: {
+									type: 'menu',
+									width: 170,
+									items: [{
+										value: 0,
+										label: '<?php echo addslashes(__('No','zedity'))?>'
+									},{
+										value: 1,
+										label: '<?php echo addslashes(__('Scaling','zedity'))?> (Premium)',
+										class: 'ui-state-disabled'
+									},{
+										value: 2,
+										label: '<?php echo addslashes(__('Multiple layout','zedity'))?> (Premium)',
+										class: 'ui-state-disabled'
+									}]
+								}
+							}
+						}
+					}
+				},
+				info: {
+					icon: 'info <?php echo (($version['update_available'] || !empty($promo['promocode'])) ? 'zicon-anim-spin' : '')?>',
+					order: 100000,
+					groups: {
+						plugin: {
+							title: '<?php echo addslashes(__('Plugin','zedity'))?>',
+							features: {
+								version: {
+									type: 'panel',
+									build: function($panel){
+										$panel.append(
+											'<table>'+
+											'<tr><td><?php echo addslashes(__('Your version','zedity'))?></td><td><b><?php echo $version['installed']?></b></td></tr>'+
+											'<tr><td><?php echo addslashes(__('Latest version','zedity'))?></td><td><b><?php echo $version['latest']?></b></td></tr>'+
+											'<tr><td colspan="2" style="padding-top:7px"><span class="update <?php echo $version['update_available'] ? 'outdated' : 'ok' ?>">'+
+												'<?php echo addslashes($version['update_available'] ? __('Please update!','zedity') : __('You are OK!','zedity')) ?>'+
+											'</span></td></tr>'+
+											'</table>'
+										);
+									}
+								},
+								update: {
+									type: 'button',
+									icon: 'download',
+									label: '<?php echo addslashes(__('Update','zedity'))?>',
+									title: '<?php echo addslashes(__('Update','zedity'))?>',
+									onclick: function(){
+										window.open('<?php echo '<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>'?>','_blank');
+									},
+									show: function(){
+										return <?php echo ($version['update_available'] ? 'true' : 'false') ?>;
+									}
+								},
+								premium: {
+									type: 'button',
+									icon: 'zedity',
+									label: '<?php echo addslashes(sprintf(__('Go %s','zedity'),'Premium'))?>',
+									title: '<?php echo addslashes(sprintf(__('Go %s','zedity'),'Premium'))?>',
+									onclick: function(){
+										window.open('https://zedity.com/plugin/wpfeatures','_blank');
+									},
+									show: function(){
+										return <?php echo ($this->is_premium() ? 'false' : 'true') ?>;
+									}
+								},
+								promo: {
+									type: 'button',
+									icon: 'happy zicon-anim-spin',
+									label: '<?php echo addslashes(__('Promo','zedity'))?>',
+									title: '<?php echo addslashes(__('Promo','zedity'))?>',
+									onclick: function(){
+										window.open('<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>','_blank');
+									},
+									refresh: function(){
+										<?php if (!empty($promo['message'])) { ?>
+										this.$button.attr('title','<?php echo $promo['message'] ?>').tooltip();
+										<?php } ?>
+									},
+									show: function(){
+										return <?php echo (empty($promo['promocode']) ? 'false' : 'true') ?>;
+									}
+								},
+								rate: {
+									type: 'button',
+									icon: 'star',
+									label: '<?php echo addslashes(sprintf(__('Rate %s!','zedity'),'Zedity'))?>',
+									title: '<?php echo addslashes(sprintf(__('Rate %s!','zedity'),'Zedity'))?>',
+									onclick: function(){
+										window.open('https://wordpress.org/support/view/plugin-reviews/zedity','_blank');
+									}
+								}
+							}
+						},
+						help: {
+							title: '<?php echo addslashes(__('Help','zedity'))?>',
+							features: {
+								tutorials: {
+									type: 'button',
+									icon: 'help',
+									label: '<?php echo addslashes(__('Tutorials','zedity'))?>',
+									title: '<?php echo addslashes(__('Tutorials','zedity'))?>',
+									onclick: function(){
+										window.open('https://zedity.com/blog/tutorials','_blank');
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			onadd: function(ed){
+				//hide unsupported features
+				ed.menu._group('content','responsive').show = function(){return false};
+				ed.menu._feature('editbox','imagebox','filters').show = function(){return false};
+				(ed.menu._feature('editbox','imagebox','config').$extpanel||$()).find('.zedity-image-quality-feat').hide();
+			}
+		});
 		
-		//add Alignment to menu
-		zedityMenu.find('li.ui-menubar:first-child > ul').append(
-			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
-			'<li class="ui-menu-item zedity-menu-PageAlignMain" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Alignment','zedity'))?></a>'+
-				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
-					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('None','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="left">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Left','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="center">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Center','zedit'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-PageAlign ui-menu-item" role="presentation" data-type="right">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Right','zedity'))?></a>'+
-					'</li>'+
-				'</ul>'+
-			'</li>'
-		);
-		//add Theme style to menu
-		zedityMenu.find('li.ui-menubar:first-child > ul').append(
-			'<li class="ui-menu-item zedity-menu-ThemeStyleMain" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Theme style','zedity'))?></a>'+
-				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
-					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="yes">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Enabled','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-ThemeStyle ui-menu-item" role="presentation" data-type="no">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('Disabled','zedity'))?></a>'+
-					'</li>'+
-				'</ul>'+
-			'</li>'
-		);
-		//add Watermark to menu
-		zedityMenu.find('li.ui-menubar:first-child > ul').append(
-			'<li class="ui-menu-item" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Watermark','zedity'))?></a>'+
-				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="false" style="display:none" aria-hidden="true">'+
-					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="none">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-yes"></span><?php echo addslashes(__('None','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="topleft">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Top left','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="topright">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Top right','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="bottomleft">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Bottom left','zedity'))?></a>'+
-					'</li>'+
-					'<li class="zedity-menu-Watermark ui-menu-item" role="presentation" data-type="bottomright">'+
-						'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-none"></span><?php echo addslashes(__('Bottom right','zedity'))?></a>'+
-					'</li>'+
-				'</ul>'+
-			'</li>'
-		);
-		//add Save to menu
-		zedityMenu.find('li.ui-menubar:first-child > ul').append(
-			'<li class="ui-state-disabled zedity-separator ui-menu-item" role="presentation" aria-disabled="true"><a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"></a></li>'+
-			'<li class="zedity-menu-SavePage ui-menu-item" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span><?php echo addslashes(__('Save','zedity'))?></a>'+
-			'</li>'
-		);
-		//add shortcut buttons
-		zedityMenu.append(
-			'<li class="ui-menu-item" role="presentation">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><?php echo addslashes(__('Help','zedity'))?></a>'+
-				'<ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-expanded="true" style="display:none">'+
-					'<li class="ui-menu-item" role="presentation">'+
-						'<a href="http://zedity.com/blog/tutorials" class="ui-corner-all" tabindex="-1" role="menuitem" target="_blank"><?php echo addslashes(__('Tutorials','zedity'))?></a>'+
-					'</li>'+
-				'</ul>'+
-			'</li>'+
-			//'<li class="zedity-menu-SavePage ui-menu-item zedity-menu-quick" role="presentation" title="Save">'+
-			//	'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-disk"></span></a>'+
-			//'</li>'+
-			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="redo" role="presentation" title="<?php echo addslashes(__('Redo','zedity'))?> (ctrl+y)">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-redo" style="background-size:85%"></span></a>'+
-			'</li>'+
-			'<li class="zedity-menu-EditUndoRedo ui-menu-item zedity-menu-quick" data-type="undo" role="presentation" title="<?php echo addslashes(__('Undo','zedity'))?> (ctrl+z)">'+
-				'<a href="javascript:;" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="zedity-menu-icon zedity-icon-undo" style="background-size:85%"></span></a>'+
-			'</li>'
-			//+'<li class="zedity-menu-separator ui-menu-item ui-state-disabled zedity-menu-quick"></li>'
-		);
-
-		//undo/redo
-		zedityMenu.find('.zedity-menu-quick.zedity-menu-EditUndoRedo').on('click.zedity',function(event){
-			var editor = $(this).editor();
-			editor.menu.close();
-			editor[$(this).attr('data-type')]();
-			return false;
-		});
-		//page align
-		zedityMenu.find('.zedity-menu-PageAlign').on('click',function(){
-			content.alignment = $(this).attr('data-type');
-			zedityEditor.$this.removeClass('alignleft alignright aligncenter');
-			if (content.alignment) zedityEditor.$this.addClass('align'+content.alignment);
-			resizeEditor(zedityEditor);
-		});
-		//theme style
-		zedityMenu.find('.zedity-menu-ThemeStyle').on('click',function(){
-			var type = $(this).attr('data-type');
-			zedityEditor.$this.toggleClass('zedity-notheme', type=='no');
-			resizeEditor(zedityEditor);
-		});
-		//watermark
-		zedityMenu.find('.zedity-menu-Watermark').on('click',function(){
-			content.watermarkposition = $(this).attr('data-type');
-			resizeEditor(zedityEditor);
-		});
-		//add boxes
-		zedityMenu.find('.zedity-menu-AddBox').off('click.zedity').on('click.zedity',function(event){
-			zedityEditor.menu.close();
-			zedityEditor.boxes.add($(this).attr('data-boxtype'),{
-				x: Math.max($(window).scrollLeft()-zedityEditor.$this.offset().left,0)+20,
-				y: Math.max($(window).scrollTop()-zedityEditor.$this.offset().top+65,0)+20
-			});
-			return false;
-		});
 		//save
 		var saveContent = function(){
 			if (zedityEditor.responsive && zedityEditor.responsive.current) {
@@ -1133,27 +936,7 @@
 				});
 			}
 		};
-		$('#saveBtn').on('click', function(){
-			saveContent();
-			return false;
-		});
-		zedityMenu.find('.zedity-menu-SavePage').on('click',function(){
-			saveContent();
-			return false;
-		});
-		<?php if (!$this->is_premium()) { ?>
-			//show "premium feature" notice in status bar
-			Zedity.core.shortcuts.add('up down left right',zedityEditor,function(event){
-				if (this.$this.children('.zedity-box.zedity-selected').length>0) {
-					$('#goPremiumLink').addClass('premiumfeat');
-					setTimeout(function(){
-						$('#goPremiumLink').removeClass('premiumfeat');
-					}, 1000);
-					return true;
-				}
-			},true);
-		<?php } ?>
-
+		
 		var keepTooltipOpen = function(event){
 			var $target = $(event.target);
 			if (!$target.hasClass('zedity-tt')) $target = $target.parents('.zedity-tt');
@@ -1170,13 +953,6 @@
 			});
 			false;
 		};
-		$('#lblVersion').attr('title','<?php echo addslashes($version['message'])?>');
-		<?php if ($version['update_available']) { ?>
-			$('#lblVersion').tooltip({show:{delay:250}}).on('mouseleave',keepTooltipOpen);
-		<?php } ?>
-		<?php if (!empty($promo['promocode'])) { ?>
-			$('#lblPromo').attr('title','<?php echo addslashes($promo['message'])?>').tooltip({show:{delay:550}}).on('mouseleave',keepTooltipOpen);
-		<?php } ?>
 
 		//-----------------------------------------------------------------------------------------
 		//resizing
@@ -1191,9 +967,9 @@
 		//set content
 		try {
 			content.getFromTinyMCE();
-		} catch(e) {}
-		resizeEditor(zedityEditor);
-		$('#ddResponsive').trigger('change');
+		} catch(e) {
+                    console.log('getFromTinyMCE() exception: '+e.name+': '+e.message);
+                }
 		</script>
 	</body>
 	
