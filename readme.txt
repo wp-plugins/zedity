@@ -13,6 +13,8 @@ A revolutionary editor to create your posts and pages as naturally as drawing on
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and saving a lot of time!
 
+>May 18, 2015: released version 6.0.0 with brand new interface, support for touchscreen devices and much more! Here is a complete list of features: https://zedity.com/plugin/wpfeatures
+
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
 Here are four main reasons why you're going to love Zedity:
