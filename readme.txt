@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 6.0.0
+Stable tag: 6.1.0
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
@@ -13,7 +13,7 @@ The revolutionary editor that makes it super easy to create your and pages, quic
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and saving a lot of time!
 
->May 19, 2015: we're excited to announce Zedity 6.0, the latest major release with brand new user interface, support for touchscreen devices and much more! Here is a complete list of features: https://zedity.com/plugin/wpfeatures
+>May 19, 2015: we're excited to announce Zedity 6, the latest major release with brand new user interface, support for touchscreen devices and much more! Here is a complete list of features: https://zedity.com/plugin/wpfeatures
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
@@ -125,6 +125,12 @@ Please feel free to [contact us](https://zedity.com/support)...
 
 
 == Changelog ==
+
+= 6.1.0 =
+* Added Box opacity feature.
+* Added help tips to Content Duplicate feature.
+* Minor adjustments.
+* Added support for Google Drive documents in Document Box (only Premium).
 
 = 6.0.0 =
 * Completely redesigned interface.

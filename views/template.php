@@ -149,10 +149,21 @@ function print_list($posts){
 			opacity: 0.4;
 			pointer-events: none;
 		}
+		.notice {
+			display: none;
+		}
 		</style>
 	</head>
 
 	<body>
+		<p class="notice notice-standard">
+			<?php echo sprintf(__('The content you\'re about to duplicate was saved in %s mode.','zedity'),'<b>'.__('Standard','zedity').'</b>')?><br/>
+			<?php _e('Modifications to the duplicated content will not affect the original one.','zedity')?>
+		</p>
+		<p class="notice notice-isolated">
+			<?php echo sprintf(__('The content you\'re about to duplicate was saved in %s mode.','zedity'),'<b>'.__('Isolated','zedity').'</b>')?><br/>
+			<?php _e('Modifications to the duplicated content will also affect the original one and any of its duplicates.','zedity')?>
+		</p>
 		<p><?php echo sprintf(__('Select the destination page or post which you want to copy this %s content into.','zedity'),'Zedity')?></p>
 		<div id="tabs">
 			<ul>
@@ -264,6 +275,7 @@ function print_list($posts){
 				//get content
 				mce.selection.select(element);
 				var html = mce.selection.getContent({format:'html'});
+				$('.notice-'+($(html).find('iframe.zedity-iframe').length?'isolated':'standard')).show();
 			} else {
 				alert('Error during content load.');
 				parent.tb_remove();

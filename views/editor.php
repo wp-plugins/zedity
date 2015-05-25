@@ -37,22 +37,6 @@
 		?>
 		<script type="text/javascript">
 		$ = jQuery;
-		var linkMsg = '<?php echo sprintf(addslashes(__('For information or to upgrade to %s, please visit %s.','zedity')),'Zedity Premium','<a href="https://zedity.com/plugin/wp" target="_blank">zedity.com</a>');?>';
-		ZedityPromo = {
-			product: 'Zedity Premium',
-			productShort: 'Premium',
-			message: '<?php echo sprintf(addslashes(__('This is a %s feature.','zedity')),'Zedity Premium')?><br/>'+linkMsg,
-			feature: {
-				linkOnBox: '<?php echo sprintf(addslashes(__('%s feature: associate a link to the box.','zedity')),'Premium')?><br/>'+linkMsg,
-				boxSize: '<?php echo sprintf(addslashes(__('%s feature: view and set exact box size.','zedity')),'Premium')?><br/>'+linkMsg,
-				textParagraph: '<?php echo sprintf(addslashes(__('%s feature: SEO friendly tags, e.g. title, paragraph, etc.','zedity')),'Premium')?><br/>'+linkMsg,
-				textLink: '<?php echo sprintf(addslashes(__('%s feature: open link in a new tab.','zedity')),'Premium')?><br/>'+linkMsg,
-				imageFilters: false, //'<?php echo sprintf(addslashes(__('%s feature: enhance images with special effects.','zedity')),'Premium')?><br/>'+linkMsg,
-				colorButtons: '<?php echo sprintf(addslashes(__('%s feature: set custom RGB or Hex colors.','zedity')),'Premium')?>',
-				additionalMedia: linkMsg,
-				additionalBoxes: true // this message is not shown anyway (disabled items in menu)
-			}
-		};
 		ZedityLang = '<?php echo substr(get_bloginfo('language'),0,2);?>';
 		</script>
 		
@@ -133,6 +117,20 @@
 			}
 			.zedity-ribbon-group-subpanel[data-name=version] span.update.outdated {
 				background-color: yellow;
+			}
+			.zedity-ribbon-tab a .zedity-tab-badge {
+				display: inline-block;
+				color: white;
+				background: orange;
+				padding: 0px 5px;
+				margin-left: 5px;
+				border-radius: 10px;
+			}
+			
+			/*PROMO messages*/
+			.zedity-premium-features {
+				padding-left: 20px;
+				max-width: 400px;
 			}
 		</style>
 	</head>
@@ -563,18 +561,6 @@
 					$dialog.find('#zedity-txtImageLink').val(file.url);
 					$dialog.find('#zedity-txtImageDescription').val(file.alt||file.description||file.title||file.caption);
 				});
-				
-				<?php if (!$this->is_premium()) { ?>
-					$('#tab-image-link').prepend(
-						'<div id="zedity-pnlThumbML">'+
-						'<?php echo addslashes(__('Select size format from Media Library:','zedity'))?><br/>'+
-						'<select id="zedity-ddThumbML" style="width:170px" disabled="disabled">'+
-							'<option value="full"><?php echo addslashes(__('Full size','zedity'))?></option>'+
-						'</select>&nbsp;<span class="zedity-tooltip">?</span>'+
-						'</div><br/>'
-					);
-					$('#tab-image-link .zedity-tooltip').attr('title',ZedityPromo.message).tooltip();
-				<?php } ?>
 			}
 		});
 
@@ -819,7 +805,7 @@
 					}
 				},
 				info: {
-					icon: 'info <?php echo (($version['update_available'] || !empty($promo['promocode'])) ? 'zicon-anim-spin' : '')?>',
+					icon: 'info <?php echo ($version['update_available'] ? 'zicon-anim-spin' : '')?>',
 					order: 100000,
 					groups: {
 						plugin: {
@@ -845,39 +831,10 @@
 									label: '<?php echo addslashes(__('Update','zedity'))?>',
 									title: '<?php echo addslashes(__('Update','zedity'))?>',
 									onclick: function(){
-										window.open('<?php echo '<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>'?>','_blank');
+										window.open('<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>','_blank');
 									},
 									show: function(){
 										return <?php echo ($version['update_available'] ? 'true' : 'false') ?>;
-									}
-								},
-								premium: {
-									type: 'button',
-									icon: 'zedity',
-									label: '<?php echo addslashes(sprintf(__('Go %s','zedity'),'Premium'))?>',
-									title: '<?php echo addslashes(sprintf(__('Go %s','zedity'),'Premium'))?>',
-									onclick: function(){
-										window.open('https://zedity.com/plugin/wpfeatures','_blank');
-									},
-									show: function(){
-										return <?php echo ($this->is_premium() ? 'false' : 'true') ?>;
-									}
-								},
-								promo: {
-									type: 'button',
-									icon: 'happy zicon-anim-spin',
-									label: '<?php echo addslashes(__('Promo','zedity'))?>',
-									title: '<?php echo addslashes(__('Promo','zedity'))?>',
-									onclick: function(){
-										window.open('<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>','_blank');
-									},
-									refresh: function(){
-										<?php if (!empty($promo['message'])) { ?>
-										this.$button.attr('title','<?php echo $promo['message'] ?>').tooltip();
-										<?php } ?>
-									},
-									show: function(){
-										return <?php echo (empty($promo['promocode']) ? 'false' : 'true') ?>;
 									}
 								},
 								rate: {
@@ -964,12 +921,29 @@
 		<?php $this->additional_editor_js($options); ?>
 		
 		<script type="text/javascript">
+		<?php if (!empty($promo['promocode'])) { ?>
+			//add ongoing promo notification and badge
+			var $b = zedityEditor.menu._feature('premium','premium','premium').$button;
+			$b.find('.zicon').after('<span class="zicon zicon-happy zicon-anim-spin"></span>');
+			$b.attr('title','<?php echo $promo['message'] ?>').tooltip();
+			zedityEditor.menu.$tabs.find('.zedity-ribbon-tab[data-name=premium] a').append('<span class="zedity-tab-badge">promo</span>');
+			zedityEditor.menu.$tabs.find('.zedity-ribbon-tab[data-name=premium] .zicon').addClass('zicon-anim-spin');
+		<?php } ?>
+		<?php if ($version['update_available']) { ?>
+			//add new version badge
+			zedityEditor.menu.$tabs.find('.zedity-ribbon-tab[data-name=info] a').append('<span class="zedity-tab-badge">new</span>');
+		<?php } ?>
+		//stop notification spinning after 30 seconds
+		setTimeout(function(){
+			zedityEditor.menu.$tabs.find('.zicon-anim-spin').removeClass('zicon-anim-spin');
+		},30*1000);
+
 		//set content
 		try {
 			content.getFromTinyMCE();
 		} catch(e) {
-                    console.log('getFromTinyMCE() exception: '+e.name+': '+e.message);
-                }
+			console.log('getFromTinyMCE() exception: '+e.name+': '+e.message);
+		}
 		</script>
 	</body>
 	
