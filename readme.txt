@@ -1,4 +1,4 @@
-=== Zedity™ The Easiest Content Editor===
+=== Zedity™ The Easiest Editor to create Posts and Pages===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
@@ -8,7 +8,7 @@ Stable tag: 6.1.0
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
-The revolutionary editor that makes it incredibly easy to create your posts and pages. Complete visual design, no more coding. Try the difference!
+The revolutionary editor that makes it incredibly easy to create your posts and pages. Complete visual design, no more need for coding. Try the difference!
 
 == Description ==
 Zedity is a revolutionary visual editor to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and saving a lot of time!
