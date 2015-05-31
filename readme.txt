@@ -1,14 +1,14 @@
-=== Zedity™ The Easiest Editor to create Posts and Pages===
+=== Zedity™ Makes Creating Posts and Pages Easy and Fun!===
 Contributors: zuyoy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 6.1.0
+Stable tag: 6.1.1
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
-The first editor that makes it incredibly easy, quick and fun to create beautiful posts and pages. Try the difference!
+The revolutionary editor that makes it incredibly easy to create your posts and pages. Completely visual design, no more coding: try the difference!
 
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities and saving a lot of time!
@@ -21,7 +21,7 @@ Here are four main reasons why you're going to love Zedity:
 
 * **Really Easy**: finally, you don't have to deal with HTML, CSS and JavaScript coding any longer! Zedity enables you to create your content entirely visually, as naturally as if you're sketching on a piece of paper. HTML5 code is automatically generated for you, totally hassle-free!
 
-* **Save Time and Money**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
+* **Saves you Time and Money**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
 
 * **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
@@ -125,6 +125,10 @@ Please feel free to [contact us](https://zedity.com/support)...
 
 
 == Changelog ==
+
+= 6.1.1 =
+* Shortcut to edit boxes with double-click.
+* Minor improvements.
 
 = 6.1.0 =
 * Added Box opacity feature.
