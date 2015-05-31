@@ -656,6 +656,7 @@
 				content: {
 					groups: {
 						save: {
+							label: '<?php echo addslashes(__('Save','zedity'))?>',
 							order: -2000,
 							features: {
 								save: {
@@ -702,14 +703,15 @@
 										this.$menu.val(content.savemode).selectmenu('refresh');
 									}
 								},
-								separator: {
-									type: 'separator'
-								},
-								wordpress: {
+							},
+						},
+						options: {
+							label: '<?php echo addslashes(__('Options','zedity'))?>',
+							order: -2000,
+							features: {
+								options: {
 									type: 'extpanel',
 									icon: 'config2',
-									label: 'WordPress',
-									title: 'WordPress',
 									build: function($panel,ed){
 										$panel.append(
 											'<table>'+
@@ -771,20 +773,17 @@
 										this.$extpanel.find('.zedity-wp-theme-feat').toggleClass('zedity-disabled',content.savemode==1);
 										this.$extpanel.find('.zedity-wp-watermark').val(content.watermarkposition).selectmenu('refresh');
 									}
-								}
-							}
-						},
-						responsivefree: {
-							title: Zedity.t('Responsive'),
-							order: 300,
-							features: {
-								responsivelabel: {
+								},
+								separator: {
+									type: 'separator'
+								},
+								responsivefreelabel: {
 									type: 'smallpanel',
 									build: function($panel){
 										$panel.css('margin','0 0 10px 5px').append('<span> <?php echo addslashes(__('Responsive:','zedity'))?></span>');
 									}
 								},
-								responsive: {
+								responsivefree: {
 									type: 'menu',
 									width: 170,
 									items: [{

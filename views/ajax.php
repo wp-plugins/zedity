@@ -100,6 +100,7 @@ if (!is_user_logged_in()) {
 				$response = array('error' => __('Error writing to file','zedity') . " ({$dir['path']}/$filename).");
 				break;
 			}
+			$dir['url'] = str_replace(array('http://','https://'), '//', $dir['url']);
 
 			$file['type'] = 'application/zedity';
 			$file['path'] = $dir['path'];

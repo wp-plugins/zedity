@@ -16,7 +16,7 @@ zedityEditor.menu.add({
 							label: 'Upgrade now!',
 							order: 2000,
 							onclick: function(){
-								window.open('https://zedity.com/plugin/wpfeatures','_blank');
+								window.open('https://zedity.com/plugin/wp','_blank');
 							}
 						}
 					}
