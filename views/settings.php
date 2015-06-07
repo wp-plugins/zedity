@@ -62,13 +62,23 @@
 			<tr valign="top">
 				<th scope="row"><label><?php _e('Preview:','zedity')?></label></th>
 				<td>
-					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> <?php _e('Yes')?></label> &nbsp;
-					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> <?php _e('No')?></label>
+					<input type="radio" id="rbPreviewYes" name="<?php echo $settings?>[iframe_preview]" value="1" <?php echo $options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewYes"> <?php _e('Yes','zedity')?></label> &nbsp;
+					<input type="radio" id="rbPreviewNo" name="<?php echo $settings?>[iframe_preview]" value="0" <?php echo !$options['iframe_preview']?'checked="checked"':'' ?> /><label for="rbPreviewNo"> <?php _e('No','zedity')?></label>
 				</td>
 			</tr>
 		</tbody></table>
 		<hr/>
-
+		<p><?php _e('Some themes/plugins provide responsiveness for iframes. In such cases, you may need to enable the "No conflict mode" option here (this only applies for isolated save mode):','zedity')?></p>
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label><?php _e('No conflict mode:')?></label></th>
+				<td>
+					<input type="radio" id="rbResponsiveNcOn" name="<?php echo $settings?>[responsive_noconflict]" value="1" <?php echo $options['responsive_noconflict']?'checked="checked"':'' ?> /><label for="rbResponsiveNcOn"> <?php _e('On','zedity')?></label> &nbsp;
+					<input type="radio" id="rbResponsiveNcOff" name="<?php echo $settings?>[responsive_noconflict]" value="0" <?php echo !$options['responsive_noconflict']?'checked="checked"':'' ?> /><label for="rbResponsiveNcOff"> <?php _e('Off','zedity')?></label>
+				</td>
+			</tr>
+		</tbody></table>
+		
 		<h3 class="title"><?php _e('Watermark','zedity')?></h3>
 		<p><?php echo sprintf(__('If you like %s, a simple way for you to support it is to enable the "%s" watermark.','zedity'),'Zedity','Powered by Zedity')?></p>
 		<p><?php _e('Select the default watermark position, which can also be changed while creating content (under the "Content" menu):','zedity')?></p>
