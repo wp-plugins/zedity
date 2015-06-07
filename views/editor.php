@@ -18,16 +18,21 @@
 		}
 		//add jQuery and jQueryUI bundled with WordPress
 		wp_enqueue_script('jquery');
-		wp_enqueue_script('jquery-ui-tabs');
-		wp_enqueue_script('jquery-ui-dialog');
-		wp_enqueue_script('jquery-ui-draggable');
-		wp_enqueue_script('jquery-ui-resizable');
-		wp_enqueue_script('jquery-ui-droppable');
-		wp_enqueue_script('jquery-ui-menu');
-		wp_enqueue_script('jquery-ui-slider');
-		wp_enqueue_script('jquery-ui-tooltip');
-		wp_enqueue_script('jquery-ui-accordion');
-		wp_enqueue_script('jquery-ui-selectmenu');
+		if (version_compare($wp_version,'4.1','>=')) {
+			wp_enqueue_script('jquery-ui-tabs');
+			wp_enqueue_script('jquery-ui-dialog');
+			wp_enqueue_script('jquery-ui-draggable');
+			wp_enqueue_script('jquery-ui-resizable');
+			wp_enqueue_script('jquery-ui-droppable');
+			wp_enqueue_script('jquery-ui-menu');
+			wp_enqueue_script('jquery-ui-slider');
+			wp_enqueue_script('jquery-ui-tooltip');
+			wp_enqueue_script('jquery-ui-accordion');
+			wp_enqueue_script('jquery-ui-selectmenu');
+		} else {
+			//old versions of WordPress have an obsolete jqueryui, add our own
+			wp_enqueue_script('jquery-ui-custom',plugins_url("jquery/jquery-ui.min.js?{$this->plugindata['Version']}",dirname(__FILE__)),'jquery');
+		}
 		//print scripts
 		wp_print_head_scripts();
 		wp_print_footer_scripts();

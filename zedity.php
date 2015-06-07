@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: https://zedity.com/plugin/wp
 Description: The easiest way to create your posts and pages, very quickly and with unprecedented possibilities!
-Version: 6.1.1
+Version: 6.1.2
 Author: Pridea Company
 Author URI: https://zedity.com
 License: GPL3

@@ -130,12 +130,8 @@
 				try {
 					t.ed.execCommand('mceFocus',false);
 				} catch (e) {}
-				if (!t._zedityContent) {
-					var n = t.ed.selection.getNode();
-					var z = t.ed.dom.select('.zedity-editor',n)[0] || t.ed.dom.select('.zedity-iframe-wrapper',n)[0];
-					t._zedityContent = z;
-				}
-				t._showOverlay(t._zedityContent);
+				if (!t._zedityContent) t._zedityContent = t._getZedityElement(t.ed.selection.getNode());
+				t._showOverlay(t._zedityContent,true);
 			},100);
 		},
 
@@ -155,10 +151,10 @@
 		//-------------------------------------------------------------------------------
 		//Manage overlay
 
-		_showOverlay: function(n){
+		_showOverlay: function(n,forced){
 			if (!n) return;
 			if (this.open) return;
-			if (this._zedityContent==n) return;
+			if (this._zedityContent==n && !forced) return;
 			
 			var ed = this.ed;
 			var overlay = ed.dom.get('zedity_content_overlay');
@@ -287,7 +283,7 @@
 				author: 'Pridea Company',
 				authorurl: 'https://zedity.com',
 				infourl: 'https://zedity.com/blog',
-				version: '4.1'
+				version: '4.2'
 			};
 		}
 	});
