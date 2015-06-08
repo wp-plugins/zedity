@@ -8,7 +8,7 @@ Stable tag: 6.1.2
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
-The first editor that makes it incredibly easy, quick and fun to create your posts and pages. Try the difference!
+The first editor that makes it incredibly easy, quick and fun to create professional and beautiful posts and pages. Try the difference!
 
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, you can now create your content super easily, with unprecedented possibilities, saving also a lot of time!
