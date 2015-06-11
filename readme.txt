@@ -19,13 +19,13 @@ Zedity is a revolutionary content builder to create your posts and pages as natu
 
 Here are four main reasons why you're going to love Zedity:
 
-* **Easy for Anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
+* **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
-* **Saves you Time and Money**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
+* **It saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
 
-* **Total Design Freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
+* **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
-* **Dedicated Technical Support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
+* **We offer dedicated support**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though: so, if you happen to wait for a few hours, please refrain from thinking that we don't want to help and consider that we also happen to eat and sleep... :) Last but not least, constructive feedback is always welcome!
 
 >Zedity is available in many languages already:
 **Chinese**, **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. 
