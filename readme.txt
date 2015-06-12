@@ -17,7 +17,7 @@ Zedity is a revolutionary content builder to create your posts and pages as natu
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Here are four main reasons why you're going to love Zedity:
+Here are four main reasons why more and more users love Zedity:
 
 * **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
