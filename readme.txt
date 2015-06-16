@@ -21,7 +21,7 @@ Here are four main reasons why more and more users love Zedity:
 
 * **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
-* **Unleash the potential of your site**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: you'd like to add a touch of creativity to your content by placing text overlapping an image, which you may also like it rotated. How can you do that? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
+* **It unleashes the potential of your site**: unprecedented flexibility and possibilities to create any desired design. Let's consider the simplest example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just not possible. With Zedity, you can do that, and much more than that, in just few clicks!
 
 * **It saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
 
