@@ -36,7 +36,7 @@ Isn't your language available yet? Be the first to translate Zedity into your na
 
 *   [Official site](https://zedity.com): Zedity is available for WordPress, either as a Free or Premium Plugin, and as Online Editor. Find all the information on the official Zedity site.
 
-*   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity) pages: follow us to get notified about new releases, special offers and the latest about Zedity!
+*   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity): follow us to get notified about new releases, special offers and the latest about Zedity!
 
 *   [Blog](https://zedity.com/blog): from installation to usage tips, release notes, video tutorials, etc.
 
