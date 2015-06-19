@@ -56,7 +56,7 @@ If you are using an outdated version, here are the compatibility requirements:
 * WP 3.9+ requires Zedity 3.1.2+  
 
 
-**Do you like Zedity?**: please support the free version with a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=US&hosted_button_id=PRACALSXMQ5PY). We'd also be glad to receive your [constructive feedback](https://wordpress.org/support/view/plugin-reviews/zedity). Thanks and happy Zedity!!!
+**Do you like Zedity?**: please support the free version with a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&lc=US&hosted_button_id=PRACALSXMQ5PY). We'd also be glad to receive your [constructive feedback](https://wordpress.org/support/view/plugin-reviews/zedity). Thanks and happy Zedity!
 
 **For those of you interested, here is the video of the first milestone, Zedity 1.0:**
 [youtube https://www.youtube.com/watch?v=7FyhGvPwMvg&rel=0]
