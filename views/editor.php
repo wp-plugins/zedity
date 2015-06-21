@@ -219,6 +219,9 @@
 						(this.needBrAfter ? '<p>&nbsp;</p>' : '')
 					);
 				}
+				//force WP editor refresh
+				parent.switchEditors.go();
+				parent.switchEditors.go();
 				zedityEditor.contentChanged = false;
 				//close editor window
 				parent.tb_remove();
