@@ -13,7 +13,7 @@ Zedity makes it incredibly easy, quick and fun for anyone to create professional
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, creating professional content becomes incredibly easy, quick and with unprecedented possibilities!
 
->**All users please **update to the latest version 6!** With a brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ), Zedity 6+ takes your WordPress experience to the next level.
+>All users please **update to the latest version 6!** With a brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ), Zedity 6+ takes your WordPress experience to the next level.
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
