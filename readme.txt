@@ -13,15 +13,15 @@ Zedity makes it incredibly easy to create professional and creative content to i
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as drawing on paper! With absolutely no coding skill required, creating professional content becomes incredibly easy, quick and with unprecedented possibilities!
 
->All users please **update to the latest version 6!** With a brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ), Zedity 6+ takes your WordPress experience to the next level.
+>All users please **update to the latest version 6!** With a brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ), Zedity 6+ takes your WordPress experience to the next level!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Here are four main reasons why more and more users love Zedity:
-
-* **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
+Why Zedity?
 
 * **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider the simplest example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just impossible! With Zedity, that's only the beginning of amazing things you can do in just few clicks!
+
+* **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
 * **It saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
 
