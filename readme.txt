@@ -17,7 +17,7 @@ Zedity is a revolutionary content builder to create your posts and pages as natu
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Why Zedity?
+Why do you need to use Zedity?
 
 * **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider the simplest example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just impossible! With Zedity, that's only the beginning of amazing things you can do in just few clicks!
 
