@@ -39,7 +39,7 @@ Isn't your language available yet? Be the first to translate Zedity into your na
 
 *   [Facebook](https://www.facebook.com/Zedity) and [Twitter](https://www.twitter.com/Zedity): follow us to get notified about new releases, special offers and the latest news!
 
-*   [Blog](https://zedity.com/blog): here you can find tips, release notes, video tutorials, etc.
+*   [Blog](https://zedity.com/blog): usage tips, release notes, video tutorials, etc.
 
 *   [Translate Zedity](https://zedity.com/translate/ ): provide the translation into your native language to enter the **Hall of Fame!** and **get rewarded** with a special promo code to get Zedity Premium!
 
