@@ -19,7 +19,7 @@ Zedity is a revolutionary content builder to create your posts and pages as natu
 
 Why do you need to use Zedity?
 
-* **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider the simplest example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just impossible! With Zedity, that's only the beginning of amazing things you can do in just few clicks!
+* **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just impossible! With Zedity, that's only the beginning of amazing things you can do in just few clicks!
 
 * **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
