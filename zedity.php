@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: https://zedity.com/plugin/wp
 Description: The easiest way to create your posts and pages, very quickly and with unprecedented possibilities!
-Version: 6.1.3
+Version: 6.1.4
 Author: Pridea Company
 Author URI: https://zedity.com
 License: GPL3
@@ -566,6 +566,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 				'save_mode' => 2,
 				'page_width' => self::DEFAULT_WIDTH,
 				'page_height' => self::DEFAULT_HEIGHT,
+				'add_blank_lines' => TRUE,
 				'webfonts' => array(),
 				'watermark' => 'none',
 				'customfontscss' => '',
@@ -657,6 +658,8 @@ if (class_exists('WP_Zedity_Plugin')) {
 			if ($options['page_height']>self::MAX_WIDTH) {
 				$options['page_height'] = self::MAX_HEIGHT;
 			}
+			
+			$options['add_blank_lines'] = isset($input['add_blank_lines']);
 
 			$options['webfonts'] = array();
 			if (isset($input['webfonts'])) {

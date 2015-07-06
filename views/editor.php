@@ -179,8 +179,12 @@
 					//get content
 					content = this.mce.selection.getContent({format:'html'});
 					//check if <br> is needed before/after the content
-					this.needBrBefore = $(this.element).prev(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
-					this.needBrAfter = $(this.element).next(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
+					<?php if ($options['add_blank_lines']) { ?>
+						this.needBrBefore = $(this.element).prev(':not(.zedity-editor):not(.zedity-wrapper)').length==0;
+						this.needBrAfter = $(this.element).next(':not(.zedity-editor):not(.zedity-wrapper):not(#zedity_content_overlay)').length==0;
+					<?php } else { ?>
+						this.needBrBefore = this.needBrAfter = false;
+					<?php } ?>
 				}
 				//check if existing content
 				var $content = $('<div/>').html(content);
@@ -220,8 +224,8 @@
 					);
 				}
 				//force WP editor refresh
-				parent.switchEditors.go();
-				parent.switchEditors.go();
+				parent.switchEditors.go(); //switch to text 
+				parent.switchEditors.go(); //switch to visual => re-parse HTML code
 				zedityEditor.contentChanged = false;
 				//close editor window
 				parent.tb_remove();
@@ -834,11 +838,11 @@
 								},
 								update: {
 									type: 'button',
-									icon: 'download',
+									icon: 'download zicon-is-link',
 									label: '<?php echo addslashes(__('Update','zedity'))?>',
 									title: '<?php echo addslashes(__('Update','zedity'))?>',
 									onclick: function(){
-										window.open('<?php echo "{$this->zedityServerBaseUrl}/plugin/wp"?>','_blank');
+										window.open('<?php echo $this->is_premium() ? "{$this->zedityServerBaseUrl}/plugin/wp" : 'plugins.php#zedity'?>','_blank');
 									},
 									show: function(){
 										return <?php echo ($version['update_available'] ? 'true' : 'false') ?>;
@@ -846,7 +850,7 @@
 								},
 								rate: {
 									type: 'button',
-									icon: 'star',
+									icon: 'star zicon-is-link',
 									label: '<?php echo addslashes(sprintf(__('Rate %s!','zedity'),'Zedity'))?>',
 									title: '<?php echo addslashes(sprintf(__('Rate %s!','zedity'),'Zedity'))?>',
 									onclick: function(){
@@ -860,7 +864,7 @@
 							features: {
 								tutorials: {
 									type: 'button',
-									icon: 'help',
+									icon: 'help zicon-is-link',
 									label: '<?php echo addslashes(__('Tutorials','zedity'))?>',
 									title: '<?php echo addslashes(__('Tutorials','zedity'))?>',
 									onclick: function(){

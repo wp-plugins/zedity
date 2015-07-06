@@ -67,6 +67,20 @@
 				</td>
 			</tr>
 		</tbody></table>
+		
+		<hr/>
+		<h3 class="title"><?php _e('Content space','zedity')?></h3>
+		<p><?php echo sprintf(__('Add a blank line above and below the %s contents when saving.','zedity'),'Zedity')?></p>
+		<table class="form-table"><tbody>
+			<tr valign="top">
+				<th scope="row"><label><?php _e('Space:','zedity')?></label></th>
+				<td>
+					<input type="radio" id="rbBlankLinesYes" name="<?php echo $settings?>[add_blank_lines]" value="1" <?php echo $options['add_blank_line']?'checked="checked"':'' ?> /><label for="rbBlankLinesYes"> <?php _e('Yes','zedity')?></label> &nbsp;
+					<input type="radio" id="rbBlankLinesNo" name="<?php echo $settings?>[add_blank_lines]" value="0" <?php echo !$options['add_blank_line']?'checked="checked"':'' ?> /><label for="rbBlankLinesNo"> <?php _e('No','zedity')?></label>
+				</td>
+			</tr>
+		</tbody></table>
+		
 		<hr/>
 		<p><?php _e('Some themes/plugins provide responsiveness for iframes. In such cases, you may need to enable the "No conflict mode" option here (this only applies for isolated save mode):','zedity')?></p>
 		<table class="form-table"><tbody>

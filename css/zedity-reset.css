@@ -100,6 +100,7 @@ Image box
 */
 
 /*reset image wrapped in <p> by TinyMCE*/
+.zedity-editor .zedity-box-Image figure,
 .zedity-editor .zedity-box-Image p {
 	width: 100% !important;
 	height: 100% !important;
