@@ -13,7 +13,7 @@ Zedity makes it very easy and quick to create your posts and pages. No coding re
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as writing on paper! With absolutely no coding skill required, creating professional content becomes incredibly easy, quick and with unprecedented possibilities!
 
->All users please **update to the latest version 6!** With a brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ), Zedity 6+ takes your WordPress experience to the next level!
+>All users should **update to the latest version 6!** as soon as possible. Take advantage of the brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ). Download the free update now!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
