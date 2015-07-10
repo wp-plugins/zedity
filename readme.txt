@@ -8,7 +8,7 @@ Stable tag: 6.1.4
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
-Zedity makes it very easy and quick to create your posts and pages. No coding required, 100% visual design freedom.
+Zedity helps you create professional posts and pages very easily and quickly like never before. No coding required, 100% visual design.
 
 == Description ==
 Zedity is a revolutionary content builder to create your posts and pages as naturally as writing on paper! With absolutely no coding skill required, creating professional content becomes incredibly easy, quick and with unprecedented possibilities!
