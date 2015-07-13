@@ -25,8 +25,8 @@ Why do you need to use Zedity?
 
 * **It saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
 
-* **You get dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to request assistance or if you think you've found a bug, please refrain from using the rating system (https://zedity.com/blog/plugin-ratings-on-wordpress-org/).
-Last but not least, constructive feedback is always welcome! 
+* **You get dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
+If you already used the plugin and would like to rate it, you're welcome. Here is a post you may want to read before rating: https://zedity.com/blog/plugin-ratings-on-wordpress-org/
 
 >Zedity is available in many languages already:
 **Chinese**, **Czech**, **Dutch**, **English**, **French**, **German**, **Greek**, **Indonesian**, **Italian**, **Polish**, **Russian**, **Spanish**, **Ukrainian**. 
