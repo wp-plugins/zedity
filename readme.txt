@@ -17,15 +17,15 @@ Zedity is a revolutionary content builder to create your posts and pages as natu
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Why do you need to use Zedity?
+Advantages of using Zedity:
 
-* **It gives you total design freedom**: unprecedented flexibility and possibilities to create any desired design. Let's consider a very simple example: how would you place some text on top of an image? Well, with the standard WordPress visual editor, that is just impossible! With Zedity, that's only the beginning of amazing things you can do in just few clicks!
+* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks!
 
-* **It's easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
+* **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
 
-* **It saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it even without hiring developers, you can also save money!
+* **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself, without hiring developers, you can also save money!
 
-* **You get dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
+* **Dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
 If you already used the plugin and would like to rate it, you're welcome. Here is a post you may want to read before rating: https://zedity.com/blog/plugin-ratings-on-wordpress-org/
 
 >Zedity is available in many languages already:
