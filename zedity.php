@@ -3,7 +3,7 @@
 Plugin Name: Zedity
 Plugin URI: https://zedity.com/plugin/wp
 Description: The easiest way to create your posts and pages, very quickly and with unprecedented possibilities!
-Version: 6.1.4
+Version: 6.1.5
 Author: Pridea Company
 Author URI: https://zedity.com
 License: GPL3
@@ -284,6 +284,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 
 			require(ABSPATH . WPINC . '/version.php');
 			$options = $this->get_options();
+			header('Content-Type: text/html');
 			include(sprintf("%s/views/editor.php", dirname(__FILE__)));
 			exit;
 		}
@@ -291,6 +292,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_zedity_ajax_page() {
 			require(ABSPATH . WPINC . '/version.php');
 			$options = $this->get_options();
+			header('Content-Type: application/json');
 			include(sprintf("%s/views/ajax.php", dirname(__FILE__)));
 			exit;
 		}
@@ -298,6 +300,7 @@ if (class_exists('WP_Zedity_Plugin')) {
 		public function add_zedity_template_page() {
 			require(ABSPATH . WPINC . '/version.php');
 			$options = $this->get_options();
+			header('Content-Type: text/html');
 			include(sprintf("%s/views/template.php", dirname(__FILE__)));
 			exit;
 		}

@@ -1,10 +1,10 @@
 === Zedity™ The Easiest Way to Create Your Posts and Pages===
-Contributors: zuyoy, zeditystaff
+Contributors: zuyoy, ZedityStaff
 Donate link: https://www.paypal.com/cgi-bin/webscr?lc=US&currency_code=USD&cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 6.1.4
+Stable tag: 6.1.5
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
@@ -13,7 +13,7 @@ Create professional posts and pages super easily, with unprecedented possibiliti
 == Description ==
 Zedity is an innovative content builder to create your posts and pages as naturally as writing on paper! With absolutely no coding skill required, creating professional content becomes incredibly easy, quick and with unprecedented possibilities!
 
->All users should **update to the latest version 6**. Take advantage of the brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ). If you're still versions 5.x, 4.x and other obsolete ones, you're missing a lot! Download the latest version 6, it's free!
+>All users should **update to the latest version 6**. Take advantage of the brand new user interface, support for touchscreen devices and many [new features]( https://zedity.com/plugin/wpfeatures ). If you're still on versions 5.x, 4.x and other obsolete ones, you're missing a lot! We recommend to updated to the latest version 6, it's free!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
@@ -126,6 +126,10 @@ Please feel free to [contact us](https://zedity.com/support)...
 
 
 == Changelog ==
+
+= 6.1.5 =
+* Improved compatibility with some non-standard server configurations.
+* Various optimizations.
 
 = 6.1.4 =
 * Setting to enable/disable adding empty lines above/below Zedity content on save.
