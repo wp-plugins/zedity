@@ -19,9 +19,9 @@ Zedity is an innovative content builder to create your posts and pages as natura
 
 Advantages of using Zedity:
 
-* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks!
-
 * **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
+
+* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks!
 
 * **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself, without hiring developers, you can also save money!
 
