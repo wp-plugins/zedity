@@ -1,4 +1,4 @@
-=== Zedity™ The Easiest Way to Create Your Posts and Pages===
+=== The Easiest Way of Creating Your Posts and Pages.===
 Contributors: zuyoy, ZedityStaff
 Donate link: https://www.paypal.com/cgi-bin/webscr?lc=US&currency_code=USD&cmd=_s-xclick&hosted_button_id=PRACALSXMQ5PY
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
@@ -19,11 +19,11 @@ Zedity is an innovative content builder to create your posts and pages as natura
 
 Advantages of using Zedity:
 
-* **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you!
+* **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you.
 
-* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks!
+* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks.
 
-* **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself, without hiring developers, you can also save money!
+* **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself, without hiring developers, you can also save money.
 
 * **Dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
 If you already used the plugin and would like to rate it, you're welcome. Here is a post you may want to read before rating: https://zedity.com/blog/plugin-ratings-on-wordpress-org/
