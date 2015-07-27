@@ -17,7 +17,7 @@ Zedity is an innovative content builder to create your posts and pages as natura
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Advantages of using Zedity:
+Why people like you are using Zedity:
 
 * **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you.
 
