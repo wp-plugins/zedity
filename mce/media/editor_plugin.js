@@ -707,7 +707,7 @@
 			// Setup new image object
 			img = new Node('img', 1);
 			img.attr({
-				src : this.editor.theme.url + '/img/trans.gif'
+				src : 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
 			});
 
 			// Video element
@@ -887,7 +887,7 @@
 			// Set width/height of placeholder
 			img.attr({
 				id : id,
-				'class' : 'mceItemMedia mceItem' + (type || 'Flash'),
+				'class' : 'mceItemMedia mce-object mceItem' + (type || 'Flash'),
 				style : style,
 				width : width || (node.name == 'audio' ? "300" : "320"),
 				height : height || (node.name == 'audio' ? "32" : "240"),
