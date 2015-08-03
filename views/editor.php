@@ -29,6 +29,7 @@
 			wp_enqueue_script('jquery-ui-tooltip');
 			wp_enqueue_script('jquery-ui-accordion');
 			wp_enqueue_script('jquery-ui-selectmenu');
+			wp_enqueue_script('jquery-effects-core');
 		} else {
 			//old versions of WordPress have an obsolete jqueryui, add our own
 			wp_enqueue_script('jquery-ui-custom',plugins_url("jquery/jquery-ui.min.js?{$this->plugindata['Version']}",dirname(__FILE__)),'jquery');
@@ -862,11 +863,11 @@
 						help: {
 							title: '<?php echo addslashes(__('Help','zedity'))?>',
 							features: {
-								tutorials: {
+								blog: {
 									type: 'button',
 									icon: 'help zicon-is-link',
-									label: '<?php echo addslashes(__('Tutorials','zedity'))?>',
-									title: '<?php echo addslashes(__('Tutorials','zedity'))?>',
+									label: '<?php echo addslashes(__('Blog','zedity'))?>',
+									title: '<?php echo addslashes(__('Blog','zedity'))?>',
 									onclick: function(){
 										window.open('https://zedity.com/blog/tutorials','_blank');
 									}
@@ -954,6 +955,27 @@
 			content.getFromTinyMCE();
 		} catch(e) {
 			console.log('getFromTinyMCE() exception: '+e.name+': '+e.message);
+		}
+		
+		//tutorials
+		Zedity.tutorials._tutorials['intro1'].tutorial.push(function(){
+			this.editor.menu.openTab('info');
+			this.showHighlight(this.editor.menu._feature('info','help','tutorials').$button,'You can run this and other tutorials whenever you need them.');
+		});
+		Zedity.tutorials.addMenu(zedityEditor,'info','help');
+		
+		if (!content.element && !Zedity.core.store.get('zedity-tutorial',window.localStorage)) {
+			var res = confirm(
+				'<?php echo addslashes(__('This is the first time you open Zedity.'))?>' +
+				'\n' +
+				'<?php echo addslashes(__('Do you want to run a tutorial?'))?>'
+			);
+			if (res) {
+				Zedity.tutorials.start(zedityEditor,'intro1');
+			} else {
+				alert('<?php echo addslashes(__('You can view tutorials at any time from the "Info" tab.'))?>');
+			}
+			Zedity.core.store.set('zedity-tutorial',1,window.localStorage);
 		}
 		</script>
 	</body>

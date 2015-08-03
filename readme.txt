@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?lc=US&currency_code=USD&cmd=_
 Tags:  admin, audio, automatic, blog, box, builder, business, button, code, comments, content, create, creative, creativity, creator, custom, design, document, drag, drop, drag&drop, edit, editor, embed, easy, facebook, free, freedom, flexible, format, free, freedom, gallery, google, html, html5, image, images, infographic, javascript, layout, link, links, media, multimedia, music, page, pages, paypal, play, photo, photos, picture, pictures, plugin, plugins, post, posts, productivity, quick, responsive, save, search, seo, share, shortcode, shortcodes, sidebar, simple, site, social, text, tool, twitter, url, video, videos, visual, web, website, widget, widgets, wordpress, wysiwyg, youtube, zedity 
 Requires at least: 3.5
 Tested up to: 4.2.3
-Stable tag: 6.1.5
+Stable tag: 6.2.0
 License: GPLv3
 License URI: https://zedity.com/license/freewp
                       
@@ -127,6 +127,11 @@ Please feel free to [contact us](https://zedity.com/support)...
 
 == Changelog ==
 
+= 6.2.0 =
+* Interactive step-by-step tutorials.
+* Text box optimizations.
+* Theme isolation improvements.
+
 = 6.1.5 =
 * Improved compatibility with some non-standard server configurations.
 * Various optimizations.
@@ -146,7 +151,6 @@ Please feel free to [contact us](https://zedity.com/support)...
 = 6.1.2 =
 * WP compatibility improvements (various adjustments for WP versions >4.2 and <4.1).
 * Grid performance improvements and size lock (only Premium).
-
 
 = 6.1.1 =
 * Shortcut to edit boxes with double-click.

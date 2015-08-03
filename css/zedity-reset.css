@@ -184,11 +184,14 @@ Text box
 	list-style-type: lower-roman;
 }
 
-
 .zedity-editor.zedity-notheme .zedity-box-Text li {
 	display: list-item !important;
 	line-height: initial !important;
 }
+.zedity-editor.zedity-notheme .zedity-box-Text li div {
+	display: inline-block !important;
+}
+
 
 .zedity-editor.zedity-notheme .zedity-box-Text blockquote {
 	margin: 0px 0px 0px 40px !important;
