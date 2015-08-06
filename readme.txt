@@ -13,7 +13,7 @@ Create stunning posts and pages very easily, 100% visually and with unprecedente
 == Description ==
 Zedity is the first user friendly content builder to create your posts and pages as naturally as writing on paper! With absolutely no coding skills required, creating professional content becomes incredibly easy and quick for anyone!
 
->All users should **update to the latest version 6** to take advantage of the brand new user interface, support for touchscreen devices, **interactive tutorials** and other [new features]( https://zedity.com/plugin/wpfeatures ). If you're still on versions 5.x, 4.x and other obsolete ones, we recommend you to update now, it's free!
+>We recommend all users to **update to the latest version 6** to take advantage of the brand new user interface, support for touchscreen devices, **interactive tutorials** and other [new features]( https://zedity.com/plugin/wpfeatures ). If you're still on versions 5.x, 4.x and other obsolete ones, please update now, it's free!
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
