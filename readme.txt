@@ -17,13 +17,13 @@ Zedity is the first user friendly content builder to create your posts and pages
 
 [youtube https://www.youtube.com/watch?v=8Ws7OzSdDhs]
 
-Why people like you are using Zedity:
+4 reasons why you will love Zedity:
 
 * **Easy for anyone**: finally, you don't have to deal with HTML, CSS and JavaScript code! Zedity enables you to create your content entirely visually, as naturally as sketching on a piece of paper, generating HTML5 code automatically for you.
 
-* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, you cannot do it. With Zedity, you can do that, and much more than that, in just few clicks.
+* **Total design freedom**: unprecedented flexibility and possibilities to create any desired design. For example: how would you place some text on top of an image? With the standard WordPress visual editor, it's just impossible. With Zedity, instead, you can do that, and much more than that, in just a few clicks.
 
-* **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself, without hiring developers, you can also save money.
+* **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself and without hiring developers, you can also save some bucks!
 
 * **Dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
 If you already used the plugin and would like to rate it, you're welcome. Here is a post you may want to read before rating: https://zedity.com/blog/plugin-ratings-on-wordpress-org/
