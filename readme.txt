@@ -25,7 +25,7 @@ Zedity is the first user friendly content builder to create your posts and pages
 
 * **Saves you time**: what used to take you hours, will take you only minutes with Zedity! Furthermore, since you can do it by yourself and without hiring developers, you can also save some bucks!
 
-* **Dedicated technical assistance**: we love what we do and we're available to assist you. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. In any case, if you intend to 
+* **Dedicated technical assistance**: we love what we do and we assist you directly. If you encounter a problem, you need assistance or you think you found a bug or something to be improved, please [submit a ticket]( https://zedity.com/support ). We also reply to the questions on the forums, with a lower priority though. 
 If you already used the plugin and would like to rate it, you're welcome. Here is a post you may want to read before rating: https://zedity.com/blog/plugin-ratings-on-wordpress-org/
 
 >Zedity is available in many languages already:
