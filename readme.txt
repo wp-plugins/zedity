@@ -33,7 +33,7 @@ If you already used the plugin and would like to rate it, you're welcome. Here i
 Isn't your language available yet? Be the first to translate Zedity into your native language and [get rewarded!](https://zedity.com/translate/)
 
 
-**Discover more about Zedity:**
+**Discover Zedity:**
 
 *   [Official site](https://zedity.com): Zedity is available for WordPress, either as a Free or Premium Plugin, and as an Online Editor for those now using WordPress. Find all the information on the Zedity site.
 
